@@ -1,0 +1,307 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-01-07 20:16+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1389125803.000000\n"
+
+# 5d002dd803f341fa81bb26b24d340b13
+#: ../../../src/externals.rst:18
+msgid "CouchDB Externals API"
+msgstr "CouchDB Externals API"
+
+# 8bb56f0a8b79407d9698781b7dcc7a81
+#: ../../../src/externals.rst:20
+msgid "Paul Joseph Davis"
+msgstr "Paul Joseph Davis"
+
+# 8edddd4f635845bfbc8724fd7b0fa39d
+#: ../../../src/externals.rst:21
+msgid "2010-09-26"
+msgstr "26.09.2010"
+
+# 75c9c3c6ec2042fab85dc7fb26dee673
+#: ../../../src/externals.rst:22
+msgid "http://davispj.com/2010/09/26/new-couchdb-externals-api.html"
+msgstr "http://davispj.com/2010/09/26/new-couchdb-externals-api.html"
+
+# 33cafbaf37974a499ce437584b159d89
+#: ../../../src/externals.rst:24
+msgid "For a bit of background, CouchDB has had an API for managing `external OS processes`_ that are capable of handling HTTP requests for a given URL prefix. These OS processes communicate with CouchDB using JSON over stdio. They're dead simple to write and provide CouchDB users an easy way to extend CouchDB functionality."
+msgstr ""
+"Um ein wenig Hintergrund zu geben: CouchDB hatte eine API um `externen "
+"Betriebsystem- Prozesse`_ zu handhaben, die in der Lage waren HTTP-Requests "
+"mit einem URL-Prefix ausführen zu können. Diese Betriebsystem-Prozesse "
+"kommunizieren mit CouchDB über STDIO unter Verwendung von JSON. Sie sind "
+"sehr einfach zu schreiben und bieten CouchDB Nutzern die Möglichkeit "
+"CouchDB-Funktionalitäten zu erweitern. "
+
+# 651207a9d2434567ac9d772f3418f0d9
+#: ../../../src/externals.rst:30
+msgid "Even though they're dead simple to write, there are a few issues. The implementation in CouchDB does not provide fancy pooling semantics. The current API is explicitly synchronous which prevents people from writing event driven code in an external handler. In the end, they may be simple, but their simplicity is also quite limiting."
+msgstr ""
+"Obwohl sie sehr einfach zu schreiben sind, gibt es ein paar Probleme. Ihre "
+"Umsetzung in CouchDB bietet keine ausgefallene Pooling Semantik. Die "
+"aktuelle API ist ausdrücklich synchron implementiert was dazu führt, das man "
+"nicht in der Lage ist \"Event driven\" Code in Externen-Handlern zu "
+"schreiben. Am Ende sind sie zwar simpel, aber diese Einfachheit ist auch "
+"ziemlich einschränkend."
+
+# 13f15d01a0e74dc5a9cbea116478b1bd
+#: ../../../src/externals.rst:36
+msgid "During CouchCamp a few weeks ago I had multiple discussions with various people that wanted to see the _externals API modified in slight ways that weren't mutually compatible. After having multiple discussions with multiple people we formed a general consensus on what a new API could look like."
+msgstr ""
+"Während des CouchCamp vor ein paar Wochen habe ich mehrere Diskussionen mit "
+"unterschiedlichen Leuten gehabt, die die _externals API etwas abgeändert "
+"sehen möchten. Allerdings sind diese nicht für beide Seiten kompatibel. Nach "
+"mehreren Diskussionen mit mehreren Leuten haben wir einen allgemeinen "
+"Konsens gefunden, wie die API aussehen könnte."
+
+# 7bea2e44e1b24f50a8790289e3a16e24
+#: ../../../src/externals.rst:42
+msgid "The New Hotness"
+msgstr "Neu und heiß"
+
+# ab70960923934137827863c5214ebf96
+#: ../../../src/externals.rst:44
+msgid "So the first idea for improving the _external API was to make CouchDB act as a reverse proxy. This would allow people to write an HTTP server that was as simple or as complicated as they wanted. It will allow people to change their networking configuration more easily and also allow for external processes to be hosted on nodes other than the one running CouchDB. Bottom line, it not only allows us to have similar semantics as _externals, it provides a lot more fringe benefits as well. I'm always a fan of extra awesomeness."
+msgstr ""
+"Die erste Idee die _externals API zu verbessern war die Idee CouchDB als "
+"Reverse Proxy agieren zu lassen. Das würde einem erlauben einen HTTP-Server "
+"zu schreiben, der so simpel oder so kompliziert wie man möchte sein kann. Es "
+"erlaubt einem seine Netzwerk-Konfiguration einfacher abzuändern und erlaubt "
+"externe Prozesse auf einer anderen Node als auf der CouchDB läuft zu "
+"hosten. Zusammengefasst erlaubt es nicht nur die gleiche Semantik wie "
+"_externals zu haben, sondern bietet auch noch viele weitere, nebenläufige "
+"Vorteile. "
+
+# 7a0d9d9c5096436a8b9cd5b4348beebc
+#: ../../../src/externals.rst:52
+msgid "After hitting on the idea of adding a reverse proxy, people quickly pointed out that it would require users to start manually managing their external processes using something like `Runit`_ or `Supervisord`_. After some more discussions I ran into people that wanted something like _externals that didn't handle HTTP requests. After that it was easy to see that adding a second feature that managed OS processes was the way to go."
+msgstr ""
+"Nach dem angehen der Idee einen Reverse-Proxy hinzuzufügen haben viele "
+"angemerkt, dass dies bedeutet, dass Nutzer anfangen müssen ihre externen "
+"Prozesse manuell mit tools wie `Runit`_ oder `Supervisord`_ verwalten "
+"müssen. nach einigen weiteren Diskussionen kamen Leute auf mich zu die "
+"_externals wollten, die nicht HTTP-Requests behandeln. Danach war klar dass "
+"ein zweites Feature her musste das Betriebssystem-Prozess verarbeitet."
+
+# 887d17c583684a958e789e5b5e6f7dfe
+#: ../../../src/externals.rst:59
+msgid "I spent this weekend implementing both of these features. Both are at the stage of working but requiring more testing. In the case of the HTTP proxy I have no tests because I can't decide how to test the thing. If you have ideas, I'd sure like to hear them."
+msgstr ""
+"Ich habe dieses Wochenende damit verbracht beide Features zu implementieren. "
+"Beide haben den Zustand, dass sie laufen, bedürfen aber mehr Tests. Im Fall "
+"des HTTP-Proxy habe ich keine Tests weil ich nicht entscheiden kann, wie "
+"ich das testen soll. Wenn Du Ideen hast würde ich diese sehr gerne hören."
+
+# 0c83b3bec7f94b4cbb9439ecfb7cfa45
+#: ../../../src/externals.rst:64
+msgid "**[Update]**: I woke up the other morning realizing that I was being an idiot and that Erlang is awesome. There's no reason that I can't have an HTTP client, proxy, and server all hosted in the same process. So that's what I did. It turns out to be a fairly nice way of configuring matching assertions between the client and the server to test the proxy transmissions."
+msgstr ""
+"**[Update]**: Ich bin am anderen morgen aufgewacht um festzustellen, dass "
+"ich ein Idiot war und Erlang super ist. Es gibt keinen Grund warum ich "
+"gleichzeitig einen HTTP-Client, -Proxy und -Server im gleichen Prozess "
+"hosten kann. Also hab ich das getan. Es hat sich herausgestellt, dass das "
+"ein sehr guter Weg ist zutreffende Assertions zwischen dem Client und Server "
+"zu konfigurieren um die Proxy-Übertragungen zu testen."
+
+# 9705501c48a64782b271743f4943a817
+#: ../../../src/externals.rst:71
+msgid "How does it work? - HTTP Proxying"
+msgstr "Wie funktioniert das? - HTTP Proxying"
+
+# cc6fce24509344ac80bcde5f78a75d12
+#: ../../../src/externals.rst:73
+msgid "To configure a :ref:`proxy handler <config/proxy>`, edit your `local.ini` and add a section like such::"
+msgstr ""
+"Editiere deine `local.ini` um einen :ref:`proxy handler <config/proxy>` zu "
+"konfigurieren und füge einen Abschnitt wie diesen dazu:"
+
+# e6536e6cbd91442ba506445a17940098
+#: ../../../src/externals.rst:79
+msgid "This would be approximately what you'd need to do to get `CouchDB-Lucene`_ handled through this interface. The URL you use to access a query would be:"
+msgstr ""
+"Das ist ungefähr das was du brauchst um `CouchDB-Lucene`_ mit diesem "
+"Interface verarbeiten zu können. Die URL die du nutzt um eine Abfrage "
+"auszuführen würde so aussehen:"
+
+# 967c4e7aeabd4e93a956c9065c4c3dc6
+#: ../../../src/externals.rst:82
+msgid "http://127.0.0.1:5984/_fti/db_name/_design/foo/by_content?q=hello"
+msgstr "http://127.0.0.1:5984/_fti/db_name/_design/foo/by_content?q=hello"
+
+# 7c4e49d9e0914d3a91fb64845884c64f
+#: ../../../src/externals.rst:84
+msgid "A couple things to note here. Anything in the path after the configured proxy name (\"_fti\" in this case) will be appended to the configured destination URL (\"http://127.0.0.1:5985\" in this case). The query string and any associated body will also be proxied transparently."
+msgstr ""
+"Einige Dinge sollen hier angemerkt werden. Alles im Pfad nach dem "
+"konfigurierten Proxy-Name (\"_fti\" in diesem Fall) wird an die konfigurierte "
+"Ziel-URL angefügt (\"http://127.0.0.1:5985\" in diesem Fall). Der Query-String "
+"und jeglicher angefügter Body wird ebenfalls transparent durchgeschleift."
+
+# 91ec07de7b9645bdbe4527ee1a4f3b3c
+#: ../../../src/externals.rst:89
+msgid "Also, of note is that there's nothing that limits on what resources can be proxied. You're free to choose any destination that the CouchDB node is capable of communicating with."
+msgstr ""
+"Es ist auch anzumerken, das es keine Beschränkungen gibt welche Art "
+"Ressourcen durchgeschleift werden können. Es steht dir frei jegliches Ziel "
+"zu wählen mit dem die CouchDB node kommunizieren kann."
+
+# ee8a7835606f4706b1096bd236a4d3d9
+#: ../../../src/externals.rst:94
+msgid "How does it work? - OS Daemons"
+msgstr "Wie funktioniert das? - OS Daemons"
+
+# cd209d134094476699ecd4821d77cdcb
+#: ../../../src/externals.rst:96
+msgid "The second part of the new API gives CouchDB simple OS process management. When CouchDB boots it will start each configured OS daemon. If one of these daemons fails at some point, it will be restarted. If one of these daemons fails too often, CouchDB will stop attempting to start it."
+msgstr ""
+"Der zweite Teil der neuen API ermöglicht CouchDB das einfache verwalten von "
+"Betriebssystem-Prozessen. CouchDB wird während des Bootens jeden "
+"konfigurierten OS-Daemon starten. Wenn einer dieser Daemons zu irgend einem "
+"Zeitpunkt fehlerhaft ist, wird er neu gestartet. Wenn einer dieser zu oft "
+"fehlerhaft ist, wird CouchDB aufhören diesen zu starten."
+
+# f7ecd248d2d641578aca5cce35eaeb3f
+#: ../../../src/externals.rst:101
+msgid "OS daemons are one-to-one. For each daemon, CouchDB will make sure that exactly one instance of it is alive. If you have something where you want multiple processes, you need to either tell CouchDB about each one, or have a main process that forks off the required sub-processes."
+msgstr ""
+"OS-Daemons sind eins-zu-eins. CouchDB wird dafür Sorge tragen, dass jeweils "
+"exakt einer läuft. Wenn Du mehrere Prozesse benötigst, musst Du entweder "
+"CouchDB über jeden einzelnen informieren oder einen Haupt-Prozess haben, der "
+"die benötigten Sub-Prozesse forkt."
+
+# 3ea03c3f9525488fb98b477eb01165bb
+#: ../../../src/externals.rst:106
+msgid "To configure an :config:section:`OS daemon <os_daemons>`, add this to your `local.ini`::"
+msgstr ""
+"Um einen :config:section:`OS daemon <os_daemons>` zu konfigurieren, füge "
+"dies der `local.ini` hinzu::"
+
+# 159bf86ce1af4b2c95190c2b1d613aa7
+#: ../../../src/externals.rst:113
+msgid "Configuration API"
+msgstr "Konfigurations API"
+
+# 9d223623d40e4607b0bc2a9cc2f8a366
+#: ../../../src/externals.rst:115
+msgid "As an added benefit, because stdio is now free, I implemented a simple API that OS daemons can use to read the configuration of their CouchDB host. This way you can have them store their configuration inside CouchDB's config system if you desire. Or they can peek at things like the :config:option:`httpd/bind_address` and :config:option:`httpd/port` that CouchDB is using."
+msgstr ""
+"Als zusätzlicher Nutzen weil stdio jetzt verfügbar ist, habe ich eine "
+"einfache API implementiert, die  OS daemons nutzen können um die "
+"Konfiguration des CouchDB-Host einzulesen. Auf diesem Weg kannst Du die "
+"daemons dazu bewegen ihre Konfiguration innerhalb des CouchDB-"
+"Konfigurations-Systems abzulegen wenn Du möchtest. Oder sie können dadurch "
+"auf Dinge von CouchDB genutzt werden wie :config:option:`httpd/bind_address` "
+"und :config:option:`httpd/port` zugreifen."
+
+# 00b241e1bbd54b52969128602ba66def
+#: ../../../src/externals.rst:122
+msgid "A request for a config section looks like this::"
+msgstr "Ein Request für einen bestimmt Konfigurations-Abschnitt sieht so aus:"
+
+# e3c1ae68c0cd4b4a8f5f0e8dc938207b
+# 1c6f349576bd4370b95035546931f57a
+#: ../../../src/externals.rst:126
+#: ../../../src/externals.rst:134
+msgid "And the response::"
+msgstr "Und die Response:"
+
+# 89f5acf3d7f441d296436bee9ce9442a
+#: ../../../src/externals.rst:130
+msgid "Or to get a specific key::"
+msgstr "Oder so, um einen bestimmten Key zu erhalten:"
+
+# a923bed1570a4d9aae2c188a9734c89a
+#: ../../../src/externals.rst:138
+msgid "All requests and responses are terminated with a newline (indicated by ``\\n``)."
+msgstr ""
+"Alle Requests und Responses werden mit einem Zeilenumbruch beendet (durch "
+"die ``\\n`` Sequenz angegeben)."
+
+# 5014555413eb48deb0d901d97137a8e8
+#: ../../../src/externals.rst:141
+msgid "Logging API"
+msgstr "Loggin API"
+
+# 714b00190de14e3684f90048705c4926
+#: ../../../src/externals.rst:143
+msgid "There's also an API for adding messages to CouchDB's logs. Its simply::"
+msgstr ""
+"Es gibt auch eine API um dem CouchDB-Log Einträge hinzuzufügen. Es geht "
+"einfach so::"
+
+# 6b6db9d012384c83b619b11437a73cd7
+#: ../../../src/externals.rst:147
+msgid "Where ``$MESG`` is any arbitrary JSON. There is no response from this command. As with the config API, the trailing ``\\n`` represents a newline byte."
+msgstr ""
+"Wobei ``$MESG`` irgend ein JSON-String ist. Dieser Befehl liefert keine "
+"Response. Wie schon bei der Konfigurations-API repräsentiert die Sequenz "
+"``\\n`` am Zeilenende eine das Newline-Byte."
+
+# 7410e7e99b3f4cbba0109892f92dd47c
+#: ../../../src/externals.rst:151
+msgid "Dynamic Daemons"
+msgstr "Dynamische Daemons"
+
+# aa3e095cb975430badc83aa6f17019fb
+#: ../../../src/externals.rst:153
+msgid "The OS daemons react in real time to changes to the configuration system. If you set or delete keys in the :config:section:`os_daemons` section, the corresponding daemons will be started or killed as appropriate."
+msgstr ""
+"Die OS-Daemons reagieren in \"Real-Time\" auf Änderungen am Konfigurations-"
+"System. Wenn Du Keys im Bereich :config:section:`os_daemons` setzt oder "
+"löschst, werden die entsprechenden Daemons entsprechend gestartet oder "
+"beendet. "
+
+# 419e52fa8c4a44c6b464d35a517ea69c
+#: ../../../src/externals.rst:158
+msgid "Neat. But So What?"
+msgstr "Nett. Und nun?"
+
+# 32158b7797974875a1258b449e429d70
+#: ../../../src/externals.rst:160
+msgid "It was suggested that a good first demo would be a `Node.js`_ handler. So, I present to you a \"Hello, World\" Node.js handler. Also, remember that this currently relies on code in my fork on `GitHub`_."
+msgstr ""
+"Es wurde vorgeschlagen, dass eine gutes erste Demo ein `Node.js`_ handler "
+"wäre. Also präsentiere ich Euch hier einen \"Hello, World\" Node.js handler. "
+"Berücksichtige bitte, dass dieser Code momentan auf meinem fork auf "
+"`GitHub`_ basiert."
+
+# 4544b0aad3934a00b9a9a3a69abf5294
+#: ../../../src/externals.rst:164
+msgid "File `node-hello-world.js`:"
+msgstr "Datei `node-hello-world.js`:"
+
+# feb3de8c4267474fb350cd09018910a3
+#: ../../../src/externals.rst:207
+msgid "File `local.ini` (Just add these to what you have):"
+msgstr "Datei `local.ini` (füge das einfach der bereits bestehenden hinzu):"
+
+# 584c507a061a45caadf04912e05693c8
+#: ../../../src/externals.rst:223
+msgid "And then start CouchDB and try:"
+msgstr "Und starte CouchDB und versuche auszuführen:"
+
+# 09517caf8fd145719d6d2a40b94238ce
+#: ../../../src/externals.rst:247
+msgid "The corresponding CouchDB logs look like::"
+msgstr "Die entsprechenden Log-Einträge in CouchDB sehen so aus:"

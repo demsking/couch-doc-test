@@ -1,0 +1,132 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# fd5207e5858e48788afda7cd77f5fcf1
+#: ../../../src/cve/2012-5650.rst:18
+msgid "CVE-2012-5650: DOM based Cross-Site Scripting via Futon UI"
+msgstr ""
+
+# a8be2abfcda44f149e503f00376308f7
+#: ../../../src/cve/2012-5650.rst:20
+msgid "14.01.2013"
+msgstr ""
+
+# 5bfb005081de40e38a029ce202515739
+#: ../../../src/cve/2012-5650.rst:22
+msgid "Apache CouchDB releases up to and including 1.0.3, 1.1.1, and 1.2.0 are vulnerable."
+msgstr ""
+
+# 218997f70c9144489561e30e815ea348
+#: ../../../src/cve/2012-5650.rst:25
+msgid "Moderate"
+msgstr ""
+
+# 457cbfbe24084e3a9a0a621d61d324f6
+#: ../../../src/cve/2012-5650.rst:27
+msgid "The Apache Software Foundation"
+msgstr ""
+
+# fd31aa2e89d9405ca98c3ed4aeb3740d
+#: ../../../src/cve/2012-5650.rst:30
+msgid "Description"
+msgstr ""
+
+# 394d87dedb8a44738b455fb75faab739
+#: ../../../src/cve/2012-5650.rst:32
+msgid "Query parameters passed into the browser-based test suite are not sanitised, and can be used to load external resources. An attacker may execute JavaScript code in the browser, using the context of the remote user."
+msgstr ""
+
+# 60b05ff7c6dd4f07889adff1b168882e
+#: ../../../src/cve/2012-5650.rst:37
+msgid "Mitigation"
+msgstr ""
+
+# 6ccddc906026474f90def0fc206b31e2
+#: ../../../src/cve/2012-5650.rst:39
+msgid "Upgrade to a supported CouchDB release that includes this fix, such as:"
+msgstr ""
+
+# 21445aff02f04eb981040815a9f22417
+#: ../../../src/cve/2012-5650.rst:41
+msgid ":ref:`1.0.4 <release/1.0.4>`"
+msgstr ""
+
+# 11964c04cce8455ba8534cc12b562d9f
+#: ../../../src/cve/2012-5650.rst:42
+msgid ":ref:`1.1.2 <release/1.1.2>`"
+msgstr ""
+
+# 78dd29269b8b45edbdd4cfa46ecfe68b
+#: ../../../src/cve/2012-5650.rst:43
+msgid ":ref:`1.2.1 <release/1.2.1>`"
+msgstr ""
+
+# 8100e214e8c047489883fb8ce631a0a5
+#: ../../../src/cve/2012-5650.rst:44
+msgid ":ref:`1.3.x <release/1.3.x>`"
+msgstr ""
+
+# 2c90e27645a5474f97d739706080e32b
+#: ../../../src/cve/2012-5650.rst:46
+msgid "All listed releases have included a specific fix."
+msgstr ""
+
+# 9e728225f8a6462e84bc95d609c4d308
+#: ../../../src/cve/2012-5650.rst:49
+msgid "Work-Around"
+msgstr ""
+
+# 3953b74a57ce47c284db8bb238ab9560
+#: ../../../src/cve/2012-5650.rst:51
+msgid "Disable the Futon user interface completely, by adapting `local.ini` and restarting CouchDB::"
+msgstr ""
+
+# 0068d064ab40476d8d7af2b4821e8f16
+#: ../../../src/cve/2012-5650.rst:57
+msgid "Or by removing the UI test suite components:"
+msgstr ""
+
+# 9f5cf1f54cbc4b76a0a953ec7433604a
+#: ../../../src/cve/2012-5650.rst:59
+msgid "share/www/verify_install.html"
+msgstr ""
+
+# e16fc629c7064c29ab083fccf09aea8c
+#: ../../../src/cve/2012-5650.rst:60
+msgid "share/www/couch_tests.html"
+msgstr ""
+
+# ac825d185f5a49a898650d985ad24720
+#: ../../../src/cve/2012-5650.rst:61
+msgid "share/www/custom_test.html"
+msgstr ""
+
+# eea36c3a61ec49f2aa530e2762550e0f
+#: ../../../src/cve/2012-5650.rst:64
+msgid "Acknowledgement"
+msgstr ""
+
+# 696b9bfc09d5495f818988118cd1476c
+#: ../../../src/cve/2012-5650.rst:66
+msgid "This vulnerability was discovered & reported to the Apache Software Foundation by `Frederik Braun`_."
+msgstr ""

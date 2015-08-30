@@ -1,0 +1,102 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 400ecdb6bd4a4adf830ec78379ff4e51
+#: ../../../src/config/logging.rst:19
+msgid "Logging"
+msgstr ""
+
+# cd8fedc6de0447b2b7ed401638e3d4e2
+#: ../../../src/config/logging.rst:24
+msgid "Logging options"
+msgstr ""
+
+# 9153e05edee643a595a5783726595ac8
+#: ../../../src/config/logging.rst:28
+msgid "CouchDB logging configuration."
+msgstr ""
+
+# 0ae729d3d403421cbafc7c8f55992e5d
+#: ../../../src/config/logging.rst:32
+msgid "Specifies the location of file for logging output::"
+msgstr ""
+
+# cd31568e0fea41df9af49151220b547c
+#: ../../../src/config/logging.rst:37
+msgid "This path should be readable and writable for user that runs CouchDB service (`couchdb` by default)."
+msgstr ""
+
+# de716dd453994f07a7ba8252614e452a
+#: ../../../src/config/logging.rst:45
+msgid "Logging level defines how verbose and detailed logging will be::"
+msgstr ""
+
+# 88a773980abe4518b17f9172aedfc2d2
+#: ../../../src/config/logging.rst:50
+msgid "Available levels:"
+msgstr ""
+
+# b7d56f1d45f0483abe6728e1f5b50685
+#: ../../../src/config/logging.rst:52
+msgid "``debug``: Very informative and detailed debug logging. Includes HTTP headers, external processes communications, authorization information and more;"
+msgstr ""
+
+# 6c3e62ec0fda4a7b808c2c756fef7f2c
+#: ../../../src/config/logging.rst:55
+msgid "``info``: Informative logging. Includes HTTP requests headlines, startup of an external processes etc."
+msgstr ""
+
+# e5523b36d17f4fc4bb6cbcca6a725c6f
+#: ../../../src/config/logging.rst:57
+msgid "``warning``: Warning messages are alerts about edge situations that may lead to errors. For instance, compaction daemon alerts about low or insufficient disk space at this level."
+msgstr ""
+
+# a373f703b80848d5a0d18ee8ba882673
+#: ../../../src/config/logging.rst:60
+msgid "``error``: Error level includes only things that going wrong, crush reports and HTTP error responses (5xx codes)."
+msgstr ""
+
+# e5332dcfd894437a8be34ea31601537e
+#: ../../../src/config/logging.rst:62
+msgid "``none``: Disables logging any messages."
+msgstr ""
+
+# ce5252c7229a4c0092a5b88112a27fee
+#: ../../../src/config/logging.rst:67
+msgid "Includes `SASL`_ information in logs::"
+msgstr ""
+
+# 87985f3639804444a9f3a56fb700cf4d
+#: ../../../src/config/logging.rst:78
+msgid "Per module logging"
+msgstr ""
+
+# 66b53d1b10f34074895046f35ecde51f
+#: ../../../src/config/logging.rst:84
+msgid "In this section you can specify :option:`log level <log/level>` on a per-module basis::"
+msgstr ""
+
+# 8c47f39c3d3343ea8115dfe0219b4aaa
+#: ../../../src/config/logging.rst:92
+msgid "See `src/*/*.erl`_ for available modules."
+msgstr ""

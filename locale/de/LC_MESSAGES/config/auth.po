@@ -1,0 +1,177 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# cda1dbb0c20849fe85366e026af6414e
+#: ../../../src/config/auth.rst:19
+msgid "Authentication and Authorization"
+msgstr ""
+
+# 857d4c3749b64dcb976b38d74de40217
+#: ../../../src/config/auth.rst:24
+msgid "Server Administrators"
+msgstr ""
+
+# d2f2e1fd7e8648cfb908d06c62a19710
+#: ../../../src/config/auth.rst:28
+msgid "A default CouchDB install provides admin-level access to all connecting users. This configuration is known as `Admin Party`, and is not recommended for in-production usage. You can crash the party simply by creating the first admin account. CouchDB server administrators and passwords are not stored in the ``_users`` database, but in the ``local.ini`` file, which should be appropriately secured and readable only by system administrators::"
+msgstr ""
+
+# c571986459eb4806bed6998fe9f9995f
+#: ../../../src/config/auth.rst:40
+msgid "Administrators can be added directly to the ``[admins]`` section, and when CouchDB is restarted, the passwords will be salted and encrypted. You may also use the HTTP interface to create administrator accounts; this way, you don't need to restart CouchDB, and there's no need to temporarily store or transmit passwords in plaintext. The HTTP ``_config/admins`` endpoint supports querying, deleting or creating new admin accounts:"
+msgstr ""
+
+# 4c0a56b5a1a34169b4b7fb0e35281684
+#: ../../../src/config/auth.rst:69
+msgid "If you already have a salted, encrypted password string (for example, from an old ``local.ini`` file, or from a different CouchDB server), then you can store the \"raw\" encrypted string, without having CouchDB doubly encrypt it."
+msgstr ""
+
+# 84aebc561e494063a4c5614c1668e53d
+#: ../../../src/config/auth.rst:95
+msgid "Further details are available in `security`, including configuring the work factor for ``PBKDF2``, and the algorithm itself at `PBKDF2 (RFC-2898) <http://tools.ietf.org/html/rfc2898>`_."
+msgstr ""
+
+# eba8d8be6d4444e6888068cac39b7eb3
+#: ../../../src/config/auth.rst:106
+msgid "Authentication Configuration"
+msgstr ""
+
+# bcf4824b22ba4686925f53b5b21a6449
+#: ../../../src/config/auth.rst:113
+msgid "Makes cookies persistent if ``true``."
+msgstr ""
+
+# b8bf54b5b52b4aa8be86cd08746aa852
+#: ../../../src/config/auth.rst:123
+msgid "Number of :ref:`userctx_object` to cache in memory, to reduce disk lookups."
+msgstr ""
+
+# 816029efb1a447a1880d2780a1d3b356
+#: ../../../src/config/auth.rst:133
+msgid "Specifies the name of the system database for storing CouchDB users."
+msgstr ""
+
+# 0d3290556d9a41089987065110643deb
+#: ../../../src/config/auth.rst:141
+msgid "If you change the database name, do not forget to remove or clean up the old database, since it will no longer be protected by CouchDB."
+msgstr ""
+
+# 9129ca29a2b84ce98cfa507112bdd427
+#: ../../../src/config/auth.rst:147
+msgid "Specifies the location for redirection on successful authentication if a ``text/html`` response is accepted by the client (via an ``Accept`` header)."
+msgstr ""
+
+# caff7836ce9e4a399354f9feeacff5d9
+#: ../../../src/config/auth.rst:160
+msgid "The number of iterations for password hashing by the PBKDF2 algorithm. A higher  number provides better hash durability, but comes at a cost in performance for each request that requires authentication."
+msgstr ""
+
+# 6f0f21401b15443d8b2f9c892384b658
+#: ../../../src/config/auth.rst:172
+msgid "When this option is set to ``true``,  the :option:`couch_httpd_auth/secret` option is required for :ref:`api/auth/proxy`."
+msgstr ""
+
+# a3767075c625433b884e9a51b4370f05
+#: ../../../src/config/auth.rst:185
+msgid "A comma-separated list of field names in user documents (in :option:`couch_httpd_auth/authentication_db`) that can be read by any user. If unset or not specified, authenticated users can only retrieve their own document."
+msgstr ""
+
+# 17569de70a9140dfa3e6cb09d305cec9
+#: ../../../src/config/auth.rst:196
+msgid "Using the ``public_fields`` whitelist for user document properties requires setting the :option:`couch_httpd_auth/users_db_public` option to ``true`` (the latter option has no other purpose)::"
+msgstr ""
+
+# 95d284e158da470f9491b5a9eb9c22bf
+#: ../../../src/config/auth.rst:206
+msgid "When this option is set to ``true``, no requests are allowed from anonymous users. Everyone must be authenticated."
+msgstr ""
+
+# 53eedf1a7d6a4159823d52f34f98e39e
+#: ../../../src/config/auth.rst:217
+msgid "The secret token used for :ref:`api/auth/proxy` method."
+msgstr ""
+
+# 3b53317e6e094b33a1d9662da2a8df33
+#: ../../../src/config/auth.rst:227
+msgid "Number of seconds since the last request before sessions will be expired."
+msgstr ""
+
+# 2d617a52fc3b4a238d5593cc44f0a772
+#: ../../../src/config/auth.rst:239
+msgid "Allow all users to view user documents. By default, only admins may browse all users documents, while users may browse only their own document."
+msgstr ""
+
+# 8d0701cae34a401d860418a25797a3c6
+#: ../../../src/config/auth.rst:250
+msgid "The HTTP header name (``X-Auth-CouchDB-Roles`` by default) that contains the list of a user's roles, separated by a comma. Used for :ref:`api/auth/proxy`."
+msgstr ""
+
+# 527cca84e9734835a0fcab46596e29fe
+#: ../../../src/config/auth.rst:262
+msgid "The HTTP header name (``X-Auth-CouchDB-Token`` by default) containing the token used to authenticate the authorization. This token is an `HMAC-SHA1` created from the :option:`couch_httpd_auth/secret` and :option:`couch_httpd_auth/x_auth_username`. The secret key should be the same on the client and the CouchDB node. This token is optional if the value of the :option:`couch_httpd_auth/proxy_use_secret` option is not ``true``. Used for :ref:`api/auth/proxy`."
+msgstr ""
+
+# acebceab0a6c4d2ba207ca57763cc947
+#: ../../../src/config/auth.rst:278
+msgid "The HTTP header name (``X-Auth-CouchDB-UserName`` by default) containing the username. Used for :ref:`api/auth/proxy`."
+msgstr ""
+
+# 2999e40d79244cf598831cc61940db6a
+#: ../../../src/config/auth.rst:290
+msgid "HTTP OAuth Configuration"
+msgstr ""
+
+# 99edc2774d8f471d972e451696ad58c3
+#: ../../../src/config/auth.rst:298
+msgid "CouchDB is able to store OAuth credentials within user documents instead of config file by using this option::"
+msgstr ""
+
+# ab533080e710401eac119b5e24c743c2
+#: ../../../src/config/auth.rst:304
+msgid "If set to ``true``, OAuth token and consumer secrets will be looked up in the :option:`authentication database <couch_httpd_auth/authentication_db>`. These secrets are stored in a top level field named ``\"oauth\"`` in user documents, as below."
+msgstr ""
+
+# a47b092f53494b0aa5f693d3a348c707
+#: ../../../src/config/auth.rst:334
+msgid "OAuth Configuration"
+msgstr ""
+
+# 167c6b30af6f4bda83d2bfa0cd08065e
+#: ../../../src/config/auth.rst:338
+msgid "To let users be authenticated by :ref:`api/auth/oauth` (:rfc:`5849`), three special sections must be set up in the :ref:`configuration <config>` file:"
+msgstr ""
+
+# 4e577ed8ee0142618bf3050e9e506c97
+#: ../../../src/config/auth.rst:341
+msgid "The Consumer secret:"
+msgstr ""
+
+# 81de50048c6842a2958f39ded3caa94c
+#: ../../../src/config/auth.rst:348
+msgid "Token secrets:"
+msgstr ""
+
+# bf0f99d601cf4abb944603128fdc4e2d
+#: ../../../src/config/auth.rst:355
+msgid "A mapping from tokens to users:"
+msgstr ""

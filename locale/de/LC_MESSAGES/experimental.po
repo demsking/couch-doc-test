@@ -1,0 +1,136 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2013-12-04 21:24+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0-rc1\n"
+"X-POOTLE-MTIME: 1386192253.0\n"
+
+# 00b0eab118794f7f8a022b4baccf2c3d
+#: ../../../src/experimental.rst:17
+msgid "Experimental Features"
+msgstr "Experimentelle Features"
+
+# baf08b3d73314346a2cfd40a5330447c
+#: ../../../src/experimental.rst:19
+msgid "This is a list of experimental features in CouchDB. They are included in a release because the development team is requesting feedback from the larger developer community. As such, please play around with these features and send us feedback, thanks!"
+msgstr ""
+"Dies is eine Liste experimenteller Features in CouchDB. Sie sind bereits in "
+"den Releases integriert, damit das Entwickler-Team Feedback von einem "
+"größeren Kreis an Entwicklern aus der Community erhalten kann. Aus diesem "
+"Grund bitten wir Euch die Features auszuprobieren und uns Feedback zu "
+"senden. Danke!"
+
+# 07c999c1f3cf444a9859831d24abb7a3
+#: ../../../src/experimental.rst:24
+msgid "Use at your own risk! Do not rely on these features for critical applications."
+msgstr ""
+"Nutzung auf eigene Gefahr. Diese Features sollten nicht in business-"
+"kritischen Applikationen eingesetzt werden."
+
+# e4e5f67252ef490d9e9d58fca9e6c699
+#: ../../../src/experimental.rst:28
+msgid "NodeJS Query Server"
+msgstr "NodeJS Query Server"
+
+# 281095ea5b53426fbbf1bfcaaa63f977
+#: ../../../src/experimental.rst:30
+msgid "The NodeJS Query Server is an alternative runtime environment for the default JavaScript Query Server that runs on top of Node.JS and not SpiderMonkey like the default Query Server."
+msgstr ""
+"Der NodeJS Query Server ist eine alternative Laufzeitumgebung zum standard "
+"JavaScript Query Server. Er läuft auf Grundlage von NodeJS und nicht "
+"SpiderMonkey."
+
+# dc958e8e6a944c00a5944ff5a6c1db34
+#: ../../../src/experimental.rst:36
+msgid "Setup"
+msgstr "Setup"
+
+# 3953dccb5f324d4ca52486487af193f1
+#: ../../../src/experimental.rst:38
+msgid "You will need to install Node.JS version 0.10.0 or later. See `Node.JS Downloads <http://nodejs.org/download/>`_ for options."
+msgstr ""
+"Du musst NodeJS in der Version 0.10.0 oder neuer installieren. Siehe auch "
+"`Node.JS Downloads <http://nodejs.org/download/>`_ für weitere Optionen."
+
+# bdd48cf71f4f42a9a42fada8231faca5
+#: ../../../src/experimental.rst:41
+msgid "Install the `couchjs-node` binary. Either from the CouchDB sources::"
+msgstr "Installiere das `couchjs-node` binary. Entweder vom CouchDB Quellcode::"
+
+# 6bd7b1cbfac04fc09d95fdb4a699e395
+#: ../../../src/experimental.rst:46
+msgid "Or via NPM::"
+msgstr "oder über NPM::"
+
+# 5cb5b5994c85462bac358e79c2e7557f
+#: ../../../src/experimental.rst:50
+msgid "**NPM in non-standard locations**"
+msgstr "**NPM Installation in nicht-standard Ort**"
+
+# 808faf1acd774ea390103aff5163aecf
+#: ../../../src/experimental.rst:52
+msgid "If your Node.JS installation doesn’t store binaries in `/usr/local/bin` you will need to adjust CouchDB’s configuration. Add this to your `local.ini` file:"
+msgstr ""
+"Wenn die Binaries von NodeJS nicht in `/usr/local/bin` installiert sind, "
+"musst Du die CouchDB Konfiguration anpassen. Füge dies der `local.ini` Datei "
+"hinzu:"
+
+# 64bdf5c8f3e64781978872f992d9f2a0
+#: ../../../src/experimental.rst:61
+msgid "And then restart your CouchDB instance."
+msgstr "Starte danach deine CouchDB-Instanz neu."
+
+# 71b758ecda614850b9db7fd3600203e2
+#: ../../../src/experimental.rst:63
+msgid "2. Done. Now you can create design documents with the `language` parameter set to `nodejs` and all JavaScript functions in this design document will be processed by the Node.JS query server."
+msgstr ""
+"2. Erledigt. Jetzt kannst Du in Design-Dokumenten dem Attribut `language` "
+"den Wert `nodejs`gewbewn und alle JavaScript Funktionen in diesem Design-"
+"Dokument werden mit dem NodeJS Query-Server ausgeführt."
+
+# 63849c4ae784488a8281e6c53797e019
+#: ../../../src/experimental.rst:67
+msgid "Enjoy!"
+msgstr "Viel Spass!"
+
+# e9bdef137f854a0f9ff9cce4eecb1af0
+#: ../../../src/experimental.rst:71
+msgid "Differences from the SpiderMonkey Query Server"
+msgstr "Unterschiede zum SpiderMonkey Query-Server"
+
+# f82a2eaccd6d4458953d1e6b0c157ad4
+#: ../../../src/experimental.rst:73
+msgid "V8 and SpiderMonkey roughly behave similar, but there might be engine- specific differences that make or break a JavaScript function in one or the other server."
+msgstr ""
+"V8 und SpiderMonkey verhalten sich im Großen und Ganzen gleich, aber es kann "
+"Engine-spezifische Unterschiede geben die dazu führen, dass im einen oder "
+"anderen Server JavaScript Funktionalitäten funktionieren oder zu Fehlern "
+"führen."
+
+# bc28eb54304f40e2a053df8d66fb409c
+#: ../../../src/experimental.rst:79
+msgid "Plugins"
+msgstr "Plugins"
+
+# 552669657ca543cfadf92a9a001672fd
+#: ../../../src/experimental.rst:81
+msgid "See `src/couch_plugins/README.md`."
+msgstr "Bitte lese `src/couch_plugins/README.md`."

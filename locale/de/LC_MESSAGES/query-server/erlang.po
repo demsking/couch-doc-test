@@ -1,0 +1,67 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 2fdaf2e352d44bd9b8ec5fc21bb1493f
+#: ../../../src/query-server/erlang.rst:18
+msgid "Erlang"
+msgstr ""
+
+# 94f62df3b34944d18aca717b81143231
+#: ../../../src/query-server/erlang.rst:22
+msgid "The Erlang query server is disabled by default. Read :ref:`configuration guide <config/native_query_servers>` about reasons why and how to enable it."
+msgstr ""
+
+# 24202ee8802b4841a13d8748c01be8e4
+#: ../../../src/query-server/erlang.rst:28
+msgid "Emits `key`-`value` pairs to view indexer process."
+msgstr ""
+
+# f1e71f45131c4abe807a1bc7170a43a5
+#: ../../../src/query-server/erlang.rst:41
+msgid "Helper to iterate over all rows in a list function."
+msgstr ""
+
+# 842e5a38a68e4a3ba0033a18eb530676
+#: ../../../src/query-server/erlang.rst:62
+msgid "Retrieves the next row from a related view result."
+msgstr ""
+
+# 496dca51b9d544ad93ad7ac9975f0f7e
+#: ../../../src/query-server/erlang.rst:95
+msgid "After the map function has run, the following line can be found in CouchDB logs (e.g. at `/var/log/couchdb/couch.log`):"
+msgstr ""
+
+# 7befb07860fe4fe5b0e1d1b6e8f07eb4
+#: ../../../src/query-server/erlang.rst:105
+msgid "Sends a single string `Chunk` in response."
+msgstr ""
+
+# 1093db9425ee4aa7baa53717eb88ad61
+#: ../../../src/query-server/erlang.rst:116
+msgid "The function above produces the following response:"
+msgstr ""
+
+# 040ec7b3a903466ca5208549921a9383
+#: ../../../src/query-server/erlang.rst:127
+msgid "Initialize :ref:`listfun` response. At this point, response code and headers may be defined. For example, this function redirects to the CouchDB web site:"
+msgstr ""

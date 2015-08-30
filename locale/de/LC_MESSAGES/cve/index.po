@@ -1,0 +1,97 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 64b71d36d39e4871b0e00269014ea59b
+#: ../../../src/cve/index.rst:17
+msgid "Security Issues Information"
+msgstr ""
+
+# 1dcdc648aa58488687a5ec857a30b78c
+#: ../../../src/cve/index.rst:28
+msgid "Reporting New Security Problems with Apache CouchDB"
+msgstr ""
+
+# f1e055694a5f445f95327a48a5b99fe2
+#: ../../../src/cve/index.rst:30
+msgid "The Apache Software Foundation takes a very active stance in eliminating security problems and denial of service attacks against Apache CouchDB."
+msgstr ""
+
+# 971b1e776be94550b75929d72db26f4d
+#: ../../../src/cve/index.rst:33
+msgid "We strongly encourage folks to report such problems to our private security mailing list first, before disclosing them in a public forum."
+msgstr ""
+
+# e50a66dcf64a4c30a093d74b7faebeb5
+#: ../../../src/cve/index.rst:36
+msgid "Please note that the security mailing list should only be used for reporting undisclosed security vulnerabilities in Apache CouchDB and managing the process of fixing such vulnerabilities. We cannot accept regular bug reports or other queries at this address. All mail sent to this address that does not relate to an undisclosed security problem in the Apache CouchDB source code will be ignored."
+msgstr ""
+
+# 669bf4b167f04327a6dffce96271ce94
+#: ../../../src/cve/index.rst:43
+msgid "If you need to report a bug that isn't an undisclosed security vulnerability, please use the `bug reporting page`_."
+msgstr ""
+
+# 47f75e185f724eb5a6d376fb70748bef
+#: ../../../src/cve/index.rst:46
+msgid "Questions about:"
+msgstr ""
+
+# 44b480015a1449d19834cbfe9f155543
+#: ../../../src/cve/index.rst:48
+msgid "How to configure CouchDB securely"
+msgstr ""
+
+# a889e4972df843ac952714dc7d59d144
+#: ../../../src/cve/index.rst:49
+msgid "If a vulnerability applies to your particular application"
+msgstr ""
+
+# 661801b5fe4e42ec8e57279e1344ec7d
+#: ../../../src/cve/index.rst:50
+msgid "Obtaining further information on a published vulnerability"
+msgstr ""
+
+# 07af8b83a1a144f2b3ec0051b99ee88e
+#: ../../../src/cve/index.rst:51
+msgid "Availability of patches and/or new releases"
+msgstr ""
+
+# ce1b1909d2d540c187385ff170b371f8
+#: ../../../src/cve/index.rst:53
+msgid "should be address to the `users mailing list`_. Please see the `mailing lists page`_ for details of how to subscribe."
+msgstr ""
+
+# 909dc5bd640347adaf6e219f1cf45dc8
+#: ../../../src/cve/index.rst:56
+msgid "The private security mailing address is: `security@couchdb.apache.org`_"
+msgstr ""
+
+# 23157fda95b144c298ccf65939fd0431
+#: ../../../src/cve/index.rst:58
+msgid "Please read `how the Apache Software Foundation handles security`_ reports to know what to expect."
+msgstr ""
+
+# 654195a06673431e9f984accc5809180
+#: ../../../src/cve/index.rst:61
+msgid "Note that all networked servers are subject to denial of service attacks, and we cannot promise magic workarounds to generic problems (such as a client streaming lots of data to your server, or re-requesting the same URL repeatedly). In general our philosophy is to avoid any attacks which can cause the server to consume resources in a non-linear relationship to the size of inputs."
+msgstr ""

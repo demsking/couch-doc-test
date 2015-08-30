@@ -1,0 +1,233 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 37e4349532d1491ca283f9820072465d
+#: ../../../src/whatsnew/0.10.rst:18
+msgid "0.10.x Branch"
+msgstr ""
+
+# 8d3814bee58e412f92685f2686f0b925
+#: ../../../src/whatsnew/0.10.rst:28
+msgid "Upgrade Notes"
+msgstr ""
+
+# 740b23a964d54a7996e67bc56105fe2c
+#: ../../../src/whatsnew/0.10.rst:32
+msgid ":ref:`release/0.10.2` contains important security fixes. Previous `0.10.x` releases are not recommended for regular usage."
+msgstr ""
+
+# 3d6ed9c894b94d89ae34c3a4102f3cce
+#: ../../../src/whatsnew/0.10.rst:36
+msgid "Modular Configuration Directories"
+msgstr ""
+
+# 513f732194484f3cb2d598b376aabee3
+#: ../../../src/whatsnew/0.10.rst:38
+msgid "CouchDB now loads configuration from the following places (`glob(7)`_ syntax) in order:"
+msgstr ""
+
+# 9739701996a04975b88d82932817462f
+#: ../../../src/whatsnew/0.10.rst:41
+msgid "PREFIX/default.ini"
+msgstr ""
+
+# 8872b28f5df34d85ab18c07d8a2d3d73
+#: ../../../src/whatsnew/0.10.rst:42
+msgid "PREFIX/default.d/*"
+msgstr ""
+
+# 5f3048d53f2e4348ae08395fb678a3ba
+#: ../../../src/whatsnew/0.10.rst:43
+msgid "PREFIX/local.ini"
+msgstr ""
+
+# bc3e603f377e4215b18d2f543703d3a8
+#: ../../../src/whatsnew/0.10.rst:44
+msgid "PREFIX/local.d/*"
+msgstr ""
+
+# 5584c8620fc1452a80a95fdd163ff27c
+#: ../../../src/whatsnew/0.10.rst:46
+msgid "The configuration options for `couchdb` script have changed to::"
+msgstr ""
+
+# 97fc5dd2286f4f62ad0493902f185e83
+#: ../../../src/whatsnew/0.10.rst:57
+msgid "Show and List API change"
+msgstr ""
+
+# dda4f325ff3d407cad486bb49ae9ec39
+#: ../../../src/whatsnew/0.10.rst:59
+msgid "Show and List functions must have a new structure in 0.10. See `Formatting_with_Show_and_List`_ for details."
+msgstr ""
+
+# e03ee90de28749b590cd9381231cefe8
+#: ../../../src/whatsnew/0.10.rst:65
+msgid "Stricter enforcing of reduciness in reduce-functions"
+msgstr ""
+
+# 6ed5cc7694c44995a2d8c17d34dff8c7
+#: ../../../src/whatsnew/0.10.rst:67
+msgid "Reduce functions are now required to reduce the number of values for a key."
+msgstr ""
+
+# 38c35bf7c63a4642a28d953f30e2dbe3
+#: ../../../src/whatsnew/0.10.rst:70
+msgid "View query reduce parameter strictness"
+msgstr ""
+
+# 870112d287764296851b2e5159e501c9
+#: ../../../src/whatsnew/0.10.rst:72
+msgid "CouchDB now considers the parameter ``reduce=false`` to be an error for queries of map-only views, and responds with status code 400."
+msgstr ""
+
+# 5f93dc39b74249388d8c9e16941a08b8
+#: ../../../src/whatsnew/0.10.rst:79
+msgid "Version 0.10.2"
+msgstr ""
+
+# 514f44d5ac8546a488d9ff871a95b8ee
+# be575a88642141a090d82a3e37d97eba
+# 3fe80f2bda5e4f8ca2e751f5f7ff25df
+#: ../../../src/whatsnew/0.10.rst:82
+#: ../../../src/whatsnew/0.10.rst:103
+#: ../../../src/whatsnew/0.10.rst:130
+msgid "Build and System Integration"
+msgstr ""
+
+# 104a7d3533dc4f03b0dcf8b97190170d
+#: ../../../src/whatsnew/0.10.rst:84
+msgid "Fixed distribution preparation for building on Mac OS X."
+msgstr ""
+
+# ca8e0ae52e194e25802334dc996ed8d8
+#: ../../../src/whatsnew/0.10.rst:87
+msgid "Security"
+msgstr ""
+
+# 1a39aeda7d7f4cd49c2aae4c7596362e
+#: ../../../src/whatsnew/0.10.rst:89
+msgid "Fixed :ref:`cve/2010-0009`"
+msgstr ""
+
+# 3c00701da4dc4fa88be95161381da7b8
+# d184c75372c94f788274aeeb53b18352
+#: ../../../src/whatsnew/0.10.rst:92
+#: ../../../src/whatsnew/0.10.rst:108
+msgid "Replicator"
+msgstr ""
+
+# 0bd66c46505548b18b86173134505051
+#: ../../../src/whatsnew/0.10.rst:94
+msgid "Avoid leaking file descriptors on automatic replication restarts."
+msgstr ""
+
+# f1ddd5281d0b4deba779a81b75e95085
+#: ../../../src/whatsnew/0.10.rst:100
+msgid "Version 0.10.1"
+msgstr ""
+
+# 33a43b5aa0264b53889754fb1ec68f67
+#: ../../../src/whatsnew/0.10.rst:105
+msgid "Test suite now works with the distcheck target."
+msgstr ""
+
+# 64dc00e7eb22495f9e9b5599b92ebe8b
+#: ../../../src/whatsnew/0.10.rst:110
+msgid "Stability enhancements regarding redirects, timeouts, OAuth."
+msgstr ""
+
+# 0ff7d3fc295e4034a580944d022084b8
+#: ../../../src/whatsnew/0.10.rst:113
+msgid "Query Server"
+msgstr ""
+
+# 05f32a6b8bcc4701a19d4c9f8d148875
+#: ../../../src/whatsnew/0.10.rst:115
+msgid "Avoid process leaks"
+msgstr ""
+
+# eecdb81dcac84e65a1e8dbbb294e163c
+#: ../../../src/whatsnew/0.10.rst:116
+msgid "Allow list and view to span languages"
+msgstr ""
+
+# 9fe1a52c164647b3bf2c61e57845a51d
+#: ../../../src/whatsnew/0.10.rst:119
+msgid "Stats"
+msgstr ""
+
+# e5c6fb38b961474ab96513423e4ed0cb
+#: ../../../src/whatsnew/0.10.rst:121
+msgid "Eliminate new process flood on system wake"
+msgstr ""
+
+# 2b74643954c6432b871169af29bcd8d0
+#: ../../../src/whatsnew/0.10.rst:127
+msgid "Version 0.10.0"
+msgstr ""
+
+# 96d9e04702ed446697ba1bfa3492247a
+#: ../../../src/whatsnew/0.10.rst:132
+msgid "Changed `couchdb` script configuration options."
+msgstr ""
+
+# 6df8d60634fc4a429f0bc830dd230996
+#: ../../../src/whatsnew/0.10.rst:133
+msgid "Added default.d and local.d configuration directories to load sequence."
+msgstr ""
+
+# 7e9eb715621d4cbd805ea2ca1d7540a6
+#: ../../../src/whatsnew/0.10.rst:136
+msgid "HTTP Interface"
+msgstr ""
+
+# 119770b67e55417c84d6f24318080cde
+#: ../../../src/whatsnew/0.10.rst:138
+msgid "Added optional cookie-based authentication handler."
+msgstr ""
+
+# 0020ae05c21744818623b1b9565a0906
+#: ../../../src/whatsnew/0.10.rst:139
+msgid "Added optional two-legged OAuth authentication handler."
+msgstr ""
+
+# 1127b5db8c0a4d399e9121db52a11116
+#: ../../../src/whatsnew/0.10.rst:142
+msgid "Storage Format"
+msgstr ""
+
+# aa4166d1fe72483c87c704bf520a015b
+#: ../../../src/whatsnew/0.10.rst:144
+msgid "Add move headers with checksums to the end of database files for extra robust storage and faster storage."
+msgstr ""
+
+# 8cb40d432ffa44da8188a5575e16be52
+#: ../../../src/whatsnew/0.10.rst:148
+msgid "View Server"
+msgstr ""
+
+# fa6ee126727f49d19df4e604b6ab503e
+#: ../../../src/whatsnew/0.10.rst:150
+msgid "Added native Erlang views for high-performance applications."
+msgstr ""

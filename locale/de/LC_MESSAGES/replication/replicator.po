@@ -1,0 +1,287 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 10115d45c3404144b250e4ccfb7564d6
+#: ../../../src/replication/replicator.rst:16
+msgid "Replicator Database"
+msgstr ""
+
+# 2bea60d24f19426ba5a39d4dccb50056
+#: ../../../src/replication/replicator.rst:18
+msgid "A database where you ``PUT``/``POST`` documents to trigger replications and you ``DELETE`` to cancel ongoing replications. These documents have exactly the same content as the JSON objects we used to ``POST`` to ``_replicate`` (fields ``source``, ``target``, ``create_target``, ``continuous``, ``doc_ids``, ``filter``, ``query_params``."
+msgstr ""
+
+# d02589bb468040deb9949bf2e78bed20
+#: ../../../src/replication/replicator.rst:24
+msgid "Replication documents can have a user defined ``_id``. Design documents (and ``_local`` documents) added to the replicator database are ignored."
+msgstr ""
+
+# a7e778ef794146e9b0418471fd2e146f
+#: ../../../src/replication/replicator.rst:27
+msgid "The default name of this database is ``_replicator``. The name can be changed in the ``local.ini`` configuration, section ``[replicator]``, parameter ``db``."
+msgstr ""
+
+# 22c40a0e05fe48b9a856bcfabb4886e1
+#: ../../../src/replication/replicator.rst:32
+msgid "Basics"
+msgstr ""
+
+# bbda4b03f3764872b6d415245f62df41
+#: ../../../src/replication/replicator.rst:34
+msgid "Let's say you PUT the following document into ``_replicator``:"
+msgstr ""
+
+# 2e716b6168804ea3a6d230a5d02de859
+#: ../../../src/replication/replicator.rst:45
+msgid "In the couch log you'll see 2 entries like these:"
+msgstr ""
+
+# 137d171224ee47b389468889023f828c
+#: ../../../src/replication/replicator.rst:52
+msgid "As soon as the replication is triggered, the document will be updated by CouchDB with 3 new fields:"
+msgstr ""
+
+# 4c5d243079dd4d39bad25fe83c08d9ac
+#: ../../../src/replication/replicator.rst:67
+msgid "Special fields set by the replicator start with the prefix ``_replication_``."
+msgstr ""
+
+# d656f387734e4b70b3903256c7da74f1
+#: ../../../src/replication/replicator.rst:70
+msgid "``_replication_id``"
+msgstr ""
+
+# e837c36793fb48c2a6b72c3f38f29853
+#: ../../../src/replication/replicator.rst:72
+msgid "The ID internally assigned to the replication. This is also the ID exposed by ``/_active_tasks``."
+msgstr ""
+
+# 258db4a6e955438c95eb50e7aeb7f180
+#: ../../../src/replication/replicator.rst:75
+msgid "``_replication_state``"
+msgstr ""
+
+# affafbd2a6de448f8764375f91ff2cbd
+#: ../../../src/replication/replicator.rst:77
+msgid "The current state of the replication."
+msgstr ""
+
+# d24b8db66d984532980c91fd77d56621
+#: ../../../src/replication/replicator.rst:79
+msgid "``_replication_state_time``"
+msgstr ""
+
+# 2bdbf5f488a54a28b087b857be3a7439
+#: ../../../src/replication/replicator.rst:81
+msgid "A Unix timestamp (number of seconds since 1 Jan 1970) that tells us when the current replication state (marked in ``_replication_state``) was set."
+msgstr ""
+
+# 5682415b1fe048438d049ea8779f2cbc
+#: ../../../src/replication/replicator.rst:85
+msgid "When the replication finishes, it will update the ``_replication_state`` field (and ``_replication_state_time``) with the value ``completed``, so the document will look like:"
+msgstr ""
+
+# 85a0ca09b569478ba434173abbd7e360
+#: ../../../src/replication/replicator.rst:101
+msgid "When an error happens during replication, the ``_replication_state`` field is set to ``error`` (and ``_replication_state_time`` gets updated of course)."
+msgstr ""
+
+# 2e5e9274f08846eab294e67a3681308c
+#: ../../../src/replication/replicator.rst:105
+msgid "When you PUT/POST a document to the ``_replicator`` database, CouchDB will attempt to start the replication up to 10 times (configurable under ``[replicator]``, parameter ``max_replication_retry_count``). If it fails on the first attempt, it waits 5 seconds before doing a second attempt. If the second attempt fails, it waits 10 seconds before doing a third attempt. If the third attempt fails, it waits 20 seconds before doing a fourth attempt (each attempt doubles the previous wait period). When an attempt fails, the Couch log will show you something like:"
+msgstr ""
+
+# 7cf5530e38af42e0913847deba8ce8c7
+#: ../../../src/replication/replicator.rst:119
+msgid "The ``_replication_state`` field is only set to ``error`` when all the attempts were unsuccessful."
+msgstr ""
+
+# 884333c7054c4acbaf47235a322b6491
+#: ../../../src/replication/replicator.rst:122
+msgid "There are only 3 possible values for the ``_replication_state`` field: ``triggered``, ``completed`` and ``error``. Continuous replications never get their state set to ``completed``."
+msgstr ""
+
+# 035f76ac376f4e6f98dec4844eb8514c
+#: ../../../src/replication/replicator.rst:127
+msgid "Documents describing the same replication"
+msgstr ""
+
+# f951006ed0be475eb4c69157c8cbd18b
+#: ../../../src/replication/replicator.rst:129
+msgid "Lets suppose 2 documents are added to the ``_replicator`` database in the following order:"
+msgstr ""
+
+# 8a6fac2a90764c29bd00f75eabf0c11e
+#: ../../../src/replication/replicator.rst:140
+msgid "and"
+msgstr ""
+
+# 038de50390b8446d997426dc32a4daf5
+#: ../../../src/replication/replicator.rst:150
+msgid "Both describe exactly the same replication (only their ``_ids`` differ). In this case document ``doc_A`` triggers the replication, getting updated by CouchDB with the fields ``_replication_state``, ``_replication_state_time`` and ``_replication_id``, just like it was described before. Document ``doc_B`` however, is only updated with one field, the ``_replication_id`` so it will look like this:"
+msgstr ""
+
+# 5fe4ef8e939b4733971f5c1a5bdbc4b2
+#: ../../../src/replication/replicator.rst:166
+msgid "While document ``doc_A`` will look like this:"
+msgstr ""
+
+# f792963f4f3e4506883f541922ee73e7
+#: ../../../src/replication/replicator.rst:179
+msgid "Note that both document get exactly the same value for the ``_replication_id`` field. This way you can identify which documents refer to the same replication - you can for example define a view which maps replication IDs to document IDs."
+msgstr ""
+
+# 0ddafcc450f34315bd6580df2ab7c9c3
+#: ../../../src/replication/replicator.rst:185
+msgid "Canceling replications"
+msgstr ""
+
+# e0b5712f044d487c92d56d14c4d0c9b1
+#: ../../../src/replication/replicator.rst:187
+msgid "To cancel a replication simply ``DELETE`` the document which triggered the replication. The Couch log will show you an entry like the following:"
+msgstr ""
+
+# c4f99174a30c4e4f9a16b3353ef0f5f2
+#: ../../../src/replication/replicator.rst:196
+msgid "You need to ``DELETE`` the document that triggered the replication. ``DELETE``-ing another document that describes the same replication but did not trigger it, will not cancel the replication."
+msgstr ""
+
+# 76c12efec3e1409799fedbfec4888de3
+#: ../../../src/replication/replicator.rst:201
+msgid "Server restart"
+msgstr ""
+
+# e6264d567d804c91a43b38d01613b777
+#: ../../../src/replication/replicator.rst:203
+msgid "When CouchDB is restarted, it checks its ``_replicator`` database and restarts any replication that is described by a document that either has its ``_replication_state`` field set to ``triggered`` or it doesn't have yet the ``_replication_state`` field set."
+msgstr ""
+
+# 6455bd1d6eaf42558c90871167e907f1
+#: ../../../src/replication/replicator.rst:209
+msgid "Continuous replications always have a ``_replication_state`` field with the value ``triggered``, therefore they're always restarted when CouchDB is restarted."
+msgstr ""
+
+# b1c0b944783a441487af906715bb4e2d
+#: ../../../src/replication/replicator.rst:214
+msgid "Changing the Replicator Database"
+msgstr ""
+
+# 130c057c467f4127ada500e87a2b5311
+#: ../../../src/replication/replicator.rst:216
+msgid "Imagine your replicator database (default name is ``_replicator``) has the two following documents that represent pull replications from servers A and B:"
+msgstr ""
+
+# eacf1ea35c6c4d2da7a1c64bfc3380fd
+#: ../../../src/replication/replicator.rst:244
+msgid "Now without stopping and restarting CouchDB, you change the name of the replicator database to ``another_replicator_db``:"
+msgstr ""
+
+# a92f2b9830e541cd94e305f65b438ddd
+#: ../../../src/replication/replicator.rst:252
+msgid "As soon as this is done, both pull replications defined before, are stopped. This is explicitly mentioned in CouchDB's log:"
+msgstr ""
+
+# 5e83c672fb52494e80550a345125eaac
+#: ../../../src/replication/replicator.rst:260
+msgid "Imagine now you add a replication document to the new replicator database named ``another_replicator_db``:"
+msgstr ""
+
+# 3ea244d16fee4b61a37351e15e97a74c
+#: ../../../src/replication/replicator.rst:272
+msgid "From now own you have a single replication going on in your system: a pull replication pulling from server X. Now you change back the replicator database to the original one ``_replicator``:"
+msgstr ""
+
+# a589e40ff0324ad9a0e6da65bee1f652
+#: ../../../src/replication/replicator.rst:281
+msgid "Immediately after this operation, the replication pulling from server X will be stopped and the replications defined in the ``_replicator`` database (pulling from servers A and B) will be resumed."
+msgstr ""
+
+# d80d7600ddba48b4adb4b8aee3c04bdc
+#: ../../../src/replication/replicator.rst:285
+msgid "Changing again the replicator database to ``another_replicator_db`` will stop the pull replications pulling from servers A and B, and resume the pull replication pulling from server X."
+msgstr ""
+
+# 03b5c3b36a1949f4a9bd498eb8a07bb1
+#: ../../../src/replication/replicator.rst:290
+msgid "Replicating the replicator database"
+msgstr ""
+
+# 28c4784b1a1548209d6cc6567ca2c786
+#: ../../../src/replication/replicator.rst:292
+msgid "Imagine you have in server C a replicator database with the two following pull replication documents in it:"
+msgstr ""
+
+# 491148c36d384d15973c53888fdb6c92
+#: ../../../src/replication/replicator.rst:319
+msgid "Now you would like to have the same pull replications going on in server D, that is, you would like to have server D pull replicating from servers A and B. You have two options:"
+msgstr ""
+
+# 9325c072119c45e384b652c16f2021ae
+#: ../../../src/replication/replicator.rst:323
+msgid "Explicitly add two documents to server's D replicator database"
+msgstr ""
+
+# 58d5c40bf786438f8669fdbd2517dc32
+#: ../../../src/replication/replicator.rst:325
+msgid "Replicate server's C replicator database into server's D replicator database"
+msgstr ""
+
+# b28e2da2660b478d896ab8d88b8b8e9c
+#: ../../../src/replication/replicator.rst:328
+msgid "Both alternatives accomplish exactly the same goal."
+msgstr ""
+
+# 80870d35b06447d488878a5c35f9afc7
+#: ../../../src/replication/replicator.rst:331
+msgid "Delegations"
+msgstr ""
+
+# 81ae3301afb848cb843c1fa066324184
+#: ../../../src/replication/replicator.rst:333
+msgid "Replication documents can have a custom ``user_ctx`` property. This property defines the user context under which a replication runs. For the old way of triggering replications (POSTing to ``/_replicate/``), this property was not needed (it didn't exist in fact) - this is because at the moment of triggering the replication it has information about the authenticated user. With the replicator database, since it's a regular database, the information about the authenticated user is only present at the moment the replication document is written to the database - the replicator database implementation is like a ``_changes`` feed consumer (with ``?include_docs=true``) that reacts to what was written to the replicator database - in fact this feature could be implemented with an external script/program. This implementation detail implies that for non admin users, a ``user_ctx`` property, containing the user's name and a subset of his/her roles, must be defined in the replication document. This is ensured by the document update validation function present in the default design document of the replicator database. This validation function also ensure that a non admin user can set a user name property in the ``user_ctx`` property that doesn't match his/her own name (same principle applies for the roles)."
+msgstr ""
+
+# 5ce1df7a910148048bb5e3bcaa279740
+#: ../../../src/replication/replicator.rst:353
+msgid "For admins, the ``user_ctx`` property is optional, and if it's missing it defaults to a user context with name null and an empty list of roles - this mean design documents will not be written to local targets. If writing design documents to local targets is desired, the a user context with the roles ``_admin`` must be set explicitly."
+msgstr ""
+
+# 214c68d6fb704b42bd9fd61de4226290
+#: ../../../src/replication/replicator.rst:359
+msgid "Also, for admins the ``user_ctx`` property can be used to trigger a replication on behalf of another user. This is the user context that will be passed to local target database document validation functions."
+msgstr ""
+
+# 23013a2eb9834f3aaaaf0a68311203cf
+#: ../../../src/replication/replicator.rst:364
+msgid "The ``user_ctx`` property only has effect for local endpoints."
+msgstr ""
+
+# 9a6faf0de4024ec8867b17d940c70b1a
+#: ../../../src/replication/replicator.rst:366
+msgid "Example delegated replication document:"
+msgstr ""
+
+# 9e40f0a4cd904037af7903cfde618ff2
+#: ../../../src/replication/replicator.rst:381
+msgid "As stated before, for admins the ``user_ctx`` property is optional, while for regular (non admin) users it's mandatory. When the roles property of ``user_ctx`` is missing, it defaults to the empty list ``[ ]``."
+msgstr ""

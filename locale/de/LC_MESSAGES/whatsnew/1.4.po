@@ -1,0 +1,102 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# a6ea4dca63e8466cab37101fccaab51e
+#: ../../../src/whatsnew/1.4.rst:18
+msgid "1.4.x Branch"
+msgstr ""
+
+# b12fcc03bcb34d949ea73b63e8186646
+#: ../../../src/whatsnew/1.4.rst:28
+msgid "Upgrade Notes"
+msgstr ""
+
+# 574cd4053e41419eb039149191afe3f9
+#: ../../../src/whatsnew/1.4.rst:30
+msgid "We now support Erlang/OTP R16B and R16B01; the minimum required version is R14B."
+msgstr ""
+
+# f506948a00654fde9139c0f5bd103edd
+#: ../../../src/whatsnew/1.4.rst:32
+msgid "User document role values must now be strings. Other types of values will be refused when saving the user document."
+msgstr ""
+
+# cf721647f90848f8be8a23255b623de3
+#: ../../../src/whatsnew/1.4.rst:39
+msgid "Version 1.4.0"
+msgstr ""
+
+# b641ce6530c5430cb445d573ddddf97a
+#: ../../../src/whatsnew/1.4.rst:41
+msgid ":issue:`1139`: it's possible to apply :ref:`list <listfun>` functions to ``_all_docs`` view. :commit:`54fd258e`"
+msgstr ""
+
+# 70c6dd84a4814b529b67de33a015adb8
+#: ../../../src/whatsnew/1.4.rst:43
+msgid ":issue:`1632`: Ignore epilogues in ``multipart/related`` MIME attachments. :commit:`2b4ab67a`"
+msgstr ""
+
+# f848768ea8a74e199523f57c1531bca4
+#: ../../../src/whatsnew/1.4.rst:45
+msgid ":issue:`1634`: Reduce PBKDF2 work factor. :commit:`f726bc4d`"
+msgstr ""
+
+# 07096680374342c58de56efee43493c7
+#: ../../../src/whatsnew/1.4.rst:46
+msgid ":issue:`1684`: Support for server-wide changes feed reporting on creation, updates and deletion of databases. :commit:`917d8988`"
+msgstr ""
+
+# 87dd8584beb740cfa318111bdd86a923
+#: ../../../src/whatsnew/1.4.rst:48
+msgid ":issue:`1772`: Prevent invalid JSON output when using `all_or_nothing` :ref:`of bulk API <api/db/bulk_docs>`. :commit:`dfd39d57`"
+msgstr ""
+
+# f1d3d9809db8481cb54101acce808ef3
+#: ../../../src/whatsnew/1.4.rst:50
+msgid "Add a :config:option:`configurable whitelist <couch_httpd_auth/public_fields>` of user document properties. :commit:`8d7ab8b1`"
+msgstr ""
+
+# a1471e9fc7e04c7d87c817d00b2e897b
+#: ../../../src/whatsnew/1.4.rst:52
+msgid ":issue:`1852`: Support Last-Event-ID header in EventSource changes feeds. :commit:`dfd2199a`"
+msgstr ""
+
+# 1f646eea236d4f71bb9d2ddf10ec6e84
+#: ../../../src/whatsnew/1.4.rst:54
+msgid "Allow storing pre-hashed admin passwords via :ref:`config API <api/config>`. :commit:`c98ba561`"
+msgstr ""
+
+# e5591be57e894d1a9ac1191f5e717ab8
+#: ../../../src/whatsnew/1.4.rst:56
+msgid "Automatic loading of CouchDB plugins. :commit:`3fab6bb5`"
+msgstr ""
+
+# 9c3ea94db19f4948b67c9ab1f0a2f066
+#: ../../../src/whatsnew/1.4.rst:57
+msgid "Much improved documentation, including an :ref:`expanded description <vdufun>` of `validate_doc_update` functions (commit:`ef9ac469`) and a description of how  CouchDB handles JSON :ref:`number values <json/numbers>` (:commit:`bbd93f77`)."
+msgstr ""
+
+# 0f52facbe82b4aef85a443855b998e57
+#: ../../../src/whatsnew/1.4.rst:61
+msgid "Split up `replicator_db` tests into multiple independent tests."
+msgstr ""

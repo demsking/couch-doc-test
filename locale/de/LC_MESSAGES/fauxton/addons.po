@@ -1,0 +1,117 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 2ee19665d1f5431ea4850f5744436b32
+#: ../../../src/fauxton/addons.rst:18
+msgid "Writting Addons"
+msgstr ""
+
+# 3162c9a2578046d59889755e5e451c76
+#: ../../../src/fauxton/addons.rst:20
+msgid "Addons allow you to extend Fauxton for a specific use case. Usually, they have the following structure::"
+msgstr ""
+
+# 907eb5dee1f94831bd62276dfdc7daad
+#: ../../../src/fauxton/addons.rst:35
+msgid "Generating an Addon"
+msgstr ""
+
+# c7b9097f0cff415f983c1dcdd119098d
+#: ../../../src/fauxton/addons.rst:37
+msgid "We have a `grunt-init` template that lets you create a skeleton addon, including all the boiler plate code. Run ``grunt-init tasks/addon`` and answer the questions it asks to create an addon::"
+msgstr ""
+
+# 81e16e810b0f4750b7a5ec39bddb2e78
+#: ../../../src/fauxton/addons.rst:55
+msgid "Once the addon is created add the name to the settings.json file to get it compiled and added on the next install."
+msgstr ""
+
+# 084ab9cbc0d34e1a87d2ec9629517d51
+#: ../../../src/fauxton/addons.rst:59
+msgid "Routes and hooks"
+msgstr ""
+
+# afaa6682fe1b4d3db2d0881ab5b80993
+#: ../../../src/fauxton/addons.rst:61
+msgid "An addon can insert itself into Fauxton in two ways; via a route or via a hook."
+msgstr ""
+
+# a980c5f6a7d3447cb5cf4dfd7625106d
+#: ../../../src/fauxton/addons.rst:64
+msgid "Routes"
+msgstr ""
+
+# bd347027c524440eab3c93861f1f0eed
+#: ../../../src/fauxton/addons.rst:66
+msgid "An addon will override an existing route should one exist, but in all other ways is just a normal backbone `route/view`. This is how you would add a whole new feature."
+msgstr ""
+
+# 22f1fc032d664bd0a7720d728e18a621
+#: ../../../src/fauxton/addons.rst:71
+msgid "Hooks"
+msgstr ""
+
+# dc5d6802d3184b15b09d35eb20658cc9
+#: ../../../src/fauxton/addons.rst:73
+msgid "Hooks let you modify/extend an existing feature. They modify a DOM element by selector for a named set of routes, for example:"
+msgstr ""
+
+# 3383a58541d944edbe1da1dfe2cc18c6
+#: ../../../src/fauxton/addons.rst:91
+msgid "adds the `searchSidebar` callback to `#sidebar-content` for three routes."
+msgstr ""
+
+# 26075715fcf64cce955c0ef63f7bcda2
+#: ../../../src/fauxton/addons.rst:94
+msgid "Hello world Addon"
+msgstr ""
+
+# 868c6828ff9f4d51bea2467862b309f7
+#: ../../../src/fauxton/addons.rst:96
+msgid "First create the addon skeleton::"
+msgstr ""
+
+# edffc6b9265e42c98df553fcc3c2a90f
+#: ../../../src/fauxton/addons.rst:111
+msgid "In `app/addons/hello/templates/hello.html` place:"
+msgstr ""
+
+# 517a77fca4214d19aed2a2a88e5b22aa
+#: ../../../src/fauxton/addons.rst:117
+msgid "Next, we'll defined a simple view in `resources.js` (for more complex addons you may want to have a views.js) that renders that template:"
+msgstr ""
+
+# 1f302cb43f904d5b898769c5f692bb83
+#: ../../../src/fauxton/addons.rst:138
+msgid "Then define a route in `routes.js` that the addon is accessible at:"
+msgstr ""
+
+# a305b66d30a9449dba88b6b32f282cb9
+#: ../../../src/fauxton/addons.rst:171
+msgid "Then wire it all together in base.js:"
+msgstr ""
+
+# b7cf9c293fbb46b4b6bf1dfacb176d0a
+#: ../../../src/fauxton/addons.rst:194
+msgid "Once the code is in place include the add on in your `settings.json` so that it gets included by the `require` task. Your addon is included in one of three ways; a local path, a git URL or a name. Named plugins assume the plugin is in the Fauxton base directory, addons with a git URL will be cloned into the application, local paths will be copied. Addons included from a local path will be cleaned out by the clean task, others are left alone."
+msgstr ""

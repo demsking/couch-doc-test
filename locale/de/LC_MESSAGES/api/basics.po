@@ -1,0 +1,698 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2015-06-05 07:55+0000\n"
+"Last-Translator: Razvan <ionescu77@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1433490927.000000\n"
+
+# 61a7cc7a178d48d7b5f528c90cf09cf4
+#: ../../../src/api/basics.rst:17
+msgid "API Basics"
+msgstr "API Grundlagen"
+
+# 65958cefc0cf475fb073861f114b52d2
+#: ../../../src/api/basics.rst:19
+msgid "The CouchDB API is the primary method of interfacing to a CouchDB instance. Requests are made using HTTP and requests are used to request information from the database, store new data, and perform views and formatting of the information stored within the documents."
+msgstr ""
+"Die CouchDB API ist die Methode erster Wahl um mit einer CouchDB Instanz zu "
+"kommunizieren. Anfragen werden über HTTP ausgeführt und diese Anfragen "
+"werden genutzt um Informationen von der Datenbank zu erhalten, neue Daten zu "
+"speichern, Views auszuführen und um Informationen, die in den Dokumenten "
+"gespeichert sind, formatiert auszugeben."
+
+# 6e4fe0fdea444c9a9ae09774ad06af17
+#: ../../../src/api/basics.rst:24
+msgid "Requests to the API can be categorised by the different areas of the CouchDB system that you are accessing, and the HTTP method used to send the request. Different methods imply different operations, for example retrieval of information from the database is typically handled by the ``GET`` operation, while updates are handled by either a ``POST`` or ``PUT`` request. There are some differences between the information that must be supplied for the different methods. For a guide to the basic HTTP methods and request structure, see :ref:`api/format`."
+msgstr ""
+"Requests an die API können nach den unterschiedlichen genutzten Bereichen "
+"des CouchDB-Systems und der genutzten HTTP Methode kategorisiert werden. "
+"Unterschiedliche Methoden bedeuten unterschiedliche Operationen. Z.B. wird "
+"der Informationsabruf von der Datenbank typischer Weise über die ``GET`` "
+"Methode aber Aktualisierungen entweder mit ``POST`` oder ``PUT`` ausgeführt. "
+"Dabei gibt es einige Unterschiede zwischen den Informationen, die bei der "
+"Nutzung der jeweiligen Methode mitgeliefert werden müssen. Siehe auch "
+":ref:`api/format` für einen Leitfaden bezüglich der grundlegenden HTTP "
+"Methoden."
+
+# bf505b98cd3c4c3e93468dc14cc364b6
+#: ../../../src/api/basics.rst:33
+msgid "For nearly all operations, the submitted data, and the returned data structure, is defined within a JavaScript Object Notation (JSON) object. Basic information on the content and data types for JSON are provided in :ref:`json`."
+msgstr ""
+"Bei fast allen Operationen für übermittelte und zurückgeliefert Daten, wird "
+"die Datenstruktur als JavaScript Object Notation (JSON) Objekt definiert. "
+"Grundlegende Informationen über den Inhalt und die Datentypen für JSON kann "
+"in :ref:`json` nachgelesen werden."
+
+# 2bba4b004b5b424eac36a4d651173324
+#: ../../../src/api/basics.rst:38
+msgid "Errors when accessing the CouchDB API are reported using standard HTTP Status Codes. A guide to the generic codes returned by CouchDB are provided in :ref:`errors`."
+msgstr ""
+"Treten Fehler beim Zugriff auf die CouchDB API werden über standard HTTP "
+"Status Codes zurückgegeben. Ein Leitfaden für die generischen Codes, die von "
+"CouchDB zurückgegeben werden, ist unter :ref:`errors` zu finden."
+
+# 16cbd30011494c4bbbbde7335fbe1d57
+#: ../../../src/api/basics.rst:42
+msgid "When accessing specific areas of the CouchDB API, specific information and examples on the HTTP methods and request, JSON structures, and error codes are provided."
+msgstr ""
+"Beim Einsehen der einzelnen Bereiche der CouchDB API, werden jeweils "
+"spezifische Informationen und Beispiele für die HTTP Methoden und Anfragen, "
+"der JSON Strukturen und Fehler-Codes zur Verfügung gestellt. "
+
+# c537fdcbcd9a4b84a1836c116a786e8b
+#: ../../../src/api/basics.rst:49
+msgid "Request Format and Responses"
+msgstr "Request- und Response-Formate"
+
+# b264992039bb4573a6dae948fd569eb4
+#: ../../../src/api/basics.rst:51
+msgid "CouchDB supports the following HTTP request methods:"
+msgstr "CouchDB unterstützt folgende HTTP-Request Methoden"
+
+# 4d4137415faa406b98d925924c371db6
+#: ../../../src/api/basics.rst:53
+msgid "``GET``"
+msgstr "``GET``"
+
+# 3b73089717424d17959bf65d23d780c5
+#: ../../../src/api/basics.rst:55
+msgid "Request the specified item. As with normal HTTP requests, the format of the URL defines what is returned. With CouchDB this can include static items, database documents, and configuration and statistical information. In most cases the information is returned in the form of a JSON document."
+msgstr ""
+"Fordert das angegebene Element an. Wie bei normalen HTTP-Anfragen bestimmt "
+"das Format der URL, was zurückgegeben wird. Bei CouchDB kann das statische "
+"Elemente, Datenbankdokumente, Einstellungen und statistische Informationen "
+"beinhalten. In den meisten Fällen wird die Information in Form eines JSON-"
+"Dokuments zurückgegeben."
+
+# fd746f05f6964da3b10b407d312a83a5
+#: ../../../src/api/basics.rst:61
+msgid "``HEAD``"
+msgstr "``HEAD``"
+
+# 3a6b8a499fc944c2b8718601f1ee89c2
+#: ../../../src/api/basics.rst:63
+msgid "The ``HEAD`` method is used to get the HTTP header of a ``GET`` request without the body of the response."
+msgstr ""
+"Die ``HEAD`` Methode wird benutzt, um den HTTP Header eines ``GET`` Requests "
+"ohne den dazugehörigen Body der Antwort zu empfangen"
+
+# f7b4067ac2ca4e18ab6e9a3b3f32d87a
+#: ../../../src/api/basics.rst:66
+msgid "``POST``"
+msgstr "``POST``"
+
+# 2f42e774bceb4d31855069e0060e9a24
+#: ../../../src/api/basics.rst:68
+msgid "Upload data. Within CouchDB ``POST`` is used to set values, including uploading documents, setting document values, and starting certain administration commands."
+msgstr ""
+"Lädt Daten hoch: Innerhalb von CouchDB wird ``POST`` benutzt um Werte zu "
+"setzen: Zum Upload von Dokumenten, um Werte in Dokumenten zu setzen und um "
+"verschiedener administrative Befehle auszuführen."
+
+# 7c03531700ae432fb15bdaa15bee3a41
+#: ../../../src/api/basics.rst:72
+msgid "``PUT``"
+msgstr "``PUT``"
+
+# 8a308443a5b241e291c3bf1c44baaba0
+#: ../../../src/api/basics.rst:74
+msgid "Used to put a specified resource. In CouchDB ``PUT`` is used to create new objects, including databases, documents, views and design documents."
+msgstr ""
+"In CouchDB wird ``PUT`` dafür benutzt um neue Objekte zu erzeugen: "
+"Datenbanken, Dokumente, Views und Design-Dokumente."
+
+# fad69084b61c4de6b2b9e8748f555a67
+#: ../../../src/api/basics.rst:78
+msgid "``DELETE``"
+msgstr "``DELETE``"
+
+# 0295cd93d91b4141b46eae27d2b0cec6
+#: ../../../src/api/basics.rst:80
+msgid "Deletes the specified resource, including documents, views, and design documents."
+msgstr "Löscht eine Ressource: Dokumente, Views und Design-Dokumente."
+
+# 5343a429a2f5434f902983d45dcef74c
+#: ../../../src/api/basics.rst:83
+msgid "``COPY``"
+msgstr "``COPY``"
+
+# afa34193fef943b5b17ddfa46bf87ae7
+#: ../../../src/api/basics.rst:85
+msgid "A special method that can be used to copy documents and objects."
+msgstr ""
+"Eine spezielle Methode, die dazu benutzt werden kann, Dokumente und Objekte "
+"zu kopieren."
+
+# 547825c8c79b4e99a7ce2bc1660f4e1b
+#: ../../../src/api/basics.rst:87
+msgid "If you use the an unsupported HTTP request type with a URL that does not support the specified type, a 405 error will be returned, listing the supported HTTP methods. For example:"
+msgstr ""
+"Wenn du einen HTTP-Anfragetyp mit einer URL benutzt, die den angegebenen Typ "
+"nicht unterstützt, wird ein 405-Fehler zurückgegeben, der die unterstützten "
+"HTTP-Methoden auflistet. Zum Beispiel::"
+
+# 54f98f6a06d64e47a72c0e1e0467cf6c
+#: ../../../src/api/basics.rst:99
+msgid "The CouchDB design document API and the functions when returning HTML (for example as part of a show or list) enables you to include custom HTTP headers through the ``headers`` block of the return object."
+msgstr ""
+"Die API von CouchDBs Designdokumenten und die Funktionen zum Ausgeben von "
+"HTML (zum Beispiel als Teil einer show- oder list-Funktion) erlauben dir, "
+"eigene HTTP-Header im ``headers``-Block des zurückgegebenen Objektes fest zu "
+"legen."
+
+# 7546270287214147a95f68c449fcf528
+#: ../../../src/api/basics.rst:104
+msgid "HTTP Headers"
+msgstr "HTTP Header"
+
+# 55101a9fbfa64649bda3a10782daead6
+#: ../../../src/api/basics.rst:106
+msgid "Because CouchDB uses HTTP for all communication, you need to ensure that the correct HTTP headers are supplied (and processed on retrieval) so that you get the right format and encoding. Different environments and clients will be more or less strict on the effect of these HTTP headers (especially when not present). Where possible you should be as specific as possible."
+msgstr ""
+"Da CouchDB für jegliche Kommunikation HTTP verwendet, musst du "
+"sicherstellen, dass die richtigen HTTP-Header gesetzt sind (und bei Eingang "
+"auch verarbeitet werden), so dass du das richtige Format und die richtige "
+"Encodierung erhältst. Verschiedene Umgebungen und Clients werden mehr oder "
+"weniger streng sein, was die Auswirkungen dieser HTTP-Header angeht ("
+"besonders dann, wenn sie fehlen). Wo immer möglich solltest du so spezifisch "
+"sein, wie es geht."
+
+# ff9827e6eda24a94b68f308df7b0daf2
+#: ../../../src/api/basics.rst:114
+msgid "Request Headers"
+msgstr "Anfrage-Header"
+
+# b207b35c325344afa165f84f2c90d99a
+# 4a88c0a1fcb14b3b9c6eb07909b1e906
+#: ../../../src/api/basics.rst:116
+#: ../../../src/api/basics.rst:199
+msgid "``Content-type``"
+msgstr "``Content-type``"
+
+# a253c33b009d4894979afb736eb41d11
+#: ../../../src/api/basics.rst:118
+msgid "Specifies the content type of the information being supplied within the request. The specification uses MIME type specifications. For the majority of requests this will be JSON (``application/json``). For some settings the MIME type will be plain text. When uploading attachments it should be the corresponding MIME type for the attachment or binary (``application/octet-stream``)."
+msgstr ""
+
+# 455027764e8940cda7c84087aa6b02b6
+#: ../../../src/api/basics.rst:125
+msgid "The use of the ``Content-type`` on a request is highly recommended."
+msgstr ""
+
+# b69193147261476089b58e88f738fbb2
+#: ../../../src/api/basics.rst:127
+msgid "``Accept``"
+msgstr ""
+
+# 7bf2dc82aeb34e47ad03ee8f76c2c6d4
+#: ../../../src/api/basics.rst:129
+msgid "Specifies the list of accepted data types to be returned by the server (i.e. that are accepted/understandable by the client). The format should be a list of one or more MIME types, separated by colons."
+msgstr ""
+
+# 07d3db81ee6d41a0bfef8593cf3e1316
+#: ../../../src/api/basics.rst:134
+msgid "For the majority of requests the definition should be for JSON data (``application/json``). For attachments you can either specify the MIME type explicitly, or use ``*/*`` to specify that all file types are supported. If the ``Accept`` header is not supplied, then the ``*/*`` MIME type is assumed (i.e. client accepts all formats)."
+msgstr ""
+
+# 70e2b7a5fa984532a91f230955987c54
+#: ../../../src/api/basics.rst:140
+msgid "The use of ``Accept`` in queries for CouchDB is not required, but is highly recommended as it helps to ensure that the data returned can be processed by the client."
+msgstr ""
+
+# 851db5a1492c4f729dbf11b1d1865fa1
+#: ../../../src/api/basics.rst:144
+msgid "If you specify a data type using the ``Accept`` header, CouchDB will honor the specified type in the ``Content-type`` header field returned. For example, if you explicitly request ``application/json`` in the ``Accept`` of a request, the returned HTTP headers will use the value in the returned ``Content-type`` field."
+msgstr ""
+
+# 7b394e8783c046379790b344bbfdce4e
+#: ../../../src/api/basics.rst:150
+msgid "For example, when sending a request without an explicit ``Accept`` header, or when specifying ``*/*``:"
+msgstr ""
+
+# 2efc72cf6bbf4160aee1ab6e1b59782d
+#: ../../../src/api/basics.rst:159
+msgid "The returned headers are:"
+msgstr ""
+
+# 714a47d4703249e5913209f9e436393b
+#: ../../../src/api/basics.rst:169
+msgid "Note that the returned content type is ``text/plain`` even though the information returned by the request is in JSON format."
+msgstr ""
+
+# 594b81fc6f754ea988d2ac06ac7136a1
+#: ../../../src/api/basics.rst:172
+msgid "Explicitly specifying the ``Accept`` header:"
+msgstr ""
+
+# 5f4b03b273d741ac82af6d5b8c209de8
+#: ../../../src/api/basics.rst:180
+msgid "The headers returned include the ``application/json`` content type:"
+msgstr ""
+
+# 7d1e6ed9fe3f46a5af53753da6db2130
+#: ../../../src/api/basics.rst:191
+msgid "Response Headers"
+msgstr ""
+
+# e2f5ca4e79ca4de78fa55161a533ebf5
+#: ../../../src/api/basics.rst:193
+msgid "Response headers are returned by the server when sending back content and include a number of different header fields, many of which are standard HTTP response header and have no significance to CouchDB operation. The list of response headers important to CouchDB are listed below."
+msgstr ""
+
+# 02c8ca62dd504e0db33623141143398d
+#: ../../../src/api/basics.rst:201
+msgid "Specifies the MIME type of the returned data. For most request, the returned MIME type is ``text/plain``. All text is encoded in Unicode (UTF-8), and this is explicitly stated in the returned ``Content-type``, as ``text/plain;charset=utf-8``."
+msgstr ""
+
+# 24f1398083254f7fad2b9123b3ce4f41
+#: ../../../src/api/basics.rst:206
+msgid "``Cache-control``"
+msgstr ""
+
+# fd8cac8606ea454382095e22b319b668
+#: ../../../src/api/basics.rst:208
+msgid "The cache control HTTP response header provides a suggestion for client caching mechanisms on how to treat the returned information. CouchDB typically returns the ``must-revalidate``, which indicates that the information should be revalidated if possible. This is used to ensure that the dynamic nature of the content is correctly updated."
+msgstr ""
+
+# c593863a3e8049be827b84daf30c5de4
+#: ../../../src/api/basics.rst:215
+msgid "``Content-length``"
+msgstr ""
+
+# 8f8073ea30bb45de9f305479fca437a2
+#: ../../../src/api/basics.rst:217
+msgid "The length (in bytes) of the returned content."
+msgstr ""
+
+# b766b15f4e06454bad5d3decefc543e8
+#: ../../../src/api/basics.rst:219
+msgid "``Etag``"
+msgstr ""
+
+# 83d4cb8f5e3442408aafc6ce41331019
+#: ../../../src/api/basics.rst:221
+msgid "The ``Etag`` HTTP header field is used to show the revision for a document, or a view."
+msgstr ""
+
+# 354bd67aac8c4251b41c157d2f7a3cbf
+#: ../../../src/api/basics.rst:224
+msgid "ETags have been assigned to a map/reduce group (the collection of views in a single design document). Any change to any of the indexes for those views would generate a new ETag for all view URLs in a single design doc, even if that specific view's results had not changed."
+msgstr ""
+
+# 9c0365a08a654feca0be4d2962ae780c
+#: ../../../src/api/basics.rst:230
+msgid "Each ``_view`` URL has its own ETag which only gets updated when changes are made to the database that effect that index. If the index for that specific view does not change, that view keeps the original ETag head (therefore sending back 304 Not Modified more often)."
+msgstr ""
+
+# 6ce5cf06bc25435f98f15b89841a961e
+#: ../../../src/api/basics.rst:239
+msgid "JSON Basics"
+msgstr ""
+
+# 3226e91895b34af2a21b10c7c7d6bf85
+#: ../../../src/api/basics.rst:241
+msgid "The majority of requests and responses to CouchDB use the JavaScript Object Notation (JSON) for formatting the content and structure of the data and responses."
+msgstr ""
+
+# c7da4478554c4619a0b7c8800177c13b
+#: ../../../src/api/basics.rst:245
+msgid "JSON is used because it is the simplest and easiest to use solution for working with data within a web browser, as JSON structures can be evaluated and used as JavaScript objects within the web browser environment. JSON also integrates with the server-side JavaScript used within CouchDB."
+msgstr ""
+
+# 7cd99f1dcb394ee1861df9afc662ea61
+#: ../../../src/api/basics.rst:251
+msgid "JSON supports the same basic types as supported by JavaScript, these are:"
+msgstr ""
+
+# 1660143b2e9d419fbaa3fd2210d8edd7
+#: ../../../src/api/basics.rst:254
+msgid "Number (either integer or floating-point)."
+msgstr ""
+
+# 65810ffce059438d8653b0445770f51d
+#: ../../../src/api/basics.rst:256
+msgid "String; this should be enclosed by double-quotes and supports Unicode characters and backslash escaping. For example:"
+msgstr ""
+
+# f4cf099f5caf4dce811e747fd16a2dcc
+#: ../../../src/api/basics.rst:263
+msgid "Boolean - a ``true`` or ``false`` value. You can use these strings directly. For example:"
+msgstr ""
+
+# 01fbb5f4026d4406964870dacea07442
+#: ../../../src/api/basics.rst:270
+msgid "Array - a list of values enclosed in square brackets. For example:"
+msgstr ""
+
+# 889dad311934454fb66b3db7acb3f2c3
+#: ../../../src/api/basics.rst:276
+msgid "Object - a set of key/value pairs (i.e. an associative array, or hash). The key must be a string, but the value can be any of the supported JSON values. For example:"
+msgstr ""
+
+# 854225a459c349cf9e8745bc12f61661
+#: ../../../src/api/basics.rst:290
+msgid "In CouchDB, the JSON object is used to represent a variety of structures, including the main CouchDB document."
+msgstr ""
+
+# 5b21e9fefe674e609c166342457b0d38
+#: ../../../src/api/basics.rst:293
+msgid "Parsing JSON into a JavaScript object is supported through the ``JSON.parse()`` function in JavaScript, or through various libraries that will perform the parsing of the content into a JavaScript object for you. Libraries for parsing and generating JSON are available in many languages, including Perl, Python, Ruby, Erlang and others."
+msgstr ""
+
+# ae4c5cf8bb0e4b409225653793249cc4
+#: ../../../src/api/basics.rst:300
+msgid "Care should be taken to ensure that your JSON structures are valid, invalid structures will cause CouchDB to return an HTTP status code of 500 (server error)."
+msgstr ""
+
+# 1a248aee045c4efab02ca9dc1d6ac4de
+#: ../../../src/api/basics.rst:308
+msgid "Number Handling"
+msgstr ""
+
+# e2a4d78fa5be4052aa81b80e3f9e6586
+#: ../../../src/api/basics.rst:310
+msgid "Developers and users new to computer handling of numbers often encounter suprises when expecting that a number stored in JSON format does not necessarily return as the same number as compared character by character."
+msgstr ""
+
+# 0da02957891b4ab4b26ca12bcfcd868c
+#: ../../../src/api/basics.rst:314
+msgid "Any numbers defined in JSON that contain a decimal point or exponent will be passed through the Erlang VM's idea of the \"double\" data type. Any numbers that are used in views will pass through the view server's idea of a number (the common JavaScript case means even integers pass through a double due to JavaScript's definition of a number)."
+msgstr ""
+
+# d7f1d8dd5f3446169a7b09b9b0dfcfd5
+#: ../../../src/api/basics.rst:320
+msgid "Consider this document that we write to CouchDB:"
+msgstr ""
+
+# e663b72e79344ad8af69ed128fa8671f
+#: ../../../src/api/basics.rst:329
+msgid "Now let’s read that document back from CouchDB:"
+msgstr ""
+
+# fde9a23c47aa4851a8e7abf8ef4ae37e
+#: ../../../src/api/basics.rst:340
+msgid "What happens is CouchDB is changing the textual representation of the result of decoding what it was given into some numerical format. In most cases this is an `IEEE 754`_ double precision floating point number which is exactly what almost all other languages use as well."
+msgstr ""
+
+# cca2408bd914468d8a77ed87ca5affbe
+#: ../../../src/api/basics.rst:347
+msgid "What Erlang does a bit differently than other languages is that it does not attempt to pretty print the resulting output to use the shortest number of characters. For instance, this is why we have this relationship:"
+msgstr ""
+
+# fbe42aae516a4d6f9cbf25daa27c109d
+#: ../../../src/api/basics.rst:357
+msgid "What can be confusing here is that internally those two formats decode into the same IEEE-754 representation. And more importantly, it will decode into a fairly close representation when passed through all major parsers that we know about."
+msgstr ""
+
+# 896a911b90014f4d93b9382e6a101e5b
+#: ../../../src/api/basics.rst:362
+msgid "While we've only been discussing cases where the textual representation changes, another important case is when an input value contains more precision than can actually represented in a double. (You could argue that this case is actually \"losing\" data if you don't accept that numbers are stored in doubles)."
+msgstr ""
+
+# 3be73b957a6e488282e5d9825e52dabe
+#: ../../../src/api/basics.rst:368
+msgid "Here's a log for a couple of the more common JSON libraries that happen to be on the author's machine:"
+msgstr ""
+
+# 8f24b6ff78c04d2a8e46d321c7e1a85d
+#: ../../../src/api/basics.rst:371
+msgid "Spidermonkey::"
+msgstr ""
+
+# 2350ee9afae344e5ba5e358eb4e164de
+#: ../../../src/api/basics.rst:382
+msgid "Node::"
+msgstr ""
+
+# 450b149117d441859da3f73884316a69
+#: ../../../src/api/basics.rst:394
+msgid "Python::"
+msgstr ""
+
+# ef396dbfe0c146e580ab7757749233dc
+#: ../../../src/api/basics.rst:407
+msgid "Ruby::"
+msgstr ""
+
+# 678495dcc02c46d3be5b8355fd7aa1a5
+#: ../../../src/api/basics.rst:421
+msgid "A small aside on Ruby, it requires a top level object or array, so I just wrapped the value. Should be obvious it doesn't affect the result of parsing the number though."
+msgstr ""
+
+# eb062eec0e014d77ba598220a274a67e
+#: ../../../src/api/basics.rst:426
+msgid "Ejson (CouchDB's current parser) at CouchDB sha 168a663b::"
+msgstr ""
+
+# a5e70c826e524ca9a3227c95cb1e717c
+#: ../../../src/api/basics.rst:441
+msgid "As you can see they all pretty much behave the same except for Ruby actually does appear to be losing some precision over the other libraries."
+msgstr ""
+
+# f7d1f20a0205468f97fe9402d64a5e23
+#: ../../../src/api/basics.rst:445
+msgid "The astute observer will notice that ejson (the CouchDB JSON library) reported an extra three digits. While its tempting to think that this is due to some internal difference, its just a more specific case of the 1.1 input as described above."
+msgstr ""
+
+# e208f80a675447eea979a61a4d90e4b8
+#: ../../../src/api/basics.rst:450
+msgid "The important point to realize here is that a double can only hold a finite number of values. What we're doing here is generating a string that when passed through the \"standard\" floating point parsing algorithms (ie, ``strtod``) will result in the same bit pattern in memory as we started with. Or, slightly different, the bytes in a JSON serialized number are chosen such that they refer to a single specific value that a double can represent."
+msgstr ""
+
+# 8fd7a160efe345568b39bfa3d7c02eec
+#: ../../../src/api/basics.rst:458
+msgid "The important point to understand is that we're mapping from one infinite set onto a finite set. An easy way to see this is by reflecting on this::"
+msgstr ""
+
+# 807a649ed33f48ac9f1c6a0749f191de
+#: ../../../src/api/basics.rst:464
+msgid "Obviously a computer can't hold infinite bytes so we have to decimate our infinitely sized set to a finite set that can be represented concisely."
+msgstr ""
+
+# 51df22e0f4b94251938031956b7d950b
+#: ../../../src/api/basics.rst:468
+msgid "The game that other JSON libraries are playing is merely:"
+msgstr ""
+
+# 5239816f930946ba89061a37930e0aae
+#: ../../../src/api/basics.rst:470
+msgid "\"How few characters do I have to use to select this specific value for a double\""
+msgstr ""
+
+# 04dc49b963ba4d7486a9d413db363cb9
+#: ../../../src/api/basics.rst:472
+msgid "And that game has lots and lots of subtle details that are difficult to duplicate in C without a significant amount of effort (it took Python over a year to get it sorted with their fancy build systems that automatically run on a number of different architectures)."
+msgstr ""
+
+# 026441de206c4fe6a38da06281392907
+#: ../../../src/api/basics.rst:477
+msgid "Hopefully we've shown that CouchDB is not doing anything \"funky\" by changing input. Its behaving the same as any other common JSON library does, its just not pretty printing its output."
+msgstr ""
+
+# 4634faeca4e640ae834c1bd6ce3091cc
+#: ../../../src/api/basics.rst:481
+msgid "On the other hand, if you actually are in a position where an IEEE-754 double is not a satisfactory datatype for your numbers, then the answer as has been stated is to not pass your numbers through this representation. In JSON this is accomplished by encoding them as a string or by using integer types (although integer types can still bite you if you use a platform that has a different integer representation than normal, ie, JavaScript)."
+msgstr ""
+
+# 3de38b2ccf924df8ad15b4cf2729ef53
+#: ../../../src/api/basics.rst:489
+msgid "Further information can be found easily, including the `Floating Point Guide`_, and  `David Goldberg's Reference`_."
+msgstr ""
+
+# 4499139c735c426288309e269138568a
+#: ../../../src/api/basics.rst:495
+msgid "Also, if anyone is really interested in changing this behavior, we're all ears for contributions to `jiffy`_ (which is theoretically going to replace ejson when we get around to updating the build system). The places we've looked for inspiration are TCL and Python. If you know a decent implementation of this float printing algorithm give us a holler."
+msgstr ""
+
+# 11d14aa6f63b41b0a0eec4bc693b4569
+#: ../../../src/api/basics.rst:507
+msgid "HTTP Status Codes"
+msgstr ""
+
+# c36826cdc5db4870863c45670da977e5
+#: ../../../src/api/basics.rst:509
+msgid "With the interface to CouchDB working through HTTP, error codes and statuses are reported using a combination of the HTTP status code number, and corresponding data in the body of the response data."
+msgstr ""
+
+# 2e75c943e4244a9aa6344cc4aedd24dc
+#: ../../../src/api/basics.rst:513
+msgid "A list of the error codes returned by CouchDB, and generic descriptions of the related errors are provided below. The meaning of different status codes for specific request types are provided in the corresponding API call reference."
+msgstr ""
+
+# 44f8922f36554e91a88809d74b80fdf4
+#: ../../../src/api/basics.rst:518
+msgid "``200 - OK``"
+msgstr ""
+
+# 5271ee6d11984040a4ea8e2d2844c042
+#: ../../../src/api/basics.rst:520
+msgid "Request completed successfully."
+msgstr ""
+
+# 60e4b507972d424b95d9af3f0d5bb28f
+#: ../../../src/api/basics.rst:522
+msgid "``201 - Created``"
+msgstr ""
+
+# 340fa66d00e64e6d88a4edf50daadee8
+#: ../../../src/api/basics.rst:524
+msgid "Document created successfully."
+msgstr ""
+
+# 0fc8692d21dc4eabbdcb24a2939680e6
+#: ../../../src/api/basics.rst:526
+msgid "``202 - Accepted``"
+msgstr ""
+
+# 01ac8c3c88cd4caabc70deb211ecc433
+#: ../../../src/api/basics.rst:528
+msgid "Request has been accepted, but the corresponding operation may not have completed. This is used for background operations, such as database compaction."
+msgstr ""
+
+# 34e6791f08d642f68247f34e84cae10b
+#: ../../../src/api/basics.rst:532
+msgid "``304 - Not Modified``"
+msgstr ""
+
+# 32842a01d2c34fa2bf22786519476276
+#: ../../../src/api/basics.rst:534
+msgid "The additional content requested has not been modified. This is used with the ETag system to identify the version of information returned."
+msgstr ""
+
+# e1f218791c404d49a952524ce7e149dc
+#: ../../../src/api/basics.rst:537
+msgid "``400 - Bad Request``"
+msgstr ""
+
+# d990d3b1ca274b69b15976a2fa7c426f
+#: ../../../src/api/basics.rst:539
+msgid "Bad request structure. The error can indicate an error with the request URL, path or headers. Differences in the supplied MD5 hash and content also trigger this error, as this may indicate message corruption."
+msgstr ""
+
+# de1bff0fd31a4a979605dff5e621dc9b
+#: ../../../src/api/basics.rst:544
+msgid "``401 - Unauthorized``"
+msgstr ""
+
+# 1ffd7f2953e64352aae8105e554d3f12
+#: ../../../src/api/basics.rst:546
+msgid "The item requested was not available using the supplied authorization, or authorization was not supplied."
+msgstr ""
+
+# dd723b05f2df41a4a60f1f6cedc2b2fe
+#: ../../../src/api/basics.rst:549
+msgid "``403 - Forbidden``"
+msgstr ""
+
+# 6a4d0f8719184d93849367647d57c0f0
+#: ../../../src/api/basics.rst:551
+msgid "The requested item or operation is forbidden."
+msgstr ""
+
+# fec6ce0d19af476eb046b0b66c5d2f89
+#: ../../../src/api/basics.rst:553
+msgid "``404 - Not Found``"
+msgstr ""
+
+# f3da208492f447169ec5d963e426c87d
+#: ../../../src/api/basics.rst:555
+msgid "The requested content could not be found. The content will include further information, as a JSON object, if available. The structure will contain two keys, ``error`` and ``reason``. For example:"
+msgstr ""
+
+# 9f90794229764b2985ba8af10ec3de89
+#: ../../../src/api/basics.rst:563
+msgid "``405 - Resource Not Allowed``"
+msgstr ""
+
+# 2e6cde006a9c46458477b3ca848b92e4
+#: ../../../src/api/basics.rst:565
+msgid "A request was made using an invalid HTTP request type for the URL requested. For example, you have requested a ``PUT`` when a ``POST`` is required. Errors of this type can also triggered by invalid URL strings."
+msgstr ""
+
+# 38dc59601135439c9664258a23a67521
+#: ../../../src/api/basics.rst:570
+msgid "``406 - Not Acceptable``"
+msgstr ""
+
+# a12f782e73784e1bb8a760fb23fa3010
+#: ../../../src/api/basics.rst:572
+msgid "The requested content type is not supported by the server."
+msgstr ""
+
+# fa1237cb4fb94b4492c8bd081da3f494
+#: ../../../src/api/basics.rst:574
+msgid "``409 - Conflict``"
+msgstr ""
+
+# 728f0f6530f842ad9eb3bea8cf47a45d
+#: ../../../src/api/basics.rst:576
+msgid "Request resulted in an update conflict."
+msgstr ""
+
+# 25656b0bd2b04b5f8bc89ca7c4608b1c
+#: ../../../src/api/basics.rst:578
+msgid "``412 - Precondition Failed``"
+msgstr ""
+
+# 653d16f3f2de41af80be0adb39d6b4ac
+#: ../../../src/api/basics.rst:580
+msgid "The request headers from the client and the capabilities of the server do not match."
+msgstr ""
+
+# f794a637cd12460ea20607ac367aab46
+#: ../../../src/api/basics.rst:583
+msgid "``415 - Bad Content Type``"
+msgstr ""
+
+# 100a410cee0942269e1085109ba035e1
+#: ../../../src/api/basics.rst:585
+msgid "The content types supported, and the content type of the information being requested or submitted indicate that the content type is not supported."
+msgstr ""
+
+# 32b7106798d847e1bdeeba03aa5e489c
+#: ../../../src/api/basics.rst:589
+msgid "``416 - Requested Range Not Satisfiable``"
+msgstr ""
+
+# a85c673864594e8686d130f1ae047523
+#: ../../../src/api/basics.rst:591
+msgid "The range specified in the request header cannot be satisfied by the server."
+msgstr ""
+
+# c04884666af449ec933f03605f739bb4
+#: ../../../src/api/basics.rst:594
+msgid "``417 - Expectation Failed``"
+msgstr ""
+
+# 5c3319bff7c3421e83e7ff4e15776489
+#: ../../../src/api/basics.rst:596
+msgid "When sending documents in bulk, the bulk load operation failed."
+msgstr ""
+
+# 94eceaa6125c471e885151ac68ad7c53
+#: ../../../src/api/basics.rst:598
+msgid "``500 - Internal Server Error``"
+msgstr ""
+
+# 0bafd62b6e384297b2662c741e0ba8c8
+#: ../../../src/api/basics.rst:600
+msgid "The request was invalid, either because the supplied JSON was invalid, or invalid information was supplied as part of the request."
+msgstr ""

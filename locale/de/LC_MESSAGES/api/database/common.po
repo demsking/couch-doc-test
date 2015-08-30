@@ -1,0 +1,210 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# ef25c0e8e7e140acb91b1c6ca10c1334
+#: ../../../src/api/database/common.rst:16
+msgid "``/db``"
+msgstr ""
+
+# cf1eda995d1844119c85fc175c6d565c
+#: ../../../src/api/database/common.rst:20
+msgid "Returns the HTTP Headers containing a minimal amount of information about the specified database. Since the response body is empty, using the HEAD method is a lightweight way to check if the database exists already or not."
+msgstr ""
+
+# 39e2bb05278743728cda439e6f471a05
+# b7679d3e4ef147d8b1d7197069370447
+# d952db0186a44a79a04e4d91e16b71da
+# 27d0402f50814d0e85376675e1065f0b
+# 8e5b1a5ea5a7449fa2e95bf5be406be4
+# e13fd5d002ff4aabad6ebc58c80949e4
+# 4844184e5f554dad9b1c878ac23c0d22
+# 0303fb41b464469a8f49f7c98a52cc21
+# 8fc2b85a275f4f87bdb3b9b92c866080
+# 15ce11d4f84c478c8599e5e5d330c5e0
+#: ../../../src/api/database/common.rst:29
+#: ../../../src/api/database/common.rst:73
+#: ../../../src/api/database/common.rst:138
+#: ../../../src/api/database/common.rst:165
+#: ../../../src/api/database/common.rst:191
+#: ../../../src/api/database/common.rst:199
+#: ../../../src/api/database/common.rst:232
+#: ../../../src/api/database/common.rst:290
+#: ../../../src/api/database/common.rst:332
+#: ../../../src/api/database/common.rst:391
+msgid "**Request**:"
+msgstr ""
+
+# 0fd1f1149e33433db54ac59744dc0ca1
+# 2d191225a34c48f48f7eb2766cc79986
+# d7596f8a9a10428aad462d06a651cae0
+# 06b28b87982a4493a6bc306d0ff6d6a2
+# a77a6fdc5b3b44c4badb43c9a784bdd2
+# 3079142c0aa049bdb9957018b033cb7f
+# 13e1514f50874d3aa8340e9cd703aef4
+# afbc5fc3a67441b9a39563b595425b4b
+#: ../../../src/api/database/common.rst:36
+#: ../../../src/api/database/common.rst:81
+#: ../../../src/api/database/common.rst:146
+#: ../../../src/api/database/common.rst:173
+#: ../../../src/api/database/common.rst:240
+#: ../../../src/api/database/common.rst:305
+#: ../../../src/api/database/common.rst:348
+#: ../../../src/api/database/common.rst:407
+msgid "**Response**:"
+msgstr ""
+
+# eb54041f4f1e401a96553e620f71e7e2
+#: ../../../src/api/database/common.rst:49
+msgid "Gets information about the specified database."
+msgstr ""
+
+# b264986182a048d48011a84d714d2e28
+# 395045c41ac549f0ae05a9ef4d041118
+# be4dc83c333041ec9e7e108eb415d803
+# 1f92ca9c28bb477e8dcda2a76ce2ef80
+# 797e4154731a43199c084e80498c7023
+# 7c2a077afcaf4abeb2621a6c2bf34dd8
+# 5f320aaa12ba41cba084ebec57b2e6ea
+# bc5e3d6376c94a46b35d38e07afa2017
+#: ../../../src/api/database/common.rst:52
+#: ../../../src/api/database/common.rst:54
+#: ../../../src/api/database/common.rst:125
+#: ../../../src/api/database/common.rst:127
+#: ../../../src/api/database/common.rst:222
+#: ../../../src/api/database/common.rst:224
+#: ../../../src/api/database/common.rst:268
+#: ../../../src/api/database/common.rst:276
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# 79cfc484d6b6427db28205b7109fc77c
+# 99fa14df0216469e85ddf7535a07c5e1
+# 7f31fb1e85794951a26224c4c7098162
+# aa2da70172a24ee89d4eaecd9e94903e
+#: ../../../src/api/database/common.rst:53
+#: ../../../src/api/database/common.rst:126
+#: ../../../src/api/database/common.rst:223
+#: ../../../src/api/database/common.rst:269
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# 06e5a076f6e341118014bfa36bf5b381
+# 77a52f08311e45b3acce9c330214e1ce
+# 793a5ec7dcdb476aa0981e6b243ec28f
+# b84ecc6e5b744bc8b14b8ca0561846c6
+#: ../../../src/api/database/common.rst:55
+#: ../../../src/api/database/common.rst:128
+#: ../../../src/api/database/common.rst:225
+#: ../../../src/api/database/common.rst:277
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# a474dd68e3e9484f81d049f01cdff990
+#: ../../../src/api/database/common.rst:109
+msgid "Creates a new database. The database name ``{db}`` must be composed by following next rules:"
+msgstr ""
+
+# d1721e4420ce42fba0d466afd701da8e
+#: ../../../src/api/database/common.rst:112
+msgid "Name must begin with a lowercase letter (``a-z``)"
+msgstr ""
+
+# 34f693922dfb49849e064ed3f1f64617
+#: ../../../src/api/database/common.rst:114
+msgid "Lowercase characters (``a-z``)"
+msgstr ""
+
+# 4dfa8ebfd90148c5be118facd88b31cf
+#: ../../../src/api/database/common.rst:116
+msgid "Digits (``0-9``)"
+msgstr ""
+
+# d03d4eb6ab5342fc81c4b9ffd2872628
+#: ../../../src/api/database/common.rst:118
+msgid "Any of the characters ``_``, ``$``, ``(``, ``)``, ``+``, ``-``, and ``/``."
+msgstr ""
+
+# bd82e1976c514eb299c68830b4103623
+#: ../../../src/api/database/common.rst:121
+msgid "If you're familiar with `Regular Expressions`_, the rules above could be written as ``^[a-z][a-z0-9_$()+/-]*$``."
+msgstr ""
+
+# fefd1f3295e043bfb3dfa91c23bfd183
+#: ../../../src/api/database/common.rst:162
+msgid "If we repeat the same request to CouchDB, it will response with :code:`412` since the database already exists:"
+msgstr ""
+
+# 6380bb0fc9f949ca9d93168b11b41b3c
+#: ../../../src/api/database/common.rst:189
+msgid "If an invalid database name is supplied, CouchDB returns response with :code:`400`:"
+msgstr ""
+
+# 1d6d136f214447b8a4d3d7539dd3119e
+#: ../../../src/api/database/common.rst:218
+msgid "Deletes the specified database, and all the documents and attachments contained within it."
+msgstr ""
+
+# 281dac0f964a4120857b7eb953e56c56
+#: ../../../src/api/database/common.rst:258
+msgid "Creates a new document in the specified database, using the supplied JSON document structure."
+msgstr ""
+
+# b7bc046f6b5d4b11a674a799b7f9ca84
+#: ../../../src/api/database/common.rst:261
+msgid "If the JSON structure includes the ``_id`` field, then the document will be created with the specified document ID."
+msgstr ""
+
+# 2814dba0057642fabf59b6e600f9fd5a
+#: ../../../src/api/database/common.rst:264
+msgid "If the ``_id`` field is not specified, a new unique ID will be generated, following whatever UUID algorithm is configured for that server."
+msgstr ""
+
+# 4f013678b55f4d95b7858a21ef2f9a55
+#: ../../../src/api/database/common.rst:326
+msgid "Specifying the Document ID"
+msgstr ""
+
+# 79d73765b86447e6a802e7ffc752160c
+#: ../../../src/api/database/common.rst:328
+msgid "The document ID can be specified by including the ``_id`` field in the JSON of the submitted record. The following request will create the same document with the ID ``FishStew``."
+msgstr ""
+
+# e7bad38354c94decb7fdcebc88ac15ce
+#: ../../../src/api/database/common.rst:371
+msgid "Batch Mode Writes"
+msgstr ""
+
+# 57633d1a900a4d6196a263b69b7a58d9
+#: ../../../src/api/database/common.rst:373
+msgid "You can write documents to the database at a higher rate by using the batch option. This collects document writes together in memory (on a user-by-user basis) before they are committed to disk. This increases the risk of the documents not being stored in the event of a failure, since the documents are not written to disk immediately."
+msgstr ""
+
+# e1eac4a283b648a88d62b8113728bfc6
+#: ../../../src/api/database/common.rst:379
+msgid "To use the batched mode, append the ``batch=ok`` query argument to the URL of the ``PUT`` or :post:`/{db}` request. The CouchDB server will respond with a HTTP :statuscode:`202` response code immediately."
+msgstr ""
+
+# ca26bf6c21a54de9a39ec61127077142
+#: ../../../src/api/database/common.rst:385
+msgid "Creating or updating documents with batch mode doesn't guarantee that all documents will be successfully stored on disk. For example, individual documents may not be saved due to conflicts, rejection by :ref:`validation function <vdufun>` or by other reasons, even if overall the batch was sucessfully submitted."
+msgstr ""

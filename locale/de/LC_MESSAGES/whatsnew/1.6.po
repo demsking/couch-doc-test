@@ -1,0 +1,57 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 08bf6eccfe19462eb212a52a0e468881
+#: ../../../src/whatsnew/1.6.rst:18
+msgid "1.6.x Branch"
+msgstr ""
+
+# 7091f2469ca0481bb783e060ce368a5a
+#: ../../../src/whatsnew/1.6.rst:27
+msgid "Upgrade Notes"
+msgstr ""
+
+# 173a56e14ac641d0814e8cb3d3018a14
+#: ../../../src/whatsnew/1.6.rst:29
+msgid "The :ref:`Proxy Authentication <api/auth/proxy>` handler was renamed to ``proxy_authentication_handler`` to follow the ``*_authentication_handler`` form of all other handlers. The old ``proxy_authentification_handler`` name is marked as deprecated and will be removed in future releases. It's strongly recommended to update :config:option:`httpd/authentication_handlers` option with new value in case if you had used such handler."
+msgstr ""
+
+# 4356c27222254c02a4c7a2814e616c6c
+#: ../../../src/whatsnew/1.6.rst:40
+msgid "Version 1.6.0"
+msgstr ""
+
+# 42111762594a489d8f46c35951548e06
+#: ../../../src/whatsnew/1.6.rst:44
+msgid "This version is not released yet."
+msgstr ""
+
+# 1e51f49c9e8543d5aa51f9e686b77c29
+#: ../../../src/whatsnew/1.6.rst:46
+msgid ":issue:`1922`: Fix CORS exposed headers :commit:`4f619833`"
+msgstr ""
+
+# af7a8efbb5f240b1a510750c105164dd
+#: ../../../src/whatsnew/1.6.rst:47
+msgid "Rename ``proxy_authentification_handler`` to ``proxy_authentication_handler`` :commit:`c66ac4a8`"
+msgstr ""

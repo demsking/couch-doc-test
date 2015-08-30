@@ -1,0 +1,294 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2013-11-25 22:23+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0-rc1\n"
+"X-POOTLE-MTIME: 1385418211.0\n"
+
+# f313ad51f4e149928388f91f703daabb
+#: ../../../src/api/ddoc/common.rst:17
+msgid "``/db/_design/design-doc``"
+msgstr "``/db/_design/design-doc``"
+
+# 216ef7fc3ccb446b84671bcd4d7ea3ad
+#: ../../../src/api/ddoc/common.rst:21
+msgid "Returns the HTTP Headers containing a minimal amount of information about the specified design document."
+msgstr ""
+"Gibt die HTTP-Header mit minimalen Informationen zum ausgewählten Design-"
+"Dokument zurück."
+
+# 6ddc2025e55e401ebc3db13629e5484b
+#: ../../../src/api/ddoc/common.rst:26
+msgid ":head:`/{db}/{docid}`"
+msgstr ":head:`/{db}/{docid}`"
+
+# 07b61297002d4043b8a94166dd44ba3b
+#: ../../../src/api/ddoc/common.rst:31
+msgid "Returns design document with the specified design document` from the specified database. Unless you request a specific revision, the latest revision of the document will always be returned."
+msgstr ""
+"Gibt die Inhalte des Design-Dokuments zurück welches über den Namen des "
+"Design-Dokumentes und den Namen der Datenbank aus der URL spezifiziert ist. "
+"Wenn du keine bestimmte Revision angibst wird immer die aktuellste Version "
+"des Dokumentes zurück gegeben."
+
+# f2f7c9a398224b79ad094ba120ed4b92
+#: ../../../src/api/ddoc/common.rst:37
+msgid ":get:`/{db}/{docid}`"
+msgstr ":get:`/{db}/{docid}`"
+
+# 166f1d0e41084fefa817c4c2107bee87
+#: ../../../src/api/ddoc/common.rst:42
+msgid "The :method:`PUT` method creates a new named design document, or creates a new revision of the existing design document."
+msgstr ""
+"Über die Methode :method:`PUT` wird eine neues Design-Dokument oder eine neu "
+"Version des vorhandenen Dokumentes erstellt."
+
+# bf5c810824ef4fe3ab39b8375891d860
+#: ../../../src/api/ddoc/common.rst:45
+msgid "The design documents have some agreement upon their fields and structure. Currently it is the next:"
+msgstr ""
+"Für Design-Dokumente gibt es ein paar Regeln für ihre Felder und Struktur. "
+"Aktuell sind es diese:"
+
+# 1a90faf2d6ff43c68dc71c514c98fb01
+#: ../../../src/api/ddoc/common.rst:48
+msgid "**language** (*string*): Defines :ref:`Query Server <query-server>` :config:section:`key <query_servers>` to process design document functions"
+msgstr ""
+"**language** (*string*): Definiert :ref:`Query Server <query-server>` "
+":config:section:`key <query_servers>` um Design-Dokument Funktionen "
+"auszuführen"
+
+# ea1ebe69444940ee80268e19972f3f3c
+#: ../../../src/api/ddoc/common.rst:50
+msgid "**options** (*object*): View's default options"
+msgstr "**options** (*object*): Die default Optionen des Views"
+
+# 5a85b8cbe80b4c6a9bdeecf083e2ce38
+#: ../../../src/api/ddoc/common.rst:51
+msgid "**filters** (*object*): :ref:`Filter functions <filterfun>` definition"
+msgstr "**filters** (*object*): :ref:`Filter functions <filterfun>` definieren"
+
+# 30973d3024544daebb6836f8a02f64d9
+#: ../../../src/api/ddoc/common.rst:52
+msgid "**lists** (*object*): :ref:`List functions <listfun>` definition"
+msgstr ""
+
+# 1f2678ee39ba4eb299c543b2bdeaa1ee
+#: ../../../src/api/ddoc/common.rst:53
+msgid "**rewrites** (*array*): Rewrite rules definition"
+msgstr ""
+
+# 28855c97072b48ccb350b6bcfd8d170d
+#: ../../../src/api/ddoc/common.rst:54
+msgid "**shows** (*object*): :ref:`Show functions <showfun>` definition"
+msgstr ""
+
+# d9691c3626af460cb40597b5fa8a362c
+#: ../../../src/api/ddoc/common.rst:55
+msgid "**updates** (*object*): :ref:`Update functions <updatefun>` definition"
+msgstr ""
+
+# 19b447bff0704a0c8bb96a14c50ff489
+#: ../../../src/api/ddoc/common.rst:56
+msgid "**validate_doc_update** (*string*): :ref:`Validate document update <vdufun>` function source"
+msgstr ""
+
+# ece3eb748336489baa76687d1a1500f4
+#: ../../../src/api/ddoc/common.rst:58
+msgid "**views** (*object*): :ref:`View functions <viewfun>` definition."
+msgstr ""
+
+# 688c352ff12a49729f5fcaf39eccaf6a
+#: ../../../src/api/ddoc/common.rst:60
+msgid "Note, that for ``filters``, ``lists``, ``shows`` and ``updates`` fields objects are mapping of function name to string function source code. For ``views`` mapping is the same except that values are objects with ``map`` and ``reduce`` (optional) keys which also contains functions source code."
+msgstr ""
+
+# 6da91ed2f6b44437a5d8b71ee28acc41
+#: ../../../src/api/ddoc/common.rst:67
+msgid ":put:`/{db}/{docid}`"
+msgstr ""
+
+# 4372343162b54d5fbd56959fbcdf5a15
+#: ../../../src/api/ddoc/common.rst:72
+msgid "Deletes the specified document from the database. You must supply the current (latest) revision, either by using the ``rev`` parameter to specify the revision."
+msgstr ""
+
+# 713d00274a4746a480c004762d5de2ab
+#: ../../../src/api/ddoc/common.rst:78
+msgid ":delete:`/{db}/{docid}`"
+msgstr ""
+
+# 675e8981ccf84711973a0f45f35f9618
+#: ../../../src/api/ddoc/common.rst:82
+msgid "The :method:`COPY` (which is non-standard HTTP) copies an existing design document to a new or existing one."
+msgstr ""
+
+# c13b22a5f9cc4d139b03847848145817
+#: ../../../src/api/ddoc/common.rst:86
+msgid "Copying a design document does automatically reconstruct the view indexes. These will be recreated, as with other views, the first time the new view is accessed."
+msgstr ""
+
+# 1d603c36b88c4dafb1ea2a67adc3e702
+#: ../../../src/api/ddoc/common.rst:92
+msgid ":copy:`/{db}/{docid}`"
+msgstr ""
+
+# 88ac9f41e9b94458b0cb4eb7eb6e6b64
+#: ../../../src/api/ddoc/common.rst:98
+msgid "``/db/_design/design-doc/attachment``"
+msgstr ""
+
+# 3390f0dba9a24a99adad76e3ba058eca
+#: ../../../src/api/ddoc/common.rst:102
+msgid "Returns the HTTP headers containing a minimal amount of information about the specified attachment."
+msgstr ""
+
+# b1f2eb3ab2a647c3bde880f7073951c4
+#: ../../../src/api/ddoc/common.rst:107
+msgid ":head:`/{db}/{docid}/{attname}`"
+msgstr ""
+
+# e9d2c543dafc45e3ae448c308331d81d
+#: ../../../src/api/ddoc/common.rst:111
+msgid "Returns the file attachment associated with the design document. The raw data of the associated attachment is returned (just as if you were accessing a static file."
+msgstr ""
+
+# 71355a9a26134233a21cb48fec9aafdd
+#: ../../../src/api/ddoc/common.rst:117
+msgid ":get:`/{db}/{docid}/{attname}`"
+msgstr ""
+
+# e927e1703b964431b61232db1f51fe24
+#: ../../../src/api/ddoc/common.rst:121
+msgid "Uploads the supplied content as an attachment to the specified design document. The attachment name provided must be a URL encoded string."
+msgstr ""
+
+# fec7c04f264340a7824b4265028fcfd7
+#: ../../../src/api/ddoc/common.rst:126
+msgid ":put:`/{db}/{docid}/{attname}`"
+msgstr ""
+
+# 152cc2cc315f4b8ca5d185ef460f47a1
+#: ../../../src/api/ddoc/common.rst:130
+msgid "Deletes the attachment of the specified design document."
+msgstr ""
+
+# f1db98768f024f2b85e3b175eb46dbeb
+#: ../../../src/api/ddoc/common.rst:134
+msgid ":delete:`/{db}/{docid}/{attname}`"
+msgstr ""
+
+# 7ab7933c19ca44439912f7e93769e944
+#: ../../../src/api/ddoc/common.rst:140
+msgid "``/db/_design/design-doc/_info``"
+msgstr ""
+
+# 6803da54608940fdb4b91bad9a998598
+#: ../../../src/api/ddoc/common.rst:144
+msgid "Obtains information about the specified design document, including the index, index size and current status of the design document and associated index information."
+msgstr ""
+
+# c906cd784c234571b6490437eb1cbf3f
+# bdf5e805d0ec4908a62c61e2e1d019c9
+#: ../../../src/api/ddoc/common.rst:150
+#: ../../../src/api/ddoc/common.rst:152
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# ecd4cedd98324b8f8b75337af4041ebc
+#: ../../../src/api/ddoc/common.rst:151
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# 1c716063be1c40e982d976be47737fa0
+#: ../../../src/api/ddoc/common.rst:153
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# a9043e4674b64ff895285ee4606dcf6f
+#: ../../../src/api/ddoc/common.rst:158
+msgid "**Request**:"
+msgstr ""
+
+# 6d74ee328d3a423686dc528a5049787c
+#: ../../../src/api/ddoc/common.rst:166
+msgid "**Response**:"
+msgstr ""
+
+# fd4b7e8511174010bfc37d45b0b56b29
+#: ../../../src/api/ddoc/common.rst:197
+msgid "View Index Information"
+msgstr ""
+
+# 899feaed1a03481e882c15a781d5c4e7
+#: ../../../src/api/ddoc/common.rst:199
+msgid "The response from :get:`/{db}/_design/{ddoc}/_info` contains ``view_index`` (*object*) field with the next structure:"
+msgstr ""
+
+# f6cc32bbbd5b4d59b78f786ec25f1136
+#: ../../../src/api/ddoc/common.rst:202
+msgid "**compact_running** (*boolean*):  Indicates whether a compaction routine is currently running on the view"
+msgstr ""
+
+# 10520202789a41b19bcf7347017a79ae
+#: ../../../src/api/ddoc/common.rst:204
+msgid "**data_size** (*number*): Actual size in bytes of the view"
+msgstr ""
+
+# 3a126bc3709e45e1b2330eab80a8deb3
+#: ../../../src/api/ddoc/common.rst:205
+msgid "**disk_size** (*number*): Size in bytes of the view as stored on disk"
+msgstr ""
+
+# 58bb8642a6b44fc2b85615c5fb70e800
+#: ../../../src/api/ddoc/common.rst:206
+msgid "**language** (*string*): Language for the defined views"
+msgstr ""
+
+# f7e35d915cd341fcb8e14386a808db9f
+#: ../../../src/api/ddoc/common.rst:207
+msgid "**purge_seq** (*number*): The purge sequence that has been processed"
+msgstr ""
+
+# 7868e0f047bb46249b1f5b18c56d6299
+#: ../../../src/api/ddoc/common.rst:208
+msgid "**signature** (*string*): MD5 signature of the views for the design document"
+msgstr ""
+
+# 8b701136b23e4b39adaf21c2a7eb9236
+#: ../../../src/api/ddoc/common.rst:209
+msgid "**update_seq** (*number*): The update sequence of the corresponding database that has been indexed"
+msgstr ""
+
+# 6fae2201fdc34a1fa80859f6a312b21d
+#: ../../../src/api/ddoc/common.rst:211
+msgid "**updater_running** (*boolean*): Indicates if the view is currently being updated"
+msgstr ""
+
+# a65a722f30f942218594cce7e940100e
+#: ../../../src/api/ddoc/common.rst:213
+msgid "**waiting_clients** (*number*): Number of clients waiting on views from this design document"
+msgstr ""
+
+# a43f197e76aa4f5d86dbc464721a96de
+#: ../../../src/api/ddoc/common.rst:215
+msgid "**waiting_commit** (*boolean*): Indicates if there are outstanding commits to the underlying database that need to processed"
+msgstr ""

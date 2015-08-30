@@ -1,0 +1,288 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-04-10 20:47+0000\n"
+"Last-Translator: Robert <rok@kowalski.gd>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1397162842.000000\n"
+
+# 4cd6b53abc3d4097b00e0c9168855d56
+#: ../../../src/install/mac.rst:18
+msgid "Installation on Mac OS X"
+msgstr "Installation auf Mac OSX"
+
+# 039f5b442eab41af81ae4959bf05d327
+#: ../../../src/install/mac.rst:24
+msgid "Installation using the Apache CouchDB native application"
+msgstr "CouchDB mit der nativen Apache CouchDB App installieren"
+
+# a3800793c7284f2182b2f5f63de31556
+#: ../../../src/install/mac.rst:26
+msgid "The easiest way to run CouchDB on Mac OS X is through his native Mac OS X application. Just follow the below instructions:"
+msgstr ""
+"In Mac OS X kann man CouchDB am leichtesten mit der nativen Mac OS X "
+"Anwendung installieren:"
+
+# 31cbaafc57c1406fa1eb1c0ee2a218aa
+#: ../../../src/install/mac.rst:29
+msgid "`Download Apache CouchDB for Mac OS X`_. Old releases are available at `archive`_."
+msgstr ""
+"`Download Apache CouchDB for Mac OS X`_. Alte Releases erhält man im "
+"`archive`_."
+
+# 0623ae46d22a4b2290745154c4716575
+#: ../../../src/install/mac.rst:31
+msgid "Double click on the Zip file"
+msgstr "Mache einen Doppelklick auf die Zip-Datei"
+
+# cb421047ff4a4b649c7c7ef1b1311a13
+#: ../../../src/install/mac.rst:32
+msgid "Drag and drop the Apache CouchDB.app into Applications folder"
+msgstr "Ziehe die Apache CouchDB.app in den Ordner Programme"
+
+# 55a43258fac84fe3bc5f7470529d300a
+#: ../../../src/install/mac.rst:37
+msgid "That's all, now CouchDB is installed on your Mac:"
+msgstr "Das wars, die CouchDB ist jetzt auf deinem Mac installiert:"
+
+# a43d0ee9fd9742f0a1ae79c33149220a
+#: ../../../src/install/mac.rst:39
+msgid "Run Apache CouchDB application"
+msgstr "Die Apache CouchDB starten"
+
+# db1176b5936442bb887a494b8ec68477
+#: ../../../src/install/mac.rst:40
+msgid "`Open up Futon`_, the CouchDB admin interface"
+msgstr "`Open up Futon`_, die CouchDB Adminstrationsoberfläche"
+
+# 90295ddea0564da89c262081dd810bf6
+#: ../../../src/install/mac.rst:41
+msgid "Time to Relax!"
+msgstr "Time to Relax!"
+
+# 105504aefbae48199530b0e7eab8da71
+#: ../../../src/install/mac.rst:48
+msgid "Installation with HomeBrew"
+msgstr "Mit Homebrew installieren"
+
+# f51e74b5b9034730a7fcf3e30a789459
+#: ../../../src/install/mac.rst:50
+msgid "You can install the build tools by running::"
+msgstr "Installiere die Build-Tools, um CouchDB zu kompilieren::"
+
+# d17ca4c7b6b1407cbaab4e3849779ba9
+#: ../../../src/install/mac.rst:54
+msgid "You will need `Homebrew`_ installed to use the `brew` command. To install the other :ref:`dependencies <install/unix/dependencies>` run next commands::"
+msgstr ""
+"Um den `brew` Befehl nutzen zu können muss `Homebrew`_ installiert sein. Um "
+"die anderen :ref:`Abhängigkeiten <install/unix/dependencies>` zu "
+"installieren gibt man folgende Befehle ein::"
+
+# 73ee42327c7747ba84594cb073881602
+#: ../../../src/install/mac.rst:66
+msgid "You may want to link ICU so that CouchDB can find the header files automatically::"
+msgstr ""
+"Damit CouchDB die Headerfiles automatisch findet, kannst du ICU linken::"
+
+# bb0a51cda6b64e46914ed6b17b0b27d1
+#: ../../../src/install/mac.rst:71
+msgid "The same is true for recent versions of Erlang::"
+msgstr "Das gilt auch für die neueste Erlang Version::"
+
+# 1d2ebcca224e4052bbbcd6b81af7c876
+#: ../../../src/install/mac.rst:75
+msgid "Now it's time to brew CouchDB::"
+msgstr "Nun können wir CouchDB installieren::"
+
+# 4d3eacbb66244ab59e14b74cd3f32b1f
+#: ../../../src/install/mac.rst:80
+msgid "The above Erlang install will use the bottled (pre-compiled) version if you are: using `/usr/local` for `homebrew`, and on 10.6 or 10.7. If you're not on one of these, `homebrew` will build from source, so consider doing::"
+msgstr ""
+"Die vorkompilierte Version wird installiert, wenn man auf 10.6 und 10.7 ist "
+"und  `/usr/local` für `homebrew` nutzt. Falls dies nicht der Fall ist, "
+"benutze folgendes::"
+
+# e35c2f6df37748d4a615567866e05d72
+#: ../../../src/install/mac.rst:86
+msgid "to trim down compilation time."
+msgstr "um die Zeit für das kompilieren etwas abzukürzen."
+
+# 4e085af60f5b405ba6972c7c10d7bdba
+#: ../../../src/install/mac.rst:88
+msgid "If you're hacking on CouchDB, and we hope you will, you may try the current git-based master (head) branch, or the next development release using this ``couchdb`` recipe, using either ``--head`` or ``--devel`` options respectively. This will allow quick installation of the future release branch when it becomes active. If you're not sure if you need this, then you probably don't. In both cases we assume you are comfortable identifying bugs, and handling any potential upgrades between commits to the codebase."
+msgstr ""
+"Falls du an CouchDB hackst, worüber wir uns freuen würden, kannst du dir den "
+"derzeitigen git master Branch auschecken oder das nächste development "
+"Release mit dem ``couchdb`` Rezept und den Parametern ``--head`` oder "
+"``--devel`` installieren. So kannst du neue, zukünftige Release Branches "
+"schnell installieren. Wenn du nicht sicher bist, ob du das benötigst, wirst "
+"du diese Installation wahrscheinlich nicht brauchen. Du solltest mit Bugs "
+"leben können und die Codebase nach ein paar Commits updaten."
+
+# b2f88d5c5022446cba878746cb1ac52e
+#: ../../../src/install/mac.rst:102
+msgid "OS X Lion might hang on the final brew. See the thread at https://github.com/mxcl/homebrew/issues/7024 it seems in most cases to be resolved by breaking out with ``CTRL-C`` and then repeating with ``brew install -v couchdb``."
+msgstr ""
+"Es kann passieren dass OS X Lion bei der Installation via Homebrew nicht "
+"mehr reagiert. Es gibt einen Thread unter "
+"https://github.com/mxcl/homebrew/issues/7024 und das Problem scheint in den "
+"meisten Fällen durch ein ``CTRL-C`` mit anschließendem ``brew install -v "
+"couchdb`` behoben zu werden."
+
+# 60d65def2d7f4b62a2a2c7a2bd6a55a1
+#: ../../../src/install/mac.rst:107
+msgid "If you wish to have CouchDB run as a daemon then, set up the account, using the \"User & Groups\" preference pane:"
+msgstr ""
+"Wenn du CouchDB als einen Daemon aufsetzen willst, klicke auf \"Benutzer & "
+"Gruppen\" in den Einstellungen:"
+
+# 92c5b7a2d1b141928900486d3269d087
+#: ../../../src/install/mac.rst:110
+msgid "Create a standard user `couchdb` with home directory as `/usr/local/var/lib/couchdb`"
+msgstr ""
+"Erstelle einen normalen Benutzer `couchdb` mit dem Homeverzeichnis "
+"`/usr/local/var/lib/couchdb`"
+
+# 7f722264b90148bca5b543fca5bd3c15
+#: ../../../src/install/mac.rst:113
+msgid "Create a group called `couchdb` and add yourself, the `couchdb` user, and any others you want to be able to edit config or db files directly to it. Use the `advanced` group options to ensure the internal name is also correctly called `couchdb`."
+msgstr ""
+"Erstelle eine Gruppe `couchdb` und füge dich selbst, alle anderen Benutzer "
+"die Konfigurationsdateien oder Datenbankdateien editieren können sollen und "
+"den Benutzer `couchdb` hinzu. In dem Screen `Erweiterte Optionen` sollte der "
+"interne Name auch für den Benutzer `couchdb` auch `couchdb` lauten."
+
+# 4e4574781324428a9c8abc9691578721
+#: ../../../src/install/mac.rst:118
+msgid "Some versions of Mac OS X ship a problematic OpenSSL library. If you're experiencing troubles with CouchDB crashing intermittently with a segmentation fault or a bus error, you will need to install your own version of OpenSSL."
+msgstr ""
+"Einige Versionen von Mac OS X kommen mit OpenSSL Bibliotheken, die Probleme "
+"verursachen. Wenn deine CouchDB zwischendurch mit Segmentation Faults oder "
+"einem Bus-Error abstürzt solltest du deine eigene OpenSSL Version "
+"installieren."
+
+# 10b63817cad24074975725db66f8917b
+#: ../../../src/install/mac.rst:126
+msgid "Running as a Daemon"
+msgstr "Als Daemon betreiben"
+
+# 6389f378ade04ab2b23311e9a180da6c
+#: ../../../src/install/mac.rst:128
+msgid "You can use the `launchctl` command to control the CouchDB daemon."
+msgstr ""
+"Um den CouchDB Daemon zu steuern kannst du den `launchctl` Befehl benutzen."
+
+# 55df1114022d4a6ea249f3d6130ac09a
+#: ../../../src/install/mac.rst:130
+msgid "You can load the configuration by running::"
+msgstr "Du kannst die Konfiguration so laden::"
+
+# b229e31c0c624930b20470e9744d2161
+#: ../../../src/install/mac.rst:135
+msgid "You can stop the CouchDB daemon by running::"
+msgstr "Du kannst den CouchDB Daemon so stoppen::"
+
+# 77f3b988551449099962f9c35bcf4ba5
+#: ../../../src/install/mac.rst:140
+msgid "You can start CouchDB by running::"
+msgstr "So kannst du CouchDB starten::"
+
+# 37e79edc669d46a190ea4c9819db6a9f
+#: ../../../src/install/mac.rst:144
+msgid "You can restart CouchDB by running::"
+msgstr "Du kannst CouchDB so neustarten::"
+
+# b84e3c8ffbdd4e72aefb15e4bf56c196
+#: ../../../src/install/mac.rst:148
+msgid "You can edit the launchd configuration by running::"
+msgstr "Du kannst die launchd Konfiguration so editieren::"
+
+# 1a6456159472445d99dcf98af1c102df
+#: ../../../src/install/mac.rst:152
+msgid "To start the daemon on boot, copy the configuration file to::"
+msgstr ""
+"Um den Daemon beim booten zu starten, kopiere die Konfigurationsdatei "
+"hierhin::"
+
+# 6a96f5cd73414013b7ed33adb486b122
+#: ../../../src/install/mac.rst:156
+msgid "Consult your system documentation for more information."
+msgstr "In deiner Systemdokumentation findest du nähere Details."
+
+# 7df81668add744b1b921687680b15d3b
+#: ../../../src/install/mac.rst:161
+msgid "Installation from MacPorts"
+msgstr "Von MacPorts installieren"
+
+# 6ec12a89b59e48ddad6ca5554b2c4c56
+#: ../../../src/install/mac.rst:163
+msgid "To install CouchDB using MacPorts you have 2 package choices:"
+msgstr "Es gibt zwei Pakete um CouchDB mit Hilfe von MacPorts zu installieren:"
+
+# 37f7281efd594f92a96e0624fefecf8e
+#: ../../../src/install/mac.rst:165
+msgid "``couchdb`` - the latest release version"
+msgstr "``couchdb`` - das neueste Stable Release"
+
+# 6b028f5ddf494aa992c6cb693f223271
+#: ../../../src/install/mac.rst:166
+msgid "``couchdb-devel`` - updated every few weeks with the latest from the master branch"
+msgstr ""
+"``couchdb-devel`` - wird alle paar Wochen mit den letzten Änderungen aus dem "
+"Masterbranch aktualisiert"
+
+# 12d4c80538d74fc48abd186989a62038
+#: ../../../src/install/mac.rst:173
+msgid "should be enough. MacPorts takes care of installing all necessary dependencies. If you have already installed some of the CouchDB dependencies via MacPorts, run this command to check and upgrade any outdated ones, after installing CouchDB::"
+msgstr ""
+"sollte ausreichen. MacPorts wird alle benötigten Abhängigkeiten "
+"installieren. Falls du schon einige Abhängigkeiten per MacPorts installiert "
+"hast, führe folgenden Befehl nach der Installation von CouchDB aus um sie zu "
+"überprüfen und ggf. zu aktualisieren::"
+
+# d12d7a59939645ed85ad1b3c56596da6
+#: ../../../src/install/mac.rst:180
+msgid "This will upgrade dependencies recursively, if there are more recent versions available. If you want to run CouchDB as a service controlled by the OS, load the launchd configuration which comes with the project, with this command::"
+msgstr ""
+"Damit updatest du alle Abhängigkeiten. Wenn du CouchDB als Beriebssystem-"
+"Service starten willst, lade einfach die mitgelieferte launchd "
+"Konfiguration::"
+
+# 8918e1194bce4ea0b4eddb9781dcf035
+#: ../../../src/install/mac.rst:186
+msgid "and it should be up and accessible via Futon at http://127.0.0.1:5984/_utils. It should also be restarted automatically after reboot."
+msgstr ""
+"und CouchDB sollte starten und Futon unter http://127.0.0.1:5984/_utils "
+"erreichbar sein. CouchDB sollte nun auch nach einem Neustart des "
+"Betriebsystems automatisch starten."
+
+# 8a0e980838b74ae3a08d0338683b1244
+#: ../../../src/install/mac.rst:189
+msgid "Updating the ports collection. The collection of port files has to be updated to reflect the latest versions of available packages. In order to do that run::"
+msgstr ""
+"Damit man die neuesten Version von einem Paket bekommt, sollte man seine "
+"ports-Dateien regelmäßig aktualisieren. Führe einfach folgendes aus::"
+
+# 2ea4a5d3ffa44355b5a083039a1d0546
+#: ../../../src/install/mac.rst:194
+msgid "to update the port tree, and then install just as explained."
+msgstr ""
+"Damit wird der Baum von Abhängigkeiten in ports aktualisiert und du kannst "
+"wie beschrieben installieren."

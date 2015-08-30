@@ -1,0 +1,164 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-04-25 13:37+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1398433021.000000\n"
+
+# 11d98138e0f14de794fa48b328ff5287
+#: ../../../src/replication/intro.rst:16
+msgid "Introduction Into Replications"
+msgstr "Replikation - eine Einführung"
+
+# 1971ff2cf4d34f91bc166e0a0ea3bcf1
+#: ../../../src/replication/intro.rst:18
+msgid "One of CouchDB's strengths is the ability to synchronize two copies of the same database. This enables users to distribute data across several nodes or datacenters, but also to move data more closely to clients."
+msgstr ""
+"Eine der Stärken von CouchDB ist die Fähigkeit zwei Kopien der gleichen "
+"Datenbank zu synchronisieren. Dies ermöglicht es Nutzern Daten über mehrere "
+"Knoten (Nodes) oder Datenzentren zu verteilen. Ausserdem ermöglicht es Daten "
+"räumlich näher zum Nutzer zu bringen."
+
+# 3dcc8eebb42d4f00a74899c8adc38c24
+#: ../../../src/replication/intro.rst:22
+msgid "Replication involves a source and a destination database, which can be one the same or on different CouchDB instances. The aim of the replication is that at the end of the process, all active documents on the source database are also in the destination database and all documents that were deleted in the source databases are also deleted on the destination database (if they even existed)."
+msgstr ""
+"Replikation beinhaltet eine Ausgangs- und eine Ziel-Datenbank, die auf der "
+"gleichen oder unterschiedlichen CouchDB-Instanzen liegen können.  Das Ziel "
+"der Replikation ist es am Ende des Prozesses alle aktiven Dokumente in der "
+"Ausgangs-Datenbank auch in der Ziel-Datenbank vorzufinden und alle "
+"gelöschten Dokumente der Ausgangs-Datenbank auch in der Ziel-Datenbank ("
+"sofern vorhanden) gelöscht zu haben."
+
+# f0e67c3fd351481bac47c83a40cab7de
+#: ../../../src/replication/intro.rst:30
+msgid "Triggering Replication"
+msgstr "Die Replikation anstoßen"
+
+# 282dd27deb8342038d4ee8ca3f6ed91a
+#: ../../../src/replication/intro.rst:32
+msgid "Replication is controlled through documents in the :ref:`replicator`, where each document describes one replication process (see :ref:`replication-settings`)."
+msgstr ""
+"Eine Replikation wird über Dokumente in der :ref:`_replicator <replicator>` "
+"Datenbank gesteuert, wobei ein Dokument einen Replikations-Prozess definiert "
+"(siehe :ref:`replication-settings`)."
+
+# 4a4d57be36664914a29b6c0066ae8f7d
+#: ../../../src/replication/intro.rst:36
+msgid "A replication is triggered by storing a replication document in the replicator database. Its status can be inspected through the active tasks API (see :ref:`api/server/active_tasks` and :ref:`replication-status`). A replication can be stopped by deleting the document, or by updating it with its `cancel` property set to `true`."
+msgstr ""
+"Eine Replikation wird ausgelöst, indem ein Dokument in der Replikator "
+"Datenbank gespeichert wird. Der Status kann über die active-tasks-API "
+"eingesehen werden (siehe :ref:`api/server/active_tasks` und :ref"
+":`replication-status`). Eine Replikation kann angehalten werden, indem das "
+"entsprechende Dokument gelöscht wird oder indem dieses aktualisiert wird mit "
+"der Eigenschaft `cancel` auf `true`."
+
+# 0167d185c73e45e2b1c1a7007d79fa6c
+#: ../../../src/replication/intro.rst:44
+msgid "Replication Procedure"
+msgstr "Der Replikations-Vorgang"
+
+# 3a6bfebd2d37492b9950386cb0f2a98f
+#: ../../../src/replication/intro.rst:46
+msgid "During replication, CouchDB will compare the source and the destination database to determine which documents differ between the source and the destination database. It does so by following the :ref:`changes` on the source and comparing the documents to the destination. Changes are submitted to the destination in batches where they can introduce conflicts. Documents that already exist on the destination in the same revision are not transferred. As the deletion of documents is represented by a new revision, a document deleted on the source will also be deleted on the target."
+msgstr ""
+"Während der Replikation wird CouchDB die Ausgangs- und Ziel-Datenbank "
+"vergleichen um heraus zu finden, welche Dokumente sich unterscheiden. Dies "
+"wird über den :ref:`changes` feed auf der Ausgangs- und Ziel-Datenbank "
+"getan. Änderungen werden in Stapeln (batches) zur Ziel-Datenbank übertragen "
+"wobei dort Konflikte entstehen können. Dokumente die in der Ziel-Datenbank "
+"mit der selben Revision bereits existieren, werden nicht übertragen. Da das "
+"Löschen eines Dokumentes durch eine neue Revision dargestellt wird, wird das "
+"Dokument auf der Ausgangs- und auch auf der Ziel-Datenbank gelöscht."
+
+# 73895d56759848438425a301817d19b0
+#: ../../../src/replication/intro.rst:55
+msgid "A replication task will finish once it reaches the end of the changes feed. If its `continuous` property is set to true, it will wait for new changes to appear until the task is cancelled. Replication tasks also create checkpoint documents on the destination to ensure that a restarted task can continue from where it stopped, for example after it has crashed."
+msgstr ""
+"Ein gestarteter Replikations-Job wird enden, wenn das Ende des \"changes "
+"feed\" erreicht ist. Wenn die `continuous` Eigenschaft auf true gesetzt ist, "
+"wird auf neue \"changes\" gewartet und die Repliaktion fortgeführt, bis der "
+"Job manuell beendet wird. Während einer Replikation werden \"checkpoint\"-"
+"Dokumente auf dem Ziel erstellt um sicher zu stellen, dass ein erneutes "
+"Starten der Replikation genau dort fortgeführt wird, wo die vorherige "
+"beendet wurde - z.B. durch einen \"Crash\"."
+
+# 3549e404788f4a5bbd21c46502f32238
+#: ../../../src/replication/intro.rst:61
+msgid "When a replication task is initiated on the sending node, it is called *push* replication, if it is initiated by the receiving node, it is called *pull* replication."
+msgstr ""
+"Wenn ein Replikations-Job auf dem sendenden Knoten gestartet wird, handelt "
+"es sich um eine *push* Replikation. Wenn sie auf dem empfangenden Knoten "
+"gestartet wurde, handelt es sich um einen *pull* Replikation."
+
+# 8a95397a6c3f49558291d2599415a2fc
+#: ../../../src/replication/intro.rst:67
+msgid "Master - Master replication"
+msgstr "Master - Master Replikation"
+
+# 25facb02b9694371b465a01abecd401b
+#: ../../../src/replication/intro.rst:69
+msgid "One replication task will only transfer changes in one direction. To achieve master-master replication it is possible to set up two replication tasks in different directions. When a change is replication from database A to B by the first task, the second will discover that the new change on B already exists in A and will wait for further changes."
+msgstr ""
+"Ein Replikations-Job überträgt Änderungen immer nur in eine Richtung. Um "
+"eine Master-Master Replikation zu verwirklichen, können zwei Replikations-"
+"Jobs in entgegen gesetzter Richtung eingerichtet werden. Wird eine Änderung "
+"von Datenbank A zu B durch den ersten Job repliziert, wird der zweite Job "
+"von B nach A feststellen, dass die Änderung von B bereits auf A existiert "
+"und warten bis weitere Änderungen eintreffen."
+
+# 745e1c0759454a95952f08ffd76d3a32
+#: ../../../src/replication/intro.rst:77
+msgid "Controlling which Documents to Replicate"
+msgstr "Festlegen, welche Dokumente repliziert werden sollen"
+
+# 626d2c277ebf4b08883f640660a49c81
+#: ../../../src/replication/intro.rst:79
+msgid "There are two ways for controlling which documents are replicated, and which are skipped. *Local* documents are never replicated (see :ref:`api/local`)."
+msgstr ""
+"Es gibt zwei Weg festzulegen, welche Dokumente repliziert werden sollen und "
+"welche ausgelassen werden. *Lokale* Dokumente werden niemals repliziert ("
+"siehe ref:`api/local`)."
+
+# e17b72e24a8145a6b069ee37ead4e1e5
+#: ../../../src/replication/intro.rst:82
+msgid "Additionally, :ref:`filterfun` can be used in a replication documents (see :ref:`replication-settings`). The replication task will then evaluate the filter function for each document in the changes feed. The document will only be replicated if the filter returns `true`."
+msgstr ""
+"Ausserdem kann :ref:`filterfun` in einer Replikation genutzt werden (siehe "
+":ref:`replication-settings`). Der Replikations-Job wird die Filter-Funktion "
+"auf jedes Dokument im changes feed anwenden. Das Dokument wird nur "
+"repliziert, wenn das Ergebnis der Filter Funktion `true` ist."
+
+# e6ca2e31915942c6be7e82cebf9d1d58
+#: ../../../src/replication/intro.rst:89
+msgid "Migrating Data to Clients"
+msgstr "Daten zu Nutzern migrieren"
+
+# 863fb53c2f194b8fbfd38f17f7a327f1
+#: ../../../src/replication/intro.rst:91
+msgid "Replication can be especially useful for bringing data closer to clients. `PouchDB <http://pouchdb.com/>`_ implements the replication algorithm of CouchDB in JavaScript, making it possible to make data from a CouchDB database available in an offline browser application, and synchronize changes back to CouchDB."
+msgstr ""
+"Replikation kann besonders nützlich sein. um Daten näher zu Nutzern zu "
+"bringen. `PouchDB <http://pouchdb.com/>`_ hat den CouchDB Replikations-"
+"Algorithmus implementiert um Daten aus einer CouchDB Datenbank in einer "
+"Browser-Applikation offline zur Verfügung zu stellen und Änderungen zurück "
+"zu CouchDB zu synchronisieren."

@@ -1,0 +1,37 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# ffae74efb0924ac08baeebeed19f4dd2
+#: ../../../src/query-server/index.rst:17
+msgid "Query Server"
+msgstr ""
+
+# baf68ecb57c04b9db8975208b03766b8
+#: ../../../src/query-server/index.rst:19
+msgid "The `Query server` is an external process that communicates with CouchDB by JSON protocol through stdio interface and processed all :ref:`design functions <ddocs>` calls: :ref:`views <viewfun>`, :ref:`shows <showfun>`, :ref:`lists <listfun>` and more."
+msgstr ""
+
+# ef80f57f50da4645a8d044f2ff8cd1ae
+#: ../../../src/query-server/index.rst:24
+msgid "The default query server is written in :ref:`JavaScript <query-server/js>`, running via `Mozilla SpiderMonkey`_. You can use other languages by setting a Query server key in the ``language`` property of a design document or the `Content-Type` header of a `temporary view`. Design documents that do not specify a ``language`` property are assumed to be of type `javascript`, as are ad hoc queries that are POSTed to :ref:`_temp_view <api/db/temp_view>` without a `Content-Type` header."
+msgstr ""

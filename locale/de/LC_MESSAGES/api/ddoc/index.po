@@ -1,0 +1,50 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2013-11-25 22:00+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0-rc1\n"
+"X-POOTLE-MTIME: 1385416820.0\n"
+
+# 009748834a8d4b358d524425c75a290b
+#: ../../../src/api/ddoc/index.rst:18
+msgid "Design Documents"
+msgstr "Design Dokumente"
+
+# 67b5e3b3811b4519a30e1e803b2fd0d6
+#: ../../../src/api/ddoc/index.rst:20
+msgid "In CouchDB, design documents provide the main interface for building a CouchDB application. The design document defines the views used to extract information from CouchDB through one or more views. Design documents are created within your CouchDB instance in the same way as you create database documents, but the content and definition of the documents is different. Design Documents are named using an ID defined with the design document URL path, and this URL can then be used to access the database contents."
+msgstr ""
+"In CouchDB bieten die Design Dokumente die Haupt-Schnittstelle um eine "
+"CouchDB-Applikation zu erstellen. Über das Design Dokument werden Views "
+"definiert die genutzt werden, um Informationen durch einen oder mehrere "
+"Views aus CouchDB zu extrahieren. Design Dokumente werden dabei auf die "
+"gleiche Art und Weise wie Dokumente erstellt wobei sich der Inhalt und die "
+"Definition dieser Dokumente von den anderen unterscheidet. Design Dokumente "
+"werden nach einer ID benannt die dem Design-Dokument URL-Pfad entspricht. "
+"Diese URL kann dann genutzt werden um auf die Inhalte der Datenbank "
+"zuzugreifen."
+
+# 80f3bba21b04457a90a84c4032f22a6b
+#: ../../../src/api/ddoc/index.rst:29
+msgid "Views and lists operate together to provide automated (and formatted) output from your database."
+msgstr ""
+"Views und Lists arbeiten zusammen um automatisiert (und formatiert) Inhalte "
+"aus der deiner Datenbank zur Verfügung zu stellen."

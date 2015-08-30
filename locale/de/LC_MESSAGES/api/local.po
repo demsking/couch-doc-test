@@ -1,0 +1,153 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 723b26e4eaa04a7ca126f5c8c3ebb38c
+#: ../../../src/api/local.rst:17
+msgid "Local (non-replicating) Documents"
+msgstr ""
+
+# ad58ebef92004376a18afb3238fe7bc8
+#: ../../../src/api/local.rst:19
+msgid "The Local (non-replicating) document interface allows you to create local documents that are not replicated to other databases. These documents can be used to hold configuration or other information that is required specifically on the local CouchDB instance."
+msgstr ""
+
+# fd5bef44cfc24ee68650ffb12706a8ba
+#: ../../../src/api/local.rst:24
+msgid "Local documents have the following limitations:"
+msgstr ""
+
+# 20bd59627df8498aa368a45d16286448
+#: ../../../src/api/local.rst:26
+msgid "Local documents are not replicated to other databases."
+msgstr ""
+
+# 76461385f323424c98b41f983ba8d05d
+#: ../../../src/api/local.rst:28
+msgid "The ID of the local document must be known for the document to accessed. You cannot obtain a list of local documents from the database."
+msgstr ""
+
+# 5a347b04709f4aa1a1de8a37730450df
+#: ../../../src/api/local.rst:32
+msgid "Local documents are not output by views, or the :ref:`api/db/all_docs` view."
+msgstr ""
+
+# d818bb73f0214f88b515a41cee4a6dfb
+#: ../../../src/api/local.rst:34
+msgid "Local documents can be used when you want to store configuration or other information for the current (local) instance of a given database."
+msgstr ""
+
+# 2066440c23fb469f8963f9dab1ae94f8
+#: ../../../src/api/local.rst:37
+msgid "A list of the available methods and URL paths are provided below:"
+msgstr ""
+
+# c7acc05ab8764c6fa0f4b4afe3f65e0b
+#: ../../../src/api/local.rst:40
+msgid "Method"
+msgstr ""
+
+# 6875d776d46040bd982663163753f0dd
+#: ../../../src/api/local.rst:40
+msgid "Path"
+msgstr ""
+
+# 6534ef57cce74685b03eaaf637bd8a7d
+#: ../../../src/api/local.rst:40
+msgid "Description"
+msgstr ""
+
+# f7121455151a479baf23846e35f21eb8
+#: ../../../src/api/local.rst:42
+msgid "GET"
+msgstr ""
+
+# ae625099343543e2b034924692844143
+# 6cd189a68439453c9343c611e96e32cc
+# 2b485f5f1ba5425cbd3d2520fec1821b
+# e201e39b15c244e6a05ba8eb9837e3c7
+#: ../../../src/api/local.rst:42
+#: ../../../src/api/local.rst:45
+#: ../../../src/api/local.rst:48
+#: ../../../src/api/local.rst:50
+msgid "/db/_local/id"
+msgstr ""
+
+# dd682ac3b9fe4db0bcff401587336c38
+#: ../../../src/api/local.rst:42
+msgid "Returns the latest revision of the non-replicated document"
+msgstr ""
+
+# 4df460b9871841119f1863c45cb8c318
+#: ../../../src/api/local.rst:45
+msgid "PUT"
+msgstr ""
+
+# cf08285ef6a44089813188ac18810323
+#: ../../../src/api/local.rst:45
+msgid "Inserts a new version of the non-replicated document"
+msgstr ""
+
+# 876f2edbd9a04e58babb8c89e01dc2fb
+#: ../../../src/api/local.rst:48
+msgid "DELETE"
+msgstr ""
+
+# aa214669fae04fe29acf5c8a24328173
+#: ../../../src/api/local.rst:48
+msgid "Deletes the non-replicated document"
+msgstr ""
+
+# 05bb9bc606994bb3b430fd690f9ee43e
+#: ../../../src/api/local.rst:50
+msgid "COPY"
+msgstr ""
+
+# f224233c6fce4367af0b8f316c416835
+#: ../../../src/api/local.rst:50
+msgid "Copies the non-replicated document"
+msgstr ""
+
+# 5f8f926215d44b9aa69e77328d22ec04
+#: ../../../src/api/local.rst:56
+msgid "``/db/_local/id``"
+msgstr ""
+
+# d3a984f4121a4481b6a60b6193abdf71
+#: ../../../src/api/local.rst:60
+msgid "Gets the specified local document. The semantics are identical to accessing a standard document in the specified database, except that the document is not replicated. See :get:`/{db}/{docid}`."
+msgstr ""
+
+# ad4f60ef15d446f1b3c96a7d1aaf2d5c
+#: ../../../src/api/local.rst:66
+msgid "Stores the specified local document. The semantics are identical to storing a standard document in the specified database, except that the document is not replicated. See :put:`/{db}/{docid}`."
+msgstr ""
+
+# 675a6e151fb24c76b84206cd1f30fd22
+#: ../../../src/api/local.rst:72
+msgid "Deletes the specified local document. The semantics are identical to deleting a standard document in the specified database, except that the document is not replicated. See :delete:`/{db}/{docid}`."
+msgstr ""
+
+# 77c88154461c48358b0698c51c7136a1
+#: ../../../src/api/local.rst:78
+msgid "Copies the specified local document. The semantics are identical to copying a standard document in the specified database, except that the document is not replicated. See :copy:`/{db}/{docid}`."
+msgstr ""

@@ -1,0 +1,438 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 5b1027fdc2aa4173a6184fda828ade25
+#: ../../../src/whatsnew/1.1.rst:18
+msgid "1.1.x Branch"
+msgstr ""
+
+# 668f4947b7444daeb556fc28878de9a1
+#: ../../../src/whatsnew/1.1.rst:28
+msgid "Upgrade Notes"
+msgstr ""
+
+# d859ef1410734e41b5e21a7c843dc551
+#: ../../../src/whatsnew/1.1.rst:32
+msgid ":ref:`release/1.1.2` contains important security fixes. Previous `1.1.x` releases are not recommended for regular usage."
+msgstr ""
+
+# 429b4e5ab1b64372bc216e1124895e9a
+#: ../../../src/whatsnew/1.1.rst:39
+msgid "Version 1.1.2"
+msgstr ""
+
+# 969dc3d646d84a63a68097df52653d17
+#: ../../../src/whatsnew/1.1.rst:42
+msgid "Build System"
+msgstr ""
+
+# b78ececf76054141a7fc0c8be1c0656a
+#: ../../../src/whatsnew/1.1.rst:44
+msgid "Don't `ln` the `couchjs` install target on Windows"
+msgstr ""
+
+# 82579a278800414cac5e02dd106d1d91
+#: ../../../src/whatsnew/1.1.rst:45
+msgid "Remove ICU version dependency on Windows."
+msgstr ""
+
+# 0d90b5c003fc43c5b464ebbeda05482c
+#: ../../../src/whatsnew/1.1.rst:46
+msgid "Improve SpiderMonkey version detection."
+msgstr ""
+
+# a81e91127a9b490cade36679e7981a22
+# 65fcfca7c8504adbaf2b4c84beb016ec
+#: ../../../src/whatsnew/1.1.rst:49
+#: ../../../src/whatsnew/1.1.rst:132
+msgid "HTTP Interface"
+msgstr ""
+
+# b805e6ff454244d38592247d0fab1e03
+#: ../../../src/whatsnew/1.1.rst:51
+msgid "ETag of attachment changes only when the attachment changes, not the document."
+msgstr ""
+
+# 2d50b53ba7724c0abd11d3d30d15e56e
+#: ../../../src/whatsnew/1.1.rst:53
+msgid "Fix retrieval of headers larger than 4k."
+msgstr ""
+
+# 2873027c1e734a9da460ec5b0902f990
+#: ../../../src/whatsnew/1.1.rst:54
+msgid "Allow OPTIONS HTTP method for list requests."
+msgstr ""
+
+# c80238e9fcfb4b0c885f85d9a4c80839
+#: ../../../src/whatsnew/1.1.rst:55
+msgid "Don't attempt to encode invalid json."
+msgstr ""
+
+# 3505ebe3d654490dbc902d9550d57ab9
+#: ../../../src/whatsnew/1.1.rst:58
+msgid "Log System"
+msgstr ""
+
+# 232bfa8f07594a649e724b2c493cd861
+#: ../../../src/whatsnew/1.1.rst:60
+msgid "Improvements to log messages for file-related errors."
+msgstr ""
+
+# ebd10fb744d4451fb140a9ac272ec3ce
+# 63f46ba7dd8b41dc9eb03f44a21242a0
+#: ../../../src/whatsnew/1.1.rst:63
+#: ../../../src/whatsnew/1.1.rst:148
+msgid "Replicator"
+msgstr ""
+
+# bb9c17da309c4ddb9a9d088e237cdef7
+#: ../../../src/whatsnew/1.1.rst:65
+msgid "Fix pull replication of documents with many revisions."
+msgstr ""
+
+# 07dfcd16f7394c17b1a352373d994c4f
+#: ../../../src/whatsnew/1.1.rst:66
+msgid "Fix replication from an HTTP source to an HTTP target."
+msgstr ""
+
+# c21534ad295c4b26aed75a99309e1265
+#: ../../../src/whatsnew/1.1.rst:69
+msgid "Security"
+msgstr ""
+
+# 63e9d36e0353468e81b29bc1ffd8f062
+#: ../../../src/whatsnew/1.1.rst:71
+msgid "Fixed :ref:`cve/2012-5641`"
+msgstr ""
+
+# fd541ed1221747559e8e48137f7724b1
+#: ../../../src/whatsnew/1.1.rst:72
+msgid "Fixed :ref:`cve/2012-5649`"
+msgstr ""
+
+# aad251585a3b47c6afc626765079bbfa
+#: ../../../src/whatsnew/1.1.rst:73
+msgid "Fixed :ref:`cve/2012-5650`"
+msgstr ""
+
+# e787066ec4e34e9ab03dfdfd6756077d
+# 47af143ecd6f4ff5afb3ce2bbfb128e9
+#: ../../../src/whatsnew/1.1.rst:76
+#: ../../../src/whatsnew/1.1.rst:167
+msgid "View Server"
+msgstr ""
+
+# a10eebee252c40fdb63c8715c369373b
+#: ../../../src/whatsnew/1.1.rst:78
+msgid "Avoid invalidating view indexes when running out of file descriptors."
+msgstr ""
+
+# 1ebdb06f7ced4574a8a7b521134842d5
+#: ../../../src/whatsnew/1.1.rst:84
+msgid "Version 1.1.1"
+msgstr ""
+
+# 45247d2d5b444e3db375fa5f1f3bed46
+#: ../../../src/whatsnew/1.1.rst:86
+msgid "Support SpiderMonkey 1.8.5"
+msgstr ""
+
+# 7f1fabbb757d40b489315db5bdf8173d
+#: ../../../src/whatsnew/1.1.rst:87
+msgid "Add configurable maximum to the number of bytes returned by _log."
+msgstr ""
+
+# d591c3bc92db42f09b3976dfcc9a021f
+#: ../../../src/whatsnew/1.1.rst:88
+msgid "Allow CommonJS modules to be an empty string."
+msgstr ""
+
+# 7c87ac81997e45d4889ffd32f0d7f308
+#: ../../../src/whatsnew/1.1.rst:89
+msgid "Bump minimum Erlang version to R13B02."
+msgstr ""
+
+# b59d4f24b2814e2aa11cc309a730cf9d
+#: ../../../src/whatsnew/1.1.rst:90
+msgid "Do not run deleted validate_doc_update functions."
+msgstr ""
+
+# 8cabc34c4eec4336b933ca41cb9bcaab
+#: ../../../src/whatsnew/1.1.rst:91
+msgid "ETags for views include current sequence if include_docs=true."
+msgstr ""
+
+# a847c7f8026649e89b25ef763f92ab7e
+#: ../../../src/whatsnew/1.1.rst:92
+msgid "Fix bug where duplicates can appear in _changes feed."
+msgstr ""
+
+# 183cbe7d10dd4cd585da2ece4a064b34
+#: ../../../src/whatsnew/1.1.rst:93
+msgid "Fix bug where update handlers break after conflict resolution."
+msgstr ""
+
+# f2a922747f014763826832e0d7075ef6
+#: ../../../src/whatsnew/1.1.rst:94
+msgid "Fix bug with _replicator where include \"filter\" could crash couch."
+msgstr ""
+
+# dc06e772b61441a6b9a385a2a36b119e
+#: ../../../src/whatsnew/1.1.rst:95
+msgid "Fix crashes when compacting large views."
+msgstr ""
+
+# 17e8e1c9063f4ce0ab570d138ed52835
+#: ../../../src/whatsnew/1.1.rst:96
+msgid "Fix file descriptor leak in _log"
+msgstr ""
+
+# c70a40704d7e4232bd72ce5246866571
+#: ../../../src/whatsnew/1.1.rst:97
+msgid "Fix missing revisions in _changes?style=all_docs."
+msgstr ""
+
+# 96ba4f56f15b456cb9834e6a00fd587e
+#: ../../../src/whatsnew/1.1.rst:98
+msgid "Improve handling of compaction at max_dbs_open limit."
+msgstr ""
+
+# 160ba4db6a4b4bc9bdfbc0d82f29d248
+#: ../../../src/whatsnew/1.1.rst:99
+msgid "JSONP responses now send \"text/javascript\" for Content-Type."
+msgstr ""
+
+# 8c1cd47f03084947ab651cc104d7719d
+#: ../../../src/whatsnew/1.1.rst:100
+msgid "Link to ICU 4.2 on Windows."
+msgstr ""
+
+# a74f8087ae8d4127b1573b32ec9d7428
+#: ../../../src/whatsnew/1.1.rst:101
+msgid "Permit forward slashes in path to update functions."
+msgstr ""
+
+# 3b12b43d87c7460dbfbbdd2d182f3657
+#: ../../../src/whatsnew/1.1.rst:102
+msgid "Reap couchjs processes that hit reduce_overflow error."
+msgstr ""
+
+# fa03ddd7707e413a8154f6dfe54a2a8c
+#: ../../../src/whatsnew/1.1.rst:103
+msgid "Status code can be specified in update handlers."
+msgstr ""
+
+# 56bce65d673943f48e3478a3f257f312
+#: ../../../src/whatsnew/1.1.rst:104
+msgid "Support provides() in show functions."
+msgstr ""
+
+# ea0748913d7841fc9eb3cc7ea59c433e
+#: ../../../src/whatsnew/1.1.rst:105
+msgid "_view_cleanup when ddoc has no views now removes all index files."
+msgstr ""
+
+# 54d6cd6eb6324d84892bd0cb7621d530
+#: ../../../src/whatsnew/1.1.rst:106
+msgid "max_replication_retry_count now supports \"infinity\"."
+msgstr ""
+
+# ec3fed49312b4ba2a740065a4ff884ec
+#: ../../../src/whatsnew/1.1.rst:107
+msgid "Fix replication crash when source database has a document with empty ID."
+msgstr ""
+
+# 03681b0d5c5146c69889d6f6ba8fc626
+#: ../../../src/whatsnew/1.1.rst:108
+msgid "Fix deadlock when assigning couchjs processes to serve requests."
+msgstr ""
+
+# a29427effc314eadac3bf4651bdcd942
+#: ../../../src/whatsnew/1.1.rst:109
+msgid "Fixes to the document multipart PUT API."
+msgstr ""
+
+# f152631e76af46ac9ed4bdc85550e172
+#: ../../../src/whatsnew/1.1.rst:110
+msgid "Fixes regarding file descriptor leaks for databases with views."
+msgstr ""
+
+# 2d14fab2a1cb486b97e9c2de3500b91b
+#: ../../../src/whatsnew/1.1.rst:116
+msgid "Version 1.1.0"
+msgstr ""
+
+# d805c661999a40d09b6d307025e703cb
+#: ../../../src/whatsnew/1.1.rst:118
+msgid "All CHANGES for 1.0.2 and 1.0.3 also apply to 1.1.0."
+msgstr ""
+
+# d0eb458c91604102bf5dafd0780eec0e
+#: ../../../src/whatsnew/1.1.rst:121
+msgid "Externals"
+msgstr ""
+
+# dbe23b0f22554e4da4f14c6866ba0bd5
+#: ../../../src/whatsnew/1.1.rst:123
+msgid "Added OS Process module to manage daemons outside of CouchDB."
+msgstr ""
+
+# aae9b5bb7d0d464dbdac04921f4472ab
+#: ../../../src/whatsnew/1.1.rst:124
+msgid "Added HTTP Proxy handler for more scalable externals."
+msgstr ""
+
+# bad511df4f934d2cb9f7b1f836c593b0
+#: ../../../src/whatsnew/1.1.rst:127
+msgid "Futon"
+msgstr ""
+
+# 26cc95af62a14a459728a97dbdf65a5d
+#: ../../../src/whatsnew/1.1.rst:129
+msgid "Added a \"change password\"-feature to Futon."
+msgstr ""
+
+# 8cb58ed753f14cf8bdec61a418a8d6af
+#: ../../../src/whatsnew/1.1.rst:134
+msgid "Native SSL support."
+msgstr ""
+
+# f561f07a06384d778b0220c23509e2e2
+#: ../../../src/whatsnew/1.1.rst:135
+msgid "Added support for HTTP range requests for attachments."
+msgstr ""
+
+# b1a110c86c6a411bbf1f30e064527373
+#: ../../../src/whatsnew/1.1.rst:136
+msgid "Added built-in filters for `_changes`: `_doc_ids` and `_design`."
+msgstr ""
+
+# 0f0ca4d49e074a18823a6c7075a9438c
+#: ../../../src/whatsnew/1.1.rst:137
+msgid "Added configuration option for TCP_NODELAY aka \"Nagle\"."
+msgstr ""
+
+# 7854c44f913b42519637aadb26586e83
+#: ../../../src/whatsnew/1.1.rst:138
+msgid "Allow POSTing arguments to `_changes`."
+msgstr ""
+
+# 857f295ff3a24d778f04b5a4ae37734f
+#: ../../../src/whatsnew/1.1.rst:139
+msgid "Allow `keys` parameter for GET requests to views."
+msgstr ""
+
+# 06fe49a2a350417383c6dc491401ed3f
+#: ../../../src/whatsnew/1.1.rst:140
+msgid "Allow wildcards in vhosts definitions."
+msgstr ""
+
+# 5921fcf2c82c4717b4de036fb254c26e
+#: ../../../src/whatsnew/1.1.rst:141
+msgid "More granular ETag support for views."
+msgstr ""
+
+# a9f1bdc1a72a42639ca847971969e48c
+#: ../../../src/whatsnew/1.1.rst:142
+msgid "More flexible URL rewriter."
+msgstr ""
+
+# 95ad96525b2b454d9d471abd73620f1e
+#: ../../../src/whatsnew/1.1.rst:143
+msgid "Added support for recognizing \"Q values\" and media parameters in HTTP Accept headers."
+msgstr ""
+
+# ad3be29bc8ac4d74b15f997984d6cefd
+#: ../../../src/whatsnew/1.1.rst:145
+msgid "Validate doc ids that come from a PUT to a URL."
+msgstr ""
+
+# d4ba73a3da70472dacfdedca2e1ca415
+#: ../../../src/whatsnew/1.1.rst:150
+msgid "Added `_replicator` database to manage replications."
+msgstr ""
+
+# 0fc914e8b938480f9243cc25596d80e2
+#: ../../../src/whatsnew/1.1.rst:151
+msgid "Fixed issues when an endpoint is a remote database accessible via SSL."
+msgstr ""
+
+# 4962ff1325eb4489a4322f5706cd7798
+#: ../../../src/whatsnew/1.1.rst:152
+msgid "Added support for continuous by-doc-IDs replication."
+msgstr ""
+
+# 34c7a6c990cd4a8087510863f891f459
+#: ../../../src/whatsnew/1.1.rst:153
+msgid "Fix issue where revision info was omitted when replicating attachments."
+msgstr ""
+
+# 1edb6daa67da439f987c9669eefde364
+#: ../../../src/whatsnew/1.1.rst:154
+msgid "Integrity of attachment replication is now verified by MD5."
+msgstr ""
+
+# 40e85e84f7cd40c0a532432d689e4876
+#: ../../../src/whatsnew/1.1.rst:157
+msgid "Storage System"
+msgstr ""
+
+# 1efa46792f3e40ab99d1aebfa71232a6
+#: ../../../src/whatsnew/1.1.rst:159
+msgid "Multiple micro-optimizations when reading data."
+msgstr ""
+
+# a558873474884f409fe486a8d32d8083
+#: ../../../src/whatsnew/1.1.rst:162
+msgid "URL Rewriter & Vhosts"
+msgstr ""
+
+# 6bae463a30954a658c3859a953504e02
+#: ../../../src/whatsnew/1.1.rst:164
+msgid "Fix for variable substituion"
+msgstr ""
+
+# 7bbf002c833c4db7837096bbd97dd520
+#: ../../../src/whatsnew/1.1.rst:169
+msgid "Added CommonJS support to map functions."
+msgstr ""
+
+# 748c850f33ef41ee89a127912aba615b
+#: ../../../src/whatsnew/1.1.rst:170
+msgid "Added `stale=update_after` query option that triggers a view update after returning a `stale=ok` response."
+msgstr ""
+
+# 0f6fed7deb2b4b868ff1fd62f0f91bce
+#: ../../../src/whatsnew/1.1.rst:172
+msgid "Warn about empty result caused by `startkey` and `endkey` limiting."
+msgstr ""
+
+# f60353ade9e34b2aa1fb798184bfb25f
+#: ../../../src/whatsnew/1.1.rst:173
+msgid "Built-in reduce function `_sum` now accepts lists of integers as input."
+msgstr ""
+
+# abe01289c71b4182a8a1813fae8fdd81
+#: ../../../src/whatsnew/1.1.rst:174
+msgid "Added view query aliases start_key, end_key, start_key_doc_id and end_key_doc_id."
+msgstr ""

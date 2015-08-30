@@ -1,0 +1,117 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 93156d5e7c4747e9b6199a5a9e7acfe8
+#: ../../../src/maintenance/compaction.rst:16
+msgid "Compaction"
+msgstr ""
+
+# 5004eec1251740d39bff9a802c4ae820
+#: ../../../src/maintenance/compaction.rst:18
+msgid "The `compaction` operation is the way to reduce disk space usage by removing unused and old data from database or view index files. This operation is a very similar to the `vacuum` (`SQLite`_ ex.) available for other database management systems."
+msgstr ""
+
+# 0a8c1e48ca07417ab9ae7109594de2cc
+#: ../../../src/maintenance/compaction.rst:25
+msgid "During compaction of the `target` CouchDB creates new file with the ``.compact`` extension and transfers only actual data into. Because of this, CouchDB checks first for the available disk space - it should be *twice greater* than the compacted file's data."
+msgstr ""
+
+# 07e6432f29774bb683aa9d84a5f800ef
+#: ../../../src/maintenance/compaction.rst:30
+msgid "When all actual data successful transferred to the `compacted` file CouchDB *removes* the `target` replacing him with it."
+msgstr ""
+
+# 65783e32b7fa4c87b2eaba0588992e4c
+#: ../../../src/maintenance/compaction.rst:37
+msgid "Database Compaction"
+msgstr ""
+
+# 83d4c309ea0449ea8306ed788ecb4878
+#: ../../../src/maintenance/compaction.rst:39
+msgid "Database compaction compresses the database file by removing unused file sections created during updates. Old documents revisions are replaced with small amount of metadata called `tombstone` which are used for conflicts resolution during replication. The number of stored revisions (and their `tombstones`) can be configured by using the :get:`_revs_limit </{db}/_revs_limit>` URL endpoint."
+msgstr ""
+
+# 106c2352fdc545af9c0799800ba725e3
+#: ../../../src/maintenance/compaction.rst:46
+msgid "Compaction is manually triggered operation per database and runs as a background task. To start it for specific database there is need to send HTTP :post:`/{db}/_compact` sub-resource of the target database::"
+msgstr ""
+
+# ab5b1a7196da4c81aea1bc89d07eb767
+#: ../../../src/maintenance/compaction.rst:52
+msgid "On success, HTTP status :statuscode:`202` is returned immediately:"
+msgstr ""
+
+# ab05df0528e44f3eaf6ef07eebaf848b
+#: ../../../src/maintenance/compaction.rst:67
+msgid "Although the request body is not used you must still specify :header:`Content-Type` header with :mimetype:`application/json` value for the request. If you don't, you will be aware about with HTTP status :statuscode:`415` response:"
+msgstr ""
+
+# 54daa9d415f943228b83d2f04fc1e4f3
+#: ../../../src/maintenance/compaction.rst:83
+msgid "When the compaction is successful started and running it is possible to get information about it via :ref:`database information resource <api/db>`::"
+msgstr ""
+
+# f196aec2b38a4011a2a41f41eff8e347
+#: ../../../src/maintenance/compaction.rst:112
+msgid "Note that ``compaction_running`` field is ``true`` indicating that compaction is actually running. To track the compaction progress you may query the :get:`_active_tasks </_active_tasks>` resource::"
+msgstr ""
+
+# e899c7dde469482db3a74850ced428fa
+#: ../../../src/maintenance/compaction.rst:144
+msgid "Views Compaction"
+msgstr ""
+
+# 65df9158b2d34bcf81582dab4f8b4038
+#: ../../../src/maintenance/compaction.rst:146
+msgid "`Views` are also need compaction like databases, unlike databases views are compacted by groups per `design document`. To start their compaction there is need to send HTTP :post:`/{db}/_compact/{ddoc}` request::"
+msgstr ""
+
+# b7d0c7a7629e4737973947b5388de5d0
+#: ../../../src/maintenance/compaction.rst:156
+msgid "This compacts the view index from the current version of the specified design document. The HTTP response code is :statuscode:`202` (like :ref:`compaction for databases <compact/db>`) and a compaction background task will be created."
+msgstr ""
+
+# a75ee3123c7a40e2a63b977e6069f53d
+#: ../../../src/maintenance/compaction.rst:165
+msgid "Views cleanup"
+msgstr ""
+
+# bec3ec822e4a4101bf80df0c37a94c27
+#: ../../../src/maintenance/compaction.rst:167
+msgid "View indexes on disk are named after their `MD5` hash of the view definition. When you change a view, old indexes remain on disk. To clean up all outdated view indexes (files named after the MD5 representation of views, that does not exist anymore) you can trigger a :ref:`view cleanup <api/db/view_cleanup>`::"
+msgstr ""
+
+# 4940602af2d440e1aa0e7afd79db5009
+#: ../../../src/maintenance/compaction.rst:182
+msgid "Automatic Compaction"
+msgstr ""
+
+# 52c4d5d05dc94040a427664096a06063
+#: ../../../src/maintenance/compaction.rst:184
+msgid "While both :ref:`database <compact/db>` and :ref:`views <compact/views>` compactions are required be manually triggered, it is also possible to configure automatic compaction, so that compaction of databases and views is automatically triggered based on various criteria. Automatic compaction is configured in CouchDB's :ref:`configuration files <config/intro>`."
+msgstr ""
+
+# cca1eca55a5d47f0b374254edbbb4835
+#: ../../../src/maintenance/compaction.rst:190
+msgid "The :config:option:`daemons/compaction_daemon` is responsible for triggering the compaction. It is automatically started, but disabled by default. The criteria for triggering the compactions is configured in the :config:section:`compactions` section."
+msgstr ""

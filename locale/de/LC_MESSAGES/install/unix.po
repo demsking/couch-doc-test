@@ -1,0 +1,478 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-03-27 21:08+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1395954511.000000\n"
+
+# 8cc2b110f63c450ebd8fb4ae87ad5a94
+#: ../../../src/install/unix.rst:18
+msgid "Installation on Unix-like systems"
+msgstr "Installation auf Unix-artigen Systemen"
+
+# 7b7332f9ff414d7dba9e1b2eb17f9c81
+#: ../../../src/install/unix.rst:20
+msgid "A high-level guide to Unix-like systems, inc. Mac OS X and Ubuntu."
+msgstr ""
+"Ein High-Level-Leitfaden für Unix-artige Systeme, inklusive Mac OS X und "
+"Ubuntu."
+
+# 16387ea5b6614552930fbc06db484838
+#: ../../../src/install/unix.rst:22
+msgid "This document is the canonical source of installation information. However, many systems have gotchas that you need to be aware of. In addition, dependencies frequently change as distributions update their archives. If you're running into trouble, be sure to check out the wiki. If you have any tips to share, please also update the wiki so that others can benefit from your experience."
+msgstr ""
+"Dieses Dokument stellt die Grundlage für den allgemein gängigen Weg zur "
+"Installation dar. Trotz allem haben viel Systeme Fallstricke derer du dir "
+"bewusst sein solltest. Ausserdem kommt es vor, dass sich Abhängigkeiten "
+"zeitweise ändern, weil die Distributionen ihre Archive aktualisieren. Wenn "
+"du über Probleme stolperst, schau bitte unbedingt im Wiki nach. Und wenn du "
+"Tipps hast aktualisiere bitte das Wiki, so dass andere von deinen "
+"Erfahrungen profitieren können."
+
+# f60bf47ffe1b460bb3d1efb1d3f6c1ef
+#: ../../../src/install/unix.rst:30
+msgid "`Community installation guides`_"
+msgstr "`Community Installations-Leitfaden`_"
+
+# f9043d84582f41d3b8252e3448802c28
+#: ../../../src/install/unix.rst:35
+msgid "Troubleshooting"
+msgstr "Problemlösungen"
+
+# 73ed574a50bb428894fae5516c691fe9
+#: ../../../src/install/unix.rst:37
+msgid "There is a `troubleshooting guide`_."
+msgstr "Es gibt einen `Problemlösungs-Leitfaden`_."
+
+# a2f4a30aeb4f42fab23f14bd02d6efa8
+#: ../../../src/install/unix.rst:38
+msgid "There is a `wiki`_ for general documentation."
+msgstr "Es gibt ein `Wiki`_ die allgemeine Dokumentation."
+
+# c04541e2ad904cd2a5fe00fbefe782bc
+#: ../../../src/install/unix.rst:39
+msgid "There are collection of `friendly mailing lists`_."
+msgstr "Es gibt eine Sammlung von `Mailing-Listen`_."
+
+# 543bdc22809d48fd86d09cd79a737a66
+#: ../../../src/install/unix.rst:41
+msgid "Please work through these in order if you experience any problems."
+msgstr ""
+"Bitte arbeite dich durch diese der Reihe nach wenn du auf Probleme stößt."
+
+# 8bfc91228aa84175bc75121cbdec5712
+#: ../../../src/install/unix.rst:51
+msgid "Dependencies"
+msgstr "Abhängigkeiten"
+
+# ae18ff06c9ac4fccb303916ddb11574c
+#: ../../../src/install/unix.rst:53
+msgid "You should have the following installed:"
+msgstr "Dies sollte installiert sein:"
+
+# 2fc72cc37fd94c85b613988ef0bd6740
+#: ../../../src/install/unix.rst:55
+msgid "`Erlang OTP (>=R13B04, <R17)  <http://erlang.org/>`_"
+msgstr "`Erlang OTP (>=R13B04, <R17) <http://erlang.org/>`_"
+
+# 459e7614e8cc4cf99c9f140391fde933
+#: ../../../src/install/unix.rst:56
+msgid "`ICU                          <http://icu-project.org/>`_"
+msgstr "`ICU <http://icu-project.org/>`_"
+
+# c1a8e86dd5434449ab16caa3089402ed
+#: ../../../src/install/unix.rst:57
+msgid "`OpenSSL                      <http://www.openssl.org/>`_"
+msgstr "`OpenSSL <http://www.openssl.org/>`_"
+
+# eb22d6ff6bf44353b72600c6fa369391
+#: ../../../src/install/unix.rst:58
+msgid "`Mozilla SpiderMonkey (1.7)   <http://www.mozilla.org/js/spidermonkey/>`_"
+msgstr "`Mozilla SpiderMonkey (1.7) <http://www.mozilla.org/js/spidermonkey/>`_"
+
+# 44bd72f3cad445b9bdc99ac23f85500e
+#: ../../../src/install/unix.rst:59
+msgid "`GNU Make                     <http://www.gnu.org/software/make/>`_"
+msgstr "`GNU Make <http://www.gnu.org/software/make/>`_"
+
+# 0d7f33e46ce24708998f1a6ee16f2e6c
+#: ../../../src/install/unix.rst:60
+msgid "`GNU Compiler Collection      <http://gcc.gnu.org/>`_"
+msgstr "`Compilador GNU <http://gcc.gnu.org/>`_"
+
+# babb615417ec49d9bea6e9b587671818
+#: ../../../src/install/unix.rst:61
+msgid "`libcurl                      <http://curl.haxx.se/libcurl/>`_"
+msgstr "`libcurl <http://curl.haxx.se/libcurl/>`_"
+
+# 0c2231b55da94359b7a6e057a6d3cd83
+#: ../../../src/install/unix.rst:62
+msgid "`help2man                     <http://www.gnu.org/s/help2man/>`_"
+msgstr "`help2man <http://www.gnu.org/s/help2man/>`_"
+
+# 4b7f3792f120428ead5253f72ace5105
+#: ../../../src/install/unix.rst:63
+msgid "`Python (>=2.7) for docs      <http://python.org/>`_"
+msgstr "`Python (>=2.7) para documentos <http://python.org/>`_"
+
+# c8bad508493f44a4b467a14c81a62c3b
+#: ../../../src/install/unix.rst:64
+msgid "`Python Sphinx (>=1.1.3)      <http://pypi.python.org/pypi/Sphinx>`_"
+msgstr "`Python Sphinx (>=1.1.3) <http://pypi.python.org/pypi/Sphinx>`_"
+
+# fb07234ac7134dcba8d1a687c6f0e325
+#: ../../../src/install/unix.rst:66
+msgid "It is recommended that you install Erlang OTP R13B-4 or above where possible. You will only need libcurl if you plan to run the JavaScript test suite. And help2man is only need if you plan on installing the CouchDB man pages. Python and Sphinx are only required for building the online documentation."
+msgstr ""
+"Es wird empfohlen, dass du, wenn möglich, Erlang OTP R13B-4 oder neuer "
+"installierst. Du brauchst nur libcurl wenn die JavaScript test-Suite laufen "
+"lassen willst. Und help2man wird nur benötigt wenn du vor hast die CouchDB "
+"\"man pages\" zu installieren. Python und Sphinx werden nur benötigt, wenn du "
+"die online Dokumentation erstellen willst."
+
+# 41952aff20c4486e9c257802c758dff8
+#: ../../../src/install/unix.rst:72
+msgid "Debian-based Systems"
+msgstr "Debian-gestützte Systeme"
+
+# 89837e3de30842e79f663c67c7e99062
+# be35150a4b1f4cb59b3e0b54f7a8f4fe
+#: ../../../src/install/unix.rst:74
+#: ../../../src/install/unix.rst:103
+msgid "You can install the dependencies by running::"
+msgstr "Du kannst die Abhängigkeiten installieren, wenn du dies ausführst::"
+
+# 8277aa592b214fe98f956ad24540103c
+#: ../../../src/install/unix.rst:86
+msgid "There are lots of Erlang packages. If there is a problem with your install, try a different mix. There is more information on the wiki. Additionally, you might want to install some of the optional Erlang tools which may also be useful."
+msgstr ""
+"Es gibt viele Erlang Pakete. Wenn es bei deiner Installation zu Problemen "
+"kommt, probiere ein anderes aus. Dazu gibt es weitere Informationen im Wiki. "
+"Ausserdem ist es ev. eine gute Idee einige der optionalen Erlang Tools zu "
+"installieren. Diese können sehr hilfreich sein."
+
+# 9a58d56a62534530b89976bc5205200f
+#: ../../../src/install/unix.rst:90
+msgid "Be sure to update the version numbers to match your system's available packages."
+msgstr ""
+"Achte darauf die Versions-Nummer, die zu deinen auf deinem System "
+"verfügbaren Paketen passt, anzupassen. "
+
+# 4306af69ed6c48a0a24b36948ad005f6
+#: ../../../src/install/unix.rst:92
+msgid "Unfortunately, it seems that installing dependencies on Ubuntu is troublesome."
+msgstr ""
+"Leider sieht es so aus, dass die Installation von Abhängigkeiten auf Ubuntu "
+"fehlerhaft sein kann."
+
+# bc767261658b499782e509d8816dbe49
+#: ../../../src/install/unix.rst:96
+msgid "`Installing on Debian <http://wiki.apache.org/couchdb/Installing_on_Debian>`_"
+msgstr ""
+"`Installation auf Debian "
+"<http://wiki.apache.org/couchdb/Installing_on_Debian>`_"
+
+# bff2d09f0f6f49d3aad0509486a25349
+#: ../../../src/install/unix.rst:97
+msgid "`Installing on Ubuntu <http://wiki.apache.org/couchdb/Installing_on_Ubuntu>`_"
+msgstr ""
+"`Installation auf Ubuntu "
+"<http://wiki.apache.org/couchdb/Installing_on_Ubuntu>`_"
+
+# 32e7d5570f534ed78553b4f31c21c37e
+#: ../../../src/install/unix.rst:101
+msgid "RedHat-based (Fedora, Centos, RHEL) Systems"
+msgstr "RedHat-basierte (Fedora, Centos, RHEL) Systeme"
+
+# 133ddc88fd094c5f8b15449bf1890ce1
+#: ../../../src/install/unix.rst:119
+msgid "While CouchDB builds against the default js-devel-1.7.0 included in some distributions, it's recommended to use a more recent js-devel-1.8.5."
+msgstr ""
+"Obwohl CouchDB gegen das standard Pakete js-devel-1.7.0, welches in einigen "
+"Distributionen vorhanden ist, gebaut wird, wird empfohlen das aktuellere "
+"Paket js-devel-1.8.5 zu nutzen."
+
+# 8952d4b7f2574ff9a83cf9ada9d93f13
+#: ../../../src/install/unix.rst:123
+msgid "Mac OS X"
+msgstr "Mac OS X"
+
+# b3496b908c7845e49828978f8ecef26a
+#: ../../../src/install/unix.rst:125
+msgid "Follow :ref:`install/mac/homebrew` reference till `brew install couchdb` step."
+msgstr ""
+"Folge der :ref:`install/mac/homebrew` Referenz bis zum Schritt `brew install "
+"couchdb`."
+
+# 9c1ba613c27f498aa69aed79164151ea
+#: ../../../src/install/unix.rst:129
+msgid "Installing"
+msgstr "Installieren"
+
+# f871ea5e52bd4b7bbb6abe9891312769
+#: ../../../src/install/unix.rst:131
+msgid "Once you have satisfied the dependencies you should run::"
+msgstr ""
+"Sobald du alle Abhängigkeiten erfüllt hast, solltest du dies ausführen::"
+
+# 24de93d3007642b1a8bb1ae1e41ea303
+#: ../../../src/install/unix.rst:135
+msgid "This script will configure CouchDB to be installed into `/usr/local` by default."
+msgstr ""
+"Das Skript konfiguriert CouchDB um nach `/usr/local` installiert zu werden."
+
+# d89a2005f7a24b1fae1cf0e1bb954e1b
+#: ../../../src/install/unix.rst:137
+msgid "If you wish to customise the installation, pass `--help` to this script."
+msgstr ""
+"Wenn du die Installation individualisieren möchtest, füge dem Script "
+"`--help` an."
+
+# 5dc4230bbeff460c812d52ed1d3156a9
+# 27b5e67c1f944c6caaf93b2ec6e47c06
+#: ../../../src/install/unix.rst:139
+#: ../../../src/install/unix.rst:153
+msgid "If everything was successful you should see the following message::"
+msgstr ""
+"Wenn alles erfolgreich von Statten ging, solltest du folgende Mitteilung "
+"sehen::"
+
+# 1a0f9da2678e481c81ebeef69c341f71
+# b36dc104797b44f19725409ac8f43bf1
+# d839f33fc94e4ab784bce460ec1e8aea
+#: ../../../src/install/unix.rst:143
+#: ../../../src/install/unix.rst:157
+#: ../../../src/install/unix.rst:172
+msgid "Relax."
+msgstr "Relax."
+
+# 5f6effbd738a48dfadb336d4a45c5c11
+#: ../../../src/install/unix.rst:145
+msgid "To install CouchDB you should run::"
+msgstr "Um CouchDB zu installieren solltest du dies ausführen::"
+
+# c1ad91881da143949f1fa5e225fd36db
+#: ../../../src/install/unix.rst:149
+msgid "You only need to use `sudo` if you're installing into a system directory."
+msgstr ""
+"`sudo` brauchst du nur, wenn du in ein System-Verzeichnis installieren "
+"willst."
+
+# 3d52277d206f47c1abd38c560f096e51
+#: ../../../src/install/unix.rst:151
+msgid "Try `gmake` if `make` is giving you any problems."
+msgstr ""
+"Probiere `gmake` aus wenn es bei der Nutzung von `make` zu Problemen kommt."
+
+# 2ee5aef2bab444c398d58e80f04b4a78
+#: ../../../src/install/unix.rst:160
+msgid "First Run"
+msgstr "Der erste Lauf"
+
+# e789bfed42684eafbaba265cbd5db086
+#: ../../../src/install/unix.rst:162
+msgid "You can start the CouchDB server by running::"
+msgstr ""
+"Du kannst den CouchDB Server starten indem du folgenden Befehl ausführst::"
+
+# a63962780584429698c98d5c5f7c70a7
+#: ../../../src/install/unix.rst:166
+msgid "This uses the `sudo` command to run the `couchdb` command as the `couchdb` user."
+msgstr ""
+"Dabei wird das `sudo` Kommando genutzt um das `couchdb` Programm als "
+"Benutzer `couchdb` auszuführen."
+
+# 92aa3e1835554139afb50a3f1459e584
+#: ../../../src/install/unix.rst:168
+msgid "When CouchDB starts it should eventually display the following message::"
+msgstr ""
+"Wenn CouchDB startet sollte schließlich die folgende Meldung angezeigt "
+"werden:"
+
+# 042f211ca40e4fafa8f010945da6e9b6
+#: ../../../src/install/unix.rst:174
+msgid "To check that everything has worked, point your web browser to::"
+msgstr ""
+"Um zu überprüfen, dass alles funktioniert hat, öffne die folgende URL in "
+"deinem Browser:"
+
+# 5249c61b46dc40bd838a252c4edf75c9
+#: ../../../src/install/unix.rst:178
+msgid "From here you should run the test suite in Firefox."
+msgstr "Im nächsten Schritt solltest du die Testsuite in Firefox ausführen."
+
+# 3762220396e04117beddbe8a87949e42
+#: ../../../src/install/unix.rst:181
+msgid "Security Considerations"
+msgstr "Überlegungen zu Sicherheits-Aspekten"
+
+# ce76c84fc2fd41e6b17b0efc63f75bba
+#: ../../../src/install/unix.rst:183
+msgid "You should create a special `couchdb` user for CouchDB."
+msgstr "Du solltest einen speziellen `couchdb` Benutzer für CouchDB erstellen."
+
+# de508a6fc41c431aa5ad22056d6ce05f
+#: ../../../src/install/unix.rst:185
+msgid "On many Unix-like systems you can run::"
+msgstr "Auf vielen Unix-artigen Systemen kannst du dies so bewerkstelligen::"
+
+# 08f93c31e9774ebaa238a9ea7cb94184
+#: ../../../src/install/unix.rst:194
+msgid "On Mac OS X you can use the `Workgroup Manager`_ to create users."
+msgstr ""
+"Auf Mac OS X kannst du den `Workgroup Manager`_ nutzen um Benutzer zu "
+"erstellen."
+
+# 7472dacb2bf44281b112751c69008d0c
+#: ../../../src/install/unix.rst:196
+msgid "You must make sure that:"
+msgstr "Du musst folgendes sicherstellen:"
+
+# 49d9be9d82c84bb1b6d989749e0019bd
+#: ../../../src/install/unix.rst:198
+msgid "The user has a working POSIX shell"
+msgstr "Der Benutzer muss eine funktionierende POSIX shell haben "
+
+# e2005dbc9ac34baba43f6cf17d21b3da
+#: ../../../src/install/unix.rst:199
+msgid "The user's home directory is `/usr/local/var/lib/couchdb`"
+msgstr "Das Home-Verzeichnis ist `/usr/local/var/lib/couchdb`"
+
+# 5c1d615ee21041cdb654df7d3906193c
+#: ../../../src/install/unix.rst:201
+msgid "You can test this by:"
+msgstr "Testen kannst Du dies folgendermaßen:"
+
+# 874933d53f13477f817944b7364c5f28
+#: ../../../src/install/unix.rst:203
+msgid "Trying to log in as the `couchdb` user"
+msgstr "Versuche dich als Benutzer  `couchdb` einzuloggen"
+
+# f412ba1978944867a82d2bab57ce8f25
+#: ../../../src/install/unix.rst:204
+msgid "Running `pwd` and checking the present working directory"
+msgstr "Führe den Befehl `pwd` aus und prüfe das aktuelle Verzeichnis"
+
+# 4d148efe3d03415d9c64fbb18e2f021e
+#: ../../../src/install/unix.rst:206
+msgid "Change the ownership of the CouchDB directories by running::"
+msgstr "Ändere den Besitzer des CouchDB Verzeichnis indem du dies ausführst::"
+
+# b0c7ddda5feb464fa90adbc50dc32146
+#: ../../../src/install/unix.rst:213
+msgid "Change the permission of the CouchDB directories by running::"
+msgstr "Ändere die Rechte der CouchDB Verzeichnisse indem du dies ausführst:: "
+
+# 5116e5c892be4687a32cfe580c396a0e
+#: ../../../src/install/unix.rst:224
+msgid "Running as a Daemon"
+msgstr "Als Daemon ausführen"
+
+# 1ff8afd4d6bf44ef99cae99fdf76fe9d
+#: ../../../src/install/unix.rst:227
+msgid "SysV/BSD-style Systems"
+msgstr "SysV/BSD-artige Systeme"
+
+# 4e25ef80d29b4c45935b26f9038c22b8
+#: ../../../src/install/unix.rst:229
+msgid "You can use the `couchdb` init script to control the CouchDB daemon."
+msgstr ""
+"Du kannst das `couchdb` init Script nutzen um den CouchDB daemon zu "
+"kontrollieren."
+
+# 6588344eb8ae47d9a45c3d2603252cb2
+#: ../../../src/install/unix.rst:231
+msgid "On SysV-style systems, the init script will be installed into::"
+msgstr "Auf SysV-artigen Systemen wird das init Script hier hin installiert::"
+
+# 02797c98c7804963b37cabeb1c649ca5
+#: ../../../src/install/unix.rst:235
+msgid "On BSD-style systems, the init script will be installed into::"
+msgstr "Auf BSD-artigen Systemen wird das init Script hier hin installiert::"
+
+# 970f8ecdc9fd4366a38ed077bade147a
+#: ../../../src/install/unix.rst:239
+msgid "We use the `[init.d|rc.d]` notation to refer to both of these directories."
+msgstr ""
+"Wir nutzen die `[init.d|rc.d]` Schreibweise um auf diese beiden "
+"Verzeichnisse zu verweisen."
+
+# e986df8aa87e41a1bf8b96c79bec9562
+#: ../../../src/install/unix.rst:241
+msgid "You can control the CouchDB daemon by running::"
+msgstr "Du kannst den CouchDB Daemon kontrollieren, indem du dies ausführst::"
+
+# 50a45ca1eb2e4e94951cd01829d4ca44
+#: ../../../src/install/unix.rst:245
+msgid "If you wish to configure how the init script works, you can edit::"
+msgstr ""
+"Wenn Du das verhalten des init Script ändern möchtest, kannst Du folgende "
+"Datei ändern::"
+
+# 3cea22c9cf4f4c31aba75a3847e87bbc
+#: ../../../src/install/unix.rst:249
+msgid "Comment out the `COUCHDB_USER` setting if you're running as a non-superuser."
+msgstr ""
+"Kommentiere die `COUCHDB_USER` Einstellung aus wenn du als Nicht-Superuser "
+"arbeitest. "
+
+# 6e4e5d8a962b4fc4bef230785ca9b1ba
+#: ../../../src/install/unix.rst:251
+msgid "To start the daemon on boot, copy the init script to::"
+msgstr ""
+"Um den Daemon während des Bootvorgangs zu starten kopierst du das Script "
+"nach::"
+
+# 8126f636dbba4497be6bcce90f5d1b7e
+#: ../../../src/install/unix.rst:255
+msgid "You should then configure your system to run the init script automatically."
+msgstr ""
+"Du solltest dein System dann so konfigurieren, dass das init Script "
+"automatisch ausgeführt wird."
+
+# e2ec9507849c4c4a9aa0de7ca060cdd2
+#: ../../../src/install/unix.rst:257
+msgid "You may be able to run::"
+msgstr "Eine Möglichkeit dies zu tun ist::"
+
+# 070b06bfd6a0445fa91b9b9f50e38fbf
+#: ../../../src/install/unix.rst:261
+msgid "If this fails, consult your system documentation for more information."
+msgstr ""
+"Sollte dies nicht funktionieren sieh bitte in der Dokumentation für dein "
+"System für weitere Informationen nach."
+
+# d65cfede252647ea854925f97fcfc2af
+#: ../../../src/install/unix.rst:263
+msgid "A `logrotate` configuration is installed into::"
+msgstr "Eine `logrotate` Konfiguration wird hier hin installiert::"
+
+# 721de4fd4b044f81b0747b2585c3447b
+#: ../../../src/install/unix.rst:267
+msgid "Consult your `logrotate` documentation for more information."
+msgstr "Sieh in der `logrotate` Dokumentation für weitere Informationen nach."
+
+# 3f79271d787546748bc1d5455b6ec70f
+#: ../../../src/install/unix.rst:269
+msgid "It is critical that the CouchDB logs are rotated so as not to fill your disk."
+msgstr ""
+"Es ist entscheidend, dass die CouchDB logs rotiert werden damit die "
+"Festplatte nicht voll läuft. "

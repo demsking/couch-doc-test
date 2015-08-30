@@ -1,0 +1,154 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-02-22 00:59+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1393030752.000000\n"
+
+# 694a585639e640718dbee0cc24178101
+#: ../../../src/fauxton/install.rst:18
+msgid "Installation"
+msgstr "Installation"
+
+# cd03257cb51f468c904e772e615a9204
+#: ../../../src/fauxton/install.rst:20
+msgid "A recent of `node.js`_ and `npm`_ is required."
+msgstr "Eine aktuelle Installation von `node.js`_ and `npm`_ wird benötigt."
+
+# d970caaef409409b8d6b3adeb31aec14
+#: ../../../src/fauxton/install.rst:26
+msgid "Get the source"
+msgstr "Die Quellen bekommen "
+
+# 348f5c0ecbd0422ca06e1dfa62ce3a68
+#: ../../../src/fauxton/install.rst:28
+msgid "Clone the CouchDB repo::"
+msgstr "Dupliziere das CouchDB repo::"
+
+# 4820fcdf7f7f40f1984148e373cc312b
+#: ../../../src/fauxton/install.rst:35
+msgid "Fauxton Setup"
+msgstr "Fauxton Setup"
+
+# 6cf6f43fb4ce4e938c88ac493de6bb3b
+#: ../../../src/fauxton/install.rst:37
+msgid "Install all dependencies::"
+msgstr "Installiere alle Abhängigkeiten::"
+
+# cbac9767e74445139d9809a844234f2c
+#: ../../../src/fauxton/install.rst:45
+msgid "To avoid a npm global install add ``node_modules/.bin`` to your path::"
+msgstr ""
+
+# f0998a3c5feb4a6f976ff67aff17b0d3
+#: ../../../src/fauxton/install.rst:49
+msgid "Or just use the wrappers in ``./bin/``."
+msgstr ""
+
+# 4327c549f41547bdada4c6d81e16a6bf
+#: ../../../src/fauxton/install.rst:51
+msgid "Development mode, non minified files::"
+msgstr ""
+
+# 90ff139bafc24335b34c96d0cd6e90f2
+#: ../../../src/fauxton/install.rst:55
+msgid "Or fully compiled install::"
+msgstr ""
+
+# d52a2a4d0e5146998721591542d1193b
+#: ../../../src/fauxton/install.rst:60
+msgid "Dev Server"
+msgstr ""
+
+# 4e2ca1aa18df44dbbd8056d9cc63e70f
+#: ../../../src/fauxton/install.rst:62
+msgid "Using the dev server is the easiest way to use Fauxton, specially when developing for it::"
+msgstr ""
+
+# d737bc4936e94950910492d83ae81e4d
+#: ../../../src/fauxton/install.rst:68
+msgid "Deploy Fauxton"
+msgstr ""
+
+# 47db3718ba4346358059d6b18355c97c
+#: ../../../src/fauxton/install.rst:70
+msgid "Deploy Fauxton to your local CouchDB instance:"
+msgstr ""
+
+# 0512fc87d6ad4ce0946b45327329663f
+#: ../../../src/fauxton/install.rst:72
+msgid "./bin/grunt couchapp_deploy"
+msgstr ""
+
+# f2d2d8df312143d0a2763d39a78b578c
+#: ../../../src/fauxton/install.rst:74
+msgid "The Fauxton be available by http://localhost:5984/fauxton/_design/fauxton/index.html"
+msgstr ""
+
+# 35bea631e0be4d1b8ceb9085749adebd
+#: ../../../src/fauxton/install.rst:78
+msgid "Understang Fauxton Code layout"
+msgstr ""
+
+# 2c1995441c6d4cfda9f9a5f06d7c98d9
+#: ../../../src/fauxton/install.rst:80
+msgid "Each bit of functionality is its own separate module or addon."
+msgstr ""
+
+# cc0140d621fc4d7eb654174e3b184e1b
+#: ../../../src/fauxton/install.rst:82
+msgid "All core modules are stored under `app/module` and any addons that are optional are under `app/addons`."
+msgstr ""
+
+# c249cafd9a014b85b08220244db7f128
+#: ../../../src/fauxton/install.rst:85
+msgid "We use `backbone.js`_ and `Backbone.layoutmanager`_ quite heavily, so best to get an idea how they work. Its best at this point to read through a couple of the modules and addons to get an idea of how they work."
+msgstr ""
+
+# 1ffe964db89344c4990fa12ba80727da
+#: ../../../src/fauxton/install.rst:89
+msgid "Two good starting points are `app/addon/config` and `app/modules/databases`."
+msgstr ""
+
+# 93e5ebb3a7274ae9979ab0fb1b041c83
+#: ../../../src/fauxton/install.rst:91
+msgid "Each module must have a `base.js` file, this is read and compile when Fauxton is deployed."
+msgstr ""
+
+# 649814f9ff574fc7ae6dce7d38175bbc
+#: ../../../src/fauxton/install.rst:94
+msgid "The `resource.js` file is usually for your ``Backbone.Models`` and ``Backbone.Collections``, `view.js` for your ``Backbone.Views``."
+msgstr ""
+
+# bc93cf3649934774a69c6498a454d775
+#: ../../../src/fauxton/install.rst:97
+msgid "The `routes.js` is used to register a url path for your view along with what layout, data, breadcrumbs and api point is required for the view."
+msgstr ""
+
+# 6371cc77909a4bf2bfc134cbd3255678
+#: ../../../src/fauxton/install.rst:105
+msgid "ToDo items"
+msgstr ""
+
+# 984081664e624439a88668f10775e133
+#: ../../../src/fauxton/install.rst:107
+msgid "Checkout `JIRA`_  for a list of items to do."
+msgstr ""

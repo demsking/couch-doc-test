@@ -1,0 +1,207 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# fd2937ca5dd74f35b1185ba18ca66e47
+#: ../../../src/api/database/misc.rst:17
+msgid "``/db/_purge``"
+msgstr ""
+
+# 902bdfb098cd4f2287e17d6d7c954fc2
+#: ../../../src/api/database/misc.rst:21
+msgid "A database purge permanently removes the references to deleted documents from the database. Normal deletion of a document within CouchDB does not remove the document from the database, instead, the document is marked as ``_deleted=true`` (and a new revision is created). This is to ensure that deleted documents can be replicated to other databases as having been deleted. This also means that you can check the status of a document and identify that the document has been deleted by its absence."
+msgstr ""
+
+# 7db6ce6baebd40209ba55f7f93f32d1c
+#: ../../../src/api/database/misc.rst:31
+msgid "Purging a document from a database should only be done as a last resort when sensitive information has been introduced inadvertently into a database. In clustered or replicated environments it is very difficult to guarantee that a particular purged document has been removed from all replicas. Do not rely on this API as a way of doing secure deletion."
+msgstr ""
+
+# 5ae82f36b5964d378ed765351f3bccc8
+#: ../../../src/api/database/misc.rst:37
+msgid "The purge operation removes the references to the deleted documents from the database. The purging of old documents is not replicated to other databases. If you are replicating between databases and have deleted a large number of documents you should run purge on each database."
+msgstr ""
+
+# 0427318965fc46aaa72eb0c60e5a52cf
+#: ../../../src/api/database/misc.rst:44
+msgid "Purging documents does not remove the space used by them on disk. To reclaim disk space, you should run a database compact (see :ref:`api/db/compact`), and compact views (see :ref:`api/db/compact/ddoc`)."
+msgstr ""
+
+# a89b7cc646994127b486a619b34cbcb4
+#: ../../../src/api/database/misc.rst:48
+msgid "The format of the request must include the document ID and one or more revisions that must be purged."
+msgstr ""
+
+# 29f0ec37f9cd4127988743a01d68b48f
+#: ../../../src/api/database/misc.rst:51
+msgid "The response will contain the purge sequence number, and a list of the document IDs and revisions successfully purged."
+msgstr ""
+
+# 01e8700104bf4a7c9262e4f903c44cc1
+# fed5ffb8d05c4972a275c481775429fa
+# 73cf8afb986147c292c4796e3483658e
+# a82ae7c8dbf747a69b283da9c41964ba
+# 47fa46aee2f84af88302076b576c197f
+# 32cf3f7c69314844b4b64cf59a7c85c0
+# 4d59385167b948b0a8eb4986b193b128
+# a3e3e9f4e9a14dac81ca9416244682ca
+# dfafd29b04ec4ffb9d31644282f0a20c
+# b07ff7f94a5d42fbb776ac95a9fdb50b
+#: ../../../src/api/database/misc.rst:55
+#: ../../../src/api/database/misc.rst:59
+#: ../../../src/api/database/misc.rst:137
+#: ../../../src/api/database/misc.rst:141
+#: ../../../src/api/database/misc.rst:212
+#: ../../../src/api/database/misc.rst:216
+#: ../../../src/api/database/misc.rst:276
+#: ../../../src/api/database/misc.rst:278
+#: ../../../src/api/database/misc.rst:312
+#: ../../../src/api/database/misc.rst:315
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# 1892da79b55249108803980ac12ffd21
+# ee0f024b8f6740a38d1652f01b0d52d6
+# 5e09667feaf842e39ff29b6608252c29
+# 4f2c8463b0b543d0941e3cd7442bdfd5
+# 4ade71fbd80e4ca5a4102eb5c2656d1c
+#: ../../../src/api/database/misc.rst:56
+#: ../../../src/api/database/misc.rst:138
+#: ../../../src/api/database/misc.rst:213
+#: ../../../src/api/database/misc.rst:277
+#: ../../../src/api/database/misc.rst:313
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# 622e8a5baae84e728b36c8c52080c966
+# f7c449a4e8c04a6096bbfa97b09a45ef
+# 3f4be4dca9d946fe8fe2919665872515
+# 4061bab96e0b4db18105797d75e83a43
+# 00213e872a654d78aa391f4f702ebf21
+#: ../../../src/api/database/misc.rst:60
+#: ../../../src/api/database/misc.rst:142
+#: ../../../src/api/database/misc.rst:217
+#: ../../../src/api/database/misc.rst:279
+#: ../../../src/api/database/misc.rst:316
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# 697f79b5d3134234ade6d384e4f1b93f
+# 78497c384ef342cca96f61fc5d8e2452
+# d84a84954dba40be9a89d471d379e32a
+# e0034740497b492689124ba8058ca969
+# abf4d8643ce74786b41887586fb66b86
+#: ../../../src/api/database/misc.rst:67
+#: ../../../src/api/database/misc.rst:147
+#: ../../../src/api/database/misc.rst:224
+#: ../../../src/api/database/misc.rst:282
+#: ../../../src/api/database/misc.rst:321
+msgid "**Request**:"
+msgstr ""
+
+# 0f7dd142b90946cfa615b9ea8adc2c40
+# 9ed2f2f9a5954560b9de3c893b3f5cdd
+# 1ae63762b758448e8d1da7af50dd56e5
+# ca89108037ee4286871279ab236dab4a
+# 52e65e4c9be14adbafac37d627e536af
+#: ../../../src/api/database/misc.rst:84
+#: ../../../src/api/database/misc.rst:164
+#: ../../../src/api/database/misc.rst:242
+#: ../../../src/api/database/misc.rst:290
+#: ../../../src/api/database/misc.rst:333
+msgid "**Response**:"
+msgstr ""
+
+# 8bc230d2b6334334839f167145b4f1fa
+#: ../../../src/api/database/misc.rst:106
+msgid "Updating Indexes"
+msgstr ""
+
+# 3ac33f616e5047ffab741f71cc74261f
+#: ../../../src/api/database/misc.rst:108
+msgid "The number of purges on a database is tracked using a purge sequence. This is used by the view indexer to optimize the updating of views that contain the purged documents."
+msgstr ""
+
+# 331bbd971a754163b559c2bce4259e4c
+#: ../../../src/api/database/misc.rst:112
+msgid "When the indexer identifies that the purge sequence on a database has changed, it compares the purge sequence of the database with that stored in the view index. If the difference between the stored sequence and database is sequence is only 1, then the indexer uses a cached list of the most recently purged documents, and then removes these documents from the index individually. This prevents completely rebuilding the index from scratch."
+msgstr ""
+
+# 1a76cdaf26fc4bbf94dc765db74a0b21
+#: ../../../src/api/database/misc.rst:120
+msgid "If the difference between the stored sequence number and current database sequence is greater than 1, then the view index is entirely rebuilt. This is an expensive operation as every document in the database must be examined."
+msgstr ""
+
+# c1e0ed16a76f4424b972fd012d77bbfa
+#: ../../../src/api/database/misc.rst:129
+msgid "``/db/_missing_revs``"
+msgstr ""
+
+# fe85f5dff1f043f7b724f24c5e92203e
+#: ../../../src/api/database/misc.rst:133
+msgid "With given a list of document revisions, returns the document revisions that do not exist in the database."
+msgstr ""
+
+# 510c353d232440e4a1bae528d16ba6d5
+#: ../../../src/api/database/misc.rst:187
+msgid "``/db/_revs_diff``"
+msgstr ""
+
+# 78f289ab97904cfda30ffa38f5b711af
+#: ../../../src/api/database/misc.rst:191
+msgid "Given a set of document/revision IDs, returns the subset of those that do not correspond to revisions stored in the database."
+msgstr ""
+
+# 38cf1635af604717b6f80863596ffbc3
+#: ../../../src/api/database/misc.rst:194
+msgid "Its primary use is by the replicator, as an important optimization: after receiving a set of new revision IDs from the source database, the replicator sends this set to the destination database's ``_revs_diff`` to find out which of them already exist there. It can then avoid fetching and sending already-known document bodies."
+msgstr ""
+
+# b00bf12912cd429692071873e8078494
+#: ../../../src/api/database/misc.rst:200
+msgid "Both the request and response bodies are JSON objects whose keys are document IDs; but the values are structured differently:"
+msgstr ""
+
+# 4e2779677859421586201a96bd95e753
+#: ../../../src/api/database/misc.rst:203
+msgid "In the request, a value is an array of revision IDs for that document."
+msgstr ""
+
+# 5251937e4f1e45dba78540ccb160474b
+#: ../../../src/api/database/misc.rst:205
+msgid "In the response, a value is an object with a ``missing``: key, whose value is a list of revision IDs for that document (the ones that are not stored in the database) and optionally a ``possible_ancestors`` key, whose value is an array of revision IDs that are known that might be ancestors of the missing revisions."
+msgstr ""
+
+# 9177c325ea434fd38ad791534d992275
+#: ../../../src/api/database/misc.rst:269
+msgid "``/db/_revs_limit``"
+msgstr ""
+
+# 4305b99eb6fb4d3492a04b36e6d80a72
+#: ../../../src/api/database/misc.rst:273
+msgid "Gets the current ``revs_limit`` (revision limit) setting."
+msgstr ""
+
+# fb0fe6b584dc45d2988f84af78378ca3
+#: ../../../src/api/database/misc.rst:306
+msgid "Sets the maximum number of document revisions that will be tracked by CouchDB, even after compaction has occurred. You can set the revision limit on a database with a scalar integer of the limit that you want to set as the request body."
+msgstr ""

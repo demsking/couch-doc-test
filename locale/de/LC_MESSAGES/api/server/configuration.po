@@ -1,0 +1,155 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 40770b4ccfc84e618ec685573a11bb85
+#: ../../../src/api/server/configuration.rst:17
+msgid "Configuration"
+msgstr ""
+
+# b48a7fd9f7294c1e979275c35e8f87fc
+#: ../../../src/api/server/configuration.rst:19
+msgid "The CouchDB Server Configuration API provide an interface to query and update the various configuration values within a running CouchDB instance."
+msgstr ""
+
+# c900b0ee191c4ecc9d605428aae100c8
+#: ../../../src/api/server/configuration.rst:23
+msgid "``/_config``"
+msgstr ""
+
+# 7863822ed5e64b78b530d37eac661a99
+#: ../../../src/api/server/configuration.rst:27
+msgid "Returns the entire CouchDB server configuration as a JSON structure. The structure is organized by different configuration sections, with individual values."
+msgstr ""
+
+# 94fef44207944ffc82857b07f8c5460c
+# c5f66a595dde4bb28807d50739aced1a
+# dcd0ce0aefc94e1f8818df7b7990035b
+# b03f1dd0d4204ef99a76bb93dbe06561
+# ef70c30a4bbe4e7b9af878daff164bfd
+# cabef352955a48b6b862854f22e58f7d
+# 811bbf6381a244b9aaf4ca13b56d8d49
+# ff00d3a6a336423884271ebc07a5be80
+# ac47d3d4ceff49069ac4420b43020ded
+# 93a5b623d11c47189479c3108d2709c3
+#: ../../../src/api/server/configuration.rst:31
+#: ../../../src/api/server/configuration.rst:33
+#: ../../../src/api/server/configuration.rst:166
+#: ../../../src/api/server/configuration.rst:168
+#: ../../../src/api/server/configuration.rst:217
+#: ../../../src/api/server/configuration.rst:219
+#: ../../../src/api/server/configuration.rst:261
+#: ../../../src/api/server/configuration.rst:264
+#: ../../../src/api/server/configuration.rst:304
+#: ../../../src/api/server/configuration.rst:306
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# f4311170cff7483cb8aea348b0d15778
+# 2af3e745a4eb4a46b8144de8b653c5b0
+# 297c40abc2034d359b7c3a0899efe24e
+# 14a511124492408fad3de4e9747b5fe3
+# 07cc384da31d49cbb3fdca36861635f1
+#: ../../../src/api/server/configuration.rst:32
+#: ../../../src/api/server/configuration.rst:167
+#: ../../../src/api/server/configuration.rst:218
+#: ../../../src/api/server/configuration.rst:262
+#: ../../../src/api/server/configuration.rst:305
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# 601cd7e026d0401182bf72a36587d64f
+# 17cae2a1645d45f5aaa4e7cb29e9aeb8
+# a514077e6ddf4f858ac489b37d592306
+# c5c093fa415d4663bc77dff9574916c6
+# cff3046c2abe4f8a818e0191c98ace08
+#: ../../../src/api/server/configuration.rst:34
+#: ../../../src/api/server/configuration.rst:169
+#: ../../../src/api/server/configuration.rst:220
+#: ../../../src/api/server/configuration.rst:265
+#: ../../../src/api/server/configuration.rst:307
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# be5c8547aef44c84a29208cd5e29726a
+#: ../../../src/api/server/configuration.rst:38
+msgid "**Request**"
+msgstr ""
+
+# 6b80947544b84f228cec74ce6dd6f85d
+# 229ef8a6984d4a71941e11afc9b33e5f
+# bf4a17069e5040f98cbf9bd2e80e9508
+# ce4c1a1c6eaf46b49b19c472c7de01c7
+# 7de3a6501045410fab9911578cf409ac
+#: ../../../src/api/server/configuration.rst:46
+#: ../../../src/api/server/configuration.rst:181
+#: ../../../src/api/server/configuration.rst:232
+#: ../../../src/api/server/configuration.rst:283
+#: ../../../src/api/server/configuration.rst:320
+msgid "**Response**:"
+msgstr ""
+
+# 2fdfafea001c4a48a8cc92da32086bb2
+#: ../../../src/api/server/configuration.rst:159
+msgid "``/_config/section``"
+msgstr ""
+
+# c2056d26c3334aa19eb3ec7b81697db3
+#: ../../../src/api/server/configuration.rst:163
+msgid "Gets the configuration structure for a single section."
+msgstr ""
+
+# 31c156070817427f9ea02dfbf9c7ffab
+# 5ae8d12f17ef4315b678c35f31f9c0f3
+# dd9fdc630d544a58aa4449a14c23d25a
+# 6cbe23c5897a45eaa240ad18453f5362
+#: ../../../src/api/server/configuration.rst:173
+#: ../../../src/api/server/configuration.rst:224
+#: ../../../src/api/server/configuration.rst:271
+#: ../../../src/api/server/configuration.rst:312
+msgid "**Request**:"
+msgstr ""
+
+# 3611d3c923a84a9b8b832e0a51fcde93
+#: ../../../src/api/server/configuration.rst:208
+msgid "``/_config/section/key``"
+msgstr ""
+
+# f18f6851e082416492ed9c776516bd24
+#: ../../../src/api/server/configuration.rst:212
+msgid "Gets a single configuration value from within a specific configuration section."
+msgstr ""
+
+# 454083de23224fa7bb36aee0ff5f0a9c
+#: ../../../src/api/server/configuration.rst:247
+msgid "The returned value will be the JSON of the value, which may be a string or numeric value, or an array or object. Some client environments may not parse simple strings or numeric values as valid JSON."
+msgstr ""
+
+# 24c5902561a440ccaa70fd90b5502e67
+#: ../../../src/api/server/configuration.rst:254
+msgid "Updates a configuration value. The new value should be supplied in the request body in the corresponding JSON format. If you are setting a string value, you must supply a valid JSON string. In response CouchDB sends old value for target section key."
+msgstr ""
+
+# 4ea8534314d947ec831af8b16a1df1b4
+#: ../../../src/api/server/configuration.rst:299
+msgid "Deletes a configuration value. The returned JSON will be the value of the configuration parameter before it was deleted."
+msgstr ""

@@ -1,0 +1,787 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-01-24 22:55+0000\n"
+"Last-Translator: Robert <rok@kowalski.gd>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1390604126.000000\n"
+
+# 217e5f7cef704372aea6d15da67f739b
+#: ../../../src/intro/security.rst:18
+msgid "Security"
+msgstr "Sicherheit"
+
+# 1b47846fde5348ffa05f01c29bc8169a
+#: ../../../src/intro/security.rst:20
+msgid "In this document, we'll look at the basic security mechanisms in CouchDB: the `Admin Party`, `Basic Authentication`, `Cookie Authentication`; how CouchDB handles users and protects their credentials."
+msgstr ""
+"In diesem Teil wollen wir uns die grundlegenden Sicherheitsmechanismen in "
+"CouchDB ansehen: die `Admin Party`, `Basic Authentication`, `Cookie "
+"Authentication`."
+
+# 71a841e48f204fddb5390e5ff83037c1
+#: ../../../src/intro/security.rst:26
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+# 43b20370bbfe47a4b4fa0181065aeaa5
+#: ../../../src/intro/security.rst:31
+msgid "The Admin Party"
+msgstr "Die Admin Party"
+
+# 289f2203dc9f421ebc056d6002395d15
+#: ../../../src/intro/security.rst:33
+msgid "When you start out fresh, CouchDB allows any request to be made by anyone. Create a database? No problem, here you go. Delete some documents? Same deal. CouchDB calls this the `Admin Party`. Everybody has privileges to do anything. Neat."
+msgstr ""
+"Wenn man CouchDB gerade installiert hat darf jeder Request von jedem "
+"ausgeführt werden. Eine Datenbank anlegen? Kein Problem. Ein paar Dokumente "
+"löschen? Schon weg. In CouchDB nennt man das die `Admin Party`. Jeder darf "
+"alles. Nette Sache."
+
+# e9e0aba57d15413f91626e8a05d64e2d
+#: ../../../src/intro/security.rst:38
+msgid "While it is incredibly easy to get started with CouchDB that way, it should be obvious that putting a default installation into the wild is adventurous. Any rogue client could come along and delete a database."
+msgstr ""
+"Während es unglaublich einfach ist, so mit CouchDB zu starten, so sollte es "
+"ebenfalls klar sein, das eine solche Installation nicht ins Internet gehört. "
+"Jeder böswillige oder schlecht geschriebene Client kann vorbeikommen und mal "
+"eben eine Datenbank löschen."
+
+# c072cdebd2554f45aaaea836598d2407
+#: ../../../src/intro/security.rst:42
+msgid "A note of relief: by default, CouchDB will listen only on your loopback network interface (``127.0.0.1`` or ``localhost``) and thus only you will be able to make requests to CouchDB, nobody else. But when you start to open up your CouchDB to the public (that is, by telling it to bind to your machine's public IP address), you will want to think about restricting access so that the next bad guy doesn't ruin your admin party."
+msgstr ""
+"Immerhin nutzt CouchDB standardmäßig nur das Loopback Interface "
+"(``127.0.0.1`` oder ``localhost``). Somit kann man nur selber mit CouchDB "
+"sprechen und niemand sonst. Doch irgendwann wird die CouchDB Instanz an das "
+"offene Internet angeschlossen (z.B. indem CouchDB an der öffentlichen IP "
+"Adresse lauscht) und spätestens dann möchte man den Zugriff beschränken, "
+"damit die Admin Party nicht mutwillig zerstört wird."
+
+# 2f75bb116ec54be99080da64f2f4d79d
+#: ../../../src/intro/security.rst:49
+msgid "In our previous discussions, we dropped some keywords about how things without the `Admin Party` work. First, there's *admin* itself, which implies some sort of super user. Then there are *privileges*. Let's explore these terms a little more."
+msgstr ""
+"In den vorangegangen Kapiteln haben wir immer mal wieder erwähnt, wie man "
+"CouchDB ohne `Admin Party` betreibt. Zunächst gibt es den *admin*, der eine "
+"Art von Superuser beschreibt. Dann gibt es Privilegien. Schauen wir uns das "
+"genauer an."
+
+# 73f4b6792f83433b9fe490ae80206840
+#: ../../../src/intro/security.rst:54
+msgid "CouchDB has the idea of an *admin user* (e.g. an administrator, a super user, or root) that is allowed to do anything to a CouchDB installation. By default, everybody is an admin. If you don't like that, you can create specific admin users with a username and password as their credentials."
+msgstr ""
+"CouchDB kennt das Konzept eines *Administrators* (oder auch Admin User, "
+"Super User bzw. root), der innerhalb einer CouchDB Installation alles darf. "
+"In der Standardeinstellung ist jeder Benutzer ein Administrator. Falls das "
+"nicht gewünscht ist, kann man bestimmte Administratorkonten mit Benutzername "
+"und Passwort anlegen."
+
+# 2f90fb516b84467eb75dc5e93785b6be
+#: ../../../src/intro/security.rst:59
+msgid "CouchDB also defines a set of requests that only admin users are allowed to do. If you have defined one or more specific admin users, CouchDB will ask for identification for certain requests:"
+msgstr ""
+"Des weiteren gibt es eine Gruppe von Requests, die ausschließlich "
+"Administratoren vorbehalten sind. Wird ein solcher Request durchgeführt und "
+"Administrator Konten sind angelegt, so fragt CouchDB nach der "
+"Authentifizierung:"
+
+# 43e796e4869d4bcd9ccc862706fffb5d
+#: ../../../src/intro/security.rst:63
+msgid "Creating a database (:put:`PUT /database </{db}>`)"
+msgstr "Datenbank anlegen (:put:`PUT /database </{db}>`)"
+
+# 320273d57d0647428bbb81420a23dd31
+#: ../../../src/intro/security.rst:64
+msgid "Deleting a database (:put:`DELETE /database </{db}>`)"
+msgstr "Datenbank löschen (:put:`DELETE /database </{db}>`)"
+
+# 2059f43d4b964ce58c88cd234cfcd32e
+#: ../../../src/intro/security.rst:65
+msgid "Setup a database security (:put:`PUT /database/_security </{db}/_security>`)"
+msgstr ""
+"Sicherheitseinstellungen der Datenbank einrichten (:put:`PUT /database/"
+"_security </{db}/_security>`)"
+
+# 03d76b210eb24f44a444d3a252b6dc5d
+#: ../../../src/intro/security.rst:67
+msgid "Creating a design document (:put:`PUT /database/_design/app </{db}/_design/{ddoc}>`)"
+msgstr ""
+"Designdokument anlegen (:put:`PUT /database/_design/app "
+"</{db}/_design/{ddoc}>`)"
+
+# f543239ba0644a82af544983b1b6053a
+#: ../../../src/intro/security.rst:69
+msgid "Updating a design document (:put:`PUT /database/_design/app?rev=1-4E2 </{db}/_design/{ddoc}>`)"
+msgstr ""
+"Designdokumente aktualisieren (:put:`PUT /database/_design/app?rev=1-4E2 "
+"</{db}/_design/{ddoc}>`)"
+
+# 16b3d32834664ad0b895188d360cd2e2
+#: ../../../src/intro/security.rst:71
+msgid "Deleting a design document (:delete:`DELETE /database/_design/app?rev=2-6A7 </{db}/_design/{ddoc}>`)"
+msgstr ""
+"Designdokumente löschen (:delete:`DELETE /database/_design/app?rev=2-6A7 "
+"</{db}/_design/{ddoc}>`)"
+
+# 938f3c85b08649639beb4acea29cc3ed
+#: ../../../src/intro/security.rst:73
+msgid "Execute a temporary view (:post:`POST /database/_temp_view </{db}/_temp_view>`)"
+msgstr ""
+"Temporären View ausführen (:post:`POST /database/_temp_view "
+"</{db}/_temp_view>`)"
+
+# 9a31eacc5e714fd2afb52b8da5f730fa
+#: ../../../src/intro/security.rst:75
+msgid "Triggering compaction (:post:`POST /database/_compact </{db}/_compact>`)"
+msgstr "Compaction auslösen (:post:`POST /database/_compact </{db}/_compact>`)"
+
+# 1da76a469de340919763b56b985269fa
+#: ../../../src/intro/security.rst:76
+msgid "Reading the task status list (:get:`GET /_active_tasks </_active_tasks>`)"
+msgstr "Taskliste lesen (:get:`GET /_active_tasks </_active_tasks>`)"
+
+# edc156f7b8d14e009c737235bfead138
+#: ../../../src/intro/security.rst:77
+msgid "Restarting the server (:post:`POST /_restart </_restart>`)"
+msgstr "Neustarten des Servers (:post:`POST /_restart </_restart>`)"
+
+# 7d10842d453b45fda7b80f1d2d673344
+#: ../../../src/intro/security.rst:78
+msgid "Reading the active configuration (:get:`GET /_config </_config>`)"
+msgstr "Lesen der aktiven Konfiguration (:get:`GET /_config </_config>`)"
+
+# bb800ee7ea1b4b58a4eefa8461b771dc
+#: ../../../src/intro/security.rst:79
+msgid "Updating the active configuration (:put:`PUT /_config/section/key </_config/{section}/{key}>`)"
+msgstr ""
+"Aktualisierung der aktiven Konfiguration (:put:`PUT /_config/section/key "
+"</_config/{section}/{key}>`)"
+
+# 5e0bac6be9424feb9bd0ce9806a1a99f
+#: ../../../src/intro/security.rst:84
+msgid "Creating New Admin User"
+msgstr "Einen neuen Admin User anlegen"
+
+# fe7a7aa1b0a74d19884422c60c6fa040
+#: ../../../src/intro/security.rst:86
+msgid "Let's do another walk through the API using `curl` to see how CouchDB behaves when you add admin users."
+msgstr ""
+"Wir schauen uns noch einmal das API an und benutzen `curl` um zu sehen wie "
+"CouchDB sich verhält, wenn wir Administratoren hinzufügen."
+
+# 08c9a8d975e147af8d819ff57b2261ee
+#: ../../../src/intro/security.rst:95
+msgid "When starting out fresh, we can add a database. Nothing unexpected. Now let's create an admin user. We'll call her ``anna``, and her password is ``secret``. Note the double quotes in the following code; they are needed to denote a string value for the :ref:`configuration API <api/config>`::"
+msgstr ""
+"Wenn wir mit einer neuen CouchDB Installation starten, können wir eine "
+"Datenbank hinzufügen, das ist nichts Neues. Wir legen nun eine "
+"Administratorin an, die wir ``anna`` nennen. Ihr Passwort ist: ``secret``. "
+"Achte auf die doppelten Anführungszeichen in dem nun folgenden Code, sie "
+"werden benötigt, um in :ref:`configuration API <api/config>` einen String zu "
+"kennzeichnen::"
+
+# c444fc7689ce460ba17be2dde4cbe089
+#: ../../../src/intro/security.rst:103
+msgid "As per the :ref:`_config <api/config>` API's behavior, we're getting the previous value for the config item we just wrote. Since our admin user didn't exist, we get an empty string."
+msgstr ""
+"Gemäß dem Verhalten des :ref:`_config <api/config>` APIs erhalten wir den "
+"vorherigen Wert des geänderten Parameters als Ergebnis zurück. Da unser "
+"Administrator noch nicht existiert hat, bekommen wir einen leeren String "
+"zurück."
+
+# 831ba916d716403481e1dd06d1310d4a
+#: ../../../src/intro/security.rst:109
+msgid "Hashing Passwords"
+msgstr "Passwort Hashing"
+
+# 4b9e3f5dde8b411d94722b8cf1191cf8
+#: ../../../src/intro/security.rst:111
+msgid "Seeing the plain-text password is scary, isn't it? No worries, CouchDB doesn't show up the plain-text password anywhere. It gets hashed right away. The hash is that big, ugly, long string that starts out with ``-hashed-``. How does that work?"
+msgstr ""
+"Das Passwort im Klartext zu sehen macht ein wenig nervös, oder? Doch keine "
+"Sorge. Wenn der Log Level nicht auf debug steht, tauchen Passwörter "
+"nirgendwo im Klartext auf, sondern werden gleich gehasht. Der Hash ist die "
+"lange unhandliche Zeichenkette, die mit ``-hashed-`` beginnt. Doch wie wird "
+"die angelegt?"
+
+# 759369d55ad049bcb3e3925185e36118
+#: ../../../src/intro/security.rst:116
+msgid "Creates a new 128-bit UUID. This is our *salt*."
+msgstr "Erzeuge eine neue 128-bit UUID. Das ist unser *salt*."
+
+# de617bf1f0764148a4aaf89a12391087
+#: ../../../src/intro/security.rst:117
+msgid "Creates a sha1 hash of the concatenation of the bytes of the plain-text password and the salt ``(sha1(password + salt))``."
+msgstr ""
+"Erzeuge einen SHA-1 Hash vom Klartext-Passwort und dem Salt ``(sha1(password "
+"+ salt))``."
+
+# 9c75f8bd7f5d40e5b0e175030b3a577c
+#: ../../../src/intro/security.rst:119
+msgid "Prefixes the result with ``-hashed-`` and appends ``,salt``."
+msgstr "Stelle dem Ergebnis ``-hashed-`` voran und hänge ``,salt`` hinten an."
+
+# cfa2ad237a464ec9afb8cef17d12dc98
+#: ../../../src/intro/security.rst:121
+msgid "To compare a plain-text password during authentication with the stored hash, the same procedure is run and the resulting hash is compared to the stored hash. The probability of two identical hashes for different passwords is too insignificant to mention (c.f. `Bruce Schneier`_). Should the stored hash fall into the hands of an attacker, it is, by current standards, way too inconvenient (i.e., it'd take a lot of money and time) to find the plain-text password from the hash."
+msgstr ""
+"Um ein Klartext-Passwort während der Authentifizierung mit dem gespeicherten "
+"Hashwert zu vergleichen, wird die gleiche Prozedur noch einmal durchgeführt "
+"und der errechnete Hashwert mit dem gespeicherten Wert verglichen. Die "
+"Wahrscheinlichkeit, dass zwei Hashwerte kollidieren kann man vernachlässigen "
+"(vgl. auch Bruce Schneier). Sollte der gespeicherte Hashwert einem Angreifer "
+"in die Hände fallen, so ist es nach heutigem Stand der Technik zu aufwändig, "
+"das dazugehörige Klartext-Passwort zu finden (d.h. es ist zu teuer und es "
+"dauert zu lange)."
+
+# 9a4610fd67d4404085813f81daae4994
+#: ../../../src/intro/security.rst:131
+msgid "But what's with the ``-hashed-`` prefix? When CouchDB starts up, it reads a set of `.ini` files with config settings. It loads these settings into an internal data store (not a database). The config API lets you read the current configuration as well as change it and create new entries. CouchDB is writing any changes back to the `.ini` files."
+msgstr ""
+"Doch was hat es mit dem ``-hashed-`` Präfix auf sich? Erinnern wir uns, wie "
+"das Configuration API funktioniert. Wenn CouchDB startet, werden eine Gruppe "
+"von `.ini` Dateien mit Konfigurationseinstellungen gelesen. Diese werden in "
+"eine interne Datenstruktur (keine Datenbank) geladen. Mit dem Configuration "
+"API kann man die aktuelle Konfiguration auslesen, ändern und neue Werte "
+"anlegen. CouchDB schreibt die Änderungen dann zurück in die `.ini` Dateien."
+
+# d7d84c038d8741bbb40301d3f533122c
+#: ../../../src/intro/security.rst:137
+msgid "The `.ini` files can also be edited by hand when CouchDB is not running. Instead of creating the admin user as we showed previously, you could have stopped CouchDB, opened your `local.ini`, added ``anna = secret`` to the :config:section:`admins`, and restarted CouchDB. Upon reading the new line from `local.ini`, CouchDB would run the hashing algorithm and write back the hash to `local.ini`, replacing the plain-text password. To make sure CouchDB only hashes plain-text passwords and not an existing hash a second time, it prefixes the hash with ``-hashed-``, to distinguish between plain-text passwords and hashed passwords. This means your plain-text password can't start with the characters ``-hashed-``, but that's pretty unlikely to begin with."
+msgstr ""
+"Die `.ini` Dateien können auch von Hand geändert werden, wenn CouchDB nicht "
+"läuft. Um ein Administrator Konto anzulegen, können wir auch CouchDB "
+"stoppen, die `local.ini` Datei öffnen, einen Eintrag ``anna = secret`` unter "
+":config:section:`admins` hinzufügen und CouchDB wieder starten. Nach dem "
+"Neustart liest CouchDB den neuen Eintrag der `local.ini` Datei, berechnet "
+"den Hashwert des Passworts und schreibt die Änderung zurück in die "
+"`local.ini` Datei. Dabei wird der ursprüngliche Eintrag ersetzt. Damit "
+"CouchDB Passwörter nur einmal hasht, bekommen bereits gehashete Passwörter "
+"den ``-hashed-`` Präfix. So kann CouchDB sie von Klartext-Passwörtern "
+"unterscheiden. Das bedeutet zwar, dass ein Passwort nicht mit ``-hashed-`` "
+"beginnen kann, doch das ist sowieso eher unwahrscheinlich."
+
+# ab68924959ea47a391751a15d7a3dcf0
+#: ../../../src/intro/security.rst:150
+msgid "Since :ref:`1.3.0 release <release/1.3.0>` CouchDB uses ``-pbkdf2-`` prefix by default to sign about using `PBKDF2`_ hashing algorithm instead of `SHA1`."
+msgstr ""
+"Seit dem :ref:`1.3.0 release <release/1.3.0>` benutzt CouchDB standardmäßig "
+"das ``-pbkdf2-`` Prefix um den `PBKDF2`_ Algorithmus zu signalisieren, "
+"anstatt `SHA1`."
+
+# e0ebfa33b2aa40a193aff89cb9feed4e
+#: ../../../src/intro/security.rst:159
+msgid "Basic Authentication"
+msgstr "Basic Authentication"
+
+# 9f1decae75db43008fc4295fa396180b
+#: ../../../src/intro/security.rst:161
+msgid "Now that we have defined an admin, CouchDB will not allow us to create new databases unless we give the correct admin user credentials. Let's verify::"
+msgstr ""
+"Nachdem wir einen Administrator angelegt haben, erlaubt es uns CouchDB nicht "
+"länger neue Datenbanken anzulegen ohne uns korrekt zu authentifizieren. "
+"Überprüfen wir das einmal::"
+
+# 465bd66955084aada2296eeca0becc9b
+#: ../../../src/intro/security.rst:167
+msgid "That looks about right. Now we try again with the correct credentials::"
+msgstr ""
+"Das sieht soweit gut aus. Jetzt noch einmal mit Benutzername und Passwort::"
+
+# 924f3f65a84d4800b08fc3fdc7e2bfc9
+#: ../../../src/intro/security.rst:173
+msgid "If you have ever accessed a website or FTP server that was password-protected, the ``username:password@`` URL variant should look familiar."
+msgstr ""
+"Falls du schon einmal auf einer passwortgeschützten Webseite oder FTP Server "
+"warst, sollte dir der ``username:password@`` Teil in der URL bekannt "
+"vorkommen."
+
+# a3bfebfde30c4953897f22285872ceb0
+#: ../../../src/intro/security.rst:176
+msgid "If you are security conscious, the missing ``s`` in ``http://`` will make you nervous. We're sending our password to CouchDB in plain text. This is a bad thing, right? Yes, but consider our scenario: CouchDB listens on ``127.0.0.1`` on a development box that we're the sole user of. Who could possibly sniff our password?"
+msgstr ""
+"Ist Sicherheit wichtig, sollte das Fehlen von HTTPS Nervosität erzeugen. "
+"Immerhin wird das Passwort im Klartext an CouchDB übertragen. Das ist in der "
+"Regel nicht so gut. Im aktuellen Fall ist es jedoch nicht ganz so schlimm, "
+"weil CouchDB auf ``127.0.0.1`` auf unserer eigenen Maschine lauscht. Wer "
+"sollte dort das Passwort mitlesen können?"
+
+# 3128295e4af44a31aae21b7fa13e5a0c
+#: ../../../src/intro/security.rst:182
+msgid "If you are in a production environment, however, you need to reconsider. Will your CouchDB instance communicate over a public network? Even a LAN shared with other collocation customers is public. There are multiple ways to secure communication between you or your application and CouchDB that exceed the scope of this documentation. CouchDB as of version :ref:`1.1.0 <release/1.1.0>` comes with :ref:`SSL built in <config/ssl>`."
+msgstr ""
+"In einer Produktionsumgebung sieht das anders aus. Soll CouchDB über das "
+"öffentliche Internet oder über ein internes LAN erreichbar sein? Auch eine "
+"Instanz, die auf einem Server liegt, den man sich mit anderen teilt ist "
+"öffentlich. Es gibt mehrere Wege die Kommunikation zwischen ihrer Anwendung "
+"und CouchDB zu sichern, die jedoch dieser Dokumentation sprengen. CouchDB in "
+"Version :ref:`1.1.0 <release/1.1.0>` kommt mit :ref:`eingebautem SSL "
+"<config/ssl>`."
+
+# a187fde08a584d6d913f65d245576501
+#: ../../../src/intro/security.rst:191
+msgid ":ref:`Basic Authentication API Reference <api/auth/basic>`"
+msgstr ":ref:`Basic Authentication API Referenz <api/auth/basic>`"
+
+# f8cc12d7ef124a68836f951016690067
+#: ../../../src/intro/security.rst:197
+msgid "Cookie Authentication"
+msgstr "Cookie Authentifizierung"
+
+# 24910703abd64b7aa07943911cb053b1
+#: ../../../src/intro/security.rst:199
+msgid "Basic authentication that uses plain-text passwords is nice and convenient, but not very secure if no extra measures are taken. It is also a very poor user experience. If you use basic authentication to identify admins, your application's users need to deal with an ugly, unstylable browser modal dialog that says non-professional at work more than anything else."
+msgstr ""
+"Basic Authentication mit Klartext-Passwörtern ist zwar einfach zu handhaben, "
+"ohne zusätzliche Sicherheitsmassnahmen jedoch nicht besonders sicher. Zudem "
+"ist die User Experience nicht besonders elegant, da der Browser ein "
+"einfaches Dialogfeld ohne jeden Schmuck einblendet auf das man als "
+"Entwickler keinen Einfluss hat. Damit zeigt man auch das hier nicht gerade "
+"Profis am Werk sind."
+
+# b64fc46935484a81a2d612bb50d0eb86
+#: ../../../src/intro/security.rst:205
+msgid "To remedy some of these concerns, CouchDB supports cookie authentication. With cookie authentication your application doesn't have to include the ugly login dialog that the users' browsers come with. You can use a regular HTML form to submit logins to CouchDB. Upon receipt, CouchDB will generate a one-time token that the client can use in its next request to CouchDB. When CouchDB sees the token in a subsequent request, it will authenticate the user based on the token without the need to see the password again. By default, a token is valid for 10 minutes."
+msgstr ""
+"Um die Situation zu verbessern unterstützt CouchDB Cookie Authentifizierung. "
+"Mit Cookie Authentifizierung muss ihre Anwendung nicht den hässlichen Login "
+"Dialog des Browsers nutzen, sondern man nutzt stattdessen ein normales HTML "
+"Formular um die Login Daten an CouchDB zu übertragen. Stimmen die Daten "
+"erzeugt CouchDB ein eindeutiges Token, welches der Client bei den nächsten "
+"Requests anstelle des Benutzernamens und Passwort nutzen kann. Das Token ist "
+"dann standardmäßig für 10 Minuten gültig."
+
+# 3ea87f6d333742d7bbde28dc5e08fcc7
+#: ../../../src/intro/security.rst:214
+msgid "To obtain the first token and thus authenticate a user for the first time, the username and password must be sent to the :ref:`_session <api/auth/session>` API. The API is smart enough to decode HTML form submissions, so you don't have to resort to any smarts in your application."
+msgstr ""
+"Um das erste Token zu erhalten und damit den Benutzer das erste Mal zu "
+"authentifizieren, schickt man den Benutzernamen und das Passwort an das "
+":ref:`_session <api/auth/session>` API. Das API versteht Daten, die von "
+"einem HTML Form kommen automatisch, sodass man in der Anwendung nichts "
+"Besonderes machen muss."
+
+# 8dd47d61525d44eba5ef20d85b4eddcf
+#: ../../../src/intro/security.rst:219
+msgid "If you are not using HTML forms to log in, you need to send an HTTP request that looks as if an HTML form generated it. Luckily, this is super simple::"
+msgstr ""
+"Nutzt man keine HTML Formulare muss man lediglich einen HTTP Request "
+"schicken, der so aussieht als käme er von einem HTML Formular. "
+"Glücklicherweise ist das kein großer Aufwand::"
+
+# 0fd44a103b8f41fa8cce88b1c368e550
+#: ../../../src/intro/security.rst:227
+msgid "CouchDB replies, and we'll give you some more detail::"
+msgstr "CouchDB antwortet::"
+
+# 54e6b0b8de204820b089939c407495dc
+#: ../../../src/intro/security.rst:236
+msgid "A :statuscode:`200` response code tells us all is well, a :header:`Set-Cookie` header includes the token we can use for the next request, and the standard JSON response tells us again that the request was successful."
+msgstr ""
+"Eine Antwort mit dem HTPP Statuscode :statuscode:`200` sagt uns, dass alles "
+"in Butter ist und ein :header:`Set-Cookie` Header enthält den Token, den wir "
+"im nächsten Request benutzen können. Auch die JSON Antwort zeigt, dass der "
+"Request erfolgreich war."
+
+# 32946c3907ef46d29f48ec148dd9776e
+#: ../../../src/intro/security.rst:240
+msgid "Now we can use this token to make another request as the same user without sending the username and password again::"
+msgstr ""
+"Nun können wir mit diesem Token einen weiteren Request abschicken und müssen "
+"dabei nicht den Benutzernamen und das Passwort mitschicken::"
+
+# 40b1ee5aa2244040a90c956be20485ff
+#: ../../../src/intro/security.rst:249
+msgid "You can keep using this token for 10 minutes by default. After 10 minutes you need to authenticate your user again. The token lifetime can be configured with the timeout (in seconds) setting in the :ref:`couch_httpd_auth <config/couch_httpd_auth>` configuration section."
+msgstr ""
+"Wir können dieses Token standardmäßig für 10 Minuten nutzen. Nach Ablauf der "
+"10 Minuten muss sich der Benutzer erneut bei CouchDB authentifizieren. Die "
+"Gültigkeitsdauer des Tokens kann man im timeout Parameter des :ref:`"
+"couch_httpd_auth <config/couch_httpd_auth>` Bereichs ändern."
+
+# 89fc66a6f17049d68616d39732565fa8
+#: ../../../src/intro/security.rst:256
+msgid ":ref:`Cookie Authentication API Reference <api/auth/cookie>`"
+msgstr ":ref:`Cookie Authentication API Referenz <api/auth/cookie>`"
+
+# 28a30469f451438f87933b2cc681d473
+#: ../../../src/intro/security.rst:261
+msgid "Authentication Database"
+msgstr "Authentifizierungsdatenbank"
+
+# d1cbb85f30e5461782c7bf778554e4f3
+#: ../../../src/intro/security.rst:263
+msgid "You may already note, that CouchDB administrators are defined within config file and you now wondering does regular users are also stored there. No, they don't. CouchDB has special `authentication database` -- ``_users`` by default -- that stores all registered users as JSON documents."
+msgstr ""
+"Wie wir bereits gesehen haben, werden CouchDB Administratoren in der "
+"Konfigurationsdatei definiert, nun stellt sich sicher die Frage, wo reguläre "
+"Benutzer definiert werden. CouchDB hat eine spezielle "
+"`Authentifizierungsdatenbank` (authentication database) -- sie hat "
+"standardmäßig den Namen ``_users`` und speichert alle registrierten Benutzer "
+"als JSON Dokumente."
+
+# 2bd795622262442ca264b0c7d0a7bba2
+#: ../../../src/intro/security.rst:268
+msgid "CouchDB uses special database (called ``_users`` by default) to store information about registered users. This is a `system database` -- this means that while it shares common :ref:`database API <api/database>`, there are some special security-related constraints applied and used agreements on documents structure. So how `authentication database` is different from others?"
+msgstr ""
+"Um Informationen über registrierte Benutzer zu speichern benutzt CouchDB "
+"eine spezielle Datenbank (Standardname: ``_users``). Dies ist eine `System "
+"Datenbank` -- das bedeutet zwar auch, dass es das :ref:`database API "
+"<api/database>` teilt, aber es gibt einige spezielle sicherheitsrelevante "
+"Einschränkungen bezüglich der Dokumentenstruktur. Wie unterscheidet sich "
+"jetzt die `Authentifizierungsdatenbank` von den anderen?"
+
+# 9db5404418d64fe1ab9499e31e4edf22
+#: ../../../src/intro/security.rst:274
+msgid "Only administrators may browse list of all documents (:get:`GET /_users/_all_docs </{db}/_all_docs>`)"
+msgstr ""
+"Nur Adminstratoren dürfen die Liste aller Dokumente durchstöbern (:get:`GET "
+"/_users/_all_docs </{db}/_all_docs>`)"
+
+# 190337dd5d4b49c69a265dfdb832918e
+#: ../../../src/intro/security.rst:276
+msgid "Only administrators may listen :ref:`changes feed <changes>` (:get:`GET /_users/_changes </{db}/_changes>`)"
+msgstr ""
+"Nur Administratoren dürfen den :ref:`changes feed <changes>` (:get:`GET "
+"/_users/_changes </{db}/_changes>`) lesen"
+
+# 8e7198e2e91e498382306ba1aeb33e94
+#: ../../../src/intro/security.rst:278
+msgid "Only administrators may execute design functions like :ref:`views <viewfun>`, :ref:`shows <showfun>` and :ref:`others <ddocs>`"
+msgstr ""
+"Nur Administratoren dürfen Design Functionen, wie :ref:`views <viewfun>`, "
+":ref:`shows <showfun>` und :ref:`others <ddocs>` ausführen"
+
+# 6403a8d4e1824e2a9584cdcb9a971ef9
+#: ../../../src/intro/security.rst:280
+msgid "Only administrators may :method:`GET`, :method:`PUT` or :method:`DELETE` any document (to be honest, that they always can do)"
+msgstr ""
+"Nur Administratoren dürfen :method:`GET`, :method:`PUT` oder :method:`DELETE`"
+" Requests an jedes Dokuments stellen (um ehrlich zu sein, sie dürfen dies "
+"überall)"
+
+# 123aac47404b4bb9b71f9d373634612f
+#: ../../../src/intro/security.rst:282
+msgid "There is special design document ``_auth`` that cannot be modified"
+msgstr "Das besondere Design Dokument ``_auth`` kann nicht modifiziert werden"
+
+# 3920539f374f4c8497439ecd43b29486
+#: ../../../src/intro/security.rst:283
+msgid "Every document (of course, except `design documents`) represents registered CouchDB users and belong to him"
+msgstr ""
+"Jedes Dokument (natürlich außer den `Design Dokumenten`) repräsentiert einen "
+"registrierten Benutzer und gehört dem Benutzer"
+
+# b7252595b81c49a99283d95ad975af8a
+#: ../../../src/intro/security.rst:285
+msgid "Users may only access (:get:`GET /_users/org.couchdb.user:Jan </{db}/{docid}>`) or modify (:put:`PUT /_users/org.couchdb.user:Jan </{db}/{docid}>`) documents that they owns"
+msgstr ""
+"Benutzer dürfen nur auf Dokumente zugreifen (:get:`GET "
+"/_users/org.couchdb.user:Jan </{db}/{docid}>`) oder sie modifizieren (:put:`"
+"PUT /_users/org.couchdb.user:Jan </{db}/{docid}>`) wenn sie ihnen gehören"
+
+# d08bd6393a144fdbadc80f98a25ae418
+#: ../../../src/intro/security.rst:289
+msgid "These draconian rules are reasonable: CouchDB cares about user's personal information and doesn't discloses it for everyone. Often, users documents are contains not only system information like `login`, `password hash` and `roles`, but also sensitive personal information like: real name, email, phone, special internal identifications and more - this is not right information that you want to share with the World."
+msgstr ""
+"Für diese harten Regeln gibt es einen Grund: CouchDB gibt Acht auf "
+"persönliche Informationen der Benutzer und teilt sie nicht mit jedermann. "
+"Oft sind in Benutzerdokumenten mehr Informationen als `login`, `Passwort "
+"Hash` und `Rollen`, zum Beispiel persönliche Informationen wie realer Name, "
+"E-Mailadresse, Telefonnummer, besondere interne Identifikationsmerkmale und "
+"vieles mehr - Informationen die man nicht mit der ganzen Welt teilen möchte."
+
+# e91a5b59a39a4c7a9b017dd60b8adc79
+#: ../../../src/intro/security.rst:298
+msgid "Users Documents"
+msgstr "Benutzerdokumente"
+
+# 75323ed08f8a45b39272aacc209508d5
+#: ../../../src/intro/security.rst:300
+msgid "Each CouchDB user is stored in document format. These documents are contains several *mandatory* fields, that CouchDB handles for correct authentication process:"
+msgstr ""
+"Jeder CouchDB-Benutzer wird als Dokument gespeichert. Diese Dokumente haben "
+"einige *Pflichtfelder*, sodass CouchDB den Benutzer korrekt authentifizieren "
+"kann:"
+
+# d013663bbadd409a9c4db0be0633bb81
+#: ../../../src/intro/security.rst:304
+msgid "**_id** (*string*): Document ID. Contains user's login with special prefix :ref:`org.couchdb.user`"
+msgstr ""
+"**_id** (*string*): Dokument-ID. Enthält die Logindaten des Benutzers mit "
+"einem besonderem Prefix :ref:`org.couchdb.user`"
+
+# ac2bc27125664a0791bf3e6f225c8038
+#: ../../../src/intro/security.rst:306
+msgid "**derived_key** (*string*): `PBKDF2`_ key"
+msgstr "**derived_key** (*string*): `PBKDF2`_ Schlüssel"
+
+# d7675ff2e3354cf6826d07bff79fc587
+#: ../../../src/intro/security.rst:307
+msgid "**name** (*string*): User's name aka login. **Immutable** e.g. you cannot rename existed user - you have to create new one"
+msgstr ""
+"**name** (*string*): Benutzername oder auch Loginname. **Immutable** also "
+"unveränderbar, d.h. man kann bestehende Benutzer nicht umbenennen, sondern "
+"muss einen neuen anlegen"
+
+# 2dc62a156c234853be17809e49c1bdc5
+#: ../../../src/intro/security.rst:309
+msgid "**roles** (*array* of *string*): List of user roles. CouchDB doesn't provides any builtin roles, so you're free to define your own depending on your needs. However, you cannot set system roles like ``_admin`` there. Also, only administrators may assign roles to users - by default all users have no roles"
+msgstr ""
+"**roles** (*array* of *string*): Liste der Benutzerrollen. CouchDB bietet "
+"keine vorinstallierten Rollen, man hat aber allen Freiraum um sich eigene "
+"Rollen zu definieren. Man kann aber trotzdem keine Systemrollen wir "
+"``_admin`` hier definieren. Zusätzlich dürfen nur administrative Accounts "
+"dem Benutzer Rollen zuweisen - standardmäßig hat kein Benutzer eine Rolle"
+
+# 014dd15e02fd4a40956b665a9524acec
+#: ../../../src/intro/security.rst:313
+msgid "**password_sha** (*string*): Hashed password with salt. Used for ``simple`` `password_scheme`"
+msgstr ""
+"**password_sha** (*string*): Gehashtes Passwort mit Salt. Wird für das "
+"``simple`` `password_scheme` benutzt"
+
+# 452c5c49995d4c1a8bcdf6b11e71cc1a
+#: ../../../src/intro/security.rst:315
+msgid "**password_scheme** (*string*): Password hashing scheme. May be ``simple`` or ``pbkdf2``"
+msgstr ""
+"**password_scheme** (*string*): Password Hashing Schema. Kann ``simple`` "
+"oder ``pbkdf2`` sein"
+
+# 927b0811db72437ea5fcbed60fd395e3
+#: ../../../src/intro/security.rst:317
+msgid "**salt** (*string*): Hash salt. Used for ``simple`` `password_scheme`"
+msgstr ""
+"**salt** (*string*): Hash Salt. Wird für ``simple`` `password_scheme` benutzt"
+
+# a3462dbcb34f4ce39bb305c107d31bdc
+#: ../../../src/intro/security.rst:318
+msgid "**type** (*string*): Document type. Constantly have value ``user``"
+msgstr "**type** (*string*): Typ des Dokuments. Hat stets den Wert ``user``"
+
+# 27571c511d9840909ca6b9483a86d3ec
+#: ../../../src/intro/security.rst:320
+msgid "Additionally, you may specify any custom fields that are relates to the target user. This is good place to store user's private information because only he and CouchDB administrators may browse it."
+msgstr ""
+"Zusätzlich kann man andere, selbst definierte Felder für den Benutzer "
+"definieren. Es ist ein guter Platz um private Benutzerdaten zu speichern, da "
+"nur der Benutzer und die CouchDB Administratoren sie anzeigen dürfen."
+
+# 313c274caa16465fae9de4fae3602d90
+#: ../../../src/intro/security.rst:327
+msgid "Why ``org.couchdb.user:`` prefix?"
+msgstr "Warum das ``org.couchdb.user:`` Prefix?"
+
+# 8f52d403873b45649f984f8e7602b496
+#: ../../../src/intro/security.rst:329
+msgid "The reason to have special prefix before user's login name is to have namespaces which users are belongs to. This prefix is designed to prevent replication conflicts when you'll try to merge two `_user` databases or more."
+msgstr ""
+"Durch ein spezielles Prefix vor dem Benutzernamen werden Namespaces "
+"erstellt, durch die klar ist, wohin ein Benutzer gehört. Dadurch werden "
+"Replikationskonflikte vermieden wenn man versucht, zwei  oder mehr `_user` "
+"Datenbanken zusammenzuführen."
+
+# e5a485e196664a9398908e27b3f71c29
+#: ../../../src/intro/security.rst:333
+msgid "For current CouchDB releases, all users are belongs to the same ``org.couchdb.user`` namespace and this cannot be changed, but we'd made such design decision for future releases."
+msgstr ""
+"Für derzeitige CouchDB Versionen gehören alle Benutzer zu dem selben "
+"Namespace ``org.couchdb.user``. Dies kann zur Zeit nicht verändert werden, "
+"aber wir haben die Vorbereitung schon für spätere Versionen getroffen."
+
+# 77cf6c243ea8475bb53edf70b1a0ed38
+#: ../../../src/intro/security.rst:339
+msgid "Creating New User"
+msgstr "Neue Benutzer anlegen"
+
+# 978267647b874c819db1512e99b77782
+#: ../../../src/intro/security.rst:341
+msgid "Creating new user is a very trivial operation. You need just to send single :method:`PUT` request with user's data to CouchDB. Let's create user with login `jan` and password `apple`::"
+msgstr ""
+"Einen neuen Benutzer anzulegen ist leicht. Wir müssen nur einen :method:`PUT`"
+" Request mit den Benutzerdaten an CouchDB senden. Lass uns einen Benutzer "
+"mit dem Login `jan` und dem Passwort `apple` anlegen::"
+
+# 0783aef48ab94c54bd6fb50bf3894122
+#: ../../../src/intro/security.rst:350
+msgid "This `curl` command will produce next HTTP request:"
+msgstr "Dieser `curl` Befehl erzeugt den folgenden HTTP request:"
+
+# 4318abfed6cb4cf2a3dc1eafed8515b4
+#: ../../../src/intro/security.rst:361
+msgid "And CouchDB responds with:"
+msgstr "Und CouchDB antwortet mit:"
+
+# 48e016e822c443e193ca8263d9c6ba77
+#: ../../../src/intro/security.rst:376
+msgid "Document successfully created what also means that user `jan` have created too! Let's check is this true::"
+msgstr ""
+"Dokument erfolgreich angelegt. Das heißt auch, der Benutzer `jan` wurde "
+"angelegt! Lass uns prüfen, ob das stimmt::"
+
+# ec3a12cd83b74f67a9df404c9d09fbcf
+# 94b2b587dae64b0dbfcf0e55047a4daa
+# e8c003b55d5b491899ba4bb8e1a65f82
+#: ../../../src/intro/security.rst:381
+#: ../../../src/intro/security.rst:450
+#: ../../../src/intro/security.rst:462
+msgid "CouchDB should respond with:"
+msgstr "CouchDB sollte damit antworten:"
+
+# 6437f753935d4efca22f10def08cfa2f
+#: ../../../src/intro/security.rst:387
+msgid "Which means that username was recognized and password's hash matches with stored one. If we specify wrong login and/or password, CouchDB will notify us with the next error message:"
+msgstr ""
+"Was bedeutet dass der Benutzername gefunden wurde und dass der Passwort-Hash "
+"mit dem gespeicherten übereinstimmt. Wenn wir einen falschen Login und/oder "
+"Passwort angeben, wird CouchDB uns mit dieser Fehlermeldung davon in "
+"Kenntnis setzen:"
+
+# 36e518d01d394a2d80ccc51a40504588
+#: ../../../src/intro/security.rst:397
+msgid "Password Changing"
+msgstr "Wechsel des Passworts"
+
+# 7a55839ddb2c4bea9805ff727ba7c392
+#: ../../../src/intro/security.rst:399
+msgid "This is quite common situation: user had forgot his password, it was leaked somehow (via copy-paste, screenshot, or by typing in wrong chat window) or something else. Let's change password for our user `jan`."
+msgstr ""
+"Oft vergessen Benutzer ihr Passwort, oder es wird irgendwie bekannt (copy-"
+"paste, Screenshot oder durch versehentliches tippen in ein falsches "
+"Chatfenster), oder man möchte das Passwort aus anderen Gründen ändern. Wir "
+"werden das Passwort für unseren Benutzer `jan` ändern."
+
+# 06b215a592544bdbaa16645fc03e5c0f
+#: ../../../src/intro/security.rst:403
+msgid "First of all, let's define what is the password changing from the point of CouchDB and the authentication database. Since \"users\" are \"documents\", this operation is nothing, but updating the document with special field ``password`` which contains the *plain text password*. Scared? No need to: the authentication database has special internal hook on  document update which looks for this field and replaces it with the *secured hash*, depending on chosen ``password_scheme``."
+msgstr ""
+"Lass uns erst einmal überlegen, was der Wechsel des Passworts aus der Sicht "
+"der Authentifizierungsdatenbank und von CouchDB ist: da \"Benutzer\" auch "
+"nur \"Dokumente\" sind ist diese Operation nicht besonderes, außer dass wir "
+"das Dokument mit dem speziellen Feld ``password`` aktualisieren, welches das "
+"*Klartext-Passwort* enthält. Verunsichert? Keine Bange! Die "
+"Authentifizierungsdatenbank besitzt einen internen Mechanismus, der bei dem "
+"Aktualisieren des Dokuments nach diesem Feld sucht und es mit dem *sicheren "
+"Hashwert* ersetzt, abhängig davon was in ``password_scheme`` konfiguriert "
+"wurde."
+
+# d3132dca1fe54b50a1e8ffc09c43fccd
+#: ../../../src/intro/security.rst:411
+msgid "Summarizing above, we need to get document content, add ``password`` field with new plain text password value and store JSON result to the authentication database."
+msgstr ""
+"Zusammenfassung: wir benötigen wir den Dokumenteninhalt, fügen ein Attribut "
+"``password`` mit einem Klartext-Passwort hinzu und senden das Ergebnis an "
+"die Authentifizierungsdatenbank."
+
+# 6a0ef75a679f45eda39386f25e46cf35
+#: ../../../src/intro/security.rst:433
+msgid "Here is our user's document. We may strip hashes from stored document to reduce amount of posted data::"
+msgstr ""
+"Hier sehen wir unser Benutzerdokument. Wir können die Hashes vom "
+"gespeicherten Dokument entfernen um die Menge der gesendeten Daten zu "
+"reduzieren::"
+
+# f61e4cca39be405c933ef28034fb1b48
+#: ../../../src/intro/security.rst:446
+msgid "Updated! Now let's check that password was really changed::"
+msgstr ""
+"Das Dokument wurde erfolgreich aktualisiert. Nun prüfen wir, ob das Passwort "
+"wirklich geändert wurde::"
+
+# 5db6634b4cb24de8bb38bb43a8c13592
+#: ../../../src/intro/security.rst:456
+msgid "Looks like the password ``apple`` is wrong, what about ``orange``?"
+msgstr ""
+"Das Passwort ``apple`` scheint falsch zu sein, wie steht es mit dem Passwort "
+"``orange``?"
+
+# 08961f4027ee4f488ede271d36f0e4a2
+#: ../../../src/intro/security.rst:468
+msgid "Hooray! You may wonder why so complex: need to retrieve user's document, add special field to him, post it back - where is one big button that changes the password without worry about document's content? Actually, :ref:`Futon <intro/futon>` has such at the right bottom corner if you have logged in - all implementation details are hidden from your sight."
+msgstr ""
+"Juhu! Falls du dich fragst, ob das nicht auch einfacher geht, ohne Lesen des "
+"Benutzerdokuments, Feld hinzufügen und zurücksenden - vielleicht einfach nur "
+"mit einem großen Knopf, bei dem man sich keine Sorgen um den Inhalt des "
+"Dokuments machen muss: :ref:`Futon <intro/futon>` hat genau so einen Button "
+"in der rechten, unteren Ecke, wenn man sich eingeloggt hat - hinter dem "
+"Knopf sind alle Implementierungsdetails vor unseren Augen versteckt."
+
+# 121e068cf27943e6b4f85e0454c0f967
+#: ../../../src/intro/security.rst:476
+msgid "There is no password confirmation for API request: you should implement it on your application layer like Futon does."
+msgstr ""
+"Es gibt keine Bestätigung für das Passwort bei dem API Request: dieser "
+"sollte in der jeweiligen Applikation implementiert werden, wie bei Futon."
+
+# 139cb4e2380a484bae27812330574aea
+#: ../../../src/intro/security.rst:481
+msgid "Users Public Information"
+msgstr "Öffentliche Benutzerinformationen"
+
+# 954f4c88619447e59ec8f75c8c1a9899
+#: ../../../src/intro/security.rst:485
+msgid "Sometimes users *wants* to share some information with the World. For instance, their contact email to let other users get in touch with him. To solve this problem, but still keep sensitive and private information secured there is special :ref:`configuration <config>` option :config:option:`public_fields <couch_httpd_auth/public_fields>`. In this options you may define comma separated list of users document fields that will be publicity available."
+msgstr ""
+"Manchmal *möchte* der Benutzer einige Informationen mit der ganzen Welt "
+"teilen. Zum Beispiel die E-Mailadresse, damit andere Benutzer ihn "
+"kontaktieren können. Um dieses Problem zu lösen, aber trotzdem sensible und "
+"private Informationen zu schützen gibt es die :ref:`configuration <config>` "
+"Option :config:option:`public_fields <couch_httpd_auth/public_fields>`. Mit "
+"Hilfe dieser Option kann man Komma separiert Attribute des Benutzerdokuments "
+"definieren, die dann öffentlich zugänglich sind, "
+
+# f0f5aa6bff164e3b9872a743a10f97b9
+#: ../../../src/intro/security.rst:492
+msgid "Normally, if you request any user's document and you're not administrator or this document owner, CouchDB will respond with :statuscode:`404`::"
+msgstr ""
+"Wenn man ein Benutzerdokument anfordert und weder Administrator, noch "
+"Besitzer des Dokuments ist, antwortet CouchDB mit :statuscode:`404`::"
+
+# 3ba6900ccfdf4911b2ba8aae2dac108c
+#: ../../../src/intro/security.rst:501
+msgid "This response is constant for both cases when user exists or not exists - by security reasons."
+msgstr ""
+"Dies gilt jeweils für die Fälle bei denen der Benutzer existiert oder nicht "
+"existiert - aus Sicherheitsgründen."
+
+# 9dbb12a1234440d384d467d0ba850e0d
+#: ../../../src/intro/security.rst:504
+msgid "Now let's share field ``name``. First, setup the ``public_fields`` configuration option. Remember, that this action requires administrator's privileges and the next command will ask for password for user `admin`, assuming that he is the server administrator::"
+msgstr ""
+"Lass uns das Feld ``name`` teilen. Wir konfigurieren die ``public_fields`` "
+"Option. Achtung, hierfür werden Administratorenrechte benötigt. Nehmen wir "
+"an, der Benutzer `admin` ist ein Serveradministrator, denn nächste Befehl "
+"wird nach dem Passwort für den Benutzer `admin` verlangen::"
+
+# 91c5b9207670428d923f89382df11d5a
+#: ../../../src/intro/security.rst:514
+msgid "What have changed? Let's check Robert's document once again::"
+msgstr ""
+"Was hat sich geändert? Lass uns Robert's Dokument noch einmal anschauen::"
+
+# 90452e516854437ebca653e17a637f2b
+#: ../../../src/intro/security.rst:522
+msgid "Good news! Now we may read field ``name`` from *every user's document without need to be an administrator*. That's important note: don't publish sensitive information, especially without user's acknowledge - they may not like such actions from your side."
+msgstr ""
+"Sieht gut aus! Nun dürfen wir das Feld ``name`` aus *jedem Benutzderdokument "
+"lesen, ohne Administrationsrechte zu haben*. Wichtige Info: publiziere keine "
+"sensitiven Informationen, besonders nicht ohne die Einwilligung deiner "
+"Benutzer - möglicherweise mögen sie es nicht."

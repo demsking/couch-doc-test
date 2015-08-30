@@ -1,0 +1,127 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# a71115d185f54dd68b6403711f18d33c
+#: ../../../src/config/replicator.rst:17
+msgid "Replicator"
+msgstr ""
+
+# 8f34fb9ddd8d4c429052ad3193f19bad
+#: ../../../src/config/replicator.rst:22
+msgid "Replicator Database Configuration"
+msgstr ""
+
+# 9dfcf58c20f545d792abfee058aaef12
+#: ../../../src/config/replicator.rst:31
+msgid "Specifies replicator database name::"
+msgstr ""
+
+# aadc64d8fb86484983d0bcc97b5718d5
+#: ../../../src/config/replicator.rst:40
+msgid "Maximum replication retry count can be a non-negative integer or \"infinity\" ::"
+msgstr ""
+
+# 10cbaf65f759432c895d9014c758f8c6
+#: ../../../src/config/replicator.rst:50
+msgid "With lower batch sizes checkpoints are done more frequently. Lower batch sizes also reduce the total amount of used RAM memory::"
+msgstr ""
+
+# 4c24ded6f65041db81c45a5544eee826
+#: ../../../src/config/replicator.rst:60
+msgid "More worker processes can give higher network throughput but can also imply more disk and network IO::"
+msgstr ""
+
+# 6cecc477f62d42b286fecc023303a1ec
+#: ../../../src/config/replicator.rst:70
+msgid "Maximum number of HTTP connections per replication::"
+msgstr ""
+
+# 0a10853ac15245089893bf91c39d6308
+#: ../../../src/config/replicator.rst:79
+msgid "HTTP connection timeout per replication. Even for very fast/reliable networks it might need to be increased if a remote database is too busy::"
+msgstr ""
+
+# 5bdb312833b54d7f8b35e65d763ce620
+#: ../../../src/config/replicator.rst:90
+msgid "If a request fails, the replicator will retry it up to N times::"
+msgstr ""
+
+# 0f6cc455dd57414d821f91e5727d190d
+#: ../../../src/config/replicator.rst:99
+msgid "Some socket options that might boost performance in some scenarios:"
+msgstr ""
+
+# aea46b8046b64dd3865f51da69c47b7c
+#: ../../../src/config/replicator.rst:101
+msgid "``{nodelay, boolean()}``"
+msgstr ""
+
+# d009fb4303184e3c995fee723f69f3b9
+#: ../../../src/config/replicator.rst:102
+msgid "``{sndbuf, integer()}``"
+msgstr ""
+
+# 4e0701b7a003451a831703729d633942
+#: ../../../src/config/replicator.rst:103
+msgid "``{recbuf, integer()}``"
+msgstr ""
+
+# 157cffec3dcd43beaabb813ce4eed659
+#: ../../../src/config/replicator.rst:104
+msgid "``{priority, integer()}``"
+msgstr ""
+
+# 433541ffca704dde9cc769da55427377
+#: ../../../src/config/replicator.rst:106
+msgid "See the `inet`_ Erlang module's man page for the full list of options::"
+msgstr ""
+
+# 88154f50e61b46638c516525788fba52
+#: ../../../src/config/replicator.rst:117
+msgid "Path to a file containing the user's certificate::"
+msgstr ""
+
+# 735786b7a2874829aa80254b397c38d3
+#: ../../../src/config/replicator.rst:126
+msgid "Path to file containing user's private PEM encoded key::"
+msgstr ""
+
+# b3dfb56046414f1e99c5f873e4a7a02c
+#: ../../../src/config/replicator.rst:135
+msgid "String containing the user's password. Only used if the private keyfile is password protected::"
+msgstr ""
+
+# 9363aea2d7764116b0a4c13ed2308d8c
+#: ../../../src/config/replicator.rst:145
+msgid "Set to true to validate peer certificates::"
+msgstr ""
+
+# 6231bd25df674890a2e66849690b2749
+#: ../../../src/config/replicator.rst:154
+msgid "File containing a list of peer trusted certificates (in the PEM format)::"
+msgstr ""
+
+# c030bad18ef0495a94b31139cc414ea2
+#: ../../../src/config/replicator.rst:163
+msgid "Maximum peer certificate depth (must be set even if certificate validation is off)::"
+msgstr ""

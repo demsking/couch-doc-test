@@ -1,0 +1,87 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# dc695259976747f4aadc2951766d62e5
+#: ../../../src/cve/2010-0009.rst:18
+msgid "CVE-2010-0009: Apache CouchDB Timing Attack Vulnerability"
+msgstr ""
+
+# 490f15b3e2a84ce6bb526e69ecdda219
+#: ../../../src/cve/2010-0009.rst:20
+msgid "31.03.2010"
+msgstr ""
+
+# d2b64b3d5f5243afa264ecaca4ca8e25
+#: ../../../src/cve/2010-0009.rst:22
+msgid "Apache CouchDB 0.8.0 to 0.10.1"
+msgstr ""
+
+# 4a9689ad6f724d468dcd10db67d75944
+#: ../../../src/cve/2010-0009.rst:24
+msgid "Important"
+msgstr ""
+
+# 3eec6fd72c624e7d9be1fd12a865e18a
+#: ../../../src/cve/2010-0009.rst:26
+msgid "The Apache Software Foundation"
+msgstr ""
+
+# 15158dc4a68248a09aa0476f619bf976
+#: ../../../src/cve/2010-0009.rst:29
+msgid "Description"
+msgstr ""
+
+# 6ca2b91411ad45e196ffc2e040683598
+#: ../../../src/cve/2010-0009.rst:31
+msgid "Apache CouchDB versions prior to version :ref:`0.11.0 <release/0.11.0>` are vulnerable to timing attacks, also known as side-channel information leakage, due to using simple break-on-inequality string comparisons when verifying hashes and passwords."
+msgstr ""
+
+# 5f2ba924152040208df1c19b4b918f17
+#: ../../../src/cve/2010-0009.rst:37
+msgid "Mitigation"
+msgstr ""
+
+# 00561d3b6ee4485bb37e71ca900a71d4
+#: ../../../src/cve/2010-0009.rst:39
+msgid "All users should upgrade to CouchDB :ref:`0.11.0 <release/0.11.0>`. Upgrades from the :ref:`0.10.x <release/0.10.x>` series should be seamless. Users on earlier versions should consult with :ref:`upgrade notes <release/0.10.x/upgrade>`."
+msgstr ""
+
+# b9cd60b24d5a4a4d8bac2b68402d1da1
+#: ../../../src/cve/2010-0009.rst:45
+msgid "Example"
+msgstr ""
+
+# 8a47f73b71c94eb08d54ff12d88ca398
+#: ../../../src/cve/2010-0009.rst:47
+msgid "A canonical description of the attack can be found in http://codahale.com/a-lesson-in-timing-attacks/"
+msgstr ""
+
+# e9571ae238ba4aca9acd7f9e2e0d7a44
+#: ../../../src/cve/2010-0009.rst:51
+msgid "Credit"
+msgstr ""
+
+# cc994a7186784a93a8e4d7f010b9c8b7
+#: ../../../src/cve/2010-0009.rst:53
+msgid "This issue was discovered by *Jason Davies* of the Apache CouchDB development team."
+msgstr ""

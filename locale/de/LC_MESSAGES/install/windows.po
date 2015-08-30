@@ -1,0 +1,522 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-04-12 19:38+0000\n"
+"Last-Translator: Robert <rok@kowalski.gd>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1397331533.000000\n"
+
+# 05aebc9536f4433c9acbfa93593227e4
+#: ../../../src/install/windows.rst:18
+msgid "Installation on Windows"
+msgstr "Auf Windows installieren"
+
+# e8491909c90d4b969d770e48854585f0
+#: ../../../src/install/windows.rst:20
+msgid "There are two ways to install CouchDB on Windows."
+msgstr "Es gibt zwei Wege CouchDB auf Windows zu installieren."
+
+# 5b48319939bf41fbaa887de686a12077
+#: ../../../src/install/windows.rst:23
+msgid "Installation from binaries"
+msgstr "Installation mit Hilfe von Binaries"
+
+# 40cc30971b63453092bad7da95704f35
+#: ../../../src/install/windows.rst:25
+msgid "This is the simplest way to go."
+msgstr "Das ist der leichteste Weg."
+
+# 985fe006902d4cc98b0249e0bacde45c
+#: ../../../src/install/windows.rst:27
+msgid "Get `the latest Windows binaries`_ from `CouchDB web site`_. Old releases are available at `archive`_."
+msgstr ""
+"Hole dir `the latest Windows binaries`_ von der `CouchDB web site`_. Alte "
+"Releases findest du im `archive`_."
+
+# 76b8f5e1515b4b3884eb752069bac7e2
+#: ../../../src/install/windows.rst:30
+msgid "Follow the installation wizard steps:"
+msgstr "Folge den Schritten im Installationswizard:"
+
+# 59f08a90ac6d4f409ca81e197f87aaa8
+#: ../../../src/install/windows.rst:32
+msgid "Next on \"Welcome\" screen"
+msgstr "Weiter auf dem \"Willkommen\" Bildschirm"
+
+# 6f363bd61f9540fca2b436e911301575
+#: ../../../src/install/windows.rst:33
+msgid "Accept the License agreement"
+msgstr "Akzeptiere die Lizenz"
+
+# 14dade8d85b34d5ba6a0f473291ff6d3
+#: ../../../src/install/windows.rst:34
+msgid "Select the installation directory"
+msgstr "Wähle das Installationsverzeichnis"
+
+# 08ab7e6293a94976b543ec829cf60bb5
+#: ../../../src/install/windows.rst:35
+msgid "Specify \"Start Menu\" group name"
+msgstr "Lege den Gruppennamen fürs \"Startmenü\" fest"
+
+# e2566a9afe7743c89c35cd9e1fbcd371
+#: ../../../src/install/windows.rst:36
+msgid "Approve that you'd like to install CouchDB as service and let him been started automatically after installation (probably, you'd like so)"
+msgstr ""
+"Bestätige, dass du CouchDB als Dienst installieren möchtest. Wenn du "
+"möchtest, kann du einstellen, das CouchDB direkt nach der Installation "
+"startet."
+
+# c6df634b64c044b0801aca0dae76d2a9
+#: ../../../src/install/windows.rst:38
+msgid "Verify installation settings"
+msgstr "Überprüfe die Einstellungen für die Installation"
+
+# d46771ee780d4699a88944ecddc8edc4
+#: ../../../src/install/windows.rst:39
+msgid "Install CouchDB"
+msgstr "Installiere CouchDB"
+
+# 04b93962810641be94d9d0b845d5844b
+#: ../../../src/install/windows.rst:41
+msgid "`Open up Futon`_ (if you hadn't selected autostart CouchDB after installation, you have to start it first manually)"
+msgstr ""
+"`Open up Futon`_ (wenn du CouchDB nach der Installation nicht automatisch "
+"gestartet hast, musst du CouchDB erst manuell starten)"
+
+# 1cd62b5e58e949f9b8309de284ec70d3
+#: ../../../src/install/windows.rst:44
+msgid "It's time to Relax!"
+msgstr "Time to Relax!"
+
+# 21605f3dcb294282b4f71ca0b3515004
+#: ../../../src/install/windows.rst:47
+msgid "In some cases you might been asked to reboot Windows to complete installation process, because of using on different Microsoft Visual C++ runtimes by CouchDB."
+msgstr ""
+"Es kann vorkommen, dass du gefragt wirst, Windows neuzustarten um die "
+"Installation abzuschließen, da eine andere Microsoft Visual C++ von CouchDB "
+"benutzt wird."
+
+# bd0d0dc470994606ab6e5da8341908d9
+#: ../../../src/install/windows.rst:51
+msgid "**Upgrading note**"
+msgstr "**Anmerkung zum Upgrade**"
+
+# a3b6c7a9ef724b3c8a4f896a60d1bfd9
+#: ../../../src/install/windows.rst:53
+msgid "It's recommended to uninstall previous CouchDB version before upgrading, especially if the new one is built against different Erlang release. The reason is simple: there may be leftover libraries with alternative or incompatible versions from old Erlang release that may create conflicts, errors and weird crashes."
+msgstr ""
+"Wir empfehlen beim Upgrade einer CouchDB Version die Deinstallation von "
+"älteren CouchDB Versionen, besonders wenn die neue Version mit einer neuen "
+"Erlang-Version gebaut wurde. Der Grund dafür: es könnten Fehler, Konflikte "
+"oder Abstürze durch übrig gebliebene Libraries mit inkompatiblen Versionen "
+"aus älteren Erlang Releases verursacht werden."
+
+# a096c13990af43deba954863315f508a
+#: ../../../src/install/windows.rst:59
+msgid "In this case, make sure you backup of your `local.ini` config and CouchDB database/index files."
+msgstr ""
+"Stelle in diesem Fall sicher dass du ein Backup deiner `local.ini` "
+"Konfiguration und den CouchDB Datenbank- und Indexdateien hast."
+
+# 2ac62aa3fe204e95b09c6f163b17881d
+#: ../../../src/install/windows.rst:69
+msgid "Installation from sources"
+msgstr "Kompilieren aus dem Sourcecode"
+
+# 560ede986a424f2dac8f5a391705ddd7
+#: ../../../src/install/windows.rst:71
+msgid "If you're Windows geek, this section is for you!"
+msgstr ""
+"Wenn du ein Windows-Geek bist, ist das hier die richtige Abteilung für dich!"
+
+# 5de91f70c1914a7282d1b57582cca294
+#: ../../../src/install/windows.rst:74
+msgid "Troubleshooting"
+msgstr "Probleme & Lösungen"
+
+# 80008845b0034404917fe5e05b8dd546
+#: ../../../src/install/windows.rst:76
+msgid "There is a `troubleshooting guide`_."
+msgstr "Es gibt einen `troubleshooting guide`_."
+
+# 6b33a64811ec44cdb5b1377f429e1740
+#: ../../../src/install/windows.rst:77
+msgid "There is a `wiki`_ for general documentation."
+msgstr "Es gibt einen `wiki`_ für allgemeine Dokumentation."
+
+# c5e2e7960313432da13dbeba8d78e79f
+#: ../../../src/install/windows.rst:78
+msgid "And some `Windows-specific tips`_."
+msgstr "Und ein paar `Windows-specific tips`_."
+
+# 3326a8199cc747f7a5aa0566bfc2abba
+#: ../../../src/install/windows.rst:79
+msgid "There are collection of `friendly mailing lists`_."
+msgstr "Es gibt auch eine Sammlung von `friendly mailing lists`_."
+
+# 0e8f82bd73394f18855ef6059f2552f4
+#: ../../../src/install/windows.rst:81
+msgid "Please work through these in order if you experience any problems."
+msgstr "Bitte gehe diese Links durch, falls du auf Probleme stößt."
+
+# 42b5325c8e5b4783b85482f5f2ab7831
+#: ../../../src/install/windows.rst:89
+msgid "Dependencies"
+msgstr "Abhängigkeiten"
+
+# e208c3aa77f0423d8d0fee93f57e5d1f
+#: ../../../src/install/windows.rst:91
+msgid "You should have the following installed:"
+msgstr "Du solltest folgendes installiert haben:"
+
+# 0553f0ebba61498cb814147ec0fba975
+#: ../../../src/install/windows.rst:93
+msgid "`Erlang OTP (>=14B01, <R17)    <http://erlang.org/>`_"
+msgstr "* `Erlang OTP (>=14B01, <R17)    <http://erlang.org/>`_"
+
+# 8475ca3275bc472089b5d0c865adbd3e
+#: ../../../src/install/windows.rst:94
+msgid "`ICU        (>=4.*)            <http://icu-project.org/>`_"
+msgstr "* `ICU        (>=4.*)            <http://icu-project.org/>`_"
+
+# 88366b92d69a434d9910498fb50f235c
+#: ../../../src/install/windows.rst:95
+msgid "`OpenSSL    (>0.9.8r)          <http://www.openssl.org/>`_"
+msgstr "* `OpenSSL    (>0.9.8r)          <http://www.openssl.org/>`_"
+
+# 3767ce5d2ebd452abbbc6053ff2a7f4f
+#: ../../../src/install/windows.rst:96
+msgid "`Mozilla SpiderMonkey (=1.8.5) <http://www.mozilla.org/js/spidermonkey/>`_"
+msgstr ""
+"* `Mozilla SpiderMonkey (=1.8.5) <http://www.mozilla.org/js/spidermonkey/>`_"
+
+# a6610615c79c47988b8e0cba39f4e1d3
+#: ../../../src/install/windows.rst:97
+msgid "`Cygwin                        <http://www.cygwin.com/>`_"
+msgstr "* `Cygwin                        <http://www.cygwin.com/>`_"
+
+# fe46ebd39baa4e27b7a287874244e808
+#: ../../../src/install/windows.rst:98
+msgid "`Microsoft SDK 7.0 or 7.1      <http://www.microsoft.com/en-us/download/details.aspx?id=8279>`_"
+msgstr ""
+"* `Microsoft SDK 7.0 or 7.1      <http://www.microsoft.com/en-"
+"us/download/details.aspx?id=8279>`_"
+
+# 8b87c8d6e35a4be9bb1425198eff013d
+#: ../../../src/install/windows.rst:99
+msgid "`libcurl    (>=7.20)           <http://curl.haxx.se/libcurl/>`_"
+msgstr "* `libcurl    (>=7.20)           <http://curl.haxx.se/libcurl/>`_"
+
+# fd859bee65a64eef8b70f0fb2afa52a2
+#: ../../../src/install/windows.rst:100
+msgid "`help2man                      <http://www.gnu.org/s/help2man/>`_"
+msgstr "* `help2man                      <http://www.gnu.org/s/help2man/>`_"
+
+# 870001e5cd5f4c6a9acc7a7070543f0d
+#: ../../../src/install/windows.rst:101
+msgid "`Python (>=2.7) for docs       <http://python.org/>`_"
+msgstr "* `Python (>=2.7) for docs       <http://python.org/>`_"
+
+# 32b4d39d1bf849c8896c13a196a3dc68
+#: ../../../src/install/windows.rst:102
+msgid "`Python Sphinx (>=1.1.3)       <http://pypi.python.org/pypi/Sphinx>`_"
+msgstr "* `Python Sphinx (>=1.1.3)       <http://pypi.python.org/pypi/Sphinx>`_"
+
+# dd9b5348505f4af69e4a342e247560ea
+#: ../../../src/install/windows.rst:104
+msgid "You will only need libcurl if you plan to run the JavaScript test suite. And help2man is only need if you plan on installing the CouchDB man pages. Python and Sphinx are only required for building the online documentation."
+msgstr ""
+"Libcurl brauchst du nur zu installieren, wenn du die JavaScript test suite "
+"laufen lassen möchtest. Die Abhängigkeit help2man brauchst du nur, falls du "
+"planst die CouchDB man pages zu installieren. Python und Sphinx werden nur "
+"für das generieren der Onlinedokumentation benötigt."
+
+# 0dada5fb425f4feb96441fbcfe53a240
+#: ../../../src/install/windows.rst:109
+msgid "General Notes"
+msgstr "Allgemeine Hinweise"
+
+# c7e71945b8a548828837d8fcb1e5e65f
+#: ../../../src/install/windows.rst:111
+msgid "When installing Cygwin, be sure to select all the `development` tools."
+msgstr "Achte darauf Cygwin mit allen `development ` tools zu installieren."
+
+# 96bde74df39c47ca9749a142f15a9ac8
+#: ../../../src/install/windows.rst:113
+msgid "When installing Erlang, you must build it from source."
+msgstr "Erlang muss aus dem Quellcode gebaut werden."
+
+# 047af0376126402b97e082d4379fbd5e
+#: ../../../src/install/windows.rst:115
+msgid "The CouchDB build requires a number of the Erlang build scripts."
+msgstr "Der Build von CouchDB benötigt einige Erlang Build Skripte."
+
+# 1612c533482b4c16b21a263d7d26088d
+#: ../../../src/install/windows.rst:117
+msgid "All dependent libraries should be built with the same version of Microsoft SDK."
+msgstr "Alle Libraries sollten mit dem selben Microsoft SDK gebaut werden."
+
+# 4f0aad41ed1e4fd2b37f556a88cdeb3c
+#: ../../../src/install/windows.rst:120
+msgid "Do not try to link against libraries built with, or included in, Cygwin or MingW. They are not compatible with the Erlang/OTP or CouchDB build scripts."
+msgstr ""
+"Linke nicht gegen Libraries die mit Cygwin oder MingW gebaut wurden oder "
+"dort enthalten sind. Sie sind nicht kompatible mit den Erlang/OTP und "
+"CouchDB Build Skripten."
+
+# 5e0903680beb4ea28c7a1f883b4771b9
+#: ../../../src/install/windows.rst:124
+msgid "ICU version 4.6 and later will build cleanly using MSBuild."
+msgstr ""
+"ICU in der Version 4.6 und älter können problemlos mit MSBuild gebaut werden."
+
+# 27492a21523d41edb3f7c28d852db895
+#: ../../../src/install/windows.rst:126
+msgid "Python and Sphinx are optional for building the online documentation. Use cygwin-provided Python and install Sphinx via easy_install or pip. Further information is here http://pypi.python.org/pypi/setuptools#id4"
+msgstr ""
+"Python und Sphinx sind optional und werden für die Generierung der "
+"Onlinedokumentation benötigt. Benutze das Python aus Cygwin und installiere "
+"Sphinx mit easy_install oder pip. Weitere Informationen findet man hier: "
+"http://pypi.python.org/pypi/setuptools#id4"
+
+# 3b2fdecd74694d7b985d3e25a720da96
+#: ../../../src/install/windows.rst:131
+msgid "Setting Up Cygwin"
+msgstr "Cygwin konfigurieren"
+
+# 201837788e8f4b88a833224651ad6c2e
+#: ../../../src/install/windows.rst:133
+msgid "Before starting any Cygwin terminals, run::"
+msgstr "Before du einen Cygwin Terminal startest, führe folgendes aus::"
+
+# 04f773691ef94735b53ef4d6eb210542
+#: ../../../src/install/windows.rst:137
+msgid "To set up your environment, run::"
+msgstr "Um die Umgebung einzurichten, führe folgendes aus::"
+
+# c4fca9168f634545a510c87e765148ca
+#: ../../../src/install/windows.rst:141
+msgid "Replace ``[VS_BIN]`` with the path to your Visual Studio `bin` directory."
+msgstr ""
+"Ersetze ``[VS_BIN]`` mit dem Pfad zu deinem Visual Studio `bin`-Verzeichnis"
+
+# fab590d118fa4a85856fb91770184269
+#: ../../../src/install/windows.rst:143
+msgid "You must check that:"
+msgstr "Überprüfe dass:"
+
+# 76615f3c6db9462abb04b10403b89124
+#: ../../../src/install/windows.rst:145
+msgid "The ``which link`` command points to the Microsoft linker."
+msgstr "Der ``which link`` Befehl auf den Microsoft Linker zeigt."
+
+# 52651ec537584b448f62f6fb998cac50
+#: ../../../src/install/windows.rst:147
+msgid "The ``which cl`` command points to the Microsoft compiler."
+msgstr "Der ``wich cl`` Befehl auf den Microsoft compiler zeigt."
+
+# 41603a5b257b4799bd59539119a159bf
+#: ../../../src/install/windows.rst:149
+msgid "The ``which mc`` command points to the Microsoft message compiler."
+msgstr "Der ``which mc`` Befehl auf den Microsoft message compiler zeigt."
+
+# 922358ff7ccf422d978cd5c92b5bcb68
+#: ../../../src/install/windows.rst:151
+msgid "The ``which mt`` command points to the Microsoft manifest tool."
+msgstr "Der ``which mt`` Befehl auf das Microsoft manifest Werkzeug zeigt."
+
+# e3fde00bcf9b41f8811a59ee7dd83ed7
+#: ../../../src/install/windows.rst:153
+msgid "The ``which nmake`` command points to the Microsoft make tool."
+msgstr "Der Befehl ``which nmake`` auf das Microsoft make Werkzeug zeigt."
+
+# d32aa68d82d24ee4b98c7e69c99c1a67
+#: ../../../src/install/windows.rst:155
+msgid "If you do not do this, the build may fail due to Cygwin ones found in `/usr/bin` being used instead."
+msgstr ""
+"Wenn du nicht darauf achtest, wird der Build fehlschlagen, weil die Cygwin-"
+"Versionen in `/usr/bin` stattdessen benutzt werden."
+
+# a873d533537649e19185a63373e12722
+#: ../../../src/install/windows.rst:159
+msgid "Building Erlang"
+msgstr "Erlang bauen"
+
+# 3a7d8e703d534edabdcaaa2261e71a64
+#: ../../../src/install/windows.rst:161
+msgid "You must include Win32 OpenSSL, built statically from source. Use exactly the same version as required by the Erlang/OTP build process."
+msgstr ""
+"Du musst die statisch vom Sourcecode gebaute Win32 OpenSSL benutzen. Benutze "
+"genau die selbe Version die vom Erlang/OTP Build Prozess benötigt wird."
+
+# 5963f76d2dd440019aa9e4e7d4cb3634
+#: ../../../src/install/windows.rst:164
+msgid "However, you can skip the GUI tools by running::"
+msgstr "Du kannst die GUI-Tools überspringen::"
+
+# 8a6bdb33947a4aedaefc6b9c6a79c63e
+#: ../../../src/install/windows.rst:172
+msgid "Follow the rest of the Erlang instructions as described."
+msgstr "Folge einfach der restlichen Anleitung für Erlang."
+
+# 9f6db92616084a0dbfb11b60f7fd8030
+#: ../../../src/install/windows.rst:174
+msgid "After running::"
+msgstr "Nachdem du folgendes ausgeführt hast::"
+
+# 9b9e65bbd8d04a5eaa0825cba3d0c4da
+#: ../../../src/install/windows.rst:178
+msgid "You should run::"
+msgstr "Solltest du diesen Befehl ausführen::"
+
+# 417e8de1ca1d4793bfe9fa727b930df5
+#: ../../../src/install/windows.rst:182
+msgid "This will set up the release/win32/bin directory correctly. The CouchDB installation scripts currently write their data directly into this location."
+msgstr ""
+"Dadurch wird das release/win32/bin Verzeichnis eingerichtet. Die CouchDB "
+"Installationsskripte schreiben ihre Daten in dieses Verzeichnis."
+
+# 70be41c915a54ae28b337527fc86df20
+#: ../../../src/install/windows.rst:186
+msgid "To set up your environment for building CouchDB, run::"
+msgstr "Um die Umgebung einzurichten um CouchDB zu bauen, gebe folgendes ein::"
+
+# a6ef5475ee8942b995f320db8108933f
+#: ../../../src/install/windows.rst:190
+msgid "To set up the `ERL_TOP` environment variable, run::"
+msgstr ""
+"Um die `ERL_TOP` Umgebungsvariable zu setzten, führe folgenden Befehl aus::"
+
+# f852adc6e8cc4e11bf39761edb77408e
+#: ../../../src/install/windows.rst:194
+msgid "Replace ``[ERL_TOP]`` with the Erlang source directory name."
+msgstr "Ersetze ``[ERL_TOP]`` mit dem Verzeichnis in dem der Erlang liegt."
+
+# 960ddefd0f6a429c8306478d6cebc304
+#: ../../../src/install/windows.rst:196
+msgid "Remember to use `/cygdrive/c/` instead of `c:/` as the directory prefix."
+msgstr ""
+"Denk dran `/cygdrive/c/` anstatt von `c:/` als Prefix für das Verzeichnis zu "
+"nutzen."
+
+# f7cbd89416774aefbf6f3a177ec22b9f
+#: ../../../src/install/windows.rst:198
+msgid "To set up your path, run::"
+msgstr "Um deinen Path zu setzen, gebe ein::"
+
+# b324bd6ef9aa415ebe3745b6080827e6
+#: ../../../src/install/windows.rst:202
+msgid "If everything was successful, you should be ready to build CouchDB."
+msgstr "Wenn alles erfolgreich war, können wir CouchDB installieren."
+
+# f6eeee4d55934aecbfe62ad8f21e266e
+# 37579c95c8174957815b11b3ecb6ca43
+# 54d480f5569348bbbffe5982c927b569
+# 6cdf3761a3934690820086b498cf5bf3
+#: ../../../src/install/windows.rst:204
+#: ../../../src/install/windows.rst:234
+#: ../../../src/install/windows.rst:244
+#: ../../../src/install/windows.rst:264
+msgid "Relax."
+msgstr "Relax."
+
+# d1b58af98f314591b5fee7381fcb26ff
+#: ../../../src/install/windows.rst:207
+msgid "Building CouchDB"
+msgstr "CouchDB bauen"
+
+# a765a285903848aab18e2eefd229a027
+#: ../../../src/install/windows.rst:209
+msgid "Note that `win32-curl` is only required if you wish to run the developer tests."
+msgstr ""
+"Nur wenn du die Tests für Entwickler laufen lassen möchtest, benötigst du "
+"`win32-curl`."
+
+# cc277fd5d57340bbb20841d2b43e9b40
+#: ../../../src/install/windows.rst:212
+msgid "The documentation step may be skipped using ``--disable-docs`` if you wish."
+msgstr "Mit ``--disable-docs`` kannst du das Bauen der Dokumentation auslassen."
+
+# 8716120a021e4bf987b7f00cb7840059
+#: ../../../src/install/windows.rst:214
+msgid "Once you have satisfied the dependencies you should run::"
+msgstr "Sobald du alle Dependencies hast, gebe ein::"
+
+# 1577c2b9cf014430ac19025dbcdcdda0
+#: ../../../src/install/windows.rst:228
+msgid "This command could take a while to complete."
+msgstr "Der Vorgang nachdem der Befehl eingegeben wurde dauert ein wenig."
+
+# 3e7b8fe1b76347b1a1d862da510ecff5
+# ea86556405f04083a751c733b4b4e6f7
+#: ../../../src/install/windows.rst:230
+#: ../../../src/install/windows.rst:240
+msgid "If everything was successful you should see the following message::"
+msgstr "Wenn alles erfolgreich war solltest du folgende Nachricht sehen::"
+
+# 1e49ad7e938848338df2f331da53c9a4
+#: ../../../src/install/windows.rst:236
+msgid "To install CouchDB you should run::"
+msgstr "Um CouchDB zu installieren gebe ein::"
+
+# 66ded74d58ef45ea86768ddfd88831d2
+#: ../../../src/install/windows.rst:246
+msgid "To build the .exe installer package, you should run::"
+msgstr "Um das .exe-Installationspaket zu bauen, gebe ein::"
+
+# 552c447da8fa4620be3ac9de8d89adbc
+#: ../../../src/install/windows.rst:250
+msgid "Alternatively, you may run CouchDB directly from the build tree, but to avoid any contamination do not run `make dist` after this."
+msgstr ""
+"Du kannst CouchDB auch direkt aus dem Buildverzeichnis starten, aber "
+"vermeide es noch einmal `make dist` einzugeben."
+
+# dd3b376eff594580a2ca438f9d2406bb
+#: ../../../src/install/windows.rst:254
+msgid "First Run"
+msgstr "Erster Start"
+
+# c389680660724fc9b85c8832288c84d1
+#: ../../../src/install/windows.rst:256
+msgid "You can start the CouchDB server by running::"
+msgstr "Du kannst den CouchDB Server so starten::"
+
+# 78cf473e130946b695b141467d110ac8
+#: ../../../src/install/windows.rst:260
+msgid "When CouchDB starts it should eventually display the following message::"
+msgstr "Sobald CouchDB startet solltest du folgende Nachricht sehen::"
+
+# 75ab190ed6bc4090b6465b136548917e
+#: ../../../src/install/windows.rst:266
+msgid "To check that everything has worked, point your web browser to::"
+msgstr ""
+"Um zu prüfen, ob alles funktioniert hat, navigiere mit deinem Browser zu::"
+
+# 6f9d7b13328b4047923234ba8657acb8
+#: ../../../src/install/windows.rst:270
+msgid "From here you should run the verification tests in Firefox."
+msgstr "Hier kannst du die Tests in Firefox ausführen."
+
+# 415e1ecdbcbd4731b3fb8ff9c5d7f3af
+#: ../../../src/install/windows.rst:275
+msgid "`Glazier: Automate building of CouchDB from source on Windows <https://github.com/dch/glazier>`_"
+msgstr ""
+"`Glazier: Automate building of CouchDB from source on Windows "
+"<https://github.com/dch/glazier>`_"

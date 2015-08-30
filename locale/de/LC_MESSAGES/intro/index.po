@@ -1,0 +1,67 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-01-07 21:30+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1389130228.000000\n"
+
+# e24851b5e1a54e289667eaa3b422b166
+#: ../../../src/intro/index.rst:18
+msgid "Introduction"
+msgstr "Einführung"
+
+# f5889ede5c114423bb617203fdba8988
+#: ../../../src/intro/index.rst:20
+msgid "CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, :ref:`via HTTP <api/basics>`. :ref:`Query <api/doc>`, :ref:`combine <views>`, and :ref:`transform <listfun>` your documents with :ref:`JavaScript <query-server/js>`. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB’s :ref:`incremental replication <replication/intro>`. CouchDB supports master-master setups with :ref:`automatic conflict <replication/conflicts>` detection."
+msgstr ""
+"CouchDB ist eine Datenbank, die komplett mit dem Web verschmilzt. Speichere "
+"deine Daten in JSON-Dokumenten. Greife auf deine Dokumente mit deinem Web-"
+"Browser :ref:`über HTTP <api/basics>` zu. :ref:`Query <api/doc>`, :ref:`"
+"kombiniere <views>`, and :ref:`transformiere <listfun>` deine Dokumente mit "
+":ref:`JavaScript <query-server/js>`. CouchDB funktioniert gut mit modernen "
+"Web- und Mobil-Applikationen. Du kannst sogar Web-Applikation direkt aus "
+"CouchDB zur Verfügung stellen. Und du kannst deine Daten oder deine "
+"Applikationen effizient mit CouchDB's  :ref:`inkrementeller Replikation "
+"<replication/intro>` verteilt ausliefern. CouchDB unterstützt Master-Master-"
+"Setups mit :ref:`automatischem Konflikt-Management <replication/conflicts>`."
+
+# 7bec5aa5cf0b4826aad371ad3b014060
+#: ../../../src/intro/index.rst:30
+msgid "CouchDB comes with a suite of features, such as on-the-fly document transformation and real-time :ref:`change notifications <changes>`, that makes :ref:`web app <couchapp>` development a breeze. It even comes with an easy to use :ref:`web administration console <intro/futon>`. You guessed it, served up directly out of CouchDB! We care a lot about `distributed scaling`_. CouchDB is highly available and partition tolerant, but is also :ref:`eventually consistent <intro/consistency>`. And we care *a lot* about your data. CouchDB has a fault-tolerant storage engine that puts the safety of your data first."
+msgstr ""
+"CouchDB bietet eine Menge an Features wie on-the-fly Dokument-Transformation "
+"und real-time  :ref:`Change-Notifications <changes>` was die Entwicklung von "
+":ref:`Web-Applicationen <couchapp>` ein leichtes macht. Es kommt ausserdem "
+"mit einer einfach zu nutzenden :ref:`Web-Administrations-"
+"Oberfläche<intro/futon>`. Du hast es erraten - direkt aus CouchDB geliefert. "
+"Wir achten sehr auf `Verteilte-Skalierung`_. CouchDB ist hochverfügbar und "
+"\"Partition-Tolerant\" aber auch :ref:`Eventually Consistent "
+"<intro/consistency>`. Und wir achten *sehr* auf Deine Daten. CouchDB verfügt "
+"über eine fehlertolerante Storage-Engine welche als oberste Prämisse die "
+"Sicherheit Deiner Daten hat."
+
+# 4d9254d17d2d43bf811b961543f2fbff
+#: ../../../src/intro/index.rst:40
+msgid "In this section you'll learn about every basic bit of CouchDB, see upon what conceptions and technologies it built and walk through short tutorial that teach how to use CouchDB."
+msgstr ""
+"In diesem Abschnitt lernst du alles über jede Einzelheit von CouchDB, "
+"erfährst auf Grundlage welcher Technologien es gebaut ist und zeigt dir in "
+"einem kurzen Tutorial, wie du CouchDB verwenden kannst."

@@ -1,0 +1,142 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# e2be09b0d1944d92bf5d0b18ecf3324e
+#: ../../../src/config/query-servers.rst:17
+msgid "Query Servers"
+msgstr ""
+
+# f309b01df4a549f89ddff0e00676e24f
+#: ../../../src/config/query-servers.rst:22
+msgid "Query Servers Definition"
+msgstr ""
+
+# c88beb8c014e440ba9b193ccc3e5109f
+#: ../../../src/config/query-servers.rst:28
+msgid "CouchDB delegates computation of :ref:`design documents <ddocs>` functions to external query servers. The external query server is a special OS process which communicates with CouchDB over standard input/output using a very simple line-based protocol with JSON messages."
+msgstr ""
+
+# 085204cb9e0a47b7957dce6ad51c409b
+#: ../../../src/config/query-servers.rst:33
+msgid "The external query server may be defined in configuration file following next pattern::"
+msgstr ""
+
+# e8a11b34636f4822ac3fd7f48836259d
+#: ../../../src/config/query-servers.rst:39
+msgid "Where:"
+msgstr ""
+
+# 71bd8b254cd741899d4aa29bba2969e8
+#: ../../../src/config/query-servers.rst:41
+msgid "``LANGUAGE``: is a programming language which code this query server may execute. For instance, there are `python`, `ruby`, `clojure` and other query servers in wild. This value is also used for `ddoc` field ``language`` to determine query server that will process his functions."
+msgstr ""
+
+# ec165ccba013431391c4202398e3155c
+#: ../../../src/config/query-servers.rst:46
+msgid "Note, that you may setup multiple query servers for the same programming language, but you have to name them different (like `python-dev` etc.)."
+msgstr ""
+
+# 7c93f3366dbd4c1ba90f709bba8eec0d
+#: ../../../src/config/query-servers.rst:49
+msgid "``PATH``: is a system path to the executable binary program that runs the query server."
+msgstr ""
+
+# bc40a1b713c54e8b95155b634cb73b0d
+#: ../../../src/config/query-servers.rst:52
+msgid "``ARGS``: optionally, you may specify additional command line arguments for the executable ``PATH``."
+msgstr ""
+
+# 1aeea6e756c74381b38d844d9e260d2d
+#: ../../../src/config/query-servers.rst:55
+msgid "The default query server is written in :ref:`JavaScript <query-server/js>`, running via `Mozilla SpiderMonkey`_::"
+msgstr ""
+
+# 4c9c09c38b254f899291ede4adbcbfd3
+#: ../../../src/config/query-servers.rst:74
+msgid "Query Servers Configuration"
+msgstr ""
+
+# 1b657f1da1fc430ab6dd4e2775f02442
+#: ../../../src/config/query-servers.rst:81
+msgid "Specifies the delay in seconds before view index changes are committed to disk. The default value is ``5``::"
+msgstr ""
+
+# 7e18202914a94eea84557c12f9c301f7
+#: ../../../src/config/query-servers.rst:90
+msgid "Amount of time in seconds that the Query Server may process CouchDB command::"
+msgstr ""
+
+# a738e9dae9f1465d87bd51d26a9f5579
+#: ../../../src/config/query-servers.rst:95
+msgid "CouchDB will raise `os_process_timeout` error and kill the process in case the Query Server doesn't return any result within this limit."
+msgstr ""
+
+# 9e3cdece0b9941fa82bd298c08242669
+#: ../../../src/config/query-servers.rst:101
+msgid "Controls `Reduce overflow` error that raises when output of :ref:`reduce functions <reducefun>` is too big::"
+msgstr ""
+
+# e9030f9003424991b1b1f80823bcbea0
+#: ../../../src/config/query-servers.rst:107
+msgid "Normally, you don't have to disable (by setting ``false`` value) this option since main propose of `reduce` functions is to *reduce* the input."
+msgstr ""
+
+# 5f51eb0626b64bb6a25ca681775f8405
+#: ../../../src/config/query-servers.rst:114
+msgid "Native Erlang Query Server"
+msgstr ""
+
+# e1d01e2ca4d74fe3a1d71eedda7a0a31
+#: ../../../src/config/query-servers.rst:120
+msgid "Due to security restrictions, the Erlang query server is disabled by default."
+msgstr ""
+
+# 84d019de06f54ea8931f4f933df7094c
+#: ../../../src/config/query-servers.rst:123
+msgid "Unlike the JavaScript query server, the Erlang one does not runs in a sandbox mode. This means that Erlang code has full access to your OS, filesystem and network, which may lead to security issues. While Erlang functions are faster than JavaScript ones, you need to be careful about running them, especially if they were written by someone else."
+msgstr ""
+
+# 3c4a325914cd4b188399718e11c4aae3
+#: ../../../src/config/query-servers.rst:129
+msgid "CouchDB has a native Erlang query server, allowing you to write your map/reduce functions in Erlang."
+msgstr ""
+
+# 7b8eaa93ac5b4b81be897dfca27bb950
+#: ../../../src/config/query-servers.rst:132
+msgid "First, you'll need to edit your `local.ini` to include a ``[native_query_servers]`` section::"
+msgstr ""
+
+# 87a6a6684d7542aa8782f50682cab151
+#: ../../../src/config/query-servers.rst:138
+msgid "To see these changes you will also need to restart the server. To test out using :ref:`Erlang views <query-server/erlang>`, visit the `Futon` admin interface, create a new database and open a temporary view. You should now be able to select ``erlang`` from the language drop-down."
+msgstr ""
+
+# 63f88141814b4b599f546241552eee32
+#: ../../../src/config/query-servers.rst:143
+msgid "Let's try an example of map/reduce functions which count the total documents at each number of revisions (there are x many documents at version \"1\", and y documents at \"2\"... etc). Add a few documents to the database, then enter the following functions as a temporary view:"
+msgstr ""
+
+# 50cf75d3b90c44c79e54cc893543329d
+#: ../../../src/config/query-servers.rst:160
+msgid "If all has gone well, after running the view you should see a list of the total number of documents at each revision number."
+msgstr ""

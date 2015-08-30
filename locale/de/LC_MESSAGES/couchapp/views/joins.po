@@ -1,0 +1,277 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 21a8decf335c4c6185876e0ba4bfadfa
+#: ../../../src/couchapp/views/joins.rst:18
+msgid "Joins With Views"
+msgstr ""
+
+# 044936e47858409cad6e6c5316a93f73
+#: ../../../src/couchapp/views/joins.rst:21
+msgid "Linked Documents"
+msgstr ""
+
+# f29a1a52f49349cbbeef13d3e92990bd
+#: ../../../src/couchapp/views/joins.rst:23
+msgid "If your :ref:`map function <mapfun>` emits an object value which has ``{'_id': XXX}`` and you :ref:`query view <api/ddoc/view>` with ``include_docs=true`` parameter, then CouchDB will fetch the document with id ``XXX`` rather than the document which was processed to emit the key/value pair."
+msgstr ""
+
+# 3e16c56239234c0a86097aeacecee6a9
+#: ../../../src/couchapp/views/joins.rst:28
+msgid "This means that if one document contains the ids of other documents, it can cause those documents to be fetched in the view too, adjacent to the same key if required."
+msgstr ""
+
+# 20ff994518f14616b28fb30c6155a3b5
+#: ../../../src/couchapp/views/joins.rst:32
+msgid "For example, if you have the following hierarchically-linked documents:"
+msgstr ""
+
+# af29df426de04ea69c913fdff04c8cee
+#: ../../../src/couchapp/views/joins.rst:42
+msgid "You can emit the values with the ancestor documents adjacent to them in the view like this:"
+msgstr ""
+
+# 707a2259e9574f8193cb54b0cc3ab732
+#: ../../../src/couchapp/views/joins.rst:58
+msgid "The result you get is:"
+msgstr ""
+
+# efd4377356374adaa4b083c0283d2761
+#: ../../../src/couchapp/views/joins.rst:148
+msgid "which makes it very cheap to fetch a document plus all its ancestors in one query."
+msgstr ""
+
+# 940dc17091da4c8b8b64a1b500fe9954
+#: ../../../src/couchapp/views/joins.rst:151
+msgid "Note that the ``\"id\"`` in the row is still that of the originating document. The only difference is that ``include_docs`` fetches a different doc."
+msgstr ""
+
+# a868ac7cb8754b4fa65adfdf58dc9f52
+#: ../../../src/couchapp/views/joins.rst:154
+msgid "The current revision of the document is resolved at query time, not at the time the view is generated. This means that if a new revision of the linked document is added later, it will appear in view queries even though the view itself hasn't changed. To force a specific revision of a linked document to be used, emit a ``\"_rev\"`` property as well as ``\"_id\"``."
+msgstr ""
+
+# cd9a2cd078bb4a388841297fcd888abf
+#: ../../../src/couchapp/views/joins.rst:162
+msgid "Using View Collation"
+msgstr ""
+
+# 9f7aadcf75fb45539871c3a625a28724
+#: ../../../src/couchapp/views/joins.rst:164
+msgid "Christopher Lenz"
+msgstr ""
+
+# 3955a38c12604cc0ae622658bd45f6de
+#: ../../../src/couchapp/views/joins.rst:165
+msgid "2007-10-05"
+msgstr ""
+
+# b0af2c204b2e4e70a463b048c67b5e33
+#: ../../../src/couchapp/views/joins.rst:166
+msgid "http://www.cmlenz.net/archives/2007/10/couchdb-joins"
+msgstr ""
+
+# 175ff984dffa4459b97f1d2b511f1445
+#: ../../../src/couchapp/views/joins.rst:168
+msgid "Just today, there was a discussion on IRC how you'd go about modeling a simple blogging system with “post” and “comment” entities, where any blog post might have N comments. If you'd be using an SQL database, you'd obviously have two tables with foreign keys and you'd be using joins. (At least until you needed to add some `denormalization`_)."
+msgstr ""
+
+# 64e8f504e6634a3e8df959abfc234bfd
+#: ../../../src/couchapp/views/joins.rst:176
+msgid "But what would the “obvious” approach in CouchDB look like?"
+msgstr ""
+
+# b6825e1c4c9b47f2b8aa9a55ee74eb7e
+#: ../../../src/couchapp/views/joins.rst:179
+msgid "Approach #1: Comments Inlined"
+msgstr ""
+
+# cd675d8d08f04f259ce664b444b4ae45
+#: ../../../src/couchapp/views/joins.rst:181
+msgid "A simple approach would be to have one document per blog post, and store the comments inside that document:"
+msgstr ""
+
+# 865b6b2b75ee41829c51441508fb98dd
+#: ../../../src/couchapp/views/joins.rst:199
+msgid "Of course the model of an actual blogging system would be more extensive, you'd have tags, timestamps, etc etc. This is just to demonstrate the basics."
+msgstr ""
+
+# 30955508fcaa4eaba9f5211c3c941d07
+#: ../../../src/couchapp/views/joins.rst:202
+msgid "The obvious advantage of this approach is that the data that belongs together is stored in one place. Delete the post, and you automatically delete the corresponding comments, and so on."
+msgstr ""
+
+# a2fc0a5a5ceb45e09be85648a6a7a6d2
+#: ../../../src/couchapp/views/joins.rst:206
+msgid "You may be thinking that putting the comments inside the blog post document would not allow us to query for the comments themselves, but you'd be wrong. You could trivially write a CouchDB view that would return all comments across all blog posts, keyed by author:"
+msgstr ""
+
+# 1b38e183e7e74c72951df96fcc8f0967
+#: ../../../src/couchapp/views/joins.rst:219
+msgid "Now you could list all comments by a particular user by invoking the view and passing it a ``?key=\"username\"`` query string parameter."
+msgstr ""
+
+# f5ad107dd3214d76945196f3280d1598
+#: ../../../src/couchapp/views/joins.rst:222
+msgid "However, this approach has a drawback that can be quite significant for many applications: To add a comment to a post, you need to:"
+msgstr ""
+
+# 77a4679059774318a6c996ef5489d9da
+#: ../../../src/couchapp/views/joins.rst:225
+msgid "Fetch the blog post document"
+msgstr ""
+
+# a1ba4b4c7986406599e0ca7e8a363736
+#: ../../../src/couchapp/views/joins.rst:226
+msgid "Add the new comment to the JSON structure"
+msgstr ""
+
+# 8553a81d86f24946b10a7bb11f7822f7
+#: ../../../src/couchapp/views/joins.rst:227
+msgid "Send the updated document to the server"
+msgstr ""
+
+# 6396f5192bb94d6ab66ef6559f576c63
+#: ../../../src/couchapp/views/joins.rst:229
+msgid "Now if you have multiple client processes adding comments at roughly the same time, some of them will get a `HTTP 409 Conflict` error on step 3 (that's optimistic concurrency in action). For some applications this makes sense, but in many other apps, you'd want to append new related data regardless of whether other data has been added in the meantime."
+msgstr ""
+
+# 29772eb5d4584197a98d652a29e8494c
+#: ../../../src/couchapp/views/joins.rst:235
+msgid "The only way to allow non-conflicting addition of related data is by putting that related data into separate documents."
+msgstr ""
+
+# 05d97f21e5b24e919153176baec9d429
+#: ../../../src/couchapp/views/joins.rst:239
+msgid "Approach #2: Comments Separate"
+msgstr ""
+
+# 767d138f3339497bba9c6db57e690114
+#: ../../../src/couchapp/views/joins.rst:241
+msgid "Using this approach you'd have one document per blog post, and one document per comment. The comment documents would have a “backlink” to the post they belong to."
+msgstr ""
+
+# cd65ea14f4bf4f8c836bd0b44f37f423
+#: ../../../src/couchapp/views/joins.rst:245
+msgid "The blog post document would look similar to the above, minus the comments property. Also, we'd now have a type property on all our documents so that we can tell the difference between posts and comments:"
+msgstr ""
+
+# 66d8c39f3490402d901b9467eb8c6f27
+#: ../../../src/couchapp/views/joins.rst:260
+msgid "The comments themselves are stored in separate documents, which also have a type property (this time with the value “comment”), and in addition feature a post property containing the ID of the post document they belong to:"
+msgstr ""
+
+# 1c71cac3238f434b8df03f76e5b33536
+#: ../../../src/couchapp/views/joins.rst:286
+msgid "To list all comments per blog post, you'd add a simple view, keyed by blog post ID:"
+msgstr ""
+
+# 186909e47e714e1cbe7e58e38bb6348b
+#: ../../../src/couchapp/views/joins.rst:297
+msgid "And you'd invoke that view passing it a ``?key=\"post_id\"`` query string parameter."
+msgstr ""
+
+# ccc9db26a2cc40f2af0414ae17c64efb
+#: ../../../src/couchapp/views/joins.rst:300
+msgid "Viewing all comments by author is just as easy as before:"
+msgstr ""
+
+# 724f609bdf494f2896e2b199845a872d
+#: ../../../src/couchapp/views/joins.rst:310
+msgid "So this is better in some ways, but it also has a disadvantage. Imagine you want to display a blog post with all the associated comments on the same web page. With our first approach, we needed just a single request to the CouchDB server, namely a ``GET`` request to the document. With this second approach, we need two requests: a ``GET`` request to the post document, and a ``GET`` request to the view that returns all comments for the post."
+msgstr ""
+
+# b0b02e32dc284d678c64fb0fe3dbfedf
+#: ../../../src/couchapp/views/joins.rst:317
+msgid "That is okay, but not quite satisfactory. Just imagine you wanted to added threaded comments: you'd now need an additional fetch per comment. What we'd probably want then would be a way to join the blog post and the various comments together to be able to retrieve them with a single HTTP request."
+msgstr ""
+
+# 5735c1012dae4ed6a945616ac59f8eb4
+#: ../../../src/couchapp/views/joins.rst:322
+msgid "This was when Damien Katz, the author of CouchDB, chimed in to the discussion on IRC to show us the way."
+msgstr ""
+
+# f23f8d2abb0844a9ae307e76dc82415f
+#: ../../../src/couchapp/views/joins.rst:326
+msgid "Optimization: Using the Power of View Collation"
+msgstr ""
+
+# 2290a96b48184a50b0a904aee040646d
+#: ../../../src/couchapp/views/joins.rst:328
+msgid "Obvious to Damien, but not at all obvious to the rest of us: it's fairly simple to make a view that includes both the content of the blog post document, and the content of all the comments associated with that post. The way you do that is by using `complex keys`. Until now we've been using simple string values for the view keys, but in fact they can be arbitrary JSON values, so let's make some use of that:"
+msgstr ""
+
+# e5c06ed9c7fb46ca9cb31e51cb6ea0b5
+#: ../../../src/couchapp/views/joins.rst:345
+msgid "Okay, this may be confusing at first. Let's take a step back and look at what views in CouchDB are really about."
+msgstr ""
+
+# 52e3660676ed4240bb752511f71975db
+#: ../../../src/couchapp/views/joins.rst:348
+msgid "CouchDB views are basically highly efficient on-disk dictionaries that map keys to values, where the key is automatically indexed and can be used to filter and/or sort the results you get back from your views. When you “invoke” a view, you can say that you're only interested in a subset of the view rows by specifying a ``?key=foo`` query string parameter. Or you can specify ``?startkey=foo`` and/or ``?endkey=bar`` query string parameters to fetch rows over a range of keys."
+msgstr ""
+
+# 7d9876634fc04736ba18dc7e11524a7f
+#: ../../../src/couchapp/views/joins.rst:356
+msgid "It's also important to note that keys are always used for collating (i.e. sorting) the rows. CouchDB has well defined (but as of yet undocumented) rules for comparing arbitrary JSON objects for collation. For example, the JSON value ``[\"foo\", 2]`` is sorted after (considered “greater than”) the values ``[\"foo\"]`` or ``[\"foo\", 1, \"bar\"]``, but before e.g. ``[\"foo\", 2, \"bar\"]``. This feature enables a whole class of tricks that are rather non-obvious..."
+msgstr ""
+
+# fdb79884eb944a78a3f81fe2015722bf
+#: ../../../src/couchapp/views/joins.rst:365
+msgid ":ref:`views/collation`"
+msgstr ""
+
+# 79d41f9b66a04e3fa0bf144b99492beb
+#: ../../../src/couchapp/views/joins.rst:367
+msgid "With that in mind, let's return to the view function above. First note that, unlike the previous view functions we've used here, this view handles both \"post\" and \"comment\" documents, and both of them end up as rows in the same view. Also, the key in this view is not just a simple string, but an array. The first element in that array is always the ID of the post, regardless of whether we're processing an actual post document, or a comment associated with a post. The second element is 0 for post documents, and 1 for comment documents."
+msgstr ""
+
+# c8c34fa1249941f883fcb341dfa73944
+#: ../../../src/couchapp/views/joins.rst:375
+msgid "Let's assume we have two blog posts in our database. Without limiting the view results via ``key``, ``startkey``, or ``endkey``, we'd get back something like the following:"
+msgstr ""
+
+# 25cf542aac884b36a233e075858f0ba2
+#: ../../../src/couchapp/views/joins.rst:407
+msgid "The ``...`` placeholder here would contain the complete JSON encoding of the corresponding document"
+msgstr ""
+
+# cce75e5058e94d58bc5740f534fccd77
+#: ../../../src/couchapp/views/joins.rst:410
+msgid "Now, to get a specific blog post and all associated comments, we'd invoke that view with the query string::"
+msgstr ""
+
+# 0c76e815bb274fe0bfff39fc8e88d1db
+#: ../../../src/couchapp/views/joins.rst:415
+msgid "We'd get back the first three rows, those that belong to the ``myslug`` post, but not the others. Et voila, we now have the data we need to display a post with all associated comments, retrieved via a single ``GET`` request."
+msgstr ""
+
+# fdb97661411249459bce8e9eed92805c
+#: ../../../src/couchapp/views/joins.rst:419
+msgid "You may be asking what the 0 and 1 parts of the keys are for. They're simply to ensure that the post document is always sorted before the the associated comment documents. So when you get back the results from this view for a specific post, you'll know that the first row contains the data for the blog post itself, and the remaining rows contain the comment data."
+msgstr ""
+
+# 040b649d5bbb41b693582fcdc5bcfe8b
+#: ../../../src/couchapp/views/joins.rst:425
+msgid "One remaining problem with this model is that comments are not ordered, but that's simply because we don't have date/time information associated with them. If we had, we'd add the timestamp as third element of the key array, probably as ISO date/time strings. Now we would continue using the query string ``?startkey=[\"myslug\"]&endkey=[\"myslug\", 2]`` to fetch the blog post and all associated comments, only now they'd be in chronological order."
+msgstr ""

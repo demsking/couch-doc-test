@@ -1,0 +1,640 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-01-20 23:37+0000\n"
+"Last-Translator: Robert <rok@kowalski.gd>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1390261025.000000\n"
+
+# 824981ee718041cbaa0cfe334e6c3888
+#: ../../../src/intro/consistency.rst:18
+msgid "Eventual Consistency"
+msgstr "Eventual Consistency - Irgendwann konsistent"
+
+# a81277a878684da38b484279b69fee6d
+#: ../../../src/intro/consistency.rst:20
+msgid "In the previous document :ref:`intro/why`, we saw that CouchDB's flexibility allows us to evolve our data as our applications grow and change. In this topic, we'll explore how working \"with the grain\" of CouchDB promotes simplicity in our applications and helps us naturally build scalable, distributed systems."
+msgstr ""
+"Im vorherigen Dokument :ref:`intro/why` haben wir gezeigt, dass die "
+"Flexibilität von CouchDB es erlaubt, die Daten weiter zu entwickeln, während "
+"Anwendungen wachsen und sich ändern. In diesem Abschnitt werden wir "
+"untersuchen, wie das Arbeiten mit CouchDB (anstatt gegen CouchDB) "
+"Einfachheit in den Anwendungen fördert und natürlich zu skalierbaren, "
+"verteilten Systemen führt."
+
+# 54727a02e1984791864c808680c5b172
+#: ../../../src/intro/consistency.rst:27
+msgid "Working with the Grain"
+msgstr "Mit CouchDB arbeiten"
+
+# 4cc55e5166aa40379daa98326dd1b929
+#: ../../../src/intro/consistency.rst:29
+msgid "A *distributed system* is a system that operates robustly over a wide network. A particular feature of network computing is that network links can potentially disappear, and there are plenty of strategies for managing this type of network segmentation. CouchDB differs from others by accepting eventual consistency, as opposed to putting absolute consistency ahead of raw availability, like `RDBMS`_ or `Paxos`_. What these systems have in common is an awareness that data acts differently when many people are accessing it simultaneously. Their approaches differ when it comes to which aspects of *consistency*, *availability*, or *partition* tolerance they prioritize."
+msgstr ""
+"Ein *verteiltes System* ist ein System, welches zuverlässig über ein großes "
+"Netzwerk funktioniert. Eine spezielle Eigenschaft von Netzwerken ist, das "
+"Verbindungen jederzeit abbrechen können und es gibt viele Strategien wie man "
+"mit dieser Situation umgehen kann. CouchDB unterscheidet sich von anderen "
+"Systemen dadurch, dass es Eventual Consistency (die Daten sind letztendlich "
+"irgendwann konsistent) akzeptiert — im Gegensatz zu  `RDBMS`_ und `Paxos`_, "
+"die absolute Konsistenz über schlichte Verfügbarkeit stellen. All diesen "
+"Systeme ist gemein, dass sich Daten anders verhalten, wenn viele Leute "
+"gleichzeitig versuchen darauf zuzugreifen. Ihre Ansätze unterscheiden sich, "
+"wenn es um die Gewichtung von *Konsistenz*, *Verfügbarkeit* oder "
+"*Partitionstoleranz* geht."
+
+# f71ea28da7064fd5acea1b0c8b0b739a
+#: ../../../src/intro/consistency.rst:39
+msgid "Engineering distributed systems is tricky. Many of the caveats and \"gotchas\" you will face over time aren't immediately obvious. We don't have all the solutions, and CouchDB isn't a panacea, but when you work with CouchDB's grain rather than against it, the path of least resistance leads you to naturally scalable applications."
+msgstr ""
+"Verteilte Systeme zu entwerfen ist nicht einfach. Viele der \"Stolperfallen\", "
+"die mit der Zeit auftauchen, sind am Anfang nicht offensichtlich. CouchDB "
+"kennt nicht alle Antworten und es ist auch keine Allheilmittel. Wenn man "
+"jedoch mit CouchDB anstatt dagegen arbeitet, führen die so entwickelten "
+"Anwendungen automatisch zu skalierbaren Systemen."
+
+# 5bdeeb29623449df9cfcb120240cdac3
+#: ../../../src/intro/consistency.rst:45
+msgid "Of course, building a distributed system is only the beginning. A website with a database that is available only half the time is next to worthless. Unfortunately, the traditional relational database approach to consistency makes it very easy for application programmers to rely on global state, global clocks, and other high availability no-nos, without even realizing that they're doing so. Before examining how CouchDB promotes scalability, we'll look at the constraints faced by a distributed system. After we've seen the problems that arise when parts of your application can't rely on being in constant contact with each other, we'll see that CouchDB provides an intuitive and useful way for modeling applications around high availability."
+msgstr ""
+"Sicher ist die Entwicklung eines verteilten Systems nur der Anfang. Eine "
+"Webseite mit einer Datenbank ist nahezu nutzlos, wenn sie nur die Hälfte der "
+"Zeit erreichbar ist. Leider macht es der traditionelle Ansatz, Konsistenz "
+"mit Hilfe eines RDBMS sicherzustellen, den Entwicklern sehr leicht, sich auf "
+"einen globalen Zustand, synchronisierte Uhren und andere Dinge zu "
+"verlassen, die in hochverfügbaren Systemen nicht sichergestellt werden "
+"können. Meist tun sie das ohne sich dessen bewusst zu sein. Bevor wir "
+"untersuchen, wie CouchDB Skalierbarkeit fördert, schauen wir auf die "
+"Rahmenbedingungen von verteilten Systemen. Nachdem die Probleme "
+"offensichtlich werden, wenn Teile einer Anwendung sich nicht mehr darauf "
+"verlassen können, auf andere Teile ständig zugreifen zu können, wird "
+"deutlich, wie CouchDB einen intuitiven und sinnvollen Weg weist, um "
+"hochverfügbare Anwendungen zu entwickeln."
+
+# 29ad919411d84eeeb0a386140ac15c3f
+#: ../../../src/intro/consistency.rst:63
+msgid "The CAP Theorem"
+msgstr "Das CAP Theorem"
+
+# 02cc0b8947bc4a3f9852513007965fc5
+#: ../../../src/intro/consistency.rst:65
+msgid "The CAP theorem describes a few different strategies for distributing application logic across networks. CouchDB's solution uses replication to propagate application changes across participating nodes. This is a fundamentally different approach from consensus algorithms and relational databases, which operate at different intersections of consistency, availability, and partition tolerance."
+msgstr ""
+"Das CAP-Theorem (CAP = Consistency, Avalability, Partition Tolerance) "
+"beschreibt einige Strategien um Anwendungslogik über ein Netzwerk zu "
+"verteilen. CouchDB verwendet Replikation um Änderungen zwischen den "
+"einzelnen Knoten zu synchronisieren. Das ist ein fundamental anderer Ansatz "
+"als der von Konsens-Algorithmen und relationalen Datenbanken, die an anderen "
+"Schnittpunkten von Konsistenz, Verfügbarkeit und Partitionstoleranz liegen."
+
+# 4cc2ee386f164ac482238d175f982c5a
+#: ../../../src/intro/consistency.rst:72
+msgid "The CAP theorem, shown in :ref:`intro/consistency-01`, identifies three distinct concerns:"
+msgstr ""
+"Das CAP Theorem wie in :ref:`intro/consistency-01` gezeigt identifiziert "
+"drei separate Bereiche: "
+
+# ff204237ae3d462990d3d7daef2cfcc1
+#: ../../../src/intro/consistency.rst:75
+msgid "**Consistency**: All database clients see the same data, even with concurrent updates."
+msgstr ""
+"**Consistency**: Alle Datenbank Nutzer sehen die gleichen Daten — selbst bei "
+"konkurrierenden Updates."
+
+# 415e59673792439fa3bea2cb1af22756
+#: ../../../src/intro/consistency.rst:77
+msgid "**Availability**: All database clients are able to access some version of the data."
+msgstr ""
+"**Availability**: Alle Datenbank Nutzer können auf irgendeine Version der "
+"Daten zugreifen."
+
+# f736811af6ca476db592427643f24a85
+#: ../../../src/intro/consistency.rst:79
+msgid "**Partition tolerance**: The database can be split over multiple servers."
+msgstr "Die Datenbank kann über mehrere Server verteilt sein."
+
+# 0ac73696c3ed484ba8b513f1e509d00a
+#: ../../../src/intro/consistency.rst:82
+msgid "Pick two."
+msgstr "Wähle zwei aus."
+
+# 5e35311cee7748b79dff899982433006
+#: ../../../src/intro/consistency.rst:92
+msgid "When a system grows large enough that a single database node is unable to handle the load placed on it, a sensible solution is to add more servers. When we add nodes, we have to start thinking about how to partition data between them. Do we have a few databases that share exactly the same data? Do we put different sets of data on different database servers? Do we let only certain database servers write data and let others handle the reads?"
+msgstr ""
+"Wenn ein System groß genug wird und ein einzelner Datenbankknoten nicht mehr "
+"ausreicht, um der Last Herr zu werden bietet es sich an, mehr Server zu "
+"betreiben. Sobald wir Netzwerkknoten hinzufügen müssen wir uns Gedanken "
+"darüber machen, wie wir die Daten zwischen ihnen aufteilen. Haben wir "
+"Datenbanken die sich exakt die selben Daten teilen? Oder werden wir "
+"verschiedene Datensätze auf verschiedene Server verteilen? Lassen wir einige "
+"Datenbankserver Daten schreiben und wieder andere die Daten nur ausliefern?"
+
+# 7deb42ff53704aac88992f785cc89986
+#: ../../../src/intro/consistency.rst:100
+msgid "Regardless of which approach we take, the one problem we'll keep bumping into is that of keeping all these database servers in sync. If you write some information to one node, how are you going to make sure that a read request to another database server reflects this newest information? These events might be milliseconds apart. Even with a modest collection of database servers, this problem can become extremely complex."
+msgstr ""
+"Egal welchen Ansatz wir wählen: wir werden immer dem Problem begegnen dass "
+"wir unsere Datenbankserver synchron halten müssen. Angenommen wir schreiben "
+"Daten auf einen Knoten, wie stellen wir dann sicher dass eine lesende "
+"Anfrage die einem anderen Datenbankserver gestellt wird, diese neuen "
+"Informationen enthält? Die Zeitspanne zwischen dem Schreiben und dem Lesen "
+"der Daten könnte nur Millisekunden voneinander getrennt sein, selbst mit "
+"einer geringen Anzahl Datenbankserver kann dieses Problem sehr komplex "
+"werden."
+
+# 07659a7430f9472f818a09d03dba3678
+#: ../../../src/intro/consistency.rst:107
+msgid "When it's absolutely critical that all clients see a consistent view of the database, the users of one node will have to wait for any other nodes to come into agreement before being able to read or write to the database. In this instance, we see that availability takes a backseat to consistency. However, there are situations where availability trumps consistency:"
+msgstr ""
+"Wenn es darum geht, dass alle Clients der Anwendung ein konsistentes Bild "
+"der Datenbank haben, werden die Nutzer des jeweiligen Knotens darauf warten "
+"müssen bis alle anderen Netzknoten sich synchronisiert haben, bevor sie "
+"Daten lesen oder schreiben können. In diesem Fall wird die Konsistenz der "
+"Verfügbarkeit vorgezogen. Aber es gibt auch Situationen bei der die "
+"Verfügbarkeit die Konsistenz aussticht:"
+
+# a9851fc06fbf48f19b29b1f020b093f7
+#: ../../../src/intro/consistency.rst:113
+msgid "Each node in a system should be able to make decisions purely based on local state. If you need to do something under high load with failures occurring and you need to reach agreement, you're lost. If you're concerned about scalability, any algorithm that forces you to run agreement will eventually become your bottleneck. Take that as a given."
+msgstr ""
+"Jeder Knoten in einem System sollte dazu in der Lage sein Entscheidungen "
+"basierend allein auf seinem lokalen Zustand zu treffen. Wenn du etwas unter "
+"hoher Last tun willst, dann Fehler auftreten und du aus Synchronisierung "
+"warten musst, hast du verloren. Wenn du dir Gedanken über Skalierbarkeit "
+"machst, könnte sich jeder Algorithmus um diese Synchronisierung zu erreichen "
+"als ein Flaschenhals entpuppen. Nehme dies als gegeben an."
+
+# f4c47c5c10744178b12b4ff9e8a03f8a
+#: ../../../src/intro/consistency.rst:119
+msgid "-- Werner Vogels, Amazon CTO and Vice President"
+msgstr "-- Werner Vogels, Amazon CTO and Vice President"
+
+# c0c27040bb9246d0b2804e52c3fb4580
+#: ../../../src/intro/consistency.rst:121
+msgid "If availability is a priority, we can let clients write data to one node of the database without waiting for other nodes to come into agreement. If the database knows how to take care of reconciling these operations between nodes, we achieve a sort of \"eventual consistency\" in exchange for high availability. This is a surprisingly applicable trade-off for many applications."
+msgstr ""
+"Wenn Verfügbarkeit Priorität hat, können wir Clients die Daten zunächst auf "
+"einen Knoten schreiben lassen, ohne darauf zu warten, dass die anderen "
+"Knoten synchronisiert werden. Wenn die Datenbank weiß, wie sie mit dieser "
+"Situation umzugehen hat, sind die Daten irgendwann \"letztendlich "
+"konsistent\" - allerdings unter Aufgabe der Hochverfügbarkeit der Daten. Für "
+"viele Anwendungen ist das ein erstaunlich guter Kompromiss."
+
+# c13607b49c644d69ab1b2ba4dde0f894
+#: ../../../src/intro/consistency.rst:127
+msgid "Unlike traditional relational databases, where each action performed is necessarily subject to database-wide consistency checks, CouchDB makes it really simple to build applications that sacrifice immediate consistency for the huge performance improvements that come with simple distribution."
+msgstr ""
+"Im Gegensatz zu traditionellen, relationalen Datenbanken, bei denen jede "
+"Aktion notwendigerweise Konsistenzprüfungen über die ganze Datenbank nach "
+"sich ziehen, macht es CouchDB sehr einfach Anwendungen zu bauen, die "
+"sofortige Konsistenz gegen eine große Steigerung der Performanz eintauschen, "
+"welche durch einfache Verteilung zustande kommt."
+
+# 71ecb49ad1aa40faa3d2f3ea3a5310b9
+#: ../../../src/intro/consistency.rst:135
+msgid "Local Consistency"
+msgstr "Lokale Konsistenz"
+
+# 6217cf1caaf84c4fa207fdc8293bb47b
+#: ../../../src/intro/consistency.rst:137
+msgid "Before we attempt to understand how CouchDB operates in a cluster, it's important that we understand the inner workings of a single CouchDB node. The CouchDB API is designed to provide a convenient but thin wrapper around the database core. By taking a closer look at the structure of the database core, we'll have a better understanding of the API that surrounds it."
+msgstr ""
+"Bevor wir versuchen zu erklären, wie CouchDB in einem Cluster funktioniert, "
+"ist es wichtig zu verstehen, wie ein einzelner CouchDB Knoten arbeitet. Das "
+"CouchDB API wurde so entworfen, dass es nur eine dünne Schicht über dem "
+"eigentlichen Datenbankkern ist. Indem man genauer auf die Struktur dieses "
+"Kerns schaut, versteht man das API, das ihn umgibt, besser."
+
+# 16db8bdfc9164875bc9b2601d32b4ce5
+#: ../../../src/intro/consistency.rst:145
+msgid "The Key to Your Data"
+msgstr "Der Schlüssel zu deinen Daten"
+
+# 48ad7816e274419ca8f00c617cb9a0b0
+#: ../../../src/intro/consistency.rst:147
+msgid "At the heart of CouchDB is a powerful *B-tree* storage engine. A B-tree is a sorted data structure that allows for searches, insertions, and deletions in logarithmic time. As :ref:`intro/consistency-02` illustrates, CouchDB uses this B-tree storage engine for all internal data, documents, and views. If we understand one, we will understand them all."
+msgstr ""
+"Das Herz von CouchDB ist eine mächtige *B-Tree* Storage Engine. Ein B-Tree "
+"ist eine sortierte Datenstruktur, welche Suchen, Einfügen und Löschen von "
+"Knoten in logarithmischer Zeit erlaubt. Wie :ref:`intro/consistency-02` "
+"zeigt, benutzt CouchDB die B-Tree Storage Engine für sämtliche internen "
+"Daten, Dokumente und Views. Hat man einen verstanden, versteht man alle."
+
+# 4580f34c30ae4b62a99057a4cad326f4
+#: ../../../src/intro/consistency.rst:163
+msgid "CouchDB uses MapReduce to compute the results of a view. MapReduce makes use of two functions, \"map\" and \"reduce\", which are applied to each document in isolation. Being able to isolate these operations means that view computation lends itself to parallel and incremental computation. More important, because these functions produce key/value pairs, CouchDB is able to insert them into the B-tree storage engine, sorted by key. Lookups by key, or key range, are extremely efficient operations with a B-tree, described in `big O` notation as ``O(log N)`` and ``O(log N + K)``, respectively."
+msgstr ""
+"CouchDB verwendet MapReduce um die Ergebnisse einer View zu berechnen. "
+"MapReduce benutzt dazu zwei Funktionen \"map\" und \"reduce\", welche auf "
+"jedes Dokument separat angewendet werden. Die Möglichkeit diese Operationen "
+"zu isolieren führt dazu, dass man sie parallel und inkrementell ausführen "
+"kann. Wichtiger noch, weil diese Funktionen Key/Value Paare erzeugen, kann "
+"CouchDB sie nach Schlüssel sortiert in die B-Tree Storage Engine einfügen. "
+"Suchen mit Hilfe eines Schlüssels (Key) oder eines Schlüsselwertbereichs ("
+"Key Range) sind sehr effizient mit einem B-Tree, beschrieben als `O Notation`"
+" in ``O(log N)`` beziehungsweise ``O(log N + K)``."
+
+# 2bd145d6c4854489a59a69575f5b7a64
+#: ../../../src/intro/consistency.rst:173
+msgid "In CouchDB, we access documents and view results by key or key range. This is a direct mapping to the underlying operations performed on CouchDB's B-tree storage engine. Along with document inserts and updates, this direct mapping is the reason we describe CouchDB's API as being a thin wrapper around the database core."
+msgstr ""
+"In CouchDB greift man auf Dokumente und Views über Schlüssel oder "
+"Schlüsselbereiche zu. Das ist eine direkte Abbildung der Operationen, die "
+"von CouchDBs B-Tree Storage Engine ausgeführt werden. Zusammen mit den "
+"Operationen für das Einfügen und Aktualisieren von Dokumenten sind es diese "
+"Funktionen, die uns das CouchDB API als eine dünne Schicht um den "
+"Datenbankkern beschreiben lassen."
+
+# a2ce7e8373224d0a94c5ee23748eb59e
+#: ../../../src/intro/consistency.rst:179
+msgid "Being able to access results by key alone is a very important restriction because it allows us to make huge performance gains. As well as the massive speed improvements, we can partition our data over multiple nodes, without affecting our ability to query each node in isolation. `BigTable`_, `Hadoop`_, `SimpleDB`_, and `memcached`_ restrict object lookups by key for  exactly these reasons."
+msgstr ""
+"Allein schon die Beschränkung, dass auf Ergebnisse ausschließlich per "
+"Schlüssel zugegriffen werden kann, führt zu massiven Steigerungen der "
+"Zugriffsgeschwindigkeit. Neben diesen Geschwindigkeitsvorteilen können die "
+"Daten noch über verschiedene Knoten partitioniert werden, ohne die "
+"Möglichkeit zu verlieren, jeden Knoten isoliert zu verwenden. BigTable, "
+"Hadoop, SimpleDB und memcached erlauben ausschließlich eine Suche nach "
+"Schlüssel aus genau diesen Gründen."
+
+# 3418d715d3894483a7243299638978fa
+#: ../../../src/intro/consistency.rst:193
+msgid "No Locking"
+msgstr "Kein Locking"
+
+# b5995c573fd140c8a568ecdac12b1cf4
+#: ../../../src/intro/consistency.rst:195
+msgid "A table in a relational database is a single data structure. If you want to modify a table -- say, update a row -- the database system must ensure that nobody else is trying to update that row and that nobody can read from that row while it is being updated. The common way to handle this uses what's known as a lock. If multiple clients want to access a table, the first client gets the lock, making everybody else wait. When the first client's request is processed, the next client is given access while everybody else waits, and so on. This serial execution of requests, even when they arrived in parallel, wastes a significant amount of your server's processing power. Under high load, a relational database can spend more time figuring out who is allowed to do what, and in which order, than it does doing any actual work."
+msgstr ""
+"Eine Tabelle in einer relationalen Datenbank ist eine große einzelne "
+"Datenstruktur. Wenn man eine Tabelle ändern möchte, um beispielsweise eine "
+"Zeile zu aktualisieren, muss sichergestellt sein, dass niemand versucht, die "
+"selbe Zeile zur gleichen Zeit zu ändern. Des weiteren müssen Lesezugriffe "
+"für diese Zeile unterbunden werden. Üblicherweise wird das durch ein Lock "
+"erreicht. Wenn mehrere Clients gleichzeitig auf die Tabelle zugreifen, "
+"erhält der erste Client das Lock und sorgt so dafür, dass alle anderen "
+"warten müssen. Wenn der erste Client seine Anfrage beendet hat, erhält der "
+"nächste Client das Lock usw. Diese Serialisierung der Anfragen, selbst wenn "
+"sie gleichzeitig ankommen, benötigt eine erhebliche Menge an Rechenzeit. "
+"Unter großer Last kann es vorkommen, dass eine relationale Datenbank mehr "
+"damit beschäftigt ist herauszufinden, was in welcher Reihenfolge zu tun ist, "
+"als die Anfragen zu beantworten."
+
+# b22906133ecd474984563ca59be1d377
+#: ../../../src/intro/consistency.rst:208
+msgid "Modern relational databases avoid locks by implementing MVCC under the hood, but hide it from the end user, requiring them to coordinate concurrent changes of single rows or fields."
+msgstr ""
+"Moderne relationale Datenbanken vermeiden Locks. Sie implementieren MVCC, "
+"aber verstecken es vor dem Benutzer. Dadurch müssen die relationalen "
+"Datenbanken die parallelen Anfragen auf die einzelnen Spalten oder Felder "
+"koordinieren."
+
+# 5a70a0af2f584dd888e0552bfab421e4
+#: ../../../src/intro/consistency.rst:212
+msgid "Instead of locks, CouchDB uses `Multi-Version Concurrency Control` (MVCC) to manage concurrent access to the database. :ref:`intro/consistency-03` illustrates the differences between MVCC and traditional locking mechanisms. MVCC means that CouchDB can run at full speed, all the time, even under high load. Requests are run in parallel, making excellent use of every last drop of processing power your server has to offer."
+msgstr ""
+"Anstelle von Locks verwendet CouchDB `Multi-Version Concurrency Control` "
+"(MVCC)  um den konkurrierenden Zugriff auf die Datenbank zu verwalten. "
+":ref:`intro/consistency-03` veranschaulicht die Unterschiede zwischen MVCC "
+"und traditionellen Locking Mechanismen. MVCC bedeutet, dass CouchDB mit "
+"voller Geschwindigkeit arbeiten kann -- selbst unter hoher Last. Anfragen "
+"werden parallel beantwortet und nutzen so jedes Quäntchen Rechenleistung "
+"aus, das Server zu bieten hat."
+
+# a3df06bef2ac446fa833d96ebac5a77d
+#: ../../../src/intro/consistency.rst:229
+msgid "Documents in CouchDB are versioned, much like they would be in a regular version control system such as `Subversion`_. If you want to change a value in a document, you create an entire new version of that document and save it over the old one. After doing this, you end up with two versions of the same document, one old and one new."
+msgstr ""
+"Dokumente in CouchDB werden versioniert, ähnlich zu Versionskontrollsystemen "
+"wie `Subversion`_. Wenn man einen Wert in einem Dokument ändern möchte, "
+"erzeugt man eine neue Version des Dokuments und speichert es neben dem "
+"alten. Anschließend hat man zwei Versionen des Dokuments -- eine alte und "
+"eine neue."
+
+# 4759a6c506594be7af2a0425209e75a1
+#: ../../../src/intro/consistency.rst:235
+msgid "How does this offer an improvement over locks? Consider a set of requests wanting to access a document. The first request reads the document. While this is being processed, a second request changes the document. Since the second request includes a completely new version of the document, CouchDB can simply append it to the database without having to wait for the read request to finish."
+msgstr ""
+"Warum sollte das besser sein als Locking? Nehmen wir eine Gruppe von "
+"Anfragen für ein bestimmtes Dokument. Die erste Anfrage liest das Dokument. "
+"Während diese Anfrage bearbeitet wird, ändert die zweite Anfrage das "
+"Dokument. Da die zweite Anfrage eine komplett neue Version des Dokuments "
+"anlegt, kann CouchDB diese Version einfach an die Datenbank anhängen, ohne "
+"darauf zu warten, dass die erste Anfrage beendet wurde."
+
+# fd88a0aa7bb74736832d1fc25ddf9aa5
+#: ../../../src/intro/consistency.rst:242
+msgid "When a third request wants to read the same document, CouchDB will point it to the new version that has just been written. During this whole process, the first request could still be reading the original version."
+msgstr ""
+"Wenn eine dritte Anfrage das gleiche Dokument lesen möchte, wird CouchDB auf "
+"die neue Version verweisen, die gerade eben erzeugt wurde. Während der "
+"ganzen Zeit könnte die erste Anfrage immer noch damit beschäftigt sein, die "
+"ursprüngliche Version zu lesen."
+
+# 273f43e8c54d44c0b82a8215bb6ea86f
+#: ../../../src/intro/consistency.rst:246
+msgid "A read request will always see the most recent snapshot of your database at the time of the beginning of the request."
+msgstr ""
+"Während eines Lesezugriffs wird immer der zu dem Zeitpunkt aktuellste "
+"Zustand der Datenbank verwendet."
+
+# 9d417ac27760486c86c1b0038a6d2e65
+#: ../../../src/intro/consistency.rst:253
+msgid "Validation"
+msgstr "Validierung"
+
+# 9512a0d918874c59853efd8e44f1a274
+#: ../../../src/intro/consistency.rst:255
+msgid "As application developers, we have to think about what sort of input we should accept and what we should reject. The expressive power to do this type of validation over complex data within a traditional relational database leaves a lot to be desired. Fortunately, CouchDB provides a powerful way to perform per-document validation from within the database."
+msgstr ""
+"Anwendungsentwickler müssen berücksichtigen, welche Eingaben akzeptabel sind "
+"und welche nicht. Die Möglichkeiten von relationalen Datenbanken, komplexe "
+"Daten innerhalb der Datenbank zu überprüfen, sind beschränkt. CouchDB bietet "
+"dagegen mächtige Funktionen um Dokumente innerhalb der Datenbank zu "
+"validieren."
+
+# 492728ea2c294095a2b60dddc19daec9
+#: ../../../src/intro/consistency.rst:261
+msgid "CouchDB can validate documents using JavaScript functions similar to those used for MapReduce. Each time you try to modify a document, CouchDB will pass the validation function a copy of the existing document, a copy of the new document, and a collection of additional information, such as user authentication details. The validation function now has the opportunity to approve or deny the update."
+msgstr ""
+"CouchDB kann Dokumente mithilfe von JavaScript validieren. Diese Funktionen "
+"sind ganz ähnlich zu den MapReduce Funktionen. Jedesmal wenn ein Dokument "
+"verändert werden soll, wird CouchDB eine Kopie des aktuellen und eine Kopie "
+"des neuen Dokuments zusammen mit einigen zusätzlichen Informationen wie "
+"Benutzer und Authentifizierungsdetails an die Validierungsfunktion "
+"übergeben. Diese hat nun die Möglichkeit die Änderung zu erlauben oder "
+"abzulehnen."
+
+# 9cd6de9feded47da8a4c51d11a7714f2
+#: ../../../src/intro/consistency.rst:268
+msgid "By working with the grain and letting CouchDB do this for us, we save ourselves a tremendous amount of CPU cycles that would otherwise have been spent serializing object graphs from SQL, converting them into domain objects, and using those objects to do application-level validation."
+msgstr ""
+"In dem man CouchDB für sich arbeiten und diese Überprüfungen durchführen "
+"lässt, spart man unglaublich viel Aufwand und Rechenzeit, die sonst für die "
+"Serialisierung von Objektgraphen via SQL und die Umwandlung in Domainobjekte "
+"benutzt würde, um die Validierung schließlich in der Anwendung durchzuführen."
+
+# 1f05c1cd18f24489ac3c3a93f6d97e3e
+#: ../../../src/intro/consistency.rst:275
+msgid "Distributed Consistency"
+msgstr "Verteilte Konsistenz"
+
+# 79247df7a18f4923864cd0dd8e2335a0
+#: ../../../src/intro/consistency.rst:277
+msgid "Maintaining consistency within a single database node is relatively easy for most databases. The real problems start to surface when you try to maintain consistency between multiple database servers. If a client makes a write operation on server `A`, how do we make sure that this is consistent with server `B`, or `C`, or `D`? For relational databases, this is a very complex problem with entire books devoted to its solution. You could use multi-master, master/slave, partitioning, sharding, write-through caches, and all sorts of other complex techniques."
+msgstr ""
+"Daten innerhalb eines einzelnen Datenbankknotens konsistent zu halten, ist "
+"für die meisten Datenbanken relativ einfach. Die Schwierigkeiten beginnen, "
+"wenn Konsistenz über mehrere Datenbankserver sichergestellt werden soll. "
+"Wenn ein Client einen Schreibzugriff auf Server `A` macht, wie stellt man "
+"sicher, dass Server `B`, `C` oder `D` konsistent sind? Das ist für "
+"relationale Datenbanken ein ziemlich komplexes Problem, dessen Lösung ganze "
+"Bücher füllt. Man kann zwischen Multi-Master, Master/Slave, Partitionierung, "
+"Sharding, Write-Through Caches und vielen anderen Ansätzen wählen."
+
+# 8b50b35a91264eb9a130bed71340a5b2
+#: ../../../src/intro/consistency.rst:288
+msgid "Incremental Replication"
+msgstr "Inkrementelle Replikation"
+
+# 772f9b0c6cf3457ba8a8f0dbc4193a6b
+#: ../../../src/intro/consistency.rst:290
+msgid "CouchDB's operations take place within the context of a single document. As CouchDB achieves eventual consistency between multiple databases by using incremental replication you no longer have to worry about your database servers being able to stay in constant communication. Incremental replication is a process where document changes are periodically copied between servers. We are able to build what's known as a *shared nothing* cluster of databases where each node is independent and self-sufficient, leaving no single point of contention across the system."
+msgstr ""
+"CouchDB führt Operationen immer im Kontext eines einzelnen Dokuments aus. Da "
+"CouchDB letztendlich die Konsistenz zwischen verschiedenen Datenbanken "
+"mittels inkrementeller Replikation wieder herstellt, muss man sich keine "
+"Gedanken mehr darüber machen, ob die Verbindung zwischen den verschiedenen "
+"Servern auch permanent besteht. Inkrementelle Replikation ist ein Prozess "
+"bei dem Änderungen an Dokumenten periodisch zwischen den Servern kopiert "
+"werden. Damit ist es möglich einen sogenannten *Shared Nothing* Cluster von "
+"Datenbanken einzurichten, in dem jeder Knoten unabhängig ist und keinen "
+"Single Point of Failure darstellt."
+
+# 324649a379d443e484e4b2b1ec5e3933
+#: ../../../src/intro/consistency.rst:299
+msgid "Need to scale out your CouchDB database cluster? Just throw in another server."
+msgstr ""
+"Muss der CouchDB Datenbank Cluster nach oben skaliert werden? Dann stellt "
+"man einfach einen Server dazu."
+
+# 9534ee56dc4145ed8fb2d2339d1acdc2
+#: ../../../src/intro/consistency.rst:301
+msgid "As illustrated in :ref:`intro/consistency-04`, with CouchDB's incremental replication, you can synchronize your data between any two databases however you like and whenever you like. After replication, each database is able to work independently."
+msgstr ""
+"Wie in :ref:`intro/consistency-04` zwischen CouchDB Knoten dargestellt wird, "
+"synchronisiert die inkrementelle Replikation von CouchDB die Daten zwischen "
+"zwei beliebigen Datenbanken wann und wie auch immer man möchte. Nach der "
+"Replikation kann jede Datenbank unabhängig von der anderen arbeiten."
+
+# d9cc940838224074b7a8ffebd1bba51b
+#: ../../../src/intro/consistency.rst:306
+msgid "You could use this feature to synchronize database servers within a cluster or between data centers using a job scheduler such as cron, or you could use it to synchronize data with your laptop for offline work as you travel. Each database can be used in the usual fashion, and changes between databases can be synchronized later in both directions."
+msgstr ""
+"Man kann dieses Feature beispielsweise dazu nutzen, Datenbanken innerhalb "
+"eines Clusters oder zwischen Rechenzentren mit einem Cron Job zu "
+"synchronisieren. Oder man synchronisiert die Daten mit dem eigenen Laptop um "
+"später offline weiter arbeiten zu können. Jede Datenbank kann ganz normal "
+"benutzt werden und Änderungen an den Daten können später in beide Richtungen "
+"synchronisiert werden."
+
+# db84cc5caf1947bb81fc4e4302c76fbb
+#: ../../../src/intro/consistency.rst:322
+msgid "What happens when you change the same document in two different databases and want to synchronize these with each other? CouchDB's replication system comes with automatic conflict detection and resolution. When CouchDB detects that a document has been changed in both databases, it flags this document as being in conflict, much like they would be in a regular version control system."
+msgstr ""
+"Was passiert, wenn man das gleiche Dokument in zwei verschiedenen "
+"Datenbanken ändert und anschließend die Datenbanken synchronisieren möchte? "
+"CouchDBs Replikationssystem hat eine automatische Konflikterkennung und "
+"Konfliktauflösung. Wenn CouchDB erkennt, dass ein Dokument in beiden "
+"Datenbanken geändert wurde, wird es als konfliktbehaftet markiert -- genau "
+"wie in einem normalen Versionskontrollsystem."
+
+# 43f130706bcf40beb6f39cb9db879e02
+#: ../../../src/intro/consistency.rst:329
+msgid "This isn't as troublesome as it might first sound. When two versions of a document conflict during replication, the winning version is saved as the most recent version in the document's history. Instead of throwing the losing version away, as you might expect, CouchDB saves this as a previous version in the document's history, so that you can access it if you need to. This happens automatically and consistently, so both databases will make exactly the same choice."
+msgstr ""
+"Das ist nicht so ein großes Problem wie es zunächst scheinen mag. Wenn zwei "
+"Versionen des gleichen Dokuments kollidieren, wird die Version, die gewinnt "
+"als aktuelles Dokument gespeichert. Die Version, die verloren hat, wird "
+"nicht vergessen, sondern als vorherige Version gespeichert, so dass man "
+"darauf zugreifen kann, wenn man möchte. Das geschieht automatisch und "
+"konsistent in beiden Datenbanken auf die gleiche Weise."
+
+# f49df4a5de294d96a48d8e58f5cab7b3
+#: ../../../src/intro/consistency.rst:337
+msgid "It is up to you to handle conflicts in a way that makes sense for your application. You can leave the chosen document versions in place, revert to the older version, or try to merge the two versions and save the result."
+msgstr ""
+"Es ist Aufgabe des Entwicklers zu entscheiden, wie ein Konflikt am besten zu "
+"lösen ist. Beide Versionen können in der Datenbank bleiben, es wird zur "
+"alten Version zurückgekehrt oder die Anwendung versucht den Konflikt "
+"aufzulösen und eine neue Version zu speichern."
+
+# 04ea7120905844bca779d4667d7c7949
+#: ../../../src/intro/consistency.rst:344
+msgid "Case Study"
+msgstr "Ein Fallbeispiel"
+
+# f7d112286f104f7085b6c32fce5ff17b
+#: ../../../src/intro/consistency.rst:346
+msgid "Greg Borenstein, a friend and coworker, built a small library for converting Songbird playlists to JSON objects and decided to store these in CouchDB as part of a backup application. The completed software uses CouchDB's MVCC and document revisions to ensure that Songbird playlists are backed up robustly between nodes."
+msgstr ""
+"Ein Freund und Kollege, Greg Borenstein, hat eine kleine Bibliothek "
+"entwickelt, die Songbird Wiedergabelisten in JSON Objekte umwandelt. Um die "
+"Objekte in einer Backup Anwendung zu speichern verwendet er CouchDB. Die "
+"fertige Anwendung verwendet CouchDBs MVCC und versionierte Dokumente um "
+"sicherzustellen, dass die Songbird Wiedergabelisten korrekt zwischen "
+"verschiedenen Rechnern gesichert werden."
+
+# 1d30827eb69d4ea6b73f01d32d832e5c
+#: ../../../src/intro/consistency.rst:353
+msgid "`Songbird`_ is a free software media player with an integrated web browser, based on the Mozilla XULRunner platform. Songbird is available for Microsoft Windows, Apple Mac OS X, Solaris, and Linux."
+msgstr ""
+"`Songbird`_ ist ein freier Software Media Player mit einem integrierten "
+"Webbrowser, der auf der Mozilla XULRunner Plattform basiert. Songbird gibt "
+"es für Microsoft Windows, Apple Mac OS X, Solaris und Linux."
+
+# 71300170d7c1485eb2de00ddcd97913a
+#: ../../../src/intro/consistency.rst:359
+msgid "Let's examine the workflow of the Songbird backup application, first as a user backing up from a single computer, and then using Songbird to synchronize playlists between multiple computers. We'll see how document revisions turn what could have been a hairy problem into something that *just works*."
+msgstr ""
+"Wenn man den Ablauf der Songbird Backup Anwendung genauer untersucht, stellt "
+"man fest, dass der Benutzer zunächst ein Backup der Wiedergabelisten auf "
+"einem der Computer erstellt. Anschließend benutzt er Songbird, um diese "
+"Wiedergabelisten zwischen verschiedenen Computern zu synchronisieren. Wir "
+"werden sehen, wie ein vermeintlich kniffliges Problem *einfach so "
+"funktioniert*."
+
+# 0703cc86be854cb7b781bcfd1b6e1746
+#: ../../../src/intro/consistency.rst:365
+msgid "The first time we use this backup application, we feed our playlists to the application and initiate a backup. Each playlist is converted to a JSON object and handed to a CouchDB database. As illustrated in :ref:`intro/consistency-05`, CouchDB hands back the document ID and revision of each playlist as it's saved to the database."
+msgstr ""
+"Beim ersten Mal werden die Wiedergabelisten der Anwendung übergeben und ein "
+"Backup wird gestartet. Jede Wiedergabeliste wird in ein JSON Objekt "
+"umgewandelt und an eine CouchDB Datenbank übergeben. Wie "
+":ref:`intro/consistency-05` zeigt, liefert CouchDB die ID des Dokuments und "
+"die Versionsnummer jeder Wiedergabeliste zurück, während die JSON Objekte in "
+"der Datenbank gespeichert werden."
+
+# 5d25d9e89b3b42a0b7968e0112339bf2
+#: ../../../src/intro/consistency.rst:381
+msgid "After a few days, we find that our playlists have been updated and we want to back up our changes. After we have fed our playlists to the backup application, it fetches the latest versions from CouchDB, along with the corresponding document revisions. When the application hands back the new playlist document, CouchDB requires that the document revision is included in the request."
+msgstr ""
+"Nach ein paar Tagen haben sich die Wiedergabelisten geändert und sollen "
+"wieder gesichert werden. Nachdem wir die Wiedergabelisten der Backup "
+"Anwendung übergeben haben, holt die sich die letzte Version von CouchDB "
+"zusammen mit der aktuellen Version des Dokuments. Beim anschließenden "
+"Aktualisieren des Dokuments muss die Versionsnummer wieder mit übergeben "
+"werden."
+
+# dc2ee357f4e840c2b1aba315be0a08fe
+#: ../../../src/intro/consistency.rst:388
+msgid "CouchDB then makes sure that the document revision handed to it in the request matches the current revision held in the database. Because CouchDB updates the revision with every modification, if these two are out of sync it suggests that someone else has made changes to the document between the time we requested it from the database and the time we sent our updates. Making changes to a document after someone else has modified it without first inspecting those changes is usually a bad idea."
+msgstr ""
+"CouchDB stellt dann sicher, dass die übergebene Versionsnummer tatsächlich "
+"der aktuellsten Version des Dokuments entspricht. Weil CouchDB die "
+"Versionsnummer bei jeder Änderung ebenfalls anpasst, bedeutet ein "
+"Unterschied, dass jemand in der Zwischenzeit das Dokument geändert hat. In "
+"den allermeisten Fällen ist es dann keine gute Idee das Dokument zu "
+"speichern, ohne sich die Änderungen vorher anzusehen."
+
+# cc79c598c83d4e9cb6ddcc305d64402d
+#: ../../../src/intro/consistency.rst:396
+msgid "Forcing clients to hand back the correct document revision is the heart of CouchDB's optimistic concurrency."
+msgstr ""
+"Der Zwang, beim Speichern die korrekte Versionsnummer des Dokuments zu "
+"übergeben, ist der Kern von CouchDBs Optimistic Concurrency."
+
+# fabf1a4fef294edd898700602ab7abd9
+#: ../../../src/intro/consistency.rst:399
+msgid "We have a laptop we want to keep synchronized with our desktop computer. With all our playlists on our desktop, the first step is to \"restore from backup\" onto our laptop. This is the first time we've done this, so afterward our laptop  should hold an exact replica of our desktop playlist collection."
+msgstr ""
+"Wenn wir einen Laptop haben und mit dem Desktop Computer synchron bleiben "
+"wollen, ist der erste Schritt das \"Wiederherstellen einer Sicherung\". Da "
+"dies das erste Mal ist, sollte der Laptop im Anschluss daran eine exakte "
+"Kopie der Wiedergabelisten haben."
+
+# f1554d56cd314b6f8cd61b27e3901db1
+#: ../../../src/intro/consistency.rst:405
+msgid "After editing our Argentine Tango playlist on our laptop to add a few new songs we've purchased, we want to save our changes. The backup application replaces the playlist document in our laptop CouchDB database and a new document revision is generated. A few days later, we remember our new songs and want to copy the playlist across to our desktop computer. As illustrated in :ref:`intro/consistency-06`, the backup application copies the new document and the new revision to the desktop CouchDB database. Both CouchDB databases now have the same document revision."
+msgstr ""
+"Nachdem die Wiedergabeliste für Argentinische Tangos auf dem Laptop geändert "
+"wurde und wir ein paar neue Songs gekauft haben, sollen die Änderungen "
+"gespeichert werden. Die Backup Anwendung speichert die Änderungen in der "
+"CouchDB auf dem Laptop und erzeugt eine neue Version des Dokuments. Ein paar "
+"Tage später erinnern wir uns und möchten die Wiedergabelisten mit dem "
+"Desktop Computer synchronisieren. Wie in :ref:`intro/consistency-06` gezeigt "
+"wird, kopiert die Backup Anwendung das neue Dokument und die neue Version in "
+"die CouchDB auf dem Desktop Computer. Beide Computer haben nun die gleiche "
+"Version des Dokuments."
+
+# 43abe7386983445fb5c5b8beb74723fd
+#: ../../../src/intro/consistency.rst:424
+msgid "Because CouchDB tracks document revisions, it ensures that updates like these will work only if they are based on current information. If we had made modifications to the playlist backups between synchronization, things wouldn't go as smoothly."
+msgstr ""
+"Weil CouchDB die Versionen von Dokumenten mitverfolgt, stellt es sicher, "
+"dass Änderungen wie diese einfach funktionieren. Wären die Wiedergabeliste "
+"auf beiden Seiten zwischen den Backups geändert worden, sähe die Sache "
+"anders aus."
+
+# 8950ede7e53c4c36bd8cece90fdf4053
+#: ../../../src/intro/consistency.rst:429
+msgid "We back up some changes on our laptop and forget to synchronize. A few days later, we're editing playlists on our desktop computer, make a backup, and want to synchronize this to our laptop. As illustrated in :ref:`intro/consistency-07`, when our backup application tries to replicate between the two databases, CouchDB sees that the changes being sent from our desktop computer are modifications of out-of-date documents and helpfully informs us that there has been a conflict."
+msgstr ""
+"Wir sichern einige Änderung auf dem Laptop und vergessen zu synchronisieren. "
+"Ein paar Tage später, als wir gerade Wiedergabelisten auf dem Desktop "
+"Rechner ändern, machen wir ein Backup und wollen dies mit dem Laptop "
+"synchronisieren. Wie :ref:`intro/consistency-07` zeigt, erkennt CouchDB den "
+"Konflikt und ist so nett und informiert uns."
+
+# 30c396da967748afb62c364e2ad700cc
+#: ../../../src/intro/consistency.rst:437
+msgid "Recovering from this error is easy to accomplish from an application perspective. Just download CouchDB's version of the playlist and provide an opportunity to merge the changes or save local modifications into a new playlist."
+msgstr ""
+"Dieser Konflikt ist in der Anwendung leicht zu lösen. Man lädt die Version "
+"aus der CouchDB und vergleicht sie mit der lokalen Version. Anschließend "
+"bietet man dem Nutzer die Möglichkeit die Änderungen entweder "
+"zusammenzuführen oder die lokalen Änderungen in einer neuen Wiedergabeliste "
+"zu speichern."
+
+# 56791967d8d94ab09fa3310a6b556edd
+#: ../../../src/intro/consistency.rst:453
+msgid "Wrapping Up"
+msgstr "Zusammenfassung"
+
+# f84da8521df7457d98a4c60e52d37985
+#: ../../../src/intro/consistency.rst:455
+msgid "CouchDB's design borrows heavily from web architecture and the lessons learned deploying massively distributed systems on that architecture. By understanding why this architecture works the way it does, and by learning to spot which parts of your application can be easily distributed and which parts cannot, you'll enhance your ability to design distributed and scalable applications, with CouchDB or without it."
+msgstr ""
+"Das Design von CouchDB ist stark an die Architektur des Webs angelehnt und "
+"von den Erkenntnissen beim Bau von massiv verteilten Systemen inspiriert. "
+"Indem man versteht, warum diese Architektur so arbeitet wie sie es tut und "
+"durch Erkennen welche Teile einer Anwendung leicht verteilt werden können "
+"und welche nicht, schafft man die Möglichkeit, verteilte und skalierbare "
+"Anwendungen zu entwickeln. Mit CouchDB oder auch ohne."
+
+# 2ff40d086e684a37bb4dd253a6a1014f
+#: ../../../src/intro/consistency.rst:462
+msgid "We've covered the main issues surrounding CouchDB's consistency model and hinted at some of the benefits to be had when you work *with* CouchDB and not against it. But enough theory -- let's get up and running and see what all the fuss is about!"
+msgstr ""
+"Die Kernpunkte des Konsistenzmodells von CouchDB wurden besprochen und auf "
+"einige Vorteile hingewiesen, die man damit erreichen kann, wenn man *mit* "
+"CouchDB arbeitet anstatt dagegen. Doch genug der Theorie -- fangen wir "
+"endlich an!"

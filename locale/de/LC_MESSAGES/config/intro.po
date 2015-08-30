@@ -1,0 +1,202 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 80aeffde4b8b4dacacfd75b7f3694d01
+#: ../../../src/config/intro.rst:21
+msgid "Introduction Into Configuring"
+msgstr ""
+
+# 9e14a8cedbf6419093938de679b2e9d9
+#: ../../../src/config/intro.rst:24
+msgid "Configuration files"
+msgstr ""
+
+# 586936e8296344c7a28d7ac318f86c6d
+#: ../../../src/config/intro.rst:26
+msgid "By default, CouchDB reads configuration files from the following locations, in the following order:"
+msgstr ""
+
+# 9204c1fb0ddf402cb88613a99cd123f3
+#: ../../../src/config/intro.rst:29
+msgid "``LOCALCONFDIR/default.ini``"
+msgstr ""
+
+# 47d37565da794c1a8c97db2a71c702d8
+#: ../../../src/config/intro.rst:31
+msgid "``LOCALCONFDIR/default.d/*.ini``"
+msgstr ""
+
+# 25b640eaabb443db90fc6c17deaadc35
+#: ../../../src/config/intro.rst:33
+msgid "``PLUGINS_DIR/*/priv/default.d/*.ini``"
+msgstr ""
+
+# 6656c80e4ab240809e5f41780b823e2a
+#: ../../../src/config/intro.rst:35
+msgid "``LOCALCONFDIR/local.ini``"
+msgstr ""
+
+# 92c8bb2636534b2da500aa222dc30696
+#: ../../../src/config/intro.rst:37
+msgid "``LOCALCONFDIR/local.d/*.ini``"
+msgstr ""
+
+# 615aba0b403e4638b1fac883f2b12988
+#: ../../../src/config/intro.rst:39
+msgid "The ``LOCALCONFDIR`` points to the directory that contains configuration files (``/usr/local/etc/couchdb`` by default). This variable may vary from the target operation system and may be changed during building from the source code. For binary distributions, it mostly points to the installation path (e.g. ``C:\\Program Files\\CouchDB\\etc\\couchdb`` for Windows)."
+msgstr ""
+
+# 5ced0b14f2f14c308eba6121e7cfa01e
+#: ../../../src/config/intro.rst:45
+msgid "To see the actual configuration files chain run in shell::"
+msgstr ""
+
+# 38c609677f0f418eb253bdae6c031eba
+#: ../../../src/config/intro.rst:49
+msgid "This will print out all *actual* configuration files that will form the result CouchDB configuration::"
+msgstr ""
+
+# 313fd5d6ff2445cca9cd529b6acd88f8
+#: ../../../src/config/intro.rst:58
+msgid "Settings in successive documents override the settings in earlier entries. For example, setting the :option:`httpd/bind_address` parameter in ``local.ini`` would override any setting in ``default.ini``."
+msgstr ""
+
+# 01b245e58c8b451f87ec1ce92faeb3cd
+#: ../../../src/config/intro.rst:63
+msgid "The ``default.ini`` file may be overwritten during an upgrade or re-installation, so localised changes should be made to the ``local.ini`` file or files within the ``local.d`` directory."
+msgstr ""
+
+# 1f367ec21fda4144822caeed1bc0d17c
+#: ../../../src/config/intro.rst:67
+msgid "The configuration files chain may be changed by specifying additional sources by using next command line options:"
+msgstr ""
+
+# ed17d3911ff341debd87ff0dffc6b87d
+#: ../../../src/config/intro.rst:70
+msgid "``-a``: adds configuration file to the chain"
+msgstr ""
+
+# 8316656ace824243bf6d58b508a5f29c
+#: ../../../src/config/intro.rst:71
+msgid "``-A``: adds configuration directory to the chain"
+msgstr ""
+
+# 36c236204e9e40049781be18650a1e12
+#: ../../../src/config/intro.rst:73
+msgid "Let's add these options and see how the configuration chain changes::"
+msgstr ""
+
+# d0b8b01b3eb5469bb36232fdb4b2b645
+#: ../../../src/config/intro.rst:83
+msgid "In case when `/home/couchdb/custom.ini` exists it will be added to the configuration chain."
+msgstr ""
+
+# 7bb9c33b8eb84e46b98a98071f9c5486
+#: ../../../src/config/intro.rst:88
+msgid "Parameter names and values"
+msgstr ""
+
+# a3c8ee431bff4f6bb01cd3a0470572fc
+#: ../../../src/config/intro.rst:90
+msgid "All parameter names are *case-sensitive*. Every parameter takes a value of one of five types: `boolean`, `integer`, `string`, `tuple`_ and `proplist`_. Boolean values can be written as ``true`` or ``false``."
+msgstr ""
+
+# 5c22e10d2e2f4adaaa49bd37d5b8fa99
+#: ../../../src/config/intro.rst:94
+msgid "Parameters with value type of `tuple` or `proplist` are following the Erlang requirement for style and naming."
+msgstr ""
+
+# 8ee69cb9393c4362a58f2cc04a80e2c0
+#: ../../../src/config/intro.rst:102
+msgid "Setting parameters via the configuration file"
+msgstr ""
+
+# 05c58dc2aee049e8b7ed15148dd4dde4
+#: ../../../src/config/intro.rst:104
+msgid "The common way to set some parameters is to edit the `local.ini` file which is mostly located in the `etc/couchdb` directory relative your installation path root."
+msgstr ""
+
+# 3768974f688b48a59e76757618b5f0fc
+#: ../../../src/config/intro.rst:108
+msgid "For example::"
+msgstr ""
+
+# 25537dadaeb741a3b48caa5b20cf90c2
+#: ../../../src/config/intro.rst:114
+msgid "Each configuration file line may contains `section` definition, `parameter` specification, empty (space and newline characters only) or `commented` line. You can setup `inline` commentaries for `sections` or `parameters`."
+msgstr ""
+
+# cd2477b141f5416da120832d7ec687c1
+#: ../../../src/config/intro.rst:118
+msgid "The `section` defines group of parameters that are belongs to some specific CouchDB subsystem. For instance, :section:`httpd` section holds not only HTTP server parameters, but also others that directly interacts with it."
+msgstr ""
+
+# 085970dea628447089e318649c74ddd7
+#: ../../../src/config/intro.rst:122
+msgid "The `parameter` specification contains two parts divided by the `equal` sign (``=``): the parameter name on the left side and the parameter value on the right one. The leading and following whitespace for ``=`` is an optional to improve configuration readability."
+msgstr ""
+
+# 74b65a3930584380af3a279be44221a6
+#: ../../../src/config/intro.rst:128
+msgid "In case when you'd like to remove some parameter from the `default.ini` without his modification, you may specify him within the `local.ini`, but without any value::"
+msgstr ""
+
+# 8a68e17046cc4600bff8a8f1683ba0e4
+#: ../../../src/config/intro.rst:135
+msgid "This could be read as: \"remove the `_all_dbs` parameter from the `httpd_global_handlers` section if it was ever set before\"."
+msgstr ""
+
+# 460af88779614cb797b248527626183f
+#: ../../../src/config/intro.rst:139
+msgid "The semicolon (``;``) signs about `commentary` start: everything after this character is counted as commentary and doesn't process by CouchDB."
+msgstr ""
+
+# c8ffdd47b3574246868c01eadd401f9c
+#: ../../../src/config/intro.rst:142
+msgid "After editing of configuration file CouchDB server instance should be restarted to apply these changes."
+msgstr ""
+
+# f09cbbd57c91456eab1cf9747ce558ae
+#: ../../../src/config/intro.rst:147
+msgid "Setting parameters via the HTTP API"
+msgstr ""
+
+# bb3c272929ff47bda118ce52d8d33123
+#: ../../../src/config/intro.rst:149
+msgid "Alternatively, configuration parameters could be set via the :ref:`HTTP API <api/config>`. This API allows to change CouchDB configuration on-fly without need for server restart::"
+msgstr ""
+
+# 1a4a0d11b7c44f8a872442f2450f533c
+#: ../../../src/config/intro.rst:155
+msgid "In the response the old parameter's value returns::"
+msgstr ""
+
+# 221225ad5cf643be89a56bc8e8f9b14f
+#: ../../../src/config/intro.rst:159
+msgid "You should be careful with changing configuration via the HTTP API since it's easy to make CouchDB unavailable. For instance, you'd like to change the :option:`httpd/bind_address` for new one::"
+msgstr ""
+
+# fceb64843c0846d99dd928b51527bb40
+#: ../../../src/config/intro.rst:165
+msgid "However, if you would made a typo or the specified IP address is not available from your network, you'll make CouchDB unavailable for you in both cases and you will have the only way to fix the problem by edit the configuration file and restart the server. To protect yourself against such accidents you may setup the :option:`httpd/config_whitelist` of configuration parameters that are allowed to edit via the HTTP API. For others you'll need to directly edit the configuration file so you may quick fix any problems that had occurred due to misconfiguring."
+msgstr ""

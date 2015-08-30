@@ -1,0 +1,53 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-04-24 16:37+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1398357479.000000\n"
+
+# 3e08a3c5aa6e44bdb21f02b98aa9260e
+#: ../../../src/replication/index.rst:17
+msgid "Replication"
+msgstr "Replikation"
+
+# e2454d9e6afa4942bba3187c31f37561
+#: ../../../src/replication/index.rst:19
+msgid "The replication is an incremental one way process involving two databases (a source and a destination)."
+msgstr ""
+"Die Replikation ist ein inkrementeller Prozess in eine Richtung, der zwei "
+"Datenbanken beinhaltet (eine Ausgangs- und eine Ziel-Datenbank). "
+
+# f1c7c1d4ed4d483ab3b1ee599c25c38e
+#: ../../../src/replication/index.rst:22
+msgid "The aim of the replication is that at the end of the process, all active documents on the source database are also in the destination database and all documents that were deleted in the source databases are also deleted (if exists) on the destination database."
+msgstr ""
+"Das Ziel der Replikation ist es am Ende des Prozesses alle aktiven Dokumente "
+"in der Ausgangs-Datenbank auch in der Ziel-Datenbank vorzufinden und alle "
+"gelöschten Dokumente der Ausgangs-Datenbank auch in der Ziel-Datenbank ("
+"sofern vorhanden) gelöscht zu haben. "
+
+# bfcc5456f39446089d126cb69ad64028
+#: ../../../src/replication/index.rst:27
+msgid "The replication process only copies the last revision of a document, so all previous revisions that were only on the source database are not copied to the destination database."
+msgstr ""
+"Die Replikation kopiert jeweils nur die letzte Revision eines Dokumentes. "
+"Das bedeutet, dass alle vorherigen Revisionen die in der Ausgangs-Datenbank "
+"vorhanden sind nicht in die Ziel-Datenbank kopiert werden."

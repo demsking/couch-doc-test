@@ -1,0 +1,247 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# b042d5eabc4f445faba016a2dd7a23c2
+#: ../../../src/maintenance/performance.rst:18
+msgid "Performance"
+msgstr ""
+
+# 9712551ff8f04f6bba1fc588aa6775e2
+#: ../../../src/maintenance/performance.rst:20
+msgid "With up to tens of thousands of documents you will generally find CouchDB to perform well no matter how you write your code. Once you start getting into the millions of documents you need to be a lot more careful."
+msgstr ""
+
+# a3e7b699e2ed40539d1c2276cf71b0ab
+#: ../../../src/maintenance/performance.rst:26
+msgid "Disk I/O"
+msgstr ""
+
+# d5d2e43dc65b4650bba1a5a0de8c690e
+#: ../../../src/maintenance/performance.rst:29
+msgid "File Size"
+msgstr ""
+
+# de1f273b0d3a41ca832757e27c938801
+#: ../../../src/maintenance/performance.rst:31
+msgid "The smaller your file size, the less `I/O` operations there will be, the more of the file can be cached by CouchDB and the operating system, the quicker it is to replicate, backup etc. Consequently you should carefully examine the data you are storing. For example it would be silly to use keys that are hundreds of characters long, but your program would be hard to maintain if you only used single character keys. Carefully consider data that is duplicated by putting it in views."
+msgstr ""
+
+# 02fe96d98d124a2a852d3886cfc92171
+#: ../../../src/maintenance/performance.rst:41
+msgid "Disk and File System Performance"
+msgstr ""
+
+# 6cfe3044c95c4f16a560d25e3cf9232d
+#: ../../../src/maintenance/performance.rst:43
+msgid "Using faster disks, striped RAID arrays and modern file systems can all speed up your CouchDB deployment. However, there is one option that can increase the responsiveness of your CouchDB server when disk performance is a bottleneck. From the Erlang documentation for the file module:"
+msgstr ""
+
+# bc607deeac59473db344cd8f83b63de1
+#: ../../../src/maintenance/performance.rst:48
+msgid "On operating systems with thread support, it is possible to let file operations be performed in threads of their own, allowing other Erlang processes to continue executing in parallel with the file operations. See the `command line flag +A in erl(1)`_."
+msgstr ""
+
+# c76fbd2ec09e4aeba1314476fa24a641
+#: ../../../src/maintenance/performance.rst:53
+msgid "Setting this argument to a number greater than zero can keep your CouchDB installation responsive even during periods of heavy disk utilization. The easiest way to set this option is through the ``ERL_FLAGS`` environment variable. For example, to give Erlang four threads with which to perform I/O operations add the following to ``(prefix)/etc/defaults/couchdb`` (or equivalent)::"
+msgstr ""
+
+# 01ec96dc610a43508cd964654329e76a
+#: ../../../src/maintenance/performance.rst:67
+msgid "System Resource Limits"
+msgstr ""
+
+# 88787af8c2514b809449e576210eb0c4
+#: ../../../src/maintenance/performance.rst:69
+msgid "One of the problems that administrators run into as their deployments become large are resource limits imposed by the system and by the application configuration. Raising these limits can allow your deployment to grow beyond what the default configuration will support."
+msgstr ""
+
+# 9438c62e95ed440c8303978f9cdc7ad4
+#: ../../../src/maintenance/performance.rst:76
+msgid "CouchDB Configuration Options"
+msgstr ""
+
+# aa8f6e17020a41f5a04a9b7841621338
+#: ../../../src/maintenance/performance.rst:79
+msgid "delayed_commits"
+msgstr ""
+
+# ed3629e70e234d1da739bebaf9ef01ce
+#: ../../../src/maintenance/performance.rst:81
+msgid "The :config:option:`delayed commits <couchdb/delayed_commits>` allows to achieve better write performance for some workloads while sacrificing a small amount of durability. The setting causes CouchDB to wait up to a full second before committing new data after an update. If the server crashes before the header is written then any writes since the last commit are lost. Keep this option enabled on your own risk."
+msgstr ""
+
+# 4e9903f32d3544c5b1721d203b4714fc
+#: ../../../src/maintenance/performance.rst:89
+msgid "max_dbs_open"
+msgstr ""
+
+# e027a93fe6d346698d88660b59a1f21c
+#: ../../../src/maintenance/performance.rst:91
+msgid "In your :ref:`configuration <config>` (local.ini or similar) familiarize yourself with the :config:option:`couchdb/max_dbs_open`:"
+msgstr ""
+
+# e1f38e4c42cc4d439ea758f2f8ff566d
+#: ../../../src/maintenance/performance.rst:99
+msgid "This option places an upper bound on the number of databases that can be open at one time. CouchDB reference counts database accesses internally and will close idle databases when it must. Sometimes it is necessary to keep more than the default open at once, such as in deployments where many databases will be continuously replicating."
+msgstr ""
+
+# 8bb7f53b8a9a4ababb676f9828914f3e
+#: ../../../src/maintenance/performance.rst:107
+msgid "Erlang"
+msgstr ""
+
+# bad715b687cb44a4964d6bfb543d2f73
+#: ../../../src/maintenance/performance.rst:109
+msgid "Even if you've increased the maximum connections CouchDB will allow, the Erlang runtime system will not allow more than 1024 connections by default. Adding the following directive to ``(prefix)/etc/default/couchdb`` (or equivalent) will increase this limit (in this case to 4096)::"
+msgstr ""
+
+# 5c8ca3b2dda54d3da8774ed6edb5fedc
+#: ../../../src/maintenance/performance.rst:116
+msgid "CouchDB versions up to 1.1.x also create Erlang Term Storage (`ETS`_) tables for each replication. If you are using a version of CouchDB older than 1.2 and must support many replications, also set the ``ERL_MAX_ETS_TABLES`` variable. The default is approximately 1400 tables."
+msgstr ""
+
+# f766fa75f66c4cf999c830e584996767
+#: ../../../src/maintenance/performance.rst:121
+msgid "Note that on Mac OS X, Erlang will not actually increase the file descriptor limit past 1024 (i.e. the system header–defined value of ``FD_SETSIZE``). See `this tip for a possible workaround`_ and `this thread for a deeper explanation`_."
+msgstr ""
+
+# 9a16feecc25e441aabeaaac96a97bf77
+#: ../../../src/maintenance/performance.rst:132
+msgid "PAM and ulimit"
+msgstr ""
+
+# 5525f65e791c4f8a9e9148c0de6a8e5d
+#: ../../../src/maintenance/performance.rst:134
+msgid "Finally, most \\*nix operating systems impose various resource limits on every process. If your system is set up to use the Pluggable Authentication Modules (`PAM`_) system, increasing this limit is straightforward. For example, creating a file named ``/etc/security/limits.d/100-couchdb.conf`` with the following contents will ensure that CouchDB can open enough file descriptors to service your increased maximum open databases and Erlang ports::"
+msgstr ""
+
+# 8dad9d0f0ac542c3b9441974fc422dbb
+#: ../../../src/maintenance/performance.rst:145
+msgid "If your system does not use PAM, a `ulimit` command is usually available for use in a custom script to launch CouchDB with increased resource limits. If necessary, feel free to increase this limits as long as your hardware can handle the load."
+msgstr ""
+
+# 6fc95578260a456cb67e3ff4078f6719
+#: ../../../src/maintenance/performance.rst:154
+msgid "Network"
+msgstr ""
+
+# 602bbd7a812f4ebda0a01accfaf36d4c
+#: ../../../src/maintenance/performance.rst:156
+msgid "There is latency overhead making and receiving each request/response. In general you should do your requests in batches. Most APIs have some mechanism to do batches, usually by supplying lists of documents or keys in the request body. Be careful what size you pick for the batches. The larger batch requires more time your client has to spend encoding the items into JSON and more time is spent decoding that number of responses. Do some benchmarking with your own configuration and typical data to find the sweet spot. It is likely to be between one and ten thousand documents."
+msgstr ""
+
+# f12b70b95d084173954f23f005790151
+#: ../../../src/maintenance/performance.rst:165
+msgid "If you have a fast I/O system then you can also use concurrency - have multiple requests/responses at the same time. This mitigates the latency involved in assembling JSON, doing the networking and decoding JSON."
+msgstr ""
+
+# 7aa79fca558b4bdaba881868fc6bf64e
+#: ../../../src/maintenance/performance.rst:169
+msgid "As of CouchDB 1.1.0, users often report lower write performance of documents compared to older releases. The main reason is that this release ships with the more recent version of the HTTP server library Mochiweb, which by default sets the TCP socket option `SO_NODELAY`_ to false. This means that small data sent to the TCP socket, like the reply to a document write request (or reading a very small document), will not be sent immediately to the network - TCP will buffer it for a while hoping that it will be asked to send more data through the same socket and then send all the data at once for increased performance. This TCP buffering behaviour can be disabled via :config:option:`httpd/socket_options`:"
+msgstr ""
+
+# 5df524693ce548f9ac3a96b193e46c28
+#: ../../../src/maintenance/performance.rst:189
+msgid "Bulk :ref:`load <api/db/all_docs>` and :ref:`store <api/db/bulk_docs>` API."
+msgstr ""
+
+# 85adeb645b4e4b788ccb801c625adfce
+#: ../../../src/maintenance/performance.rst:193
+msgid "CouchDB"
+msgstr ""
+
+# 799548099e634b1f988cca6700d5bc55
+#: ../../../src/maintenance/performance.rst:196
+msgid "DELETE operation"
+msgstr ""
+
+# 9622fe0eda8d45f0b6d8095630128e16
+#: ../../../src/maintenance/performance.rst:198
+msgid "When you :method:`DELETE` a document the database will create a new revision which contains the ``_id`` and ``_rev`` fields as well as the `_deleted` flag. This revision will remain even after a `database compaction` so that the deletion can be replicated. Deleted documents, like non-deleted documents, can affect view build times, :method:`PUT` and :method:`DELETE` requests time and size of database on disk, since they increase the size of the B+Tree's. You can see the number of deleted documents in :get:`database information </{db}>`. If your use case creates lots of deleted documents (for example, if you are storing short-term data like logfile entries, message queues, etc), you might want to periodically switch to a new database and delete the old one (once the entries in it have all expired)."
+msgstr ""
+
+# b9f5c6fd97eb434a89959d6582732012
+#: ../../../src/maintenance/performance.rst:212
+msgid "Document's ID"
+msgstr ""
+
+# 09b5a07bb704439999ebd1d1c2b47f61
+#: ../../../src/maintenance/performance.rst:214
+msgid "The db file size is derived from your document and view sizes but also on a multiple of your ``_id`` sizes. Not only is the ``_id`` present in the document, but it and parts of it are duplicated in the binary tree structure CouchDB uses to navigate the file to find the document in the first place. As a real world example for one user switching from 16 byte ids to 4 byte ids made a database go from 21GB to 4GB with 10 million documents (the raw JSON text when from 2.5GB to 2GB)."
+msgstr ""
+
+# b2e4eb56839743d48e2640e104a0a870
+#: ../../../src/maintenance/performance.rst:222
+msgid "Inserting with sequential (and at least sorted) ids is faster than random ids. Consequently you should consider generating ids yourself, allocating them sequentially and using an encoding scheme that consumes fewer bytes. For example, something that takes 16 hex digits to represent can be done in 4 base 62 digits (10 numerals, 26 lower case, 26 upper case)."
+msgstr ""
+
+# aedf5275e06d4f18a5bf0ec527db6472
+#: ../../../src/maintenance/performance.rst:230
+msgid "Views"
+msgstr ""
+
+# c8eb51591fe0445e8779aa052450607f
+#: ../../../src/maintenance/performance.rst:233
+msgid "Views Generation"
+msgstr ""
+
+# 098ac9c1b4314460a1bb79444b99a438
+#: ../../../src/maintenance/performance.rst:235
+msgid "Views with the Javascript query server are extremely slow to generate when there are a non-trivial number of documents to process. The generation process won't even saturate a single CPU let alone your I/O. The cause is the latency involved in the CouchDB server and separate `couchjs` query server, dramatically indicating how important it is to take latency out of your implementation."
+msgstr ""
+
+# 00979ba8d65c4b92b51aefcdbe22e228
+#: ../../../src/maintenance/performance.rst:241
+msgid "You can let view access be \"stale\" but it isn't practical to determine when that will occur giving you a quick response and when views will be updated which will take a long time. (A 10 million document database took about 10 minutes to load into CouchDB but about 4 hours to do view generation)."
+msgstr ""
+
+# 59905bc5956746889ee443204870039d
+#: ../../../src/maintenance/performance.rst:246
+msgid "View information isn't replicated - it is rebuilt on each database so you can't do the view generation on a separate sever."
+msgstr ""
+
+# 4d3820d1798b46f49dfaf4dce0f675d4
+#: ../../../src/maintenance/performance.rst:251
+msgid "Builtin Reduce Functions"
+msgstr ""
+
+# 1bf35f8d839e429891a4d1197f9cc5ef
+#: ../../../src/maintenance/performance.rst:253
+msgid "If you’re using a very simple view function that only performs a sum or count reduction, you can call native Erlang implementations of them by simply writing ``_sum`` or ``_count`` in place of your function declaration. This will speed up things dramatically, as it cuts down on IO between CouchDB and the :ref:`JavaScript query server <query-server/js>`. For example, as `mentioned on the mailing list`_, the time for outputting an (already indexed and cached) view with about 78,000 items went down from 60 seconds to 4 seconds."
+msgstr ""
+
+# 77e3dc0e8f4e4ce397b502457ac94a39
+#: ../../../src/maintenance/performance.rst:261
+msgid "Before:"
+msgstr ""
+
+# aa15bac182a8484cafab3d358a201f3e
+#: ../../../src/maintenance/performance.rst:275
+msgid "After:"
+msgstr ""
+
+# 5031163aced1429ea1c81deea7bff286
+#: ../../../src/maintenance/performance.rst:293
+msgid ":ref:`reducefun/builtin`"
+msgstr ""

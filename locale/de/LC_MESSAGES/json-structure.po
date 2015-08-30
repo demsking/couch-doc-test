@@ -1,0 +1,1493 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-02-20 20:22+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1392927721.000000\n"
+
+# 493da21412514853925fa8365de5335d
+#: ../../../src/json-structure.rst:15
+msgid "JSON Structure Reference"
+msgstr "JSON Struktur Referenz"
+
+# 305b30ba602e4b6ba1f6ffbfe6dd5a30
+#: ../../../src/json-structure.rst:17
+msgid "The following appendix provides a quick reference to all the JSON structures that you can supply to CouchDB, or get in return to requests."
+msgstr ""
+"Der folgende Anhang bietet eine Schnell-Referenz für alle JSON "
+"Datenstrukturen die Du an CouchDB senden kannst bzw. im Umkehrschluss bei "
+"Requests erhältst."
+
+# 34c1dddbe2804969ab1ac222723cd773
+#: ../../../src/json-structure.rst:21
+msgid "All Database Documents"
+msgstr "Alle Datenbank-Dokumente"
+
+# 05c43e9b917d4d8ca87f4f7ddbfe5583
+# c8044751635e42a09adfc9f074dd1119
+# bc9a3e5575724d408e0a52c28b5f6eda
+# 0d51e658e7764ef69fc386d58536cdca
+# db1365af964d402b9328effd3d2a96f1
+# 283cd292cb484f4fa079e20cfc239a64
+# 699140d5cbbe4ba0a6c92318ddadb779
+# c7eaa1f7558b46f68beb897b03b725a8
+# 9873987b9f9e428297828c0c4a166427
+# 8de585ac98234fb69f8665c527cf066b
+# 8b9f567960a4418abfab7cd3eb941691
+# ee4220b897be467d8b8d098e91856365
+# 9b7fd47c24b94e50908a9a0d2900c0a4
+# f331bf55a87c4a859a64e8a3902c77e5
+# 0a214d9609db463f8d9521f8928eb13c
+# d19d451bb744461d81ed614268acf020
+# edc534607d6d48968e4a491b472dd1f9
+# 6b8bd7f83a18466a8ed4bed32f358c80
+# d7a090cf503345c09fa513d84b32e6c9
+# 8a450d30d1c04a018d07a2826e055505
+# 83ebf0261eb54daa8d67e625a453f78b
+#: ../../../src/json-structure.rst:24
+#: ../../../src/json-structure.rst:39
+#: ../../../src/json-structure.rst:54
+#: ../../../src/json-structure.rst:73
+#: ../../../src/json-structure.rst:91
+#: ../../../src/json-structure.rst:103
+#: ../../../src/json-structure.rst:118
+#: ../../../src/json-structure.rst:153
+#: ../../../src/json-structure.rst:172
+#: ../../../src/json-structure.rst:208
+#: ../../../src/json-structure.rst:228
+#: ../../../src/json-structure.rst:247
+#: ../../../src/json-structure.rst:281
+#: ../../../src/json-structure.rst:321
+#: ../../../src/json-structure.rst:454
+#: ../../../src/json-structure.rst:494
+#: ../../../src/json-structure.rst:512
+#: ../../../src/json-structure.rst:531
+#: ../../../src/json-structure.rst:557
+#: ../../../src/json-structure.rst:597
+#: ../../../src/json-structure.rst:624
+msgid "Field"
+msgstr "Feld"
+
+# 7ac0bdf8f9fc419387540549cdc8d226
+# dddb1382bb1946478f2c085a845ba832
+# 9e31962c43eb42a685dc347156adc61b
+# 78a85c7129b34ba8aed09fa3ea22c724
+# b0650c27e01645f59376bff465026ab3
+# 8e5158de0cc74dcab2424af0d5119aa7
+# bcafefbbe9a84ed799f58a1c5afc6ae0
+# cbdf800f96744c47b804f05990d9775e
+# 7dcacaa825ab43f09242c1e70ab040bd
+# 43193ad6a3194950be2d2c6cb598868f
+# 03875a9274be4860be41ced99b7f5f9e
+# fbdd99d352c6418d85669ce8bcbe1d34
+# dda46ae5e84c41e2928c3bbc483a486f
+# f58cdaac82e0488daa469bba3673cb9a
+# e9a30a4a300c40a786e43c15e4f82afe
+# 41df2b8987814816a068dd1ee94cd535
+# 81a4a2ce3efe4f3aac46d004737227b7
+# 414607133f854093a909ec9b1085567d
+# 5ae8c56b3b004b19803915dbb939dd30
+# 22c55263b9574256a22818ad8d4180f2
+# 5fcfedbb40364ea2bb846acd8a6bd391
+#: ../../../src/json-structure.rst:24
+#: ../../../src/json-structure.rst:39
+#: ../../../src/json-structure.rst:54
+#: ../../../src/json-structure.rst:73
+#: ../../../src/json-structure.rst:91
+#: ../../../src/json-structure.rst:103
+#: ../../../src/json-structure.rst:118
+#: ../../../src/json-structure.rst:153
+#: ../../../src/json-structure.rst:172
+#: ../../../src/json-structure.rst:208
+#: ../../../src/json-structure.rst:228
+#: ../../../src/json-structure.rst:247
+#: ../../../src/json-structure.rst:281
+#: ../../../src/json-structure.rst:321
+#: ../../../src/json-structure.rst:454
+#: ../../../src/json-structure.rst:494
+#: ../../../src/json-structure.rst:512
+#: ../../../src/json-structure.rst:531
+#: ../../../src/json-structure.rst:557
+#: ../../../src/json-structure.rst:597
+#: ../../../src/json-structure.rst:624
+msgid "Description"
+msgstr "Beschreibung"
+
+# e6ea3faad7bf4ae7a2b42456756b0f95
+# ff3cb14650414c4c9a10bf0e7977de5e
+#: ../../../src/json-structure.rst:26
+#: ../../../src/json-structure.rst:626
+msgid "total_rows"
+msgstr "total_rows"
+
+# b61181666f9a40ee90950d99f11eb95f
+#: ../../../src/json-structure.rst:26
+msgid "Number of documents in the database/view"
+msgstr "Anzahl der Dokumente in der Datenbank oder View"
+
+# a4809befc3f147a5ae981a315b1f027c
+# e392b9012c7d4402acc37df94ab342ac
+#: ../../../src/json-structure.rst:28
+#: ../../../src/json-structure.rst:628
+msgid "offset"
+msgstr "offset"
+
+# 7e7196e6cfc4413b89382427a472ef2c
+# faa7accc46394f5093c2c8e0aa7aa373
+#: ../../../src/json-structure.rst:28
+#: ../../../src/json-structure.rst:628
+msgid "Offset where the document list started"
+msgstr "Der Punkt, an dem die Dokument-Liste begonnen hat"
+
+# 0ddb07fa2cbe4d78a96e7c5e688402c7
+#: ../../../src/json-structure.rst:30
+msgid "update_seq (optional)"
+msgstr "update_seq (optional)"
+
+# f864d3d1ddc24e9a87cce1e3c8ffd11f
+#: ../../../src/json-structure.rst:30
+msgid "Current update sequence for the database"
+msgstr "Aktuelle Aktualisierungs-Sequenz der Datenbank"
+
+# 9172db82894748e7a64184acd0650541
+#: ../../../src/json-structure.rst:32
+msgid "rows [array]"
+msgstr "rows [array]"
+
+# 52f29893ac034f8db25390aa11cb67ce
+#: ../../../src/json-structure.rst:32
+msgid "Array of document object"
+msgstr "Array von Dokument-Objekten"
+
+# 092b3f26175a4e1fa8fa65b06a3bdb72
+#: ../../../src/json-structure.rst:36
+msgid "Bulk Document Response"
+msgstr "Massen-Dokument Antwort"
+
+# d44f6067b9a64f63934465112c4a8274
+# 9a1c963c40134b0b819f4cd5a9f02f18
+#: ../../../src/json-structure.rst:41
+#: ../../../src/json-structure.rst:59
+msgid "docs [array]"
+msgstr "docs [array]"
+
+# 8adfc525b15a495fa89405bfe92b4d32
+#: ../../../src/json-structure.rst:41
+msgid "Bulk Docs Returned Documents"
+msgstr "Alle Dokumente die zurückgegeben werden"
+
+# c884cfc634b34ca7a219ed2f91a83f4e
+# 57056affbc044b41803239da4f8be541
+# 445ff342ceb34e39a2be80d216a08816
+# d10d37058e384044a4212e160b73994a
+#: ../../../src/json-structure.rst:43
+#: ../../../src/json-structure.rst:81
+#: ../../../src/json-structure.rst:105
+#: ../../../src/json-structure.rst:338
+msgid "id"
+msgstr "id"
+
+# a0969967656f441e9c79e715aca5dd61
+# 12b5ced4a0ba4df0875d408294a12f82
+# fb160c002e9a4b51bdaed623c6debed0
+# 9749a1aec33e47bfaf7c8e807f7f417c
+# 59bbec06889c4b828ec685555a8a1704
+# d814fb56f12f4d43a99ecc7c8516506e
+# 01350a4af44c4a1a97d736cc9fec669d
+# 85ea8c1b4a364c1d8a9a3692d8e6cf54
+# f4d2375e17ab4e7c9e08b37ff4a5ce45
+#: ../../../src/json-structure.rst:43
+#: ../../../src/json-structure.rst:61
+#: ../../../src/json-structure.rst:81
+#: ../../../src/json-structure.rst:93
+#: ../../../src/json-structure.rst:105
+#: ../../../src/json-structure.rst:210
+#: ../../../src/json-structure.rst:496
+#: ../../../src/json-structure.rst:514
+#: ../../../src/json-structure.rst:533
+msgid "Document ID"
+msgstr "Dokument-ID"
+
+# fefe8089d5e949f2b57785b52fc55589
+# fea209e2a834435b8f337e6563dcf8ad
+#: ../../../src/json-structure.rst:45
+#: ../../../src/json-structure.rst:107
+msgid "error"
+msgstr "error"
+
+# 3a31613f2d8140b4a4da6252b686a565
+# 1ad612a1ef2342fe92591ea0036dbaeb
+#: ../../../src/json-structure.rst:45
+#: ../../../src/json-structure.rst:107
+msgid "Error type"
+msgstr "Fehler-Typ"
+
+# 2fecbd5b4f7942c79464d0fdbfb01ee3
+# b9f8d3ecce4b4c90a49247a4454dfab1
+#: ../../../src/json-structure.rst:47
+#: ../../../src/json-structure.rst:109
+msgid "reason"
+msgstr "reason"
+
+# b36f885f32ff4549976c3b3f0b55a507
+# d088653b45d8409a92a19620af84fe4c
+#: ../../../src/json-structure.rst:47
+#: ../../../src/json-structure.rst:109
+msgid "Error string with extended reason"
+msgstr "Fehlerausgabe mit weiterem Grund"
+
+# 46558fff4834443ea5354131593b3f88
+#: ../../../src/json-structure.rst:51
+msgid "Bulk Documents"
+msgstr "Massen-Dokumente"
+
+# c9a6a0513c784374805449b3ea1366e1
+#: ../../../src/json-structure.rst:56
+msgid "all_or_nothing (optional)"
+msgstr "all_or_nothing (optional)"
+
+# a6eae21177ff46aea586e4a01cab7bde
+#: ../../../src/json-structure.rst:56
+msgid "Sets the database commit mode to use all-or-nothing semantics"
+msgstr ""
+"Setzt die Semantik für den Datenbank Commit-Modues auf alles-oder-nichts"
+
+# 243934cd814640d884f84f204701b037
+#: ../../../src/json-structure.rst:59
+msgid "Bulk Documents Document"
+msgstr "Massen-Dokumente Dokument"
+
+# a21c6499c5ef4da0b1911d21aefefb2c
+# ebce9d985d5640a1b303be7610856faa
+# 6ab034ae522b4bbeb651e6a0e7183428
+# e0850f4c830e436fb0a9ac9cd44014a6
+# 87f04d2b090f4dc1b0856dc39cf38609
+# 2ade00758aee4e3ebef4a316d79464ae
+#: ../../../src/json-structure.rst:61
+#: ../../../src/json-structure.rst:93
+#: ../../../src/json-structure.rst:210
+#: ../../../src/json-structure.rst:496
+#: ../../../src/json-structure.rst:514
+#: ../../../src/json-structure.rst:533
+msgid "_id (optional)"
+msgstr "_id (optional)"
+
+# 94ebd9ab088b4aceb9a74f1f64f3f7b7
+# 8f78a192c6bc411aa1010cea2d63bbdc
+# c26d186c64e947698aa24551d98c1271
+# 1fed5779d6fe4c76aab7c29fddad6174
+# 7b6d0b9b3b194039b8b2c27e085c0f64
+# 1b3465433ab54d24948427a24150e044
+#: ../../../src/json-structure.rst:63
+#: ../../../src/json-structure.rst:95
+#: ../../../src/json-structure.rst:212
+#: ../../../src/json-structure.rst:498
+#: ../../../src/json-structure.rst:516
+#: ../../../src/json-structure.rst:535
+msgid "_rev (optional)"
+msgstr "_rev (optional)"
+
+# ada7025fe0ac4708a5d76336d10cc853
+# 41bc2bb42b514c869387d4ce72a64852
+# fd859e752923490388f93f502b0ac6d7
+# 5fffbd63113b4f79b297d04646ab74de
+# 08bae5d5765f4ce28a83176d64b1ae18
+# 659507e963ea4b6c945de65649618a6e
+#: ../../../src/json-structure.rst:63
+#: ../../../src/json-structure.rst:95
+#: ../../../src/json-structure.rst:212
+#: ../../../src/json-structure.rst:498
+#: ../../../src/json-structure.rst:516
+#: ../../../src/json-structure.rst:535
+msgid "Revision ID (when updating an existing document)"
+msgstr "Revisions-ID (wenn ein bestehendes Dokument aktualisiert wurde)"
+
+# 9ee91c3553fd40f3a287e7425b2cac55
+#: ../../../src/json-structure.rst:66
+msgid "_deleted (optional)"
+msgstr "_deleted (optional)"
+
+# 5196f4ac186d449f8ad5fd0c6887d165
+#: ../../../src/json-structure.rst:66
+msgid "Whether the document should be deleted"
+msgstr "Indikator, ob das Dokument gelöscht werden soll"
+
+# 112a59c88b02411abe9834ee01424ce0
+#: ../../../src/json-structure.rst:70
+msgid "Changes information for a database"
+msgstr "Änderungs-Informationen (changes) der Datenbank"
+
+# d83a822930174d898f69b4bbe34415bf
+#: ../../../src/json-structure.rst:75
+msgid "last_seq"
+msgstr "last_seq"
+
+# 58e8d182722f4715a647e83ca5ffdc5c
+#: ../../../src/json-structure.rst:75
+msgid "Last change sequence number"
+msgstr "Die letzte Änderungs-Sequenz Nummer"
+
+# a8aff07693324fb9afa3a89613b5c389
+#: ../../../src/json-structure.rst:77
+msgid "results [array]"
+msgstr "results [array]"
+
+# 62b41aa136e34ab39b9dcc7fd6c442a1
+#: ../../../src/json-structure.rst:77
+msgid "Changes made to a database"
+msgstr "Änderungen, die in der Datenbank vorgenommen wurden"
+
+# edca6924d54e485b8427a6f8d1596fbd
+#: ../../../src/json-structure.rst:79
+msgid "seq"
+msgstr "seq"
+
+# 68b341425ed8420c9ffe713c20ee0042
+#: ../../../src/json-structure.rst:79
+msgid "Update sequence number"
+msgstr "Aktualisierungs-Sequenz Nummer"
+
+# 3e0bdff0a1954859be5d975631af9f09
+#: ../../../src/json-structure.rst:83
+msgid "changes [array]"
+msgstr "changes [array]"
+
+# c7fab19544d24146bf7721276f24490c
+#: ../../../src/json-structure.rst:83
+msgid "List of changes, field-by-field, for this document"
+msgstr "Liste aller Änderungen dieses Dokumentes Feld bei Feld"
+
+# 4c91f7ec1b444a64b69f708649175cb8
+#: ../../../src/json-structure.rst:88
+msgid "CouchDB Document"
+msgstr "CouchDB Dokument"
+
+# 02a281ac51cc4465863518fff259d3a2
+#: ../../../src/json-structure.rst:100
+msgid "CouchDB Error Status"
+msgstr "CouchDB Fehler-Status"
+
+# c5d0381abe084072b72870a31d22ef6c
+#: ../../../src/json-structure.rst:115
+msgid "CouchDB database information object"
+msgstr "Objekt mit Informationen für eine CouchDB Datenbank"
+
+# 08fd7b2456e74446b81e747502b5645c
+#: ../../../src/json-structure.rst:120
+msgid "db_name"
+msgstr "db_name"
+
+# 9e37f86ed65c4e23a7a2769e190bf4f4
+#: ../../../src/json-structure.rst:120
+msgid "The name of the database."
+msgstr "Der Name der Datenbank."
+
+# 89598533bab947ca9d7ca6e38ba3b9fa
+#: ../../../src/json-structure.rst:122
+msgid "committed_update_seq"
+msgstr "committed_update_seq"
+
+# 11c5f245b0a54de3815fd22b69a37d30
+#: ../../../src/json-structure.rst:122
+msgid "The number of committed update."
+msgstr "Anzahl der ausgeführten Aktualisierungen."
+
+# a4484c9285f040faa617a529638933de
+#: ../../../src/json-structure.rst:124
+msgid "doc_count"
+msgstr "doc_count"
+
+# e455670479464b52b00b0be19c224065
+#: ../../../src/json-structure.rst:124
+msgid "A count of the documents in the specified database."
+msgstr "Anzahl der Dokumente in der Datenbank."
+
+# cd8514fe6b064c189d00d792ccfa95d5
+#: ../../../src/json-structure.rst:127
+msgid "doc_del_count"
+msgstr "doc_del_count"
+
+# 300fc6be2dc54cd489e622dee8a6b1b5
+#: ../../../src/json-structure.rst:127
+msgid "Number of deleted documents"
+msgstr "Anzahl der gelöschten Dokumente"
+
+# f097647fde3a486fba38cc337e47023b
+# efd737afdd3e42e99e06ff59eb467bab
+#: ../../../src/json-structure.rst:129
+#: ../../../src/json-structure.rst:178
+msgid "compact_running"
+msgstr "compact_running"
+
+# 0550dbdabc0d4994abb28520b2e0bae4
+#: ../../../src/json-structure.rst:129
+msgid "Set to true if the database compaction routine is operating on this database."
+msgstr ""
+"Ist auf true gesetzt, wenn die Compaction-Routine gerade auf der Datenbank "
+"ausgeführt wird."
+
+# 080f02d3ce6b4604b5a78b2bd02cbf71
+#: ../../../src/json-structure.rst:132
+msgid "disk_format_version"
+msgstr "disk_format_version"
+
+# b9512210e01a45e49db93142e81f38c2
+#: ../../../src/json-structure.rst:132
+msgid "The version of the physical format used for the data when it is stored on disk."
+msgstr ""
+"Die Version des Formats das genutzt wird, um die Daten physikalisch auf der "
+"Festplatte zu speichern."
+
+# c1207793ae864df59fa00eb487037a38
+# 6ebca34ce40c4ac6904b954a9cf108c4
+#: ../../../src/json-structure.rst:135
+#: ../../../src/json-structure.rst:181
+msgid "disk_size"
+msgstr "disk_size"
+
+# 323e9989800440c1bb2e1d38fb492e80
+#: ../../../src/json-structure.rst:135
+msgid "Size in bytes of the data as stored on the disk. Views indexes are not included in the calculation."
+msgstr ""
+"Größe der Daten, die auf der Festplatte gespeichert sind, in Byte. View-"
+"Indizes sind in der Berechndung nicht enthalten."
+
+# 5426a5affe56438cba4d3fc008f87ea7
+#: ../../../src/json-structure.rst:139
+msgid "instance_start_time"
+msgstr "instance_start_time"
+
+# 5b1deec5a77543799598591bf1162dac
+#: ../../../src/json-structure.rst:139
+msgid "Timestamp of when the database was opened, expressed in microseconds since the epoch."
+msgstr "Unix-Timestamp zu welchem Zeitpunkt die Datenbank geöffnet wurde."
+
+# 5837ca7270c4497d862bb9fec55a3a18
+# 4050385d20de4589a93864bb36128b9a
+#: ../../../src/json-structure.rst:142
+#: ../../../src/json-structure.rst:185
+msgid "purge_seq"
+msgstr "purge_seq"
+
+# 39218940b8a5471584ac33aabb2bd85f
+#: ../../../src/json-structure.rst:142
+msgid "The number of purge operations on the database."
+msgstr "Die Anzahl der ausgeführten Säuberungs-Operationen in der Datenbank."
+
+# b3afec977fb24fc4907e86bfafbcdb05
+# f42d7dfd0fa04ef5912072e8a7a5f5d4
+#: ../../../src/json-structure.rst:145
+#: ../../../src/json-structure.rst:190
+msgid "update_seq"
+msgstr "update_seq"
+
+# bf866995d1c4424f8476940bc14a2253
+#: ../../../src/json-structure.rst:145
+msgid "The current number of updates to the database."
+msgstr ""
+"Die aktuelle Anzahl der vorgenommenen Aktualisierungen in der Datenbank."
+
+# b34927642f484601a8cbe5251ccc4fba
+#: ../../../src/json-structure.rst:150
+msgid "Design Document"
+msgstr "Design-Dokument"
+
+# 1878df4912b7468e92cc143dcb0dcdcc
+#: ../../../src/json-structure.rst:155
+msgid "_id"
+msgstr "_id"
+
+# 88042e65569e4394929ba9fc5c5bfadc
+#: ../../../src/json-structure.rst:155
+msgid "Design Document ID"
+msgstr "Design-Dokument ID"
+
+# dd2fc506c4734add9f83f4f2848b8065
+#: ../../../src/json-structure.rst:157
+msgid "_rev"
+msgstr "_rev"
+
+# 21e52168e24c4f44ba0ce1a31d5c4d71
+#: ../../../src/json-structure.rst:157
+msgid "Design Document Revision"
+msgstr "Design-Dokument Revision"
+
+# 922b06f644404517a5d9abdfef4b9408
+#: ../../../src/json-structure.rst:159
+msgid "views"
+msgstr "views"
+
+# 3332de8a828449f283046c2f668d0f08
+#: ../../../src/json-structure.rst:159
+msgid "View"
+msgstr "View"
+
+# 070c02d8914c40949108f2d239a94519
+#: ../../../src/json-structure.rst:161
+msgid "viewname"
+msgstr "viewname"
+
+# 500c898cf12244ce8b72137e29a9e950
+#: ../../../src/json-structure.rst:161
+msgid "View Definition"
+msgstr "Definition des View"
+
+# 87a7d429e4894316bc3817642922958f
+#: ../../../src/json-structure.rst:163
+msgid "map"
+msgstr "map"
+
+# 04f1fda67e33445da1a72f1318c2c9d0
+#: ../../../src/json-structure.rst:163
+msgid "Map Function for View"
+msgstr "Die Map-Funktion des View"
+
+# 915f353b90814977b71191872db92a44
+#: ../../../src/json-structure.rst:165
+msgid "reduce (optional)"
+msgstr "reduce (optional)"
+
+# d42cba42ba6144bf8d534849de8b14c2
+#: ../../../src/json-structure.rst:165
+msgid "Reduce Function for View"
+msgstr "Die Reduce-Funtkion des View"
+
+# 82c8528b97b848c3803a34514b90b1f6
+#: ../../../src/json-structure.rst:169
+msgid "Design Document Information"
+msgstr "Design Dokument Informationen"
+
+# 48369e6cb93f4bf1bbfd79509324814e
+# 56e3853620454ca488e6e25177726eda
+#: ../../../src/json-structure.rst:174
+#: ../../../src/json-structure.rst:602
+msgid "name"
+msgstr "name"
+
+# 0ef832bdbbb54dbea1243a9f9bff82da
+#: ../../../src/json-structure.rst:174
+msgid "Name/ID of Design Document"
+msgstr "Name / ID des Design Dokuments"
+
+# 78c87088afb3432b82d36bff11794598
+#: ../../../src/json-structure.rst:176
+msgid "view_index"
+msgstr "view_index"
+
+# 2396eec634444e01b51fa97463d0c0a9
+#: ../../../src/json-structure.rst:176
+msgid "View Index"
+msgstr "View Index"
+
+# d443a094d797432e821140552e9e6ba9
+#: ../../../src/json-structure.rst:178
+msgid "Indicates whether a compaction routine is currently running on the view"
+msgstr "Zeigt an, ob eine Compaction Routine momentan auf dem View läuft"
+
+# fcf54a80888f4d2cb94fc96104b3d8ec
+#: ../../../src/json-structure.rst:181
+msgid "Size in bytes of the view as stored on disk"
+msgstr "Größe des View in Byte so wie er auf der Festplatte gespeichert ist"
+
+# a83b7e2bb0d841e09ec49c005517f54a
+#: ../../../src/json-structure.rst:183
+msgid "language"
+msgstr "language"
+
+# cc9b2ede175e4a05ab8997fd5f138a44
+#: ../../../src/json-structure.rst:183
+msgid "Language for the defined views"
+msgstr "Sprache des definierten Views"
+
+# ef02272cb1154282bca6b313e8b82984
+#: ../../../src/json-structure.rst:185
+msgid "The purge sequence that has been processed"
+msgstr "Die Säuberungs-Sequenz die ausgeführt wurde"
+
+# 72c5908e6be24a1e91a2f776bd03ffc5
+#: ../../../src/json-structure.rst:187
+msgid "signature"
+msgstr "signature"
+
+# 5be724c6028545ebb9ec7d0b07653b1e
+#: ../../../src/json-structure.rst:187
+msgid "MD5 signature of the views for the design document"
+msgstr "MD5 Signatur der Views in diesem Design-Dokument"
+
+# e52f8109196c4c5c9af078e9bb5f4a5b
+#: ../../../src/json-structure.rst:190
+msgid "The update sequence of the corresponding database that has been indexed"
+msgstr "Die Update-Sequenz der entsprechenden Datenbank die Indiziert wurde"
+
+# 39059d3a193149b2b001c1ff4f79464a
+#: ../../../src/json-structure.rst:193
+msgid "updater_running"
+msgstr "updater_running"
+
+# ac06025149ec4614afdb286fb9d32aee
+#: ../../../src/json-structure.rst:193
+msgid "Indicates if the view is currently being updated"
+msgstr "Gibt an, ob der View gerade aktualisiert wird "
+
+# e1360299160b426db2cea1c93451467a
+#: ../../../src/json-structure.rst:196
+msgid "waiting_clients"
+msgstr "waiting_clients"
+
+# a1286983540b4628b6997ab142ca5eb1
+#: ../../../src/json-structure.rst:196
+msgid "Number of clients waiting on views from this design document"
+msgstr ""
+"Anzahl der Clients die warten um Views aus diesem Design-Dokument zu erhalten"
+
+# df04bd6b260549509bc0f9fa3749d57f
+#: ../../../src/json-structure.rst:199
+msgid "waiting_commit"
+msgstr "waiting_commit"
+
+# 65e38b4d4f944fe681c5391408e0a3d8
+#: ../../../src/json-structure.rst:199
+msgid "Indicates if there are outstanding commits to the underlying database that need to processed"
+msgstr ""
+"Gibt an ob es ausstehende Commits in der aktuellen Datenbank gibt die "
+"ausgeführt werden müssen"
+
+# 2f8a74a1bdd84170b3d7e0f6e54cf12a
+#: ../../../src/json-structure.rst:205
+msgid "Document with Attachments"
+msgstr "Dokument mit Attachments"
+
+# e64618bce0a940ce9187fb0f4dcce616
+# 100074e81cf34eec96c3f78fc92b3c3a
+#: ../../../src/json-structure.rst:215
+#: ../../../src/json-structure.rst:538
+msgid "_attachments (optional)"
+msgstr "_attachments (optional)"
+
+# 07bc2f8cecec4672af4331001603c796
+# 5db1535df5184acd98742f8115c1507f
+#: ../../../src/json-structure.rst:215
+#: ../../../src/json-structure.rst:538
+msgid "Document Attachment"
+msgstr "Attachment des Dokuments"
+
+# e7c44ef3754d41369b0c89aa2429edac
+# 7dce3d4860f640939723c01e806a49c7
+#: ../../../src/json-structure.rst:217
+#: ../../../src/json-structure.rst:540
+msgid "filename"
+msgstr "filename"
+
+# add18307b36e4455a85128eb14357104
+#: ../../../src/json-structure.rst:217
+msgid "Attachment information"
+msgstr "Informationen zum Attachment"
+
+# fcf401e89c3541dab6c130395a3945ad
+# d04b09c9df684f92a18edb466720dade
+#: ../../../src/json-structure.rst:219
+#: ../../../src/json-structure.rst:544
+msgid "content_type"
+msgstr "content_type"
+
+# 330eb95d8bad48acbc78655d7a394698
+# 70ecb01a801647879c71a0b494570765
+#: ../../../src/json-structure.rst:219
+#: ../../../src/json-structure.rst:544
+msgid "MIME Content type string"
+msgstr "MIME Content Typ als String"
+
+# eeca0a0d17f448a4bb47d4e6efee6fe1
+#: ../../../src/json-structure.rst:221
+msgid "data"
+msgstr "data"
+
+# debd82e430bb42e5b53d00f6da5353f9
+#: ../../../src/json-structure.rst:221
+msgid "File attachment content, Base64 encoded"
+msgstr "Datei-Attachment Inhalt Base64 enkodiert"
+
+# 5dfec07c5ba140dfac2393877959ad20
+#: ../../../src/json-structure.rst:225
+msgid "List of Active Tasks"
+msgstr "Liste aktiver Aufgaben"
+
+# db075781954e4d8493cd4c03a8e9e786
+#: ../../../src/json-structure.rst:230
+msgid "tasks [array]"
+msgstr "tasks [array]"
+
+# 2305a697e2d841ee98bb32053c43c86e
+#: ../../../src/json-structure.rst:230
+msgid "Active Task"
+msgstr "Aktive Aufgaben"
+
+# c52fbcc8477541e1bebaebbf089fc5e7
+#: ../../../src/json-structure.rst:232
+msgid "pid"
+msgstr "pid"
+
+# 9b9813fbb3fb41a6a85e9ae4f0843dfd
+#: ../../../src/json-structure.rst:232
+msgid "Process ID"
+msgstr "Prozess ID"
+
+# edeac1a644e546ada7efb2215a2ab07b
+# aa23f0b09ef6410484410ca89db8cea4
+#: ../../../src/json-structure.rst:234
+#: ../../../src/json-structure.rst:505
+msgid "status"
+msgstr "status"
+
+# 803fdb14c804446aaab3f84a77b5c1dc
+#: ../../../src/json-structure.rst:234
+msgid "Task status message"
+msgstr "Status Informationen zur momentanen Aufgabe"
+
+# bbc9d98f75d547b78df31110c37107e8
+#: ../../../src/json-structure.rst:236
+msgid "task"
+msgstr "task"
+
+# f6f8111f70a04a5788ece9b37f4bc213
+#: ../../../src/json-structure.rst:236
+msgid "Task name"
+msgstr "Name der Aufgabe"
+
+# 5ee7a4a7d83646a490014cd796ca2450
+#: ../../../src/json-structure.rst:238
+msgid "type"
+msgstr "type"
+
+# 740808f0d1c44be2b998589adcd97b07
+#: ../../../src/json-structure.rst:238
+msgid "Operation Type"
+msgstr "Typ der Operation"
+
+# a81f413891b94fd197600ce578510cc8
+#: ../../../src/json-structure.rst:244
+msgid "Replication Settings"
+msgstr "Replikations-Einstellungen"
+
+# 57dc4b7df20b4f64b2355c43b86e88e5
+#: ../../../src/json-structure.rst:249
+msgid "source"
+msgstr "source"
+
+# 5911800e198a492e842e8a4ad8805179
+#: ../../../src/json-structure.rst:249
+msgid "Source database name or URL"
+msgstr "Name oder URL der Quell-Datenbank"
+
+# b66d24185e2b41eda145b442a06bc614
+#: ../../../src/json-structure.rst:251
+msgid "target"
+msgstr "target"
+
+# 486327857d964316886620d5f1abbe30
+#: ../../../src/json-structure.rst:251
+msgid "Target database name or URL"
+msgstr "URL oder Name der Ziel-Datenbank"
+
+# 7f2f3408c75e4a4d87aabe9947051014
+#: ../../../src/json-structure.rst:253
+msgid "create_target (optional)"
+msgstr "create_target (optional)"
+
+# ab9c1f7ae67c4e7490d2f68d422cc60f
+#: ../../../src/json-structure.rst:253
+msgid "Creates the target database"
+msgstr "Erstellt die Ziel-Datenbank"
+
+# bf7cb321f8764aabacac6fd97c6502e5
+#: ../../../src/json-structure.rst:255
+msgid "continuous (optional)"
+msgstr "continuous (optional)"
+
+# f06018c148a5414aa539870d5480f47a
+#: ../../../src/json-structure.rst:255
+msgid "Configure the replication to be continuous"
+msgstr "Die Replikation wird als fortlaufend konfiguriert"
+
+# c317dcf02d5b4d75a1b78c81d675cdfc
+#: ../../../src/json-structure.rst:257
+msgid "cancel (optional)"
+msgstr "cancel (optional)"
+
+# 78e3b1d0a7f044e5b63b9d0f1f4a9adc
+#: ../../../src/json-structure.rst:257
+msgid "Cancels the replication"
+msgstr "Bricht die Replikation ab"
+
+# 24b2190ed06a4f1aa063781b01efd79c
+#: ../../../src/json-structure.rst:259
+msgid "doc_ids (optional)"
+msgstr "doc_ids (optional)"
+
+# 3ddc34bf20304cb58f6aa9375ce322a6
+#: ../../../src/json-structure.rst:259
+msgid "Array of document IDs to be synchronized"
+msgstr "Array mit Dokument-ID's die synchronisiert werden müssen"
+
+# 10acee35eafc4645b1b7adb235152711
+#: ../../../src/json-structure.rst:261
+msgid "proxy (optional)"
+msgstr "proxy (optional)"
+
+# 136aeade6dab496d834add017d199225
+#: ../../../src/json-structure.rst:261
+msgid "Address of a proxy server through which replication should occur"
+msgstr ""
+"Addresse eines Proxy-Server über den Replikationen vorgenommen werden sollen"
+
+# 2607044303ad49dc9da3c2ba82ef6c57
+#: ../../../src/json-structure.rst:264
+msgid "since_seq (optional)"
+msgstr "since_seq (optional)"
+
+# 25c3b3fad4e54ca49fb3bfcd62745b54
+#: ../../../src/json-structure.rst:264
+msgid "Sequence from which the replication should start"
+msgstr "Sequenz ab welcher die Replikation starten sollte"
+
+# c8e63fe1772b470f81cf275fd1101c64
+#: ../../../src/json-structure.rst:267
+msgid "filter (optional)"
+msgstr "filter (optional)"
+
+# 7cc87cd1942e42719a0b1bc84489e0fb
+#: ../../../src/json-structure.rst:267
+msgid "name of the filter function in the form of ddoc/myfilter"
+msgstr "Name der Filter-Funktion im Format ``ddoc/myfilter``"
+
+# 2d436a43834344acacc1d7f31beb5bd2
+#: ../../../src/json-structure.rst:270
+msgid "query_params (optional)"
+msgstr "query_params (optional)"
+
+# a6e6e8fba0e14c3b9f85a7f84e287cca
+#: ../../../src/json-structure.rst:270
+msgid "query parameter that are passed to the filter function; value should be a document containing parameters as members"
+msgstr ""
+"Query-Parameter, die einer Filter Funktion übergeben werden; der Wert sollte "
+"ein Dokument mkt Parametern sein"
+
+# 46dde4f7a7594d64b79ec59492a647d3
+#: ../../../src/json-structure.rst:278
+msgid "Replication Status"
+msgstr "Replikations Status"
+
+# fcb3b8a92a874a65bc44fa35ee7cf644
+#: ../../../src/json-structure.rst:283
+msgid "ok"
+msgstr "ok"
+
+# a0c2e9a42ca84a659b26481a87251a6d
+#: ../../../src/json-structure.rst:283
+msgid "Replication status"
+msgstr "Replikations Status"
+
+# 4cb80932a3da4b7faaf557fbac498968
+# 597eca3812364335b391b342cfd0d410
+#: ../../../src/json-structure.rst:285
+#: ../../../src/json-structure.rst:292
+msgid "session_id"
+msgstr "session_id"
+
+# 71c08b4b0bd44d2b8433c81ba4dd2084
+#: ../../../src/json-structure.rst:285
+msgid "Unique session ID"
+msgstr "Eindeutige Session-ID"
+
+# e1209179cc7e48f0b815e2a5ba55bd53
+#: ../../../src/json-structure.rst:287
+msgid "source_last_seq"
+msgstr "source_last_seq"
+
+# 7f6c76aea47044c1add1ed206ca5405c
+#: ../../../src/json-structure.rst:287
+msgid "Last sequence number read from source database"
+msgstr "Letzte Sequenz-Nummer die von der Ursprungs-Datenbank gelesen wurde"
+
+# 94fc71f20fa84f6bab3c87be759c6581
+#: ../../../src/json-structure.rst:290
+msgid "history [array]"
+msgstr "history [array]"
+
+# d5cc6bb67c084ce283d2ea766648b99b
+#: ../../../src/json-structure.rst:290
+msgid "Replication History"
+msgstr "Replikations-Historie"
+
+# a050e76af61d49ef8943f64d88ef87e2
+#: ../../../src/json-structure.rst:292
+msgid "Session ID for this replication operation"
+msgstr "Session-ID für diese Replikation"
+
+# 573094e1b19848ff86ea5679e04898b9
+#: ../../../src/json-structure.rst:294
+msgid "recorded_seq"
+msgstr "recorded_seq"
+
+# 37fdeb8163ec4712ae07f7436505d8d9
+#: ../../../src/json-structure.rst:294
+msgid "Last recorded sequence number"
+msgstr "Letzte aufgezeichnete Sequenz Nummer"
+
+# 7954467aefab429cb46c8015c0fdf970
+#: ../../../src/json-structure.rst:296
+msgid "docs_read"
+msgstr "docs_read"
+
+# 75b45b68ec7946a0b2ba536e1b96d373
+#: ../../../src/json-structure.rst:296
+msgid "Number of documents read"
+msgstr "Anzahl der bereits gelesenen Dokumente"
+
+# ad86f40e6a4e47db805a81ed5bfdd906
+#: ../../../src/json-structure.rst:298
+msgid "docs_written"
+msgstr "docs_written"
+
+# f3ce6fce905647e380fec01c65142b04
+#: ../../../src/json-structure.rst:298
+msgid "Number of documents written to target"
+msgstr "Anzahl der Dokumente die bereits auf das Ziel geschrieben wurden"
+
+# f841de07cb8b42ed8b1066e4181d1b50
+#: ../../../src/json-structure.rst:300
+msgid "doc_write_failures"
+msgstr "doc_write_failures"
+
+# 2f3a9ccf75604c2983c6e9cd31a57911
+#: ../../../src/json-structure.rst:300
+msgid "Number of document write failures"
+msgstr "Anzahl der Dokumente die nicht geschrieben werden konnten"
+
+# 092c540dcdc940e4babdf32e1ec7b4f4
+#: ../../../src/json-structure.rst:302
+msgid "start_time"
+msgstr "start_time"
+
+# 6e86133ee7d94097a61a2a99f72c562f
+#: ../../../src/json-structure.rst:302
+msgid "Date/Time replication operation started"
+msgstr "Datum / Zeit zu der die Replikation gestartet ist"
+
+# 830e98346aa54fccb719c746bd46e9da
+#: ../../../src/json-structure.rst:304
+msgid "start_last_seq"
+msgstr "start_last_seq"
+
+# cd5aaf8ce018478aac8bb992b129c63d
+#: ../../../src/json-structure.rst:304
+msgid "First sequence number in changes stream"
+msgstr "Erste Sequenz-Nummer im Changes-Stream"
+
+# 07ba5de87ee041068fd185e9422ddfc2
+#: ../../../src/json-structure.rst:306
+msgid "end_time"
+msgstr "end_time"
+
+# a7f30fde760241e9a697325953b86473
+#: ../../../src/json-structure.rst:306
+msgid "Date/Time replication operation completed"
+msgstr "Datum / zeit zu der die Replikation endete"
+
+# 0166fd53572b4a838f3629dbacde3e57
+#: ../../../src/json-structure.rst:308
+msgid "end_last_seq"
+msgstr "end_last_seq"
+
+# 1ea8ad39e192473b9a2b03b2589716d0
+#: ../../../src/json-structure.rst:308
+msgid "Last sequence number in changes stream"
+msgstr "Letzte Sequenz-Nummer im Changes-Stream"
+
+# 8c57fb8896d849caa50b86d494167a91
+#: ../../../src/json-structure.rst:310
+msgid "missing_checked"
+msgstr "missing_checked"
+
+# 1fa73f5c1a8c47de91bd10ec6e24246e
+#: ../../../src/json-structure.rst:310
+msgid "Number of missing documents checked"
+msgstr "Anzahl der überprüften verlorenen Dokumente"
+
+# e567a9b558fb44f198361c0a142b77a4
+#: ../../../src/json-structure.rst:312
+msgid "missing_found"
+msgstr "missing_found"
+
+# 8244f5f4d67147cbb1ebdb68edcd2e43
+#: ../../../src/json-structure.rst:312
+msgid "Number of missing documents found"
+msgstr "Anzahl der gefundenen fehlenden Dokumente "
+
+# dddce512e6ff4c4c9ad024c7d02cddf8
+#: ../../../src/json-structure.rst:318
+msgid "Request object"
+msgstr "Request Objekt"
+
+# 7f2d3f656e434fcfb4e5a4f9249a6140
+# d57ed3ecd3814fd7a8d697bbaac37bae
+#: ../../../src/json-structure.rst:323
+#: ../../../src/json-structure.rst:462
+msgid "body"
+msgstr "body"
+
+# 0ce46359f58647f8a62651424fbe7c28
+#: ../../../src/json-structure.rst:323
+msgid "Request body data as `string`. If request method is `GET` method contains this field contains ``\"undefined\"`` value, while if `DELETE` or `HEAD` value is ``\"\"`` (empty string)"
+msgstr ""
+"Body Daten des Request als String. Wenn die Request-methode `GET`ist, "
+"enthält diese Feld den Wert ``\"undefined\"``. Wenn die Methode `DELETE` "
+"oder `HEAD` ist, enthält das Feld den Wert ``\"\"`` (leerer String)."
+
+# 902973a60d6f4515aeebddcd94bcd098
+#: ../../../src/json-structure.rst:329
+msgid "cookie"
+msgstr "cookie"
+
+# dfae76c669f644e0bf0ed7e6f41c93bb
+#: ../../../src/json-structure.rst:329
+msgid "Cookies `object`."
+msgstr "Das Cookie `object`."
+
+# a6c9b829255a4369a6d6fb141aea667e
+#: ../../../src/json-structure.rst:331
+msgid "form"
+msgstr "form"
+
+# 0d9a34ad636a494ebe795ef5750c8879
+#: ../../../src/json-structure.rst:331
+msgid "Form data `object`. Contains decoded body as key-value pairs if `Content-Type` header was ``application/x-www-form-urlencoded``."
+msgstr ""
+"Formular-Daten `object`. Enthält den dekodierten Body als Key-Value Paare "
+"wenn der `Content-Type` Header ``application/x-www-form-urlencoded`` war."
+
+# fc5862f83e664538821d0cb5178165b5
+# 5b34e4269e154a7e826c89966cc3f71f
+#: ../../../src/json-structure.rst:336
+#: ../../../src/json-structure.rst:470
+msgid "headers"
+msgstr "headers"
+
+# be220732c0994598a635ec5b8f531cca
+#: ../../../src/json-structure.rst:336
+msgid "Request headers `object`."
+msgstr "Request-Headers `object`."
+
+# 1d96048b268c4dc2a163851d5f79272e
+#: ../../../src/json-structure.rst:338
+msgid "Requested document id `string` if it was specified or ``null`` otherwise."
+msgstr ""
+"Angefragte Dokument-ID als `string` wenn spezifiziert oder ``null`` wenn "
+"nicht."
+
+# fae34fc2ef41467f8ed325cbcb322448
+#: ../../../src/json-structure.rst:341
+msgid "info"
+msgstr "info"
+
+# 1ef0a9517a3c41e7ac3c53dbcec8ee4f
+#: ../../../src/json-structure.rst:341
+msgid ":ref:`Database information <dbinfo_object>`"
+msgstr ":ref:`Datenbank Information <dbinfo_object>`"
+
+# 1264fbc98d9c426ba7f6ef064bcd7089
+#: ../../../src/json-structure.rst:343
+msgid "method"
+msgstr "method"
+
+# 0dd23134a5db4ebe8e70182fac83253e
+#: ../../../src/json-structure.rst:343
+msgid "Request method as `string` or `array`. String value is method is one of: `HEAD`, `GET`, `POST`, `PUT`, `DELETE`, `OPTIONS`, and `TRACE`, otherwise it will be represented as array of char codes."
+msgstr ""
+"Request-Methode als `string` oder `array`. Als String, wenn die Methode "
+"`HEAD`, `GET`, `POST`, `PUT`, `DELETE`, `OPTIONS` oder `TRACE` ist. "
+"Anderenfalls wird sie als Array von Char-Codes repräsentiert."
+
+# 4994235c871f42e0b11e6bc099eeba10
+#: ../../../src/json-structure.rst:349
+msgid "path"
+msgstr "path"
+
+# 416dfadb565b441793e669a6930d5bf9
+#: ../../../src/json-structure.rst:349
+msgid "List of requested path sections."
+msgstr "Liste der angefragten Pfad-Bestandteile."
+
+# 14236a87d8d94185b3d8b3f1a3b5e441
+#: ../../../src/json-structure.rst:351
+msgid "peer"
+msgstr "peer"
+
+# cc4bdbafdfa640ab917688dfe5b9c524
+#: ../../../src/json-structure.rst:351
+msgid "Request source IP address."
+msgstr "IP Adresse des Requests."
+
+# 7f7ebe5fc70a4f2db60bee535afc15f0
+#: ../../../src/json-structure.rst:353
+msgid "query"
+msgstr "query"
+
+# ca6b140abc164d56ac9e14ef1c6d458c
+#: ../../../src/json-structure.rst:353
+msgid "URL query parameters `object`. Note that multiple keys not supported and last key value suppress others."
+msgstr ""
+"URL Query-Parameter `object`. Beachte, dass multiple-keys nicht unterstützt "
+"werden und der letzte key alle vorherigen unterdrückt."
+
+# f3ac6eebe93e410babe69440d9df2d4c
+#: ../../../src/json-structure.rst:357
+msgid "requested_path"
+msgstr "requested_path"
+
+# 1dd23ab119f840ecb519322839a19ada
+#: ../../../src/json-structure.rst:357
+msgid "List of actual requested path section."
+msgstr "Liste der Pfad-Segmente des aktuellen Requests."
+
+# f93c16f18a584e418c3723e5382de7ef
+#: ../../../src/json-structure.rst:359
+msgid "raw_path"
+msgstr "raw_path"
+
+# 32f9129c614542f1aeada5f92cfbd34a
+#: ../../../src/json-structure.rst:359
+msgid "Raw requested path `string`."
+msgstr "Der \"rohe\" angefragte Pfad-String."
+
+# ada26202e38e44a59ae90cb8a15eefcc
+#: ../../../src/json-structure.rst:361
+msgid "secObj"
+msgstr "secObj"
+
+# 3eb9681f31a54197a8fbf19fe6790bab
+#: ../../../src/json-structure.rst:361
+msgid ":ref:`security_object`."
+msgstr ":ref:`security_object`."
+
+# f8493ca0a5f74e60a317f19751f8209a
+#: ../../../src/json-structure.rst:363
+msgid "userCtx"
+msgstr "userCtx"
+
+# 338e0f57e75d40acaadb115c9c9c0dbb
+#: ../../../src/json-structure.rst:363
+msgid ":ref:`userctx_object`."
+msgstr ":ref:`userctx_object`."
+
+# 142ca061f39449dcb204caed6cfd53de
+#: ../../../src/json-structure.rst:365
+msgid "uuid"
+msgstr "uuid"
+
+# 2e3872a3911242d7a054597d9c5516b0
+#: ../../../src/json-structure.rst:365
+msgid "Generated UUID by specified algorithm in config file."
+msgstr ""
+"Die auf Grundlage des in der Konfiguration angegebenen Algorithmus "
+"generierte UUID."
+
+# 0dbd1f4e109c4f70a9174f227d830295
+#: ../../../src/json-structure.rst:451
+msgid "Response object"
+msgstr "Response-Objekt"
+
+# 4e1b96090dec41a0a52f32b6aba87000
+#: ../../../src/json-structure.rst:456
+msgid "code"
+msgstr "code"
+
+# af9aa94e7c2a497e831ba48b9963848f
+#: ../../../src/json-structure.rst:456
+msgid "HTTP status code `number`."
+msgstr "HTTP-Status-Code `Nummer`."
+
+# 52c8c0e792d64101a38ee8fde636562f
+#: ../../../src/json-structure.rst:458
+msgid "json"
+msgstr "json"
+
+# c101e325daaa48cea882886b6c9c6526
+#: ../../../src/json-structure.rst:458
+msgid "JSON encodable `object`. Implicitly sets `Content-Type` header as ``application/json``."
+msgstr ""
+"JSON enkodierbares `object`. Setzt implizit den `Content-Type`-Header zu "
+"``application/json``."
+
+# b2071f40bead4323b92b5989b2f79da4
+#: ../../../src/json-structure.rst:462
+msgid "Raw response text `string`. Implicitly sets `Content-Type` header as ``text/html; charset=utf-8``."
+msgstr ""
+"Antwort String. Setzt implizit den `Content-Type`-header zu  ``text/html; "
+"charset=utf-8``."
+
+# 1af54a65b6f9495289415cba76f829cf
+#: ../../../src/json-structure.rst:466
+msgid "base64"
+msgstr "base64"
+
+# 7a8110d28ce14c8f8316e7f912ccb91c
+#: ../../../src/json-structure.rst:466
+msgid "Base64 encoded `string`. Implicitly sets `Content-Type` header as ``application/binary``."
+msgstr ""
+"Base64 enkodierter `String`. Setzt implizit den `Content-Type`-Header zu "
+"``application/binary``."
+
+# 020096fc16fa44499c6b71491364ebcc
+#: ../../../src/json-structure.rst:470
+msgid "Response headers `object`. `Content-Type` header from this object overrides any implicitly assigned one."
+msgstr ""
+"Response-Header `object`. Der `Content-Type`-Header von diesem Objekt "
+"überschreibt alle implizit zugewiesenen."
+
+# 706de481a1c8483eb913a399867ad547
+#: ../../../src/json-structure.rst:474
+msgid "stop"
+msgstr "stop"
+
+# bbfc8e7e07424adc891a555cfc83a926
+#: ../../../src/json-structure.rst:474
+msgid "`boolean` signal to stop iteration over view result rows (for list functions only)"
+msgstr ""
+"`bool` Signal um das Iterieren über die Zeilen des Ergebnis eines Views zu "
+"stoppen (nur für List-Funktionen)."
+
+# f33086350a284061b1180d9e627a3517
+#: ../../../src/json-structure.rst:479
+msgid "``body``, ``base64`` and ``json`` object keys are overlaps each other and the last wins. Since most realizations of key-value objects doesn't preserve key order mixing them may create confusing situation. Try to use only one of them."
+msgstr ""
+"Die ``body``, ``base64`` und ``json`` Objekt-Keys uberlagern sich "
+"gegenseitig wobei der letzte gewinnt. Da die meisten Implementierungen von "
+"Key-Value Objekten nicht die Reihenfolge einhalten, kann es zu verwirrenden "
+"Situationen kommen. Das gleiche gilt für das durcheinander mischen dieser. "
+"Versuche nur eine zu nutzen."
+
+# 01f3664006874ca88462bf517dc7ff92
+#: ../../../src/json-structure.rst:485
+msgid "Any custom property makes CouchDB raise internal exception. Also `Response object` could be a simple string value which would be implicitly wrapped into ``{\"body\": ...}`` object."
+msgstr ""
+"Jede benutzerdefinierte Eigenschaft führt dazu, dass CouchDB eine interne "
+"Exception wirft. Ausserdem könnte das `Response object` ein einfacher String "
+"sein, der implizit in ein ``{\"body\": ...}`` Objekt gehüllt würde."
+
+# a42eae67321a4cffb4c12f9b99514e66
+#: ../../../src/json-structure.rst:491
+msgid "Returned CouchDB Document with Detailed Revision Info"
+msgstr "Zurückgegebenes CouchDB Dokument mit detaillierter Revision Info"
+
+# eaa927ad084b4f4f902b00a51ccc8c13
+#: ../../../src/json-structure.rst:501
+msgid "_revs_info [array]"
+msgstr "_revs_info [array]"
+
+# e41f4d27f8004e318f47a75d20df971a
+#: ../../../src/json-structure.rst:501
+msgid "CouchDB Document Extended Revision Info"
+msgstr "CouchDB Dokument erweiterte Revision Info"
+
+# a7ffc5f5788348028a18f78f95e2d919
+#: ../../../src/json-structure.rst:503
+msgid "rev"
+msgstr "rev"
+
+# ac92bf8823b94439bd6a60d1f768c9ca
+#: ../../../src/json-structure.rst:503
+msgid "Full revision string"
+msgstr "Der komplette Revision-String"
+
+# c51dea241537483fb71ddca99190694e
+#: ../../../src/json-structure.rst:505
+msgid "Status of the revision"
+msgstr "Status der Revision"
+
+# d7a22069f4d24b80b5edcdc2bad14daa
+#: ../../../src/json-structure.rst:509
+msgid "Returned CouchDB Document with Revision Info"
+msgstr "Zurückgegebenes CouchDB Dokument mit Revision-Info"
+
+# 7a010ca9503745869a8dbd2fbf159d6b
+#: ../../../src/json-structure.rst:519
+msgid "_revisions"
+msgstr "_revisions"
+
+# bb5eb1183644454e865912a471de242b
+#: ../../../src/json-structure.rst:519
+msgid "CouchDB Document Revisions"
+msgstr "CouchDB Dokument Revisionen"
+
+# b101176b876f416b96319f72eed6cc21
+#: ../../../src/json-structure.rst:521
+msgid "ids [array]"
+msgstr "ids [array]"
+
+# e5bdd5777dff40cdb62137b08dc08081
+#: ../../../src/json-structure.rst:521
+msgid "Array of valid revision IDs, in reverse order (latest first)"
+msgstr ""
+"Array mit validen Revision IDs in umgekehrter Reihenfolge (das Letzte zuerst)"
+
+# fac473c9cee04a1ea65adc2b7330456a
+#: ../../../src/json-structure.rst:524
+msgid "start"
+msgstr "start"
+
+# 7fc1bc05191c4cf3922c6a58bcbbfc5b
+#: ../../../src/json-structure.rst:524
+msgid "Prefix number for the latest revision"
+msgstr "Prefix-Nummer der letzten Revision"
+
+# 0b6abb003f37498599d985cefa3d96da
+#: ../../../src/json-structure.rst:528
+msgid "Returned Document with Attachments"
+msgstr "Zurückgegebenes Dokument mit Anhängen (Attachments)"
+
+# f0e8c4fbf00641d38067dd5bbaf01992
+#: ../../../src/json-structure.rst:540
+msgid "Attachment"
+msgstr "Anhang (Attachment)"
+
+# a12eafef77f748799741504030955bb0
+#: ../../../src/json-structure.rst:542
+msgid "stub"
+msgstr "stub"
+
+# 243ee67cbbd643e1b69952f6f99f6070
+#: ../../../src/json-structure.rst:542
+msgid "Indicates whether the attachment is a stub"
+msgstr "Zeigt an, ob das Attachment ein stub ist"
+
+# 21a5d99248464e4bac815e63893a7f31
+#: ../../../src/json-structure.rst:546
+msgid "length"
+msgstr "length"
+
+# 4e409f162bc84ee481439d52d1bef76b
+#: ../../../src/json-structure.rst:546
+msgid "Length (bytes) of the attachment data"
+msgstr "Länge in Byte der Attachment Daten"
+
+# 434bbb0098044c3bb0fe6c1aae549899
+#: ../../../src/json-structure.rst:548
+msgid "revpos"
+msgstr "revops"
+
+# 850104bd8ebc4c18af1596ed9d31aa8f
+#: ../../../src/json-structure.rst:548
+msgid "Revision where this attachment exists"
+msgstr "Revision, in welcher dieses Attachment existiert "
+
+# 3de571c18d1840c0844c25a0490b01c1
+#: ../../../src/json-structure.rst:554
+msgid "Security Object"
+msgstr "Sicherheits-Objekt"
+
+# 246ea43be35b44ef8a1ed815ed66aad3
+#: ../../../src/json-structure.rst:559
+msgid "admins"
+msgstr "admins"
+
+# 08ad71c68bf34c1885cba6159cb4609e
+#: ../../../src/json-structure.rst:559
+msgid "Roles/Users with admin privileges"
+msgstr "Rollen/Benutzer mit admin Privilegien"
+
+# 89b48a4503a14d5e823586a9129d6531
+# 652b7271eaf74179b01fdf9ad0d54187
+#: ../../../src/json-structure.rst:561
+#: ../../../src/json-structure.rst:567
+msgid "roles [array]"
+msgstr "roles [array]"
+
+# ce946d21922247d18a797fae280eb188
+# 419d0c73b7c44e568e5e2570fc774f1e
+#: ../../../src/json-structure.rst:561
+#: ../../../src/json-structure.rst:567
+msgid "List of roles with parent privilege"
+msgstr "Liste von Rollen mit übergeordneten Privilegien"
+
+# 5b2147b574c249ca904e986f1fa958d9
+# 5e79d46fdec64d93a961af0a40c5dbb8
+#: ../../../src/json-structure.rst:563
+#: ../../../src/json-structure.rst:569
+msgid "users [array]"
+msgstr "users [array]"
+
+# 20e4f777428b491d9596c86d0c9f5229
+# d4abe1fe21cb47db87f6d89ed5a095a6
+#: ../../../src/json-structure.rst:563
+#: ../../../src/json-structure.rst:569
+msgid "List of users with parent privilege"
+msgstr "Liste von Benutzern mit übergeordneten Privilegien"
+
+# a180485dbb784a2087f44283b641f0f6
+#: ../../../src/json-structure.rst:565
+msgid "readers"
+msgstr "readers"
+
+# 45990d5b34d1418ab4b91c4f46c7fbb2
+#: ../../../src/json-structure.rst:565
+msgid "Roles/Users with reader privileges"
+msgstr "Rollen/Benutzer mit Berechtigung zu lesenden Operationen"
+
+# 69cc253a3b4947449da7732342b220e5
+#: ../../../src/json-structure.rst:594
+msgid "User Context Object"
+msgstr "Benutzer Kontext Objekt"
+
+# f896383d1ac04d51962131e861d501c2
+#: ../../../src/json-structure.rst:599
+msgid "db"
+msgstr "db"
+
+# b69a97b548bb4421b0d9bf91195dedc9
+#: ../../../src/json-structure.rst:599
+msgid "Database name in context of provided operation."
+msgstr "Datenbankname im Kontext der vorausgesetzten Operation."
+
+# fb0113dc2d3f44349a23beebdaaef03f
+#: ../../../src/json-structure.rst:602
+msgid "User name."
+msgstr "Benutzername."
+
+# 1d585215323f448596d59b011b8194f4
+#: ../../../src/json-structure.rst:604
+msgid "roles"
+msgstr "Rollen"
+
+# 5926854bb25e427ebac476bcec0f4a96
+#: ../../../src/json-structure.rst:604
+msgid "List of user roles."
+msgstr "Liste der Benutzerrollen."
+
+# 5b97ec5115784d6d909c71fbc3e0c8e9
+#: ../../../src/json-structure.rst:621
+msgid "View Head Information"
+msgstr "View Head Information"
+
+# aa27e6206ed640a4857717339b4f5ecb
+#: ../../../src/json-structure.rst:626
+msgid "Number of documents in the view"
+msgstr "Anzahl der Dokumente im View"

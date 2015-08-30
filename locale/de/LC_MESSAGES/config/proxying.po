@@ -1,0 +1,112 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# b43a239791124ccf9f3ef9c9bbda8017
+#: ../../../src/config/proxying.rst:19
+msgid "Proxying Configuration"
+msgstr ""
+
+# 0cf9f1b077794f60b426bab701b5ca7a
+#: ../../../src/config/proxying.rst:25
+msgid "CouchDB As Proxy"
+msgstr ""
+
+# bb533d8a212c440094f8e41df5646fb2
+#: ../../../src/config/proxying.rst:27
+msgid "The HTTP proxy feature makes it easy to map and redirect different content through your CouchDB URL. The proxy works by mapping a pathname and passing all content after that prefix through to the configured proxy address."
+msgstr ""
+
+# 8ea8916a2afc4ef182ffbed3a62907ea
+#: ../../../src/config/proxying.rst:32
+msgid "Configuration of the proxy redirect is handled through the ``[httpd_global_handlers]`` section of the CouchDB configuration file (typically ``local.ini``). The format is::"
+msgstr ""
+
+# a865489b542a4708871811966e3ff2c9
+#: ../../../src/config/proxying.rst:40
+msgid "Where:"
+msgstr ""
+
+# 25571de4da63402f88bda042e594203d
+#: ../../../src/config/proxying.rst:42
+msgid "``PREFIX``"
+msgstr ""
+
+# c22e76b280fa41bbb5a44cc29e9c5786
+#: ../../../src/config/proxying.rst:44
+msgid "Is the string that will be matched. The string can be any valid qualifier, although to ensure that existing database names are not overridden by a proxy configuration, you can use an underscore prefix."
+msgstr ""
+
+# 8bc5b372d7a84cecac5ea4a1baccaa04
+#: ../../../src/config/proxying.rst:49
+msgid "``DESTINATION``"
+msgstr ""
+
+# b94d1f383b904dc9982c9e2ff0e3e0be
+#: ../../../src/config/proxying.rst:51
+msgid "The fully-qualified URL to which the request should be sent. The destination must include the ``http`` prefix. The content is used verbatim in the original request, so you can also forward to servers on different ports and to specific paths on the target host."
+msgstr ""
+
+# 2739673f7c88437682c242e087adb203
+#: ../../../src/config/proxying.rst:56
+msgid "The proxy process then translates requests of the form:"
+msgstr ""
+
+# 72dceafdc40849baa6122c02407d08e4
+#: ../../../src/config/proxying.rst:62
+msgid "To:"
+msgstr ""
+
+# 7f20238ece0e4e468a6688052b9950e8
+#: ../../../src/config/proxying.rst:69
+msgid "Everything after ``PREFIX`` including the required forward slash will be appended to the ``DESTINATION``."
+msgstr ""
+
+# ea1726a212004a98aa50c265a1f8945d
+#: ../../../src/config/proxying.rst:72
+msgid "The response is then communicated back to the original client."
+msgstr ""
+
+# 72ea0442c0d54e52b63a2c8fcefbe453
+#: ../../../src/config/proxying.rst:74
+msgid "For example, the following configuration::"
+msgstr ""
+
+# e35f7463e12f41b1bdff625cad320a55
+#: ../../../src/config/proxying.rst:79
+msgid "Would forward all requests for ``http://couchdb:5984/_google`` to the Google website."
+msgstr ""
+
+# a6e368bcab354a2ab5b7b550e448457f
+#: ../../../src/config/proxying.rst:82
+msgid "The service can also be used to forward to related CouchDB services, such as `Lucene`::"
+msgstr ""
+
+# 8793faf7e89442b98516fe108390578d
+#: ../../../src/config/proxying.rst:89
+msgid "The proxy service is basic. If the request is not identified by the ``DESTINATION``, or the remainder of the ``PATH`` specification is incomplete, the original request URL is interpreted as if the ``PREFIX`` component of that URL does not exist."
+msgstr ""
+
+# 019cd2004ba24219af1a9a1933f80834
+#: ../../../src/config/proxying.rst:94
+msgid "For example, requesting ``http://couchdb:5984/_intranet/media`` when ``/media`` on the proxy destination does not exist, will cause the request URL to be interpreted as ``http://couchdb:5984/media``. Care should be taken to ensure that both requested URLs and destination URLs are able to cope."
+msgstr ""

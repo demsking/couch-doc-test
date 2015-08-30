@@ -1,0 +1,985 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2015-06-05 07:52+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1433490731.000000\n"
+
+# f3a4efdb39434cabbae99b83d5912049
+#: ../../../src/intro/api.rst:18
+msgid "The Core API"
+msgstr "Das Core API"
+
+# e91ba4bb989f4328977dab95eb926ac3
+#: ../../../src/intro/api.rst:20
+msgid "This document explores the CouchDB in minute detail. It shows all the nitty-gritty and clever bits. We show you best practices and guide you around common pitfalls."
+msgstr ""
+"In diesem Kaptiel nehmen wir CouchDB genau unter die Lupe. Wir gehen richtig "
+"auf die Details ein und zeigen knifflige Sachen. Wir erklären die Best "
+"Practices und helfen die üblichen Stolperfallen zu umgehen."
+
+# 155ac6ecdd9948848d755ab9ebe6dc78
+#: ../../../src/intro/api.rst:24
+msgid "We start out by revisiting the basic operations we ran in the previous document :ref:`intro/tour`, looking behind the scenes. We also show what Futon needs to do behind its user interface to give us the nice features we saw earlier."
+msgstr ""
+"Zu Beginn gehen wir noch einmal die Grundoperationen durch, die wir bereits "
+"im vorherigen Dokument :ref:`intro/tour` vorgestellt haben und schauen "
+"anschließend unter die Haube. Wir zeigen auch, was Futon hinter der "
+"Benutzerschnittstelle machen muss, um die vielen Funktionen zu haben, die "
+"wir zuvor gesehen haben."
+
+# 643baab89605412f9aa547300e39ed11
+#: ../../../src/intro/api.rst:28
+msgid "This document is both an introduction to the core CouchDB API as well as a reference. If you can't remember how to run a particular request or why some parameters are needed, you can always come back here and look things up (we are probably the heaviest users of this document)."
+msgstr ""
+"Dieses Kapitel ist zugleich eine Einführung in die Core API von CouchDB und "
+"eine Referenz. Wenn du dich nicht mehr erinnern kannst, wie ein bestimmter "
+"Request funktioniert oder warum bestimmte Parameter benötigt werden, kannst "
+"du jederzeit hierhin zurückkehren und nachschlagen. Von allen Kapiteln "
+"nutzen wir dieses wahrscheinlich am häufigsten."
+
+# 1a92fda12fb1467aa087d6f6dec03713
+#: ../../../src/intro/api.rst:33
+msgid "While explaining the API bits and pieces, we sometimes need to take a larger detour to explain the reasoning for a particular request. This is a good opportunity for us to tell you why CouchDB works the way it does."
+msgstr ""
+"Während wir die API genauer erklären, müssen wir manchmal etwas weiter "
+"ausholen, um die Motivation hinter einem Request zu erklären. Dabei können "
+"wir gleich erklären, warum CouchDB so funktioniert wie es funktioniert."
+
+# eacb68539e064e4bbd825dbb4f3766e2
+#: ../../../src/intro/api.rst:37
+msgid "The API can be subdivided into the following sections. We'll explore them individually:"
+msgstr ""
+"Die API kann man in folgende Bereiche aufteilen, die wir nacheinander "
+"besprechen werden:"
+
+# 58dda11cb49f4fffb1201771dd2ae76a
+#: ../../../src/intro/api.rst:46
+msgid "Server"
+msgstr "Server"
+
+# b92fd6757e684fea9478f126b22fffbc
+#: ../../../src/intro/api.rst:48
+msgid "This one is basic and simple. It can serve as a sanity check to see if CouchDB is running at all. It can also act as a safety guard for libraries that require a certain version of CouchDB. We're using the `curl`_ utility again::"
+msgstr ""
+"Der erste Request ist simpel. Man benutzt ihn um zu sehen ob CouchDB "
+"überhaupt läuft. Setzt eine externe Bibliothek eine bestimmte Version "
+"voraus, kann sie mit diesem Request prüfen, ob diese Bedingung erfüllt ist. "
+"Wir nutzen wieder `curl`_ um mit CouchDB zu sprechen::"
+
+# 302a40cf9dca405ea9163cd72127e103
+#: ../../../src/intro/api.rst:55
+msgid "CouchDB replies, all excited to get going:"
+msgstr "Voller Erwartung antwortet CouchDB mit:"
+
+# d254947e158d4ef482877119e0c1d33b
+#: ../../../src/intro/api.rst:69
+msgid "You get back a JSON string, that, if parsed into a native object or data structure of your programming language, gives you access to the welcome string and version information."
+msgstr ""
+"Zurück kommt ein JSON String, der einen Willkommensgruß und die Version von "
+"CouchDB enthält."
+
+# 7863a7bc19cb42f2be459c6392efaae8
+#: ../../../src/intro/api.rst:73
+msgid "This is not terribly useful, but it illustrates nicely the way CouchDB behaves. You send an HTTP request and you receive a JSON string in the HTTP response as a result."
+msgstr ""
+"Damit kann man zwar nicht viel anfangen, allerdings zeigt es, wie sich "
+"CouchDB verhält. Man schickt einen HTTP Request und bekommt einen JSON "
+"String als HTTP Response."
+
+# 7720d19c8c4c4a09ad870c891cc879fa
+#: ../../../src/intro/api.rst:81
+msgid "Databases"
+msgstr "Datenbanken"
+
+# d4be61c016aa483c94d44481cfc2a983
+#: ../../../src/intro/api.rst:83
+msgid "Now let's do something a little more useful: *create databases*. For the strict, CouchDB is a *database management system* (DMS). That means it can hold multiple databases. A database is a bucket that holds \"related data\". We'll explore later what that means exactly. In practice, the terminology is overlapping -- often people refer to a DMS as \"a database\" and also a database within the DMS as \"a database.\" We might follow that slight oddity, so don't get confused by it. In general, it should be clear from the context if we are talking about the whole of CouchDB or a single database within CouchDB."
+msgstr ""
+"Machen wir etwas Sinnvolleres: Legen wir eine Datenbank an. Wenn man es "
+"genau nimmt, ist CouchDB ein *Datenbank Management System* (DBMS), weil es "
+"mehrere Datenbanken enthalten kann. Eine Datenbank ist ein Behälter, der "
+"\"zusammenhängende Daten\" enthält. Wir werden später sehen was das genau "
+"bedeutet. Meist verschwimmen die Begriffe etwas und \"die Datenbank\" sind "
+"dann zugleich das DBMS und die Datenbank darin. Wir nehmen es auch nicht so "
+"genau, denn aus dem Kontext geht meist hervor, ob CouchDB als Ganzes oder "
+"eine Datenbank darin gemeint ist."
+
+# e0d462a4d99942dba01accaa4f9b4732
+#: ../../../src/intro/api.rst:92
+msgid "Now let's make one! We want to store our favorite music albums, and we creatively give our database the name albums. Note that we're now using the ``-X`` option again to tell curl to send a :method:`PUT` request instead of the default :method:`GET` request::"
+msgstr ""
+"Legen wir die Datenbank nun an - zum Beispiel um unsere Lieblingsalben zu "
+"speichern. Sinnigerweise nennen wir die Datenbank albums. Datenbanken werden "
+"in CouchDB mit einem :method:`PUT` Request angelegt. Deshalb nehmen wir bei "
+"curl die ``-X`` Option. Andernfalls würde curl einen :method:`GET` Request "
+"schicken::"
+
+# a36b71677332455da4e53472fc0340e5
+# ade2ad40b8644e988ad0c6423046094c
+# 1a6b135f9ee44e26856ec73095b03d72
+# df88d861faa74f1ba86f3b4b56a9901f
+# 55782acf6c2e457e85b772aba6304ac0
+# d8478ef42ce2403285de16af142f780f
+# 46769feb5b2f4b578ad00e65977f15c7
+#: ../../../src/intro/api.rst:99
+#: ../../../src/intro/api.rst:111
+#: ../../../src/intro/api.rst:370
+#: ../../../src/intro/api.rst:395
+#: ../../../src/intro/api.rst:412
+#: ../../../src/intro/api.rst:448
+#: ../../../src/intro/api.rst:594
+msgid "CouchDB replies:"
+msgstr "CouchDB antwortet mit:"
+
+# da1b5eb5d8d74f02b90a9567a4e37875
+#: ../../../src/intro/api.rst:105
+msgid "That's it. You created a database and CouchDB told you that all went well. What happens if you try to create a database that already exists? Let's try to create that database again::"
+msgstr ""
+"Das war's. Wir haben eine Datenbank angelegt und CouchDB sagt, das alles "
+"funktioniert hat. Was passiert, wenn man versucht eine Datenbank anzulegen, "
+"die bereits existiert sehen wir, wenn wir versuchen, die gleiche Datenbank "
+"noch einmal anzulegen::"
+
+# 3abc55dbd46d477085fac8b996ab5dc0
+#: ../../../src/intro/api.rst:117
+msgid "We get back an error. This is pretty convenient. We also learn a little bit about how CouchDB works. CouchDB stores each database in a single file. Very simple."
+msgstr ""
+"CouchDB antwortet mit einem Fehler, was sehr praktisch ist. Zugleich lernen "
+"wir wieder ein wenig mehr darüber, wie CouchDB arbeitet. CouchDB speichert "
+"jede Datenbank in einer eigenen Datei. Ganz einfach."
+
+# f09978b1538140fe947b870228ab32d9
+#: ../../../src/intro/api.rst:121
+msgid "Let's create another database, this time with curl's ``-v`` (for \"verbose\") option. The verbose option tells curl to show us not only the essentials -- the HTTP response body -- but all the underlying request and response details::"
+msgstr ""
+"Legen wir noch eine Datenbank an - diesmal mit der ``-v`` Option (für "
+"„verbose“) von curl. Mit dieser Option zeigt curl nicht nur die wesentlichen "
+"Teile -- den HTTP Response Body -- sondern alle Bestandteile des Requests "
+"an."
+
+# dcb9cffa11b34e5089702cdcc6e10b59
+#: ../../../src/intro/api.rst:127
+msgid "curl elaborates::"
+msgstr "curl zeigt::"
+
+# 1b297dc2ca4243f9b630a0c79bb82f02
+#: ../../../src/intro/api.rst:148
+msgid "What a mouthful. Let's step through this line by line to understand what's going on and find out what's important. Once you've seen this output a few times, you'll be able to spot the important bits more easily."
+msgstr ""
+"Wupps, das ist doch einiges mehr als ohne -v. Gehen wir der Reihe nach durch "
+"die einzelnen Zeilen, um zu verstehen, was genau passiert ist und was "
+"wichtig ist. Wenn man diese Ausgabe ein paarmal gesehen hat, weiß man worauf "
+"man achten muss und sieht die wichtigen Teile sofort."
+
+# 7759e942d7fd44969c36ad27fdc900c0
+#: ../../../src/intro/api.rst:156
+msgid "This is curl telling us that it is going to establish a TCP connection to the CouchDB server we specified in our request URI. Not at all important, except when debugging networking issues."
+msgstr ""
+"Damit sagt curl uns, dass es eine TCP Verbindung zu dem CouchDB Server "
+"aufbauen wird, den wir in dem Request URL angegeben haben. Das ist meist "
+"nicht besonders wichtig, außer man sucht gerade einen Fehler im Netzwerk."
+
+# außer auch in neuer dt. Rechschreibung mit ß
+#: ../../../src/intro/api.rst:165
+msgid "curl tells us it successfully connected to CouchDB. Again, not important if you aren't trying to find problems with your network."
+msgstr ""
+"curl sagt uns mit diesen Zeilen, dass es sich erfolgreich mit CouchDB "
+"verbunden hat. Wieder nicht besonders wichtig, außer man kämpft mit "
+"Netzwerkfehlern."
+
+# 512880f711ad447fb3018aaa0a5ba00b
+#: ../../../src/intro/api.rst:168
+msgid "The following lines are prefixed with ``>`` and ``<`` characters. The ``>`` means the line was sent to CouchDB verbatim (without the actual ``>``). The ``<`` means the line was sent back to curl by CouchDB."
+msgstr ""
+"Die folgenden Zeilen beginnen jeweils mit den Zeichen ``>`` und ``<``. Steht "
+"am Anfang ein ``>`` bedeutet das, dass diese Zeile exakt so an CouchDB "
+"geschickt wurde (ohne das ``>``). Ein ``<`` am Anfang bedeutet, dass diese "
+"Zeile genau so von CouchDB zurück an curl geschickt wurde."
+
+# dd6d551fa2c4449dbd86df4e5caf9dab
+#: ../../../src/intro/api.rst:176
+msgid "This initiates an HTTP request. Its *method* is :method:`PUT`, the *URI* is ``/albums-backup``, and the HTTP version is ``HTTP/1.1``. There is also ``HTTP/1.0``, which is simpler in some cases, but for all practical reasons you should be using ``HTTP/1.1``."
+msgstr ""
+"Dies initiiert einen HTTP-request. Die *Methode* ist :method:`PUT`, die *URI*"
+" ist ``/albums-backup`` und die HTTP Version ist ``HTTP/1.1``. Es gibt auch "
+"das ``HTTP/1.0`` Protokoll welches in einigen Fällen einfacher ist, aber für "
+"alle praktischen Fälle solltest Du das ``HTTP/1.1`` Protokoll nutzen."
+
+# 1eb5d93d12e94df9bbad38b3230f1462
+#: ../../../src/intro/api.rst:181
+msgid "Next, we see a number of *request headers*. These are used to provide additional details about the request to CouchDB."
+msgstr ""
+"Als nächstes betrachten wir einige *Request-header*. Diese werden genutzt um "
+"CouchDB zusätzliche Details des Requests zur Verfügung zu stellen."
+
+# 072c4351f3464beab03037bd9a89c278
+#: ../../../src/intro/api.rst:188
+msgid "The User-Agent header tells CouchDB which piece of client software is doing the HTTP request. We don't learn anything new: it's curl. This header is often useful in web development when there are known errors in client implementations that a server might want to prepare the response for. It also helps to determine which platform a user is on. This information can be used for technical and statistical reasons. For CouchDB, the :header:`User-Agent` header is irrelevant."
+msgstr ""
+"Der User-Agent Header teilt CouchDB mit, welche \"Client-Software\" den HTTP-"
+"Request ausführt. Hier erfahren wir nichts neues: es ist cUrl. Dieser Header "
+"ist in der Web-Entwicklung oft nützlich, wenn es bekannte Fehler in Client-"
+"Implementierungen gibt und der Server entsprechende Responses vorbereiten "
+"soll. Es hilft auch dabei herauszufinden, welche Platform ein Benutzer "
+"nutzt. Diese Information kann sowohl für technische als auch für "
+"statistische Zwecke genutzt werden. Für CouchDB ist der Header :header:`User-"
+"Agent` allerdings irrelevant."
+
+# 386e62a6f8ae42e5b19d338435a277eb
+#: ../../../src/intro/api.rst:200
+msgid "The :header:`Host` header is required by ``HTTP 1.1``. It tells the server the hostname that came with the request."
+msgstr ""
+"Der Header :header:`Host` ist für ``HTTP 1.1`` erforderlich. Er teilt dem "
+"Server den Hostname mit, von welchem der Request gesendet wurde."
+
+# f06ecfb671e24d4a9d0a1b1cc863f5bc
+#: ../../../src/intro/api.rst:207
+msgid "The :header:`Accept` header tells CouchDB that curl accepts any media type. We'll look into why this is useful a little later."
+msgstr ""
+"Der header :header:`Accept` teilt CouchDB mit, das cUrl jeglichen Medientyp "
+"akzeptiert. Warum dies nützlich ist, werden wir uns später ansehen. "
+
+# 89c38e2411484376ae6fda8b39017021
+#: ../../../src/intro/api.rst:214
+msgid "An empty line denotes that the request headers are now finished and the rest of the request contains data we're sending to the server. In this case, we're not sending any data, so the rest of the curl output is dedicated to the HTTP response."
+msgstr ""
+"Eine Leerzeile dient zur Kennzeichnung, dass die Header nun beendet sind und "
+"der Rest des Request Daten enthält, die wir an den Server senden. In diesem "
+"Fall senden wir keine Daten, so dass sich die restliche Ausgabe von cUrl auf "
+"die HTTP-Response bezieht."
+
+# ec707226f00b4223b706777eb1ff3040
+#: ../../../src/intro/api.rst:223
+msgid "The first line of CouchDB's HTTP response includes the HTTP version information (again, to acknowledge that the requested version could be processed), an HTTP *status code*, and a *status code message*. Different requests trigger different response codes. There's a whole range of them telling the client (curl in our case) what effect the request had on the server. Or, if an error occurred, what kind of error. :rfc:`2616` (the HTTP 1.1 specification) defines clear behavior for response codes. CouchDB fully follows the RFC."
+msgstr ""
+"Die erste Zeile der HTTP-Response von CouchDB beinhaltet die HTTP-Versions-"
+"Information (nochmals um zu bestätigen, dass die angefragte Version "
+"verarbeitet werden konnte), einen *HTTP-Status-Code* und eine *Status-Code-"
+"Message*. Unterschiedliche Requests lösen unterschiedliche Response-Codes "
+"aus. Es gibt eine größere Anzahl dieser Codes um dem Client (in unserem Fall "
+"cUrl) mitzuteilen, welche Auswirkungen der Request auf dem Server hatte. "
+"Oder wenn ein Fehler aufgetreten ist, welche Art Fehler.  :rfc:`2616` (die "
+"HTTP 1.1 Spezifikation) definiert eindeutige Verhaltensweisen für Response-"
+"Codes. CouchDB folgt dem RFC in Gänze."
+
+# 2d15c29a50af4ca8a140a4ea3f456863
+#: ../../../src/intro/api.rst:232
+msgid "The :statuscode:`201` status code tells the client that the resource the request was made against was successfully created. No surprise here, but if you remember that we got an error message when we tried to create this database twice, you now know that this response could include a different response code. Acting upon responses based on response codes is a common practice. For example, all response codes of :statuscode:`400` or larger tell you that some error occurred. If you want to shortcut your logic and immediately deal with the error, you could just check a >= ``400`` response code."
+msgstr ""
+"Der Status-Code :statuscode:`201` teilt dem Client mit, dass die Ressource "
+"für die der Request ausgeführt wurde erfolgreich erstellt wurde. Das ist "
+"hier keine Überraschung, aber wenn Du Dich daran erinnerst, dass wir eine "
+"Fehlermeldung erhalten haben, als wir versucht haben diese Datenbank zweimal "
+"zu erstellen, weisst Du jetzt, dass diese Antwort einen anderen Response-"
+"Code enthalten könnte. Das Verhalten auf Grundlage von Response-Codes zu "
+"steuern ist gängige Praxis. Z.B. sagen Dir alle Response-Codes ab "
+":statuscode:`400` oder höher, dass ein Fehler aufgetreten ist. Wenn Deine "
+"Logik verkürzen willst und sofort einen auftretenden Fehler behandeln "
+"willst, könntest Du einfach nach einem Response-Code >= ``400`` prüfen."
+
+# 0a54d96afdc5478a9032409934331cf1
+#: ../../../src/intro/api.rst:246
+msgid "The :header:`Server` header is good for diagnostics. It tells us which CouchDB version and which underlying Erlang version we are talking to. In general, you can ignore this header, but it is good to know it's there if you need it."
+msgstr ""
+"Der :header:`Server` Header eignet sich gut zur Diagnose. Er enthält die "
+"CouchDB Version und die Version des zugrundeliegenden Erlang Systems. Meist "
+"kann man diesen Header ignorieren, doch es ist gut zu wissen, dass er da "
+"ist, falls man ihn braucht."
+
+# 5d8fac7693a8480b805d8101f75f5aa8
+#: ../../../src/intro/api.rst:255
+msgid "The :header:`Date` header tells you the time of the server. Since client and server time are not necessarily synchronized, this header is purely informational. You shouldn't build any critical application logic on top of this!"
+msgstr ""
+"In dem :header:`Datum` Header teilt uns CouchDB die Uhrzeit auf dem Server "
+"mit. Da die Zeit auf dem Client und Server nicht unbedingt synchronisiert "
+"sind, ist dieser Header eine reine Information. Unter keinen Umständen "
+"sollte man sich in einer Anwendung auf eine Wert dieses Header verlassen."
+
+# 68741375ea954182b07fd4adbd3d4d38
+#: ../../../src/intro/api.rst:264
+msgid "The :header:`Content-Type` header tells you which MIME type the HTTP response body is and its encoding. We already know CouchDB returns JSON strings. The appropriate :header:`Content-Type` header is :mimetype:`application/json`. Why do we see :mimetype:`text/plain`? This is where pragmatism wins over purity. Sending an :mimetype:`application/json` :header:`Content-Type` header will make a browser offer you the returned JSON for download instead of just displaying it. Since it is extremely useful to be able to test CouchDB from a browser, CouchDB sends a :mimetype:`text/plain` content type, so all browsers will display the JSON as text."
+msgstr ""
+"Der :header:`Content-Type` Header zeigt an, welche Art von Daten der HTTP "
+"Response Body enthält und wie diese codiert sind. Die Art der Daten steht im "
+"MIME Type und die Codierung im charset Parameter. Wir wissen bereits, das "
+"CouchDB JSON Strings zurückliefert. Der passende :header:`Content-Type` "
+"Header wäre also :mimetype:`application/json`. Warum schickt CouchDB dann "
+":mimetype:`text/plain`? An dieser Stelle ist Pragmatismus wichtiger als "
+"Purismus. Schickt man :mimetype:`application/json` als :header:`Content-Type`"
+" Header, so wird jeder Browser versuchen den JSON String als Datei zu "
+"speichern anstatt ihn einfach anzuzeigen. Da es jedoch sehr praktisch ist "
+"CouchDB von einem Webbrowser aus zu testen, schickt CouchDB als Content Type "
+":mimetype:`text/plain`, so dass alle Browser den JSON String einfach "
+"anzeigen."
+
+# ca7351300329463f86c60cd684fd1f55
+#: ../../../src/intro/api.rst:277
+msgid "There are some extensions that make your browser JSON-aware, but they are not installed by default. For more information, look at the popular `JSONView`_ extension, available for both Firefox and Chrome."
+msgstr ""
+"Es gibt Erweiterungen für Webbrowser, mit denen der Browser JSON korrekt "
+"erkennt und entsprechend behandelt. Allerdings werden diese standardmäßig "
+"nicht installiert. Eine bekannte Erweiterung ist die `JSONView`_ Erweiterung "
+"für Chrome und Firefox."
+
+# 4ada6214c78d47ea99964f1b17de4420
+#: ../../../src/intro/api.rst:283
+msgid "Do you remember the :header:`Accept` request header and how it is set to ``\\*/\\* -> */*`` to express interest in any MIME type? If you send ``Accept: application/json`` in your request, CouchDB knows that you can deal with a pure JSON response with the proper :header:`Content-Type` header and will use it instead of :mimetype:`text/plain`."
+msgstr ""
+"Erinnerst du dich noch an den :header:`Accept` Header im HTTP Request und "
+"wie er zu ``\\*/\\* -> */*`` gesetzt wurde, um damit zu zeigen, dass der "
+"Client jeden MIME Type akzeptiert? Schickt ein Client im Request Accept: "
+"``Accept: application/json``, so weiß CouchDB, dass der Client korrekt mit "
+"JSON Strings und dem Content-Type: :mimetype:`application/json` Header "
+"umgehen kann und wird diesen verwenden anstelle von :mimetype:`text/plain`."
+
+# 41f5b594141b4b4d80ad1e9a8b120a1e
+#: ../../../src/intro/api.rst:293
+msgid "The :header:`Content-Length` header simply tells us how many bytes the response body has."
+msgstr ""
+"Der :header:`Content-Length` Header informiert uns darüber, wie viele Bytes "
+"der Response Body der Antwort hat."
+
+# 5c5c01e6bcc5480fb28b6a39865a32b7
+#: ../../../src/intro/api.rst:300
+msgid "This :header:`Cache-Control` header tells you, or any proxy server between CouchDB and you, not to cache this response."
+msgstr ""
+"Dieser :header:`Cache-Control` Header sorgt dafür, dass wir - oder Proxy-"
+"Server zwischen der CouchDB und uns - die Antwort nicht cachen."
+
+# 6bd39d7bdb67407e9d3e7a201f4a6bdd
+#: ../../../src/intro/api.rst:307
+msgid "This empty line tells us we're done with the response headers and what follows now is the response body."
+msgstr ""
+"Diese leere Zeile zeigt uns, dass keine weiteren Response Header folgen und "
+"dass der Rest der Response Body ist."
+
+# dea52d9315824de08ab4acced1515389
+#: ../../../src/intro/api.rst:314
+msgid "We've seen this before."
+msgstr "Das haben wir schon mal gesehen."
+
+# 88017114ca174f5498c92a281b2ba056
+#: ../../../src/intro/api.rst:321
+msgid "The last two lines are curl telling us that it kept the TCP connection it opened in the beginning open for a moment, but then closed it after it received the entire response."
+msgstr ""
+"Mit den letzen beiden Zeilen zeigt curl an, dass es die TCP Verbindung noch "
+"einen Moment offen gehalten hat, um sie dann nach Erhalt des vollständigen "
+"Response Bodys zu schließen."
+
+# e0ec7903ece9483db7a052e65808cd7e
+#: ../../../src/intro/api.rst:325
+msgid "Throughout the documents, we'll show more requests with the ``-v`` option, but we'll omit some of the headers we've seen here and include only those that are important for the particular request."
+msgstr ""
+"Wir werden später immer wieder Requests mit der ``-v`` Option zeigen, aber "
+"bestimmte Header, die wir hier gezeigt haben, weglassen und nur die "
+"wichtigen für den jeweiligen Request anzeigen."
+
+# f932ad8b5350423eb2e5d541d5cbb20d
+#: ../../../src/intro/api.rst:329
+msgid "Creating databases is all fine, but how do we get rid of one? Easy -- just change the HTTP method::"
+msgstr ""
+"Datenbanken anzulegen ist schön und gut, aber wie löschen wir eine? Ganz "
+"einfach -- Man ändert einfach die HTTP Methode::"
+
+# 54e21bf12802460c873d01fefcf81c3b
+#: ../../../src/intro/api.rst:334
+msgid "This deletes a CouchDB database. The request will remove the file that the database contents are stored in. There is no *\"Are you sure?\"* safety net or any *\"Empty the trash\"* magic you've got to do to delete a database. Use this command with care. Your data will be deleted without a chance to bring it back easily if you don't have a backup copy."
+msgstr ""
+"Damit löscht man eine CouchDB Datenbank. Der Request wird die Datei, in der "
+"die Datenbank gespeichert ist, sofort löschen. Es gibt keine *\"Sind Sie "
+"sicher?\"* Frage oder eine *\"Papierkorb-Logik\"* wenn wir eine Datenbank "
+"löschen. Das liegt in deiner Verantwortung und die Daten werden umgehend - "
+"und wenn du kein Backup hast - ohne eine Chance sie wieder zurück zu holen "
+"gelöscht."
+
+# 702085059c9e4657968f39255d9ab2fd
+#: ../../../src/intro/api.rst:340
+msgid "This section went knee-deep into HTTP and set the stage for discussing the rest of the core CouchDB API. Next stop: documents."
+msgstr ""
+"In diesem Abschnitt sind wir tief in HTTP eingestiegen und haben damit die "
+"Grundlage geschaffen um den Rest des Core APIs von CouchDB zu erklären. "
+"Nächste Haltestelle: Dokumente."
+
+# a266dc6c6a65406397741d6a77c4fa75
+#: ../../../src/intro/api.rst:345
+msgid "Documents"
+msgstr "Dokumente"
+
+# 3bd2a83e0e3e47f0b05645ceb14ece9b
+#: ../../../src/intro/api.rst:350
+msgid "Documents are CouchDB's central data structure. The idea behind a document is, unsurprisingly, that of a real-world document -- a sheet of paper such as an invoice, a recipe, or a business card. We already learned that CouchDB uses the JSON format to store documents. Let's see how this storing works at the lowest level."
+msgstr ""
+"Dokumente sind die zentrale Datenstruktur von CouchDB und die Idee dahinter "
+"ist die von realen Dokumenten auf Papier, wie eine Rechnung, ein Rezept oder "
+"eine Visitenkarte. Wir wissen bereits, dass CouchDB Dokumente im JSON Format "
+"speichert. Schauen wir wie die Speicherung auf der untersten Ebene "
+"funktioniert."
+
+# 3c22793e8125490999003e2b1b09bfa4
+#: ../../../src/intro/api.rst:356
+msgid "Each document in CouchDB has an *ID*. This ID is unique per database. You are free to choose any string to be the ID, but for best results we recommend a `UUID`_ (or `GUID`_), i.e., a Universally (or Globally) Unique IDentifier. UUIDs are random numbers that have such a low collision probability that everybody can make thousands of UUIDs a minute for millions of years without ever creating a duplicate. This is a great way to ensure two independent people cannot create two different documents with the same ID. Why should you care what somebody else is doing? For one, that somebody else could be you at a later time or on a different computer; secondly, CouchDB replication lets you share documents with others and using UUIDs ensures that it all works. But more on that later; let's make some documents::"
+msgstr ""
+"In CouchDB hat jedes Dokument eine *ID*, die innerhalb der jeweiligen "
+"Datenbank eindeutig ist. Du kannst jeden beliebigen String als ID nehmen, "
+"wir empfehlen jedoch `UUID`_ (or `GUID`_) - Universally (bzw. Globally) "
+"Unique Identifiers. UUIDs sind Zufallszahlen, die so eine geringe "
+"Kollisionswahrscheinlichkeit haben, dass man Tausende UUIDs pro Minute für "
+"Millionen von Jahren erzeugen kann, ohne jemals eine doppelt anzulegen. "
+"Damit kann man sicherzustellen, dass zwei Menschen, die unabhängig "
+"voneinander arbeiten, nicht verschiedene Dokumente mit der gleichen ID "
+"anlegen können. Doch warum sollte es einen überhaupt kümmern was andere "
+"Leute tun? Zum einen könntest du selbst diese andere Person sein - zu einem "
+"späteren Zeitpunkt oder an einem anderen Computer. Zum anderen kann man "
+"mithilfe der Replikation Dokumente mit anderen teilen und mit UUIDs stellt "
+"man sicher, dass alles funktioniert. Wir gehen später noch einmal genauer "
+"darauf ein. Zuerst legen wir ein paar Dokumente an::"
+
+# 00689cad6bee42e3942ceff159db53c8
+#: ../../../src/intro/api.rst:376
+msgid "The curl command appears complex, but let's break it down. First, ``-X PUT`` tells curl to make a :method:`PUT` request. It is followed by the URL that specifies your CouchDB IP address and port. The resource part of the URL ``/albums/6e1295ed6c29495e54cc05947f18c8af`` specifies the location of a document inside our albums database. The wild collection of numbers and characters is a UUID. This UUID is your document's ID. Finally, the ``-d`` flag tells curl to use the following string as the body for the :method:`PUT` request. The string is a simple JSON structure including ``title`` and ``artist`` attributes with their respective values."
+msgstr ""
+"Das curl Kommando sieht komplex aus, weshalb wir es Schritt für Schritt "
+"durchgehen. Durch ``-X PUT`` wird curl angewiesen, einen PUT Request zu "
+"machen. Anschließend folgt die URL, welche den Hostnamen oder die IP Adresse "
+"und den Port von CouchDB enthält. Die URI "
+"``/albums/6e1295ed6c29495e54cc05947f18c8af`` beschreibt die Position des "
+"Dokuments innerhalb der albums Datenbank. Die wilde Folge von Zahlen und "
+"Buchstaben ist eine UUID, welche die ID des Dokuments ist. Zum Schluß "
+"übegeben wir mit dem ``-d`` Parameter den Body des :method:`PUT` Requests. "
+"Der Body ist ein String, der eine einfache JSON Struktur inklusive der "
+"Attribute ``title`` und ``artist`` mit ihren jeweiligen Werten enthält."
+
+# ba616d35ee754ef69cac4d50c80d11d1
+#: ../../../src/intro/api.rst:389
+msgid "If you don't have a UUID handy, you can ask CouchDB to give you one (in fact, that is what we did just now without showing you). Simply send a :get:`/_uuids` request::"
+msgstr ""
+"Wenn du gerade keine UUID zur Hand hast, kannst du einfach CouchDB nach "
+"einer UUID fragen (de facto haben wir das gerade getan, ohne darauf "
+"hinzuweisen). Um eine UUID zu erzeugen sende einfach einen :get:`/_uuids` "
+"Request::"
+
+# babfa947ba294d4a909db4b7ab67ef35
+#: ../../../src/intro/api.rst:401
+msgid "Voilà, a UUID. If you need more than one, you can pass in the ``?count=10`` HTTP parameter to request 10 UUIDs, or really, any number you need."
+msgstr ""
+"Voilà, eine UUID. Brauchen wir mehr als eine, so können wir zum Beispiel "
+"``?count=10`` mit angeben, um 10 UUIDs zu erzeugen."
+
+# 2eb81c9188b34d8cb07f3425a143107c
+#: ../../../src/intro/api.rst:404
+msgid "To double-check that CouchDB isn't lying about having saved your document (it usually doesn't), try to retrieve it by sending a GET request::"
+msgstr ""
+"Um sicher zu gehen das CouchDB das Dokument auch wirklich gespeichert hat, "
+"versuchen wir es mit einem GET Request wieder zu laden::"
+
+# 0efea758c7ad4426be9918dc8d9df8d9
+#: ../../../src/intro/api.rst:409
+msgid "We hope you see a pattern here. Everything in CouchDB has an address, a URI, and you use the different HTTP methods to operate on these URIs."
+msgstr ""
+"Wir hoffen, dass du ein Muster erkennst: alles in CouchDB hat eine Adresse, "
+"eine sogenannte URI und man benutzt verschiedene HTTP Methoden um auf diesen "
+"URIs Operationen auszuführen."
+
+# 0212db5fad9f49b59bf993662b0a7549
+#: ../../../src/intro/api.rst:418
+msgid "This looks a lot like the document you asked CouchDB to save, which is good. But you should notice that CouchDB added two fields to your JSON structure. The first is ``_id``, which holds the UUID we asked CouchDB to save our document under. We always know the ID of a document if it is included, which is very convenient."
+msgstr ""
+"Das sieht wie das Dokument aus, das wir zuvor gespeichert haben, allerdings "
+"mit zwei zusätzlichen Feldern, die CouchDB zu unserer JSON Struktur "
+"hinzugefügt hat. Das erste Feld ist ``_id``, welches die UUID des Dokuments "
+"enthält. Das CouchDB Dokumente ihre ID als eigenes Attribut enthalten ist "
+"sehr praktisch."
+
+# 74802bb60d0545edb3cdc9c10dd57bee
+#: ../../../src/intro/api.rst:424
+msgid "The second field is ``_rev``. It stands for *revision*."
+msgstr ""
+"Das zweite Feld ist ``_rev``. Es bedeutet Revision oder auf Deutsch "
+"*Version*."
+
+# 543c5af0ec6b4442ad973c1b6542efce
+#: ../../../src/intro/api.rst:427
+msgid "Revisions"
+msgstr "Versionen"
+
+# 4d947d1c156c4fd3aadd4e013ae525ce
+#: ../../../src/intro/api.rst:429
+msgid "If you want to change a document in CouchDB, you don't tell it to go and find a field in a specific document and insert a new value. Instead, you load the full document out of CouchDB, make your changes in the JSON structure (or object, when you are doing actual programming), and save the entire new revision (or version) of that document back into CouchDB. Each revision is identified by a new ``_rev`` value."
+msgstr ""
+"Wenn man in CouchDB ein Dokument ändern möchte, so schickt man keinen "
+"Request um ein bestimmtes Feld in einem Dokument zu finden und dessen Wert "
+"zu ändern. Stattdessen lädt man das komplette Dokument, ändert die JSON "
+"Struktur (oder das Objekt, je nachdem in welcher Umgebung man gerade "
+"arbeitet) und speichert das Dokument als neue Version wieder in CouchDB. "
+"Jede Version hat einen eigenen neuen Wert für das ``_rev`` Attribut."
+
+# 1203955440e3423781aae41d28cc1493
+#: ../../../src/intro/api.rst:436
+msgid "If you want to update or delete a document, CouchDB expects you to include the ``_rev`` field of the revision you wish to change. When CouchDB accepts the change, it will generate a new revision number. This mechanism ensures that, in case somebody else made a change without you knowing before you got to request the document update, CouchDB will not accept your update because you are likely to overwrite data you didn't know existed. Or simplified: whoever saves a change to a document first, wins. Let's see what happens if we don't provide a ``_rev`` field (which is equivalent to providing a outdated value)::"
+msgstr ""
+"Um ein Dokument zu aktualisieren oder zu löschen muss man das ``_rev`` "
+"Attribut mit übergeben. Damit stellt CouchDB sicher, dass sich das Dokument "
+"in der Zwischenzeit nicht geändert hat. Stimmen die Versionsnummern nicht "
+"überein, wird CouchDB die Änderung oder das Löschen des Dokuments ablehnen. "
+"Wenn CouchDB die Änderung des Dokuments akzeptiert, dann weist es ihm eine "
+"neue Versionsnummer zu. Kurz gesagt, wer zuerst speichert gewinnt. Schauen "
+"wir was passiert, wenn wir kein ``_rev`` Attribut übergeben (was das Gleiche "
+"ist wie ein veralteter Wert)::"
+
+# 751a5da0eb8341c0aa0e495282ad036e
+#: ../../../src/intro/api.rst:454
+msgid "If you see this, add the latest revision number of your document to the JSON structure::"
+msgstr ""
+"Wenn dieser Fehler erscheint, dann muss die aktuelle Versionsnummer mit in "
+"die JSON Struktur::"
+
+# 30a2bd85d76a46aa82e10e4553316a9e
+#: ../../../src/intro/api.rst:460
+msgid "Now you see why it was handy that CouchDB returned that ``_rev`` when we made the initial request. CouchDB replies:"
+msgstr ""
+"Jetzt wird auch klar, warum CouchDB das ``_rev`` Attribut beim Anlegen des "
+"Dokuments zurückgegeben hat. CouchDB antwortet mit::"
+
+# ca741b7bd83b4c0bab67c247f75c2cff
+#: ../../../src/intro/api.rst:467
+msgid "CouchDB accepted your write and also generated a new revision number. The revision number is the *MD5 hash* of the transport representation of a document with an ``N-`` prefix denoting the number of times a document got updated. This is useful for replication. See :ref:`replication/conflicts` for more information."
+msgstr ""
+"CouchDB hat die Änderung akzeptiert und zugleich eine neue Versionsnummer "
+"erstellt. Die Versionsnummer ist der *MD5 Hashwert* der Transport "
+"Repräsentation(bessere Übersetzung) des Dokuments und einem ``N-`` Präfix, "
+"der angibt, wie oft das Dokument bereits aktualisiert wurde. Das wird uns "
+"bei der Replikation noch helfen. Mehr Infos gibt es in "
+":ref:`replication/conflicts`."
+
+# 5c9799b3e2a146c293e8fb15baef10c1
+#: ../../../src/intro/api.rst:473
+msgid "There are multiple reasons why CouchDB uses this revision system, which is also called Multi-Version Concurrency Control (`MVCC`_). They all work hand-in-hand, and this is a good opportunity to explain some of them."
+msgstr ""
+"Es gibt verschiedene Gründe, warum CouchDB dieses Versionierungsschema "
+"nutzt, dass man auch Multi-Version Concurrency Control (`MVCC`_) nennt. Sie "
+"greifen alle ineinander und jetzt ist ein guter Zeitpunkt, einige davon "
+"etwas genauer zu erklären."
+
+# ad46f1afee7d4e768537e60a036eb591
+#: ../../../src/intro/api.rst:479
+msgid "One of the aspects of the HTTP protocol that CouchDB uses is that it is stateless. What does that mean? When talking to CouchDB you need to make requests. Making a request includes opening a network connection to CouchDB, exchanging bytes, and closing the connection. This is done every time you make a request. Other protocols allow you to open a connection, exchange bytes, keep the connection open, exchange more bytes later -- maybe depending on the bytes you exchanged at the beginning -- and eventually close the connection. Holding a connection open for later use requires the server to do extra work. One common pattern is that for the lifetime of a connection, the client has a consistent and static view of the data on the server. Managing huge amounts of parallel connections is a significant amount of work. HTTP connections are usually short-lived, and making the same guarantees is a lot easier. As a result, CouchDB can handle many more concurrent connections."
+msgstr ""
+"Einer der wichtigsten Aspekte des HTTP Protokolls, das CouchDB benutzt, ist, "
+"dass es zustandslos (stateless) ist. Was bedeutet das? Wenn man mit CouchDB "
+"spricht, so verschickt man Requests. Dazu muss man eine Netzwerkverbindung "
+"öffnen, Daten in eine oder beide Richtungen übertragen und die Verbindung "
+"wieder schließen. Jeder Request ist in sich abgeschlossen und trifft keine "
+"Annahmen darüber, in welchem Zustand sich der Server gerade befindet. "
+"Sämtliche Daten, die zur Bearbeitung des Requests benötigt werden, sind in "
+"dem Request enthalten und der Server vergisst den Request sofort nachdem er "
+"geschlossen wurde. Andere Protokolle dagegen erlauben es eine Verbindung "
+"über einen längeren Zeitraum offen zu halten, um immer mal wieder Daten "
+"auszutauschen und nicht ständig eine Verbindung auf- und abzubauen. Dabei "
+"merken sich Client und Server, welche Daten bereits über diese Verbindung "
+"verschicht wurden -- sie merken sich den Zustand der Verbindung (stateful). "
+"Wenn der Client den Zustand kennt, kann er sich anders verhalten, als wenn "
+"er das nicht weiß. Er kann zum Beispiel immer nur die Unterschiede zwischen "
+"Dokumenten verschicken oder den Modus auf dem Server ändern (z.B. \"Beginne "
+"das Bearbeiten von Dokument\", \"Bearbeite Dokument\", \"Beende das "
+"Bearbeiten von Dokument\"). Das bedeutet jedoch für den Server sehr viel "
+"Mehrarbeit, da er sich für jede offene Verbindung den Zustand merken muss. "
+"Zusätzlich dazu ist die Verwaltung der offenen Verbindungen zu vielen "
+"verschiedenen Clients eine signifikante Last für den Server. HTTP "
+"Verbindungen sind dagegen meist von kurzer Dauer und erlauben CouchDB so "
+"mehr parallele Requests von vielen verschiedenen Clients zu beantworten."
+
+# 92c65ac97edc4ebba894a218e07d3e4b
+#: ../../../src/intro/api.rst:493
+msgid "Another reason CouchDB uses MVCC is that this model is simpler conceptually and, as a consequence, easier to program. CouchDB uses less code to make this work, and less code is always good because the ratio of defects per lines of code is static."
+msgstr ""
+"Ein anderer Grund für die Benutzung von MVCC ist, dass diese Modell vom "
+"Konzept her einfacher ist und somit auch leichter zu programmieren ist. "
+"CouchDB benötigt weniger Code um das umzusetzen und weniger Code ist immer "
+"gut, da das Verhältnis von Fehlern zu Codezeilen konstant ist."
+
+# 7418f10ffbff4fdd927e3e5da88c3e7c
+#: ../../../src/intro/api.rst:498
+msgid "The revision system also has positive effects on replication and storage mechanisms, but we'll explore these later in the documents."
+msgstr ""
+"Die Versionierung von Dokumenten erleichtert auch die Replikation und die "
+"Speicherung der Dokumente in der Datenbank, doch dazu später mehr."
+
+# 4166292385734095b009a5d48d996697
+#: ../../../src/intro/api.rst:503
+msgid "The terms *version* and *revision* might sound familiar (if you are programming without version control, stop reading this guide right now and start learning one of the popular systems). Using new versions for document changes works a lot like version control, but there's an important difference: **CouchDB does not guarantee that older versions are kept around**."
+msgstr ""
+"Der Begriff *Version* und *Revision* sollte dir bekannt vorkommen (wenn du "
+"bisher ohne Versionsverwaltung entwickelst, lege diese Anleitung sofort "
+"beiseite und lerne mit einem der gängigen Versionskontrollsysteme umzugehen)"
+". Neue Versionen von Dokumenten anzulegen ist sehr ähnlich zu "
+"Versionskontrollsystemen, doch es gibt einen entscheidenden Unterschied: **"
+"CouchDB garantiert nicht, dass alte Versionen immer verfügbar sind**."
+
+# 538db6cbdc0d468ea1041ace003a7ed8
+#: ../../../src/intro/api.rst:511
+msgid "Documents in Detail"
+msgstr "Dokumente im Detail"
+
+# 5005a903ddb14f42bde0cd53e16baa1b
+#: ../../../src/intro/api.rst:513
+msgid "Now let's have a closer look at our document creation requests with the curl ``-v`` flag that was helpful when we explored the database API earlier. This is also a good opportunity to create more documents that we can use in later examples."
+msgstr ""
+"Schauen wir uns den Request zum Anlegen eines Dokuments mit curl und der "
+"``-v`` Option noch einmal genauer an. Dabei können wir auch gleich noch ein "
+"paar weitere Dokumente anlegen, die wir in späteren Beispielen benötigen "
+"werden."
+
+# 76116a7901eb433995943e470249af00
+#: ../../../src/intro/api.rst:518
+msgid "We'll add some more of our favorite music albums. Get a fresh UUID from the ``/_uuids`` resource. If you don't remember how that works, you can look it up a few pages back."
+msgstr ""
+"Wir fügen ein paar mehr unserer Lieblingsalben in die Datenbank ein. Dazu "
+"holen wir uns eine neue UUID von der ``/_uuids`` Ressource. Falls du nicht "
+"mehr weißt, wie das geht, blättere einfach ein paar Seiten zurück."
+
+# 95803196994f4ba9b273051dc8b1bf22
+#: ../../../src/intro/api.rst:529
+msgid "By the way, if you happen to know more information about your favorite albums, don't hesitate to add more properties. And don't worry about not knowing all the information for all the albums. CouchDB's schema-less documents can contain whatever you know. After all, you should relax and not worry about data."
+msgstr ""
+"Falls du mehr Details zu deinen Lieblingsalben kennst, füge einfach weitere "
+"Attribute hinzu. Mache dir auch keine Sorgen darum, wenn du im Moment noch "
+"nicht alle Informationen über die Alben hast. Die schema-freien Dokumente "
+"von CouchDB können enthalten was auch immer man möchte. Schließlich sollst "
+"du dich entspannen und keine Sorgen um Daten machen."
+
+# 58abcd1190a942c6861e3be885c8de13
+#: ../../../src/intro/api.rst:535
+msgid "Now with the ``-v`` option, CouchDB's reply (with only the important bits shown) looks like this::"
+msgstr ""
+"Mit der ``-v`` Option sieht die Antwort von CouchDB wie folgt aus ("
+"unwichtige Details haben wir dabei ausgeblendet)::"
+
+# 290fd492ad4c494180c446318fff06a8
+#: ../../../src/intro/api.rst:546
+msgid "We're getting back the :statuscode:`201` HTTP status code in the response headers, as we saw earlier when we created a database. The :header:`Location` header gives us a full URL to our newly created document. And there's a new header. An :header:`ETag` in HTTP-speak identifies a specific version of a resource. In this case, it identifies a specific version (the first one) of our new document. Sound familiar? Yes, conceptually, an :header:`ETag` is the same as a CouchDB document revision number, and it shouldn't come as a surprise that CouchDB uses revision numbers for ETags. ETags are useful for caching infrastructures."
+msgstr ""
+"CouchDB antwortet mit dem HTTP Status Code :statuscode:`201` Created, "
+"genauso als wenn wir eine Datenbank anlegen. Der :header:`Location` Header "
+"enthält die komplette URL zu unserem Dokument -- und dann ist da noch ein "
+"neuer Etag Header: Im HTTP Kauderwelsch ist ein :header:`ETag` eine "
+"bestimmte Version einer Ressource. In diesem Fall ist es eine bestimmte "
+"Version (die erste) unseres Dokuments. Das kommt einem irgendwie bekannt "
+"vor, oder? Ein :header:`ETag` ist vom Konzept her das Gleiche wie die "
+"Versionsnummer für CouchDB Dokumente und es ist daher auch nicht "
+"überraschend, dass CouchDB die Revisionsnummern für den Etag Header benutzt. "
+"Etags sind sinnvoll für Caching Systeme."
+
+# 7df52aa70ea34324a582b91de93d1078
+#: ../../../src/intro/api.rst:558
+msgid "Attachments"
+msgstr "Anhänge"
+
+# 0bdd47792d524c58b3937918e6b306db
+#: ../../../src/intro/api.rst:560
+msgid "CouchDB documents can have attachments just like an email message can have attachments. An attachment is identified by a name and includes its MIME type (or :header:`Content-Type`) and the number of bytes the attachment contains. Attachments can be any data. It is easiest to think about attachments as files attached to a document. These files can be text, images, Word documents, music, or movie files. Let's make one."
+msgstr ""
+"CouchDB Dokumente können Anhänge haben genau wie eine E-Mail Anhänge haben "
+"kann. Ein Anhang wird durch einen Namen und einen MIME Type (oder :header"
+":`Content-Type`) sowie die Größe des Anhangs in Bytes beschrieben. Anhänge "
+"können beliebige Daten enthalten. Am einfachsten stellt man sich Anhänge als "
+"Dateien vor, die zu dem Dokument gehören. Das können Texte oder Bilder sein, "
+"Word Dokumente, Musik, Filme, etc. Legen wir mal einen an."
+
+# b2cf75e177624419a94a5d88254fd787
+#: ../../../src/intro/api.rst:567
+msgid "Attachments get their own URL where you can upload data. Say we want to add the album artwork to the ``6e1295ed6c29495e54cc05947f18c8af`` document (*\"There is Nothing Left to Lose\"*), and let's also say the artwork is in a file artwork `.jpg` in the current directory::"
+msgstr ""
+"Anhänge bekommen eine eigene URL wenn man sie hochlädt. Angenommen wir "
+"möchten das Album Cover zu dem Dokument mit der ID "
+"``6e1295ed6c29495e54cc05947f18c8af`` (*\"There is Nothing Left to Lose\"*) "
+"hinzufügen und das Cover Bild ist in der Datei `artwork.jpg` in dem "
+"aktuellen Verzeichnis, in dem wir uns befinden::"
+
+# f30e517793ad47bfa74b7699f5ca0f75
+#: ../../../src/intro/api.rst:577
+msgid "The ``--data-binary`` ``@`` option tells curl to read a file's contents into the HTTP request body. We're using the ``-H`` option to tell CouchDB that we're uploading a JPEG file. CouchDB will keep this information around and will send the appropriate header when requesting this attachment; in case of an image like this, a browser will render the image instead of offering you the data for download. This will come in handy later. Note that you need to provide the current revision number of the document you're attaching the artwork to, just as if you would update the document. Because, after all, attaching some data is changing the document."
+msgstr ""
+"Mit der ``--data-binary`` ``@`` Option sagen wir curl den Inhalt einer Datei "
+"im HTTP Request Body zu verschicken. Mit der ``-H`` Option sagen wir "
+"CouchDB, dass wir ein JPEG hochladen. CouchDB merkt sich das und wird "
+"entsprechende Header in die Antwort schreiben, wenn der Anhang wieder "
+"gelesen wird. Im Falle dieses Bildes wird der Browser das Bild anzeigen "
+"anstatt anzubieten, die Datei zu speichern. Das wird später noch nützlich "
+"sein. Achte darauf, dass wir die aktuelle Versionsnummer zum Request "
+"hinzugefügt haben, genauso als wenn wir das Dokument selber aktualisieren "
+"würden. Letztendlich ändert das Hinzufügen eines Anhangs das Dokument."
+
+# 6b7625d2adcc4cdf9f6e8e7171adea60
+#: ../../../src/intro/api.rst:587
+msgid "You should now see your artwork image if you point your browser to http://127.0.0.1:5984/albums/6e1295ed6c29495e54cc05947f18c8af/artwork.jpg"
+msgstr ""
+"Wenn du mit deinem Browser auf "
+"http://127.0.0.1:5984/albums/6e1295ed6c29495e54cc05947f18c8af/artwork.jpg "
+"gehst, sollte das Bild angezeigt werden."
+
+# 6753b9c14d1745d786f0bf20721152fa
+#: ../../../src/intro/api.rst:590
+msgid "If you request the document again, you'll see a new member::"
+msgstr "Wenn man das Dokument wieder abruft, enthält es ein neues Attribut::"
+
+# b25c2361f4b04add92faa3f6c8150304
+#: ../../../src/intro/api.rst:613
+msgid "``_attachments`` is a list of keys and values where the values are JSON objects containing the attachment metadata. ``stub=true`` tells us that this entry is just the metadata. If we use the ``?attachments=true`` HTTP option when requesting this document, we'd get a `Base64`_ encoded string containing the attachment data."
+msgstr ""
+"Das ``_attachments`` Attribut ist eine Liste von Key/Value Paaren, deren "
+"Werte JSON Objekte mit den Metadaten der Anhänge sind. ``stub=true`` sagt "
+"uns, dass der Eintrag nur aus Metadaten besteht. Fügen wir dem HTTP Request "
+"``?attachments=true`` hinzu, so bekommen wir einen `Base64`_ kodierten "
+"String mit den Daten des Anhangs."
+
+# d4e5118b0eda417dad30e59de3d7eef1
+#: ../../../src/intro/api.rst:621
+msgid "We'll have a look at more document request options later as we explore more features of CouchDB, such as replication, which is the next topic."
+msgstr ""
+"Wir werden später noch weitere Requests für Dokumente sehen, wenn wir uns "
+"weitere Funktionen von CouchDB näher ansehen. Wie beispielsweise die "
+"Replikation, die unser nächstes Thema ist."
+
+# 0130cd36e54e443f8f2fedca4dde78c0
+#: ../../../src/intro/api.rst:626
+msgid "Replication"
+msgstr "Replikation"
+
+# d9ab8d5e244f4c1696cd87db0fca7272
+#: ../../../src/intro/api.rst:628
+msgid "CouchDB replication is a mechanism to synchronize databases. Much like `rsync`_ synchronizes two directories locally or over a network, replication synchronizes two databases locally or remotely."
+msgstr ""
+"Die Replikation in CouchDB ist ein Mechanismus, um Datenbanken zu "
+"synchronisieren. Ähnlich wie mit `rsync`_ zwei Verzeichnisse lokal oder über "
+"ein Netzwerk synchronisiert werden können, synchronisiert die Replikation in "
+"CouchDB zwei Datenbanken entweder lokal oder über ein Netzwerk."
+
+# ac682a9a20804bea93e334f9ab47ca04
+#: ../../../src/intro/api.rst:634
+msgid "In a simple :method:`POST` request, you tell CouchDB the *source* and the *target* of a replication and CouchDB will figure out which documents and new document revisions are on *source* that are not yet on *target*, and will proceed  to move the missing documents and revisions over."
+msgstr ""
+"Mit einem einfachen :method:`POST` Request teilt man CouchDB die *Quelle* "
+"(source) und das *Ziel* (target) der Replikation mit. CouchDB findet "
+"anschließend heraus, welche Dokumente und neue Versionen von Dokumenten in "
+"der Quelldatenbank existieren, aber nicht in der Zieldatenbank vorhanden "
+"sind und wird beginnen, die fehlenden Dokumente und Versionen zu kopieren."
+
+# d867aa18a125463e88e7765ec36d4288
+#: ../../../src/intro/api.rst:639
+msgid "We'll take an in-depth look at replication in the document :ref:`replication/intro`; in this document, we'll just show you how to use it."
+msgstr ""
+"Wir gehen auf die Replikation in :ref:`replication/intro` noch genauer ein. "
+"In diesem Kapitel zeigen wir lediglich, wie man sie benutzt."
+
+# 425daa6edca244de894ca794348e5340
+#: ../../../src/intro/api.rst:642
+msgid "First, we'll create a target database. Note that CouchDB won't automatically create a target database for you, and will return a replication failure if the target doesn't exist (likewise for the source, but that mistake isn't as easy to make)::"
+msgstr ""
+"Zunächst erzeugt man eine Zieldatenbank. Beachte, dass CouchDB nicht "
+"automatisch eine Zieldatenbank für uns anlegt und einen Fehler meldet, wenn "
+"das Ziel nicht existiert. (Das gleiche gilt auch für die Quelle, aber diesen "
+"Fehler zu machen ist nicht ganz so einfach)::"
+
+# ef87093b8ff14b2ca1c6a51b6310f368
+#: ../../../src/intro/api.rst:649
+msgid "Now we can use the database `albums-replica` as a replication target::"
+msgstr ""
+"Ab jetzt können wir die Datenbank `albums-replica` als Ziel einer "
+"Replikation benutzen::"
+
+# 8f7f03be1e4b4754a1538b36eee6e96c
+#: ../../../src/intro/api.rst:657
+msgid "CouchDB supports the option ``\"create_target\":true`` placed in the JSON POSTed to the :ref:`_replicate <api/server/replicate>` URL. It implicitly creates the target database if it doesn't exist."
+msgstr ""
+"Wenn wir ``\"create_target\":true`` im JSON von unserem POST Request an "
+":ref:`_replicate <api/server/replicate>` mitsenden wird CouchDB die "
+"Zieldatenbank erzeugen, falls sie noch nicht existiert."
+
+# abb2935f0e2848f6884159830fdc3d08
+#: ../../../src/intro/api.rst:661
+msgid "CouchDB replies (this time we formatted the output so you can read it more easily):"
+msgstr ""
+"CouchDB antwortet mit (diesmal haben wir die Ausgabe formatiert, sodass man "
+"sie besser lesen kann):"
+
+# 10d5c239978842ad88b75c10b5dd3556
+#: ../../../src/intro/api.rst:685
+msgid "CouchDB maintains a *session history* of replications. The response for a replication request contains the history entry for this *replication session*. It is also worth noting that the request for replication will stay open until replication closes. If you have a lot of documents, it'll take a while until they are all replicated and you won't get back the replication response until all documents are replicated. It is important to note that replication replicates the database only as it was at the point in time when replication was started. So, any additions, modifications, or deletions subsequent to the start of replication will not be replicated."
+msgstr ""
+"CouchDB verwaltet eine *Session Historie* der Replikationen. Die Antwort auf "
+"einen Replication Request enthält die Historie dieser *Replikationssession*. "
+"Zu beachten ist, dass der Request für die Replikation erst beantwortet wird, "
+"wenn die Replikation abgeschlossen ist. Bis dahin bleibt die Verbindung "
+"offen. Wenn Ihre Datenbank viele Dokumente hat, wird es eine Weile dauern, "
+"bis alle kopiert wurden und du erhälst keine Antwort, bis dieser Vorgang "
+"vollständig abgeschlossen ist. Des weiteren ist es wichtig zu wissen, dass "
+"die Datenbank nur bis zu dem Punkt repliziert wird, an dem sie zu Beginn der "
+"Replikation war. Alle Veränderungen, die nach Beginn der Replikation "
+"erfolgen, werden nicht mit repliziert."
+
+# e61fefbbb85f4c0b94595478f7189f8b
+#: ../../../src/intro/api.rst:695
+msgid "We'll punt on the details again -- the ``\"ok\": true`` at the end tells us all went well. If you now have a look at the albums-replica database, you should see all the documents that you created in the albums database. Neat, eh?"
+msgstr ""
+"Wir überspringen die Details noch einmal, denn ``\"ok\": true`` am Ende sagt "
+"uns, das die Replikation erfolgreich war. Wenn man anschließend auf die "
+"albums-replica Datenbank schaut, sollten alle Dokumente, die in der albums "
+"Datenbank vorhanden sind ebenfalls vorhanden sein. Nett, oder?"
+
+# 628ee922dcc94a1b8b13209b366d69ba
+#: ../../../src/intro/api.rst:700
+msgid "What you just did is called local replication in CouchDB terms. You created a local copy of a database. This is useful for backups or to keep snapshots of a specific state of your data around for later. You might want to do this if you are developing your applications but want to be able to roll back to a stable version of your code and data."
+msgstr ""
+"Was wir gerade gemacht haben nennt man in CouchDB eine lokale Replikation. "
+"Wir haben eine lokale Kopie einer Datenbank angelegt. Das ist hilfreich für "
+"Backups oder um Snapshots von bestimmten Zuständen der Datenbank für später "
+"aufzuheben. Es kann auch während der Entwicklung von Anwendungen nützlich "
+"sein, um gegebenenfalls einen Rollback auf eine stabile Version von Code und "
+"Daten durchzuführen."
+
+# 65ac209f708e4451a7ca0599267aa81d
+#: ../../../src/intro/api.rst:706
+msgid "There are more types of replication useful in other situations. The source and target members of our replication request are actually links (like in HTML) and so far we've seen links relative to the server we're working on (hence local). You can also specify a remote database as the target::"
+msgstr ""
+"Es gibt noch weitere Arten der Replikation, die in anderen Situationen "
+"sinnvoll sind. Die source und target Parameter in unserem "
+"Replikationsrequest sind Links (genau wie in HTML) und bis jetzt haben wir "
+"nur relative Links verwendet, die relativ zu dem Server sind, auf dem wir "
+"gerade arbeiten (deshalb auch lokale Replikation). Man kann aber auch eine "
+"entfernte Datenbank als Ziel angeben::"
+
+# d64be9d2d3e540f0aaff600c4d0a42a6
+#: ../../../src/intro/api.rst:715
+msgid "Using a *local source* and a *remote target* database is called *push replication*. We're pushing changes to a remote server."
+msgstr ""
+"Verwendet man eine lokale Datenbank als *source* und eine entfernte "
+"Datenbank als *target*, dann nennt man das *Push Replikation*, weil die "
+"Änderungen auf den entfernten Server geschoben werden."
+
+# a29d7e92cacf4308abf71efaf2ac764b
+#: ../../../src/intro/api.rst:720
+msgid "Since we don't have a second CouchDB server around just yet, we'll just use the absolute address of our single server, but you should be able to infer from this that you can put any remote server in there."
+msgstr ""
+"Da wir im Moment keinen zweiten CouchDB Server zur Verfügung haben, nutzen "
+"wir für die Beispiele die absolute Adresse unseres Servers, aber es sollte "
+"klar sein, dass wir hier jeden beliebigen entfernten CouchDB Server nutzen "
+"könnten."
+
+# 0a8b403ca4a54673b8c753c55da45c49
+#: ../../../src/intro/api.rst:724
+msgid "This is great for sharing local changes with remote servers or buddies next door."
+msgstr ""
+"Das ist sehr praktisch um lokale Änderungen mit entfernten Servern zu teilen "
+"-- und sei es auch nur mit dem des Kumpels von nebenan."
+
+# dc5cdbc3c35b460b9844dc373c02ae6d
+#: ../../../src/intro/api.rst:727
+msgid "You can also use a *remote source* and a *local target* to do a *pull replication*. This is great for getting the latest changes from a server that is used by others::"
+msgstr ""
+"Eine weitere Form der Replikation ist eine *entfernte source* und ein *"
+"lokales target*. In dem Fall führt man eine *Pull Replikation* durch. Damit "
+"lassen sich gut die Änderungen eines entfernten Server, der von anderen "
+"gepflegt wird, auf den eigenen Server kopieren::"
+
+# db319f33ec794222a16cf284d5d836d2
+#: ../../../src/intro/api.rst:735
+msgid "Finally, you can run remote replication, which is mostly useful for management operations::"
+msgstr ""
+"Letztendlich kann man auch noch eine Remote Replikation starten, die "
+"hauptsächlich für Management Aufgaben eingesetzt wird::"
+
+# 484f4b1635654546bf6449ac7ff91c71
+#: ../../../src/intro/api.rst:744
+msgid "**CouchDB and REST**"
+msgstr "**CouchDB und REST**"
+
+# 9151b44bb41c4227b880963a88c29a62
+#: ../../../src/intro/api.rst:746
+msgid "CouchDB prides itself on having a `RESTful`_ API, but these replication requests don't look very RESTy to the trained eye. What's up with that? While CouchDB's core database, document, and attachment API are RESTful, not all of CouchDB's API is. The replication API is one example. There are more, as we'll see later in the documents."
+msgstr ""
+"CouchDB ist stolz darauf, ein `RESTful`_ API zu haben, doch diese "
+"Replikations Requests sehen für REST Profis nicht sehr REST-mäßig aus. Warum "
+"ist das so? Obwohl das Core API für Datenbanken, Dokumente und Anhänge "
+"RESTful ist, so gilt das nicht für alle Bereiche des CouchDB APIs. Das API "
+"für die Replikation ist ein Beispiel und wir werden später noch weitere in "
+"den Dokumenten sehen."
+
+# b485b23460fd4deba94ebaa002bf0aee
+#: ../../../src/intro/api.rst:752
+msgid "Why are there RESTful and non-RESTful APIs mixed up here? Have the developers been too lazy to go REST all the way? Remember, REST is an architectural style that lends itself to certain architectures (such as the CouchDB document API). But it is not a one-size-fits-all. Triggering an event like replication does not make a whole lot of sense in the REST world. It is more like a traditional remote procedure call. And there is nothing wrong with this."
+msgstr ""
+"Warum existieren RESTful und nicht RESTful APIs nebeneinander? Waren die "
+"Entwickler zu faul REST wirklich konsequent umzusetzen? REST ist ein "
+"Architektur Stil, der zu bestimmten Architekturen führt, wie zum Beispiel "
+"dem CouchDB API für Dokumente. Doch es ist keine eierlegende Wollmilchsau. "
+"Das Auslösen eines Events ergibt unter REST wenig Sinn, denn es ist viel "
+"eher ein traditioneller Remote Procedure Call -- und ist nichts Schlimmes "
+"dran."
+
+# 8a5bf17e600c43aba901459c8b886ce4
+#: ../../../src/intro/api.rst:760
+msgid "We very much believe in the \"use the right tool for the job\" philosophy, and REST does not fit every job. For support, we refer to Leonard Richardson and Sam Ruby who wrote `RESTful Web Services`_ (O'Reilly), as they share our view."
+msgstr ""
+"Wir glauben das es wichtig ist, das richtige Werkzeug für den Job "
+"einzusetzen und REST ist kein Werkzeug für jeden Job. Zur Unterstützung "
+"möchten wir an dieser Stelle Leonard Richardson und Sam Ruby zitieren, die `"
+"RESTful Web Services`_ (O'Reilly) geschrieben haben und unsere Ansichten "
+"teilen."
+
+# 59adebb067b74fe9ae487cfe7ab5664a
+#: ../../../src/intro/api.rst:770
+msgid "Wrapping Up"
+msgstr "Zusammenfassung"
+
+# dd93e98f6cdc4c69802c3ffcaec5fcb3
+#: ../../../src/intro/api.rst:772
+msgid "This is still not the full CouchDB API, but we discussed the essentials in great detail. We're going to fill in the blanks as we go. For now, we believe you're ready to start building CouchDB applications."
+msgstr ""
+"Wir haben immer noch nicht das vollständige CouchDB API vorgestellt, sind "
+"jedoch einen Schritt weiter gekommen und tief in die Details eingestiegen. "
+"Die Lücken werden wir später füllen. Im Moment solltest Du soweit gerüstet "
+"sein, dass Du anfangen kannst, mit CouchDB Anwendungen zu schreiben."
+
+# 1aedc3688b7b4b5f9415c00aa11ba81d
+#: ../../../src/intro/api.rst:778
+msgid ":ref:`Complete HTTP API Reference <api>`:"
+msgstr ":ref:`Vollständige HTTP API Reference <api>`:"
+
+# 916abe5aef474c32ba24a4e9b19d07f1
+#: ../../../src/intro/api.rst:780
+msgid ":ref:`Server API Reference <api/server>`"
+msgstr ":ref:`Server API Reference <api/server>`"
+
+# 9e37fbc0474b44dabaaebe79a6e3f510
+#: ../../../src/intro/api.rst:781
+msgid ":ref:`Database API Reference <api/database>`"
+msgstr ":ref:`Database API Reference <api/database>`"
+
+# 5909c3569cf84745a3699cfb3e61d092
+#: ../../../src/intro/api.rst:782
+msgid ":ref:`Document API Reference <api/document>`"
+msgstr ":ref:`Document API Referenz <api/document>`"
+
+# 66f88426fc2f439daaec8e9bde649feb
+#: ../../../src/intro/api.rst:783
+msgid ":ref:`Replication API <api/server/replicate>`"
+msgstr ":ref:`Replikations API <api/server/replicate>`"

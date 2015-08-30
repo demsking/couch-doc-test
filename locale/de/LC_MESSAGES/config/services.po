@@ -1,0 +1,97 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 3d74f63688484cd7a5bc2955a712ad80
+#: ../../../src/config/services.rst:17
+msgid "CouchDB Internal Services"
+msgstr ""
+
+# fac18ebb3ca5439faa4c5ba4d3dc54e9
+#: ../../../src/config/services.rst:23
+msgid "CouchDB Daemonized Mini Apps"
+msgstr ""
+
+# d133afe16b4c4900a8011aa6a6d13e5a
+#: ../../../src/config/services.rst:30
+msgid "This daemon provides authentication caching to avoid repeated opening and closing of the `_users` database for each request requiring authentication::"
+msgstr ""
+
+# 0b2704e5f679453188afb604ce55e6df
+#: ../../../src/config/services.rst:40
+msgid ":ref:`Automatic compaction <config/compactions>` daemon::"
+msgstr ""
+
+# 77b1e40ce24c4bfaab9d377a95a8bd7a
+#: ../../../src/config/services.rst:49
+msgid "`External` processes manager::"
+msgstr ""
+
+# 85f94a337ea14b1d948ef7be63880e6d
+#: ../../../src/config/services.rst:58
+msgid "HTTP server daemon::"
+msgstr ""
+
+# bcd3d397db43469d96f1acdadea6edb1
+#: ../../../src/config/services.rst:67
+msgid "Provides :ref:`SSL support <config/ssl>`. The default ssl port CouchDB listens on is `6984`::"
+msgstr ""
+
+# ec16affa919a443c994457d85eed22cf
+#: ../../../src/config/services.rst:78
+msgid "The `couch_index` application is responsible for managing all of the different types of indexers. This manages the process handling for keeping track of the index state as well as managing the updater and compactor handling::"
+msgstr ""
+
+# e7f791a97ae0417792de70971c84275e
+#: ../../../src/config/services.rst:90
+msgid ":ref:`OS Daemons <config/os_daemons>` manager::"
+msgstr ""
+
+# 11bc43d9c568482fad94a3289f66364e
+#: ../../../src/config/services.rst:99
+msgid ":ref:`Query servers <config/query_servers>` manager::"
+msgstr ""
+
+# 9032ae0d930f47128cc1a86f96804e5d
+#: ../../../src/config/services.rst:108
+msgid "Replications manager::"
+msgstr ""
+
+# dc2e0a66c7ad4de6938bd78da98df5ea
+#: ../../../src/config/services.rst:117
+msgid "Runtime statistics aggregator::"
+msgstr ""
+
+# 8cdbe3ad9a5646b68dbcf738c3cde8cb
+#: ../../../src/config/services.rst:126
+msgid "Runtime statistics collector::"
+msgstr ""
+
+# fe7ecf88bd0948e1b1461e717f72d888
+#: ../../../src/config/services.rst:135
+msgid ":ref:`UUIDs <config/uuids>` generator daemon::"
+msgstr ""
+
+# b3249deba45f465fb3be5de07fb1c541
+#: ../../../src/config/services.rst:144
+msgid ":ref:`Virtual hosts <config/vhosts>` manager. Provides dynamic add of vhosts without restart, wildcards support and dynamic routing via pattern matching ::"
+msgstr ""

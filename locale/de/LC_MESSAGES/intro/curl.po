@@ -1,0 +1,116 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-02-23 01:26+0000\n"
+"Last-Translator: Robert <rok@kowalski.gd>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1393118811.000000\n"
+
+# 43d42dbd6f244fca8de1ff5c9fef047c
+#: ../../../src/intro/curl.rst:17
+msgid "cURL: Your Command Line Friend"
+msgstr "cURL: Der freundliche Helfer für die Kommandozeile"
+
+# 4f095b6a0f434baca6ac40175e8822a1
+#: ../../../src/intro/curl.rst:19
+msgid "The ``curl`` utility is a command line tool available on Unix, Linux, Mac OS X and Windows and many other platforms. ``curl`` provides easy access to the HTTP protocol (among others) directly from the command-line and is therefore an ideal way of interacting with CouchDB over the HTTP REST API."
+msgstr ""
+"Das ``curl`` Programm ist ein Kommandozeilenprogramm, dass es für Unix, "
+"Linux, Mac OS X, Windows und viele weitere Plattformen gibt. ``curl`` bietet "
+"einen einfachen Zugriff auf das HTTP Protokoll (neben anderen) von der "
+"Kommandozeile aus und ist optimal dafür geeignet mit CouchDB über die HTTP "
+"REST API zu interagieren."
+
+# c8f41ef17f1b441ba8257625134859b4
+#: ../../../src/intro/curl.rst:25
+msgid "For simple ``GET`` requests you can supply the URL of the request. For example, to get the database information:"
+msgstr ""
+"Um einen einfachen ``GET`` Requests durchzuführen gibt man einfach die URL "
+"für den Request an. Zum Beispiel bekommt man so Informationen zur Datenbank:"
+
+# 92addfd4b68b4e93a4264edb1f088a7a
+#: ../../../src/intro/curl.rst:32
+msgid "This returns the database information (formatted in the output below for clarity):"
+msgstr ""
+"Damit bekommen wir die Informationen zur Datenbank zurück (in der Ausgabe "
+"unten zur besseren Übersicht formatiert):"
+
+# 3262db2c2f2842fab416d11bfd25d561
+#: ../../../src/intro/curl.rst:48
+msgid "For some URLs, especially those that include special characters such as ampersand, exclamation mark, or question mark, you should quote the URL you are specifying on the command line. For example:"
+msgstr ""
+"URLs die Sonderzeichen enthalten wie das Und-Zeichen (&), Ausrufezeichen (!)"
+", Fragezeichen (?) sollten bei der Eingabe mit Anführungszeichen versehen "
+"werden. Zum Beispiel:"
+
+# af359b2e62a842398d63b4a2b2798b55
+#: ../../../src/intro/curl.rst:56
+msgid "You can explicitly set the HTTP command using the ``-X`` command line option. For example, when creating a database, you set the name of the database in the URL you send using a PUT request:"
+msgstr ""
+"Mit der Option ``-X`` kann das HTTP-Kommando geändert werden. Zum Beispiel "
+"sendet man beim Anlegen einer Datenbank den Namen der Datenbank im PUT "
+"Request mit."
+
+# c4c4f4df275f42fbb0e8861c6daa453b
+#: ../../../src/intro/curl.rst:65
+msgid "But to obtain the database information you use a ``GET`` request (with the return information formatted for clarity):"
+msgstr ""
+"Aber um Informationen über die Datenbank abzurufen, würde man einen ``GET`` "
+"Request benutzen (die Antwort ist der Übersicht wegen von uns umformatiert "
+"worden):"
+
+# 6bad7417ecb34f7594475cba98b9f07d
+#: ../../../src/intro/curl.rst:84
+msgid "For certain operations, you must specify the content type of request, which you do by specifying the ``Content-Type`` header using the ``-H`` command-line option:"
+msgstr ""
+"Manche Operationen erfordern die Angabe einen Content-Types. Den ``Content-"
+"Type`` Header setzt man mit der ``-H`` Option:"
+
+# aad2a63f5aca4cb598efc919fe053f25
+#: ../../../src/intro/curl.rst:92
+msgid "You can also submit 'payload' data, that is, data in the body of the HTTP request using the ``-d`` option. This is useful if you need to submit JSON structures, for example document data, as part of the request. For example, to submit a simple document to the ``demo`` database:"
+msgstr ""
+"Es ist zudem möglich mit der ``-d`` Option Daten mit dem Body des HTTP "
+"Requests zu senden. Das ist sehr nützlich wenn man JSON Strukturen, zum "
+"Beispiel Dokumentdaten, senden möchte. Hier ein Beispiel wie man ein "
+"einfaches Dokument an die ``demo`` Datenbank sendet:"
+
+# f1e435c289524913a9d40fe3f7ecf4d4
+#: ../../../src/intro/curl.rst:106
+msgid "In the above example, the argument after the ``-d`` option is the JSON of the document we want to submit."
+msgstr ""
+"Im obigen Beispiel enthält das Argument nach der ``-d`` Option das JSON "
+"Dokument, das wir senden wollen."
+
+# a0d8cd8f41b944eea30ba4d4b6152d67
+#: ../../../src/intro/curl.rst:109
+msgid "The document can be accessed by using the automatically generated document ID that was returned:"
+msgstr ""
+"Auf das Dokument kann dann mit der Dokument ID die zurückgegeben wurde "
+"zugegriffen werden."
+
+# 968423218e794219896154e8393f0a85
+#: ../../../src/intro/curl.rst:119
+msgid "The API samples in the :ref:`api/basics` show the HTTP command, URL and any payload information that needs to be submitted (and the expected return value). All of these examples can be reproduced using ``curl`` with the command-line examples shown above."
+msgstr ""
+"Die API Beispiele in :ref:`api/basics` zeigen das HTTP Kommando, die URL und "
+"jeden Wert der abgeschickt werden muss (und den erwarteten Rückgabewert). "
+"Jedes dieser Beispiele kann mit ``curl`` und den oben gezeigten Beispielen "
+"reproduziert werden."

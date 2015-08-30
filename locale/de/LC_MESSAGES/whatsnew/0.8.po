@@ -1,0 +1,337 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# c7ceae125e574fc7aace0cfcca2bb5c7
+#: ../../../src/whatsnew/0.8.rst:18
+msgid "0.8.x Branch"
+msgstr ""
+
+# 3253c488157e437c943c35686912dbfb
+#: ../../../src/whatsnew/0.8.rst:28
+msgid "Version 0.8.1-incubating"
+msgstr ""
+
+# 6b2e4e5915cb4a4f908b7fe3145f1ce2
+# fbc0310bf3a44542a044d3ad971a0a14
+#: ../../../src/whatsnew/0.8.rst:31
+#: ../../../src/whatsnew/0.8.rst:84
+msgid "Build and System Integration"
+msgstr ""
+
+# 69acc597909f4d6b973b9c169af53891
+#: ../../../src/whatsnew/0.8.rst:33
+msgid "The `couchdb` script no longer uses `awk` for configuration checks as this was causing portability problems."
+msgstr ""
+
+# 8b72b9d8a24d4447be561956fa58eb5e
+#: ../../../src/whatsnew/0.8.rst:35
+msgid "Updated `sudo` example in `README` to use the `-i` option, this fixes problems when invoking from a directory the `couchdb` user cannot access."
+msgstr ""
+
+# 7acf456127bb4be88f81285947b4a18b
+# 74033421d1eb469da09d4abe6fb51fb7
+#: ../../../src/whatsnew/0.8.rst:39
+#: ../../../src/whatsnew/0.8.rst:95
+msgid "Database Core"
+msgstr ""
+
+# 44f5fba4288547e9ab55b27e3d399d79
+#: ../../../src/whatsnew/0.8.rst:41
+msgid "Fix for replication problems where the write queues can get backed up if the writes aren't happening fast enough to keep up with the reads. For a large replication, this can exhaust memory and crash, or slow down the machine dramatically. The fix keeps only one document in the write queue at a time."
+msgstr ""
+
+# e3fefe682db549339c6b1f85d38e299d
+#: ../../../src/whatsnew/0.8.rst:45
+msgid "Fix for databases sometimes incorrectly reporting that they contain 0 documents after compaction."
+msgstr ""
+
+# 2c2aa5feb2844c6da203c42f221bf315
+#: ../../../src/whatsnew/0.8.rst:47
+msgid "CouchDB now uses ibrowse instead of inets for its internal HTTP client implementation. This means better replication stability."
+msgstr ""
+
+# cf259e0e35554ac2941cccacbab1354e
+# 11689053df1f45d0bcde013046d59a8d
+#: ../../../src/whatsnew/0.8.rst:51
+#: ../../../src/whatsnew/0.8.rst:114
+msgid "Futon"
+msgstr ""
+
+# 10f5dd9357d3481c902f2ae169095f83
+#: ../../../src/whatsnew/0.8.rst:53
+msgid "The view selector dropdown should now work in Opera and Internet Explorer even when it includes optgroups for design documents. (:issue:`81`)"
+msgstr ""
+
+# 4a4d51d962694bcbb24f2cb7d913d95b
+# a720c8b4bc1348fd8277ff6f01f55fd7
+#: ../../../src/whatsnew/0.8.rst:57
+#: ../../../src/whatsnew/0.8.rst:137
+msgid "JavaScript View Server"
+msgstr ""
+
+# be9b473078924825a3e914d1b072d54a
+#: ../../../src/whatsnew/0.8.rst:59
+msgid "Sealing of documents has been disabled due to an incompatibility with SpiderMonkey 1.9."
+msgstr ""
+
+# b5d40640349040f79c87d1c85e994d52
+#: ../../../src/whatsnew/0.8.rst:61
+msgid "Improve error handling for undefined values emitted by map functions. (:issue:`83`)"
+msgstr ""
+
+# 8675500ef90243fd93c8607a951f9262
+# a4aceea3667543ec92f82ce94b0fb74d
+#: ../../../src/whatsnew/0.8.rst:65
+#: ../../../src/whatsnew/0.8.rst:151
+msgid "HTTP Interface"
+msgstr ""
+
+# 95daebe4147347b5b3404a6a5b92ee8c
+#: ../../../src/whatsnew/0.8.rst:67
+msgid "Fix for chunked responses where chunks were always being split into multiple TCP packets, which caused problems with the test suite under Safari, and in some other cases."
+msgstr ""
+
+# 1923b05fb31745dbbc1ad203aecb418b
+#: ../../../src/whatsnew/0.8.rst:70
+msgid "Fix for an invalid JSON response body being returned for some kinds of views. (:issue:`84`)"
+msgstr ""
+
+# 2bb5a788b88f4d729d7cc33937817def
+#: ../../../src/whatsnew/0.8.rst:72
+msgid "Fix for connections not getting closed after rejecting a chunked request. (:issue:`55`)"
+msgstr ""
+
+# 09dc139d3aa445f5bfecf3e0f76f5656
+#: ../../../src/whatsnew/0.8.rst:74
+msgid "CouchDB can now be bound to IPv6 addresses."
+msgstr ""
+
+# 0988b054dd304c50aa054ed7ee6c4ef2
+#: ../../../src/whatsnew/0.8.rst:75
+msgid "The HTTP `Server` header now contains the versions of CouchDB and Erlang."
+msgstr ""
+
+# 4f92fdec4f274f938fde4f4b89ab18e8
+#: ../../../src/whatsnew/0.8.rst:81
+msgid "Version 0.8.0-incubating"
+msgstr ""
+
+# 5a423352d6a64cba84d6b3f86c0c120f
+#: ../../../src/whatsnew/0.8.rst:86
+msgid "CouchDB can automatically respawn following a server crash."
+msgstr ""
+
+# 25e851a0d4de486c8acc68d20cc2e407
+#: ../../../src/whatsnew/0.8.rst:87
+msgid "Database server no longer refuses to start with a stale PID file."
+msgstr ""
+
+# be37ba8366f9429e8aaaf448cca3f89f
+#: ../../../src/whatsnew/0.8.rst:88
+msgid "System logrotate configuration provided."
+msgstr ""
+
+# c6e1d9d583764169bd4bffac4ea765bf
+#: ../../../src/whatsnew/0.8.rst:89
+msgid "Improved handling of ICU shared libraries."
+msgstr ""
+
+# 6e2be8564df34f6f80b2a061c4314c68
+#: ../../../src/whatsnew/0.8.rst:90
+msgid "The `couchdb` script now automatically enables SMP support in Erlang."
+msgstr ""
+
+# 38348f220de64cf498f5f0e50af5f791
+#: ../../../src/whatsnew/0.8.rst:91
+msgid "The `couchdb` and `couchjs` scripts have been improved for portability."
+msgstr ""
+
+# d875135e99ca4c2b920bba69e87b3bd9
+#: ../../../src/whatsnew/0.8.rst:92
+msgid "The build and system integration have been improved for portability."
+msgstr ""
+
+# 405ea9aaeecf4a779dbcd90e93884ee6
+#: ../../../src/whatsnew/0.8.rst:97
+msgid "The view engine has been completely decoupled from the storage engine. Index data is now stored in separate files, and the format of the main database file has changed."
+msgstr ""
+
+# 0c43a7f326454a2eba91e66cb49f24c8
+#: ../../../src/whatsnew/0.8.rst:100
+msgid "Databases can now be compacted to reclaim space used for deleted documents and old document revisions."
+msgstr ""
+
+# 0e35a84468004d4e81a672d973623ee6
+#: ../../../src/whatsnew/0.8.rst:102
+msgid "Support for incremental map/reduce views has been added."
+msgstr ""
+
+# 43c100860d9a46daa5c0bb5327c11c03
+#: ../../../src/whatsnew/0.8.rst:103
+msgid "To support map/reduce, the structure of design documents has changed. View values are now JSON objects containing at least a `map` member, and optionally a `reduce` member."
+msgstr ""
+
+# 6002001c889d4b00bcd13cd4a9039d67
+#: ../../../src/whatsnew/0.8.rst:106
+msgid "View servers are now identified by name (for example `javascript`) instead of by media type."
+msgstr ""
+
+# 9e7d224dd85343acbb8ad8bf8d6c3290
+#: ../../../src/whatsnew/0.8.rst:108
+msgid "Automatically generated document IDs are now based on proper UUID generation using the crypto module."
+msgstr ""
+
+# d6dcbf6e12c24ec49ea1031b2074f664
+#: ../../../src/whatsnew/0.8.rst:110
+msgid "The field `content-type` in the JSON representation of attachments has been renamed to `content_type` (underscore)."
+msgstr ""
+
+# 5c5d66fbf9414f2f84c7573c9bfb5ced
+#: ../../../src/whatsnew/0.8.rst:116
+msgid "When adding a field to a document, Futon now just adds a field with an autogenerated name instead of prompting for the name with a dialog. The name is automatically put into edit mode so that it can be changed immediately."
+msgstr ""
+
+# 58b8527141b0404992d810a59e474ca2
+#: ../../../src/whatsnew/0.8.rst:119
+msgid "Fields are now sorted alphabetically by name when a document is displayed."
+msgstr ""
+
+# 6581b376f793433980347d8ac498bdb4
+#: ../../../src/whatsnew/0.8.rst:120
+msgid "Futon can be used to create and update permanent views."
+msgstr ""
+
+# 43067ae6d2b046069eec302cb3c96ad0
+#: ../../../src/whatsnew/0.8.rst:121
+msgid "The maximum number of rows to display per page on the database page can now be adjusted."
+msgstr ""
+
+# 0e2f253b706e4de8adfb931deadf031f
+#: ../../../src/whatsnew/0.8.rst:123
+msgid "Futon now uses the XMLHTTPRequest API asynchronously to communicate with the CouchDB HTTP server, so that most operations no longer block the browser."
+msgstr ""
+
+# 4ec3932449f9409ea3a54209c2b2d07b
+#: ../../../src/whatsnew/0.8.rst:125
+msgid "View results sorting can now be switched between ascending and descending by clicking on the `Key` column header."
+msgstr ""
+
+# 632e9164227e4d1898753b47a18fa621
+#: ../../../src/whatsnew/0.8.rst:127
+msgid "Fixed a bug where documents that contained a `@` character could not be viewed. (:issue:`12`)"
+msgstr ""
+
+# 1747b2efd10948b2bcd5e88b41116838
+#: ../../../src/whatsnew/0.8.rst:129
+msgid "The database page now provides a `Compact` button to trigger database compaction. (:issue:`38`)"
+msgstr ""
+
+# f2d0ed142e8344439968489834eed88f
+#: ../../../src/whatsnew/0.8.rst:131
+msgid "Fixed portential double encoding of document IDs and other URI segments in many instances. (:issue:`39`)"
+msgstr ""
+
+# e25c6ff4211647c7a09777da70001f5f
+#: ../../../src/whatsnew/0.8.rst:133
+msgid "Improved display of attachments."
+msgstr ""
+
+# e1911259ad034cae97bbe774fcc9566c
+#: ../../../src/whatsnew/0.8.rst:134
+msgid "The JavaScript Shell has been removed due to unresolved licensing issues."
+msgstr ""
+
+# d648320bceff457e84e7c54570614110
+#: ../../../src/whatsnew/0.8.rst:139
+msgid "SpiderMonkey is no longer included with CouchDB, but rather treated as a normal external dependency. A simple C program (`_couchjs`) is provided that links against an existing SpiderMonkey installation and uses the interpreter embedding API."
+msgstr ""
+
+# d2b6860f56354257ab6de57723f794be
+#: ../../../src/whatsnew/0.8.rst:143
+msgid "View functions using the default JavaScript view server can now do logging using the global `log(message)` function. Log messages are directed into the CouchDB log at `INFO` level. (:issue:`59`)"
+msgstr ""
+
+# 54d63d16985340f8893db7d55b9551d9
+#: ../../../src/whatsnew/0.8.rst:146
+msgid "The global `map(key, value)` function made available to view code has been renamed to `emit(key, value)`."
+msgstr ""
+
+# 6372a9e14299443dbab8f1e4dd37c341
+#: ../../../src/whatsnew/0.8.rst:148
+msgid "Fixed handling of exceptions raised by view functions."
+msgstr ""
+
+# bdc1a248e14943bc9d19b0e5bc81a4a5
+#: ../../../src/whatsnew/0.8.rst:153
+msgid "CouchDB now uses MochiWeb instead of inets for the HTTP server implementation. Among other things, this means that the extra configuration files needed for inets (such as `couch_httpd.conf`) are no longer used."
+msgstr ""
+
+# fec7a3bc52824a9eaf4156a78026db7b
+#: ../../../src/whatsnew/0.8.rst:156
+msgid "The HTTP interface now completely supports the `HEAD` method. (:issue:`3`)"
+msgstr ""
+
+# 8f41437fb07944629338b7de8148490a
+#: ../../../src/whatsnew/0.8.rst:157
+msgid "Improved compliance of `Etag` handling with the HTTP specification. (:issue:`13`)"
+msgstr ""
+
+# 3ecdbc5b78334248b88289aae20b6d8b
+#: ../../../src/whatsnew/0.8.rst:159
+msgid "Etags are no longer included in responses to document `GET` requests that include query string parameters causing the JSON response to change without the revision or the URI having changed."
+msgstr ""
+
+# beef0e24fc28410ca2a605f0baf75c74
+#: ../../../src/whatsnew/0.8.rst:162
+msgid "The bulk document update API has changed slightly on both the request and the response side. In addition, bulk updates are now atomic."
+msgstr ""
+
+# 77c8aed7fb104fc98f0804c31ac8e123
+#: ../../../src/whatsnew/0.8.rst:164
+msgid "CouchDB now uses `TCP_NODELAY` to fix performance problems with persistent connections on some platforms due to nagling."
+msgstr ""
+
+# ae41dd2809e849dca22105c2c707eda8
+#: ../../../src/whatsnew/0.8.rst:166
+msgid "Including a `?descending=false` query string parameter in requests to views no longer raises an error."
+msgstr ""
+
+# f5dba5ee0bbf40e1a6ca436cf57ec619
+#: ../../../src/whatsnew/0.8.rst:168
+msgid "Requests to unknown top-level reserved URLs (anything with a leading underscore) now return a `unknown_private_path` error instead of the confusing `illegal_database_name`."
+msgstr ""
+
+# 8934294e09fc40aab2c78c87cd58a6d8
+#: ../../../src/whatsnew/0.8.rst:171
+msgid "The Temporary view handling now expects a JSON request body, where the JSON is an object with at least a `map` member, and optional `reduce` and `language` members."
+msgstr ""
+
+# 3125d0c8f10449769d124eb61a642595
+#: ../../../src/whatsnew/0.8.rst:174
+msgid "Temporary views no longer determine the view server based on the Content-Type header of the `POST` request, but rather by looking for a `language` member in the JSON body of the request."
+msgstr ""
+
+# 27850cd01c454707a13bb96f3219ed8b
+#: ../../../src/whatsnew/0.8.rst:177
+msgid "The status code of responses to `DELETE` requests is now 200 to reflect that that the deletion is performed synchronously."
+msgstr ""

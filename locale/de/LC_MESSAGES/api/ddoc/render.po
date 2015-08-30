@@ -1,0 +1,138 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 0ade1dfe4a204bb68fcb97decb4961d1
+#: ../../../src/api/ddoc/render.rst:17
+msgid "``/db/_design/design-doc/_show/show-name``"
+msgstr ""
+
+# 1c0bd29dc5bf4deeb7dfba6a5b630e0c
+#: ../../../src/api/ddoc/render.rst:22
+msgid "Applies :ref:`show function <showfun>` for `null` document."
+msgstr ""
+
+# 8a7615c024b14170a5d410961190b805
+# 5b044f219f51464eb8ea5c243a2197f4
+# d7942653de894c8394137c2fb21c54c9
+# 3c153c72050e48a2a6cb4524657b9af4
+#: ../../../src/api/ddoc/render.rst:24
+#: ../../../src/api/ddoc/render.rst:81
+#: ../../../src/api/ddoc/render.rst:140
+#: ../../../src/api/ddoc/render.rst:202
+msgid "The request and response parameters are depended upon function implementation."
+msgstr ""
+
+# d2e6279177bf4ade9d7e4a72c4281378
+# b416abb2d67b4b70807bc377af4d36de
+# 72e5cd9551d7463aa9d99edd6c1f6667
+# 6ccc97eed3bf4ae89afe09dfb9b66ece
+# 8cc15f09f7ea4d2b9abad658abac3153
+# c520ba0daa6f4527831227e0b000e3cf
+#: ../../../src/api/ddoc/render.rst:36
+#: ../../../src/api/ddoc/render.rst:94
+#: ../../../src/api/ddoc/render.rst:153
+#: ../../../src/api/ddoc/render.rst:216
+#: ../../../src/api/ddoc/render.rst:273
+#: ../../../src/api/ddoc/render.rst:338
+msgid "**Function**:"
+msgstr ""
+
+# 585e4c3b9ada4f218febe7f18f7976a9
+# 7c17db78619542348c067010cc9c5fdf
+# 75f6abe9125546e9bce57423b99e8f39
+# 57320bbe893740e0b077f149ab602724
+# c61d5aa531734592a272e9ba5edd3423
+# 2f689de67e7845279abbd34497faeb25
+#: ../../../src/api/ddoc/render.rst:48
+#: ../../../src/api/ddoc/render.rst:106
+#: ../../../src/api/ddoc/render.rst:168
+#: ../../../src/api/ddoc/render.rst:231
+#: ../../../src/api/ddoc/render.rst:288
+#: ../../../src/api/ddoc/render.rst:353
+msgid "**Request**:"
+msgstr ""
+
+# 9e13d0c6028d4d5c9d41ff378c4ab7c8
+# fb9b90cc631b413b9a15422d637aa1f5
+# 647fa08c70244e2db18a88cb0ab35bcd
+# b064805707974379b34ab36f2038441d
+# ab7eb410d0fd44538689bea1cb9eebce
+# 647b92b41df5403fa2d3c7cbaa0de152
+#: ../../../src/api/ddoc/render.rst:56
+#: ../../../src/api/ddoc/render.rst:114
+#: ../../../src/api/ddoc/render.rst:176
+#: ../../../src/api/ddoc/render.rst:239
+#: ../../../src/api/ddoc/render.rst:300
+#: ../../../src/api/ddoc/render.rst:365
+msgid "**Response**:"
+msgstr ""
+
+# 74ab2e6b19804def92035518954737cc
+#: ../../../src/api/ddoc/render.rst:74
+msgid "``/db/_design/design-doc/_show/show-name/doc-id``"
+msgstr ""
+
+# cffcc4a6a66c4125ab2961bd2f285d9d
+#: ../../../src/api/ddoc/render.rst:79
+msgid "Applies :ref:`show function <showfun>` for the specified document."
+msgstr ""
+
+# 234a1cc21f944762bda1517322f4eeec
+#: ../../../src/api/ddoc/render.rst:132
+msgid "``/db/_design/design-doc/_list/list-name/view-name``"
+msgstr ""
+
+# 6db0d3a051fe41f694da3cd97036b0a6
+#: ../../../src/api/ddoc/render.rst:137
+msgid "Applies :ref:`list function <listfun>` for the :ref:`view function <viewfun>` from the same design document."
+msgstr ""
+
+# 52251c2a980a41d891dd48bac6b99008
+#: ../../../src/api/ddoc/render.rst:194
+msgid "``/db/_design/design-doc/_list/list-name/other-ddoc/view-name``"
+msgstr ""
+
+# d88561e5805148aa92810603c4022d3b
+#: ../../../src/api/ddoc/render.rst:199
+msgid "Applies :ref:`list function <listfun>` for the :ref:`view function <viewfun>` from the other design document."
+msgstr ""
+
+# 5bae0d638b274308972c05cfd51c52ee
+#: ../../../src/api/ddoc/render.rst:257
+msgid "``/db/_design/design-doc/_update/update-name``"
+msgstr ""
+
+# 947c62ba85fa43c984840051cf5be503
+#: ../../../src/api/ddoc/render.rst:261
+msgid "Executes :ref:`update function <updatefun>` on server side for ``null`` document."
+msgstr ""
+
+# edab0282e75848f3a490cfb6ce4df678
+#: ../../../src/api/ddoc/render.rst:320
+msgid "``/db/_design/design-doc/_update/update-name/doc-id``"
+msgstr ""
+
+# 40b5e6ae6854451cad1d7c3df640ecee
+#: ../../../src/api/ddoc/render.rst:325
+msgid "Executes :ref:`update function <updatefun>` on server side for the specified document."
+msgstr ""

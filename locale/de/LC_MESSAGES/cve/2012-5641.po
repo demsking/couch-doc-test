@@ -1,0 +1,127 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# 94a49ba19f7c4c0d93367490833fcd0b
+#: ../../../src/cve/2012-5641.rst:18
+msgid "CVE-2012-5641: Information disclosure via unescaped backslashes in URLs on Windows"
+msgstr ""
+
+# aa02bdfd5e284f6ebbfe01af92d833f3
+#: ../../../src/cve/2012-5641.rst:20
+msgid "14.01.2013"
+msgstr ""
+
+# e98b3b4356df4f499ae4a52e3f56c445
+#: ../../../src/cve/2012-5641.rst:22
+msgid "All Windows-based releases of Apache CouchDB, up to and including 1.0.3, 1.1.1, and 1.2.0 are vulnerable."
+msgstr ""
+
+# 737211f6e7074b7ba4a5729edbac0267
+#: ../../../src/cve/2012-5641.rst:25
+msgid "Moderate"
+msgstr ""
+
+# 4250d0b14b9348dc96d70c19af8008da
+#: ../../../src/cve/2012-5641.rst:27
+msgid "The Apache Software Foundation"
+msgstr ""
+
+# eff9e2a79d6f4136ba440cf77657a534
+#: ../../../src/cve/2012-5641.rst:30
+msgid "Description"
+msgstr ""
+
+# 31efc242311046a8afc03909e52607a6
+#: ../../../src/cve/2012-5641.rst:32
+msgid "A specially crafted request could be used to access content directly that would otherwise be protected by inbuilt CouchDB security mechanisms. This request could retrieve in binary form any CouchDB database, including the `_users` or `_replication` databases, or any other file that the user account used to run CouchDB might have read access to on the local filesystem. This exploit is due to a vulnerability in the included MochiWeb HTTP library."
+msgstr ""
+
+# 042e790acb9242108bdaf5a722145a51
+#: ../../../src/cve/2012-5641.rst:40
+msgid "Mitigation"
+msgstr ""
+
+# 109faa532cf94c7a90fe5ad4764f8989
+#: ../../../src/cve/2012-5641.rst:42
+msgid "Upgrade to a supported CouchDB release that includes this fix, such as:"
+msgstr ""
+
+# 9548b82e2ec84da49140a62ed027b2f6
+#: ../../../src/cve/2012-5641.rst:44
+msgid ":ref:`1.0.4 <release/1.0.4>`"
+msgstr ""
+
+# 1720dbfb5d5d459683c72eba9e8beb13
+#: ../../../src/cve/2012-5641.rst:45
+msgid ":ref:`1.1.2 <release/1.1.2>`"
+msgstr ""
+
+# b362e4257daa4a3f9416d926482030e5
+#: ../../../src/cve/2012-5641.rst:46
+msgid ":ref:`1.2.1 <release/1.2.1>`"
+msgstr ""
+
+# 75067ba2817c48e2a05f4abd4ff75010
+#: ../../../src/cve/2012-5641.rst:47
+msgid ":ref:`1.3.x <release/1.3.x>`"
+msgstr ""
+
+# 3b51bbeaf4e641adab900e722c62dc74
+#: ../../../src/cve/2012-5641.rst:49
+msgid "All listed releases have included a specific fix for the MochiWeb component."
+msgstr ""
+
+# 81a1ef11095b4be384777f60f01124cd
+#: ../../../src/cve/2012-5641.rst:52
+msgid "Work-Around"
+msgstr ""
+
+# 529b939b8c864d29816fad9de5c94a65
+#: ../../../src/cve/2012-5641.rst:54
+msgid "Users may simply exclude any file-based web serving components directly within their configuration file, typically in `local.ini`. On a default CouchDB installation, this requires amending the :config:option:`httpd_global_handlers/favicon.ico` and :config:option:`httpd_global_handlers/_utils` lines within :config:section:`httpd_global_handlers`::"
+msgstr ""
+
+# 6557a7d647b84322ac80f024f93e63a1
+#: ../../../src/cve/2012-5641.rst:65
+msgid "If additional handlers have been added, such as to support Adobe's Flash `crossdomain.xml` files, these would also need to be excluded."
+msgstr ""
+
+# d21f7e5bde044371810dad3205ffeb00
+#: ../../../src/cve/2012-5641.rst:69
+msgid "Acknowledgement"
+msgstr ""
+
+# db54a53b69e54b53874cd107dab4601c
+#: ../../../src/cve/2012-5641.rst:71
+msgid "The issue was found and reported by Sriram Melkote to the upstream MochiWeb project."
+msgstr ""
+
+# efd35b6a4ae8426da0af60399951c270
+#: ../../../src/cve/2012-5641.rst:75
+msgid "References"
+msgstr ""
+
+# 7a1fe0e7b8804afdb55932870d48f524
+#: ../../../src/cve/2012-5641.rst:77
+msgid "https://github.com/melkote/mochiweb/commit/ac2bf"
+msgstr ""

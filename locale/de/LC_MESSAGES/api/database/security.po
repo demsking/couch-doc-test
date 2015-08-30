@@ -1,0 +1,141 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# dbc425cab3cd4c34b21c9f05960fb8f3
+#: ../../../src/api/database/security.rst:17
+msgid "``/db/_security``"
+msgstr ""
+
+# 015a0371d83f4703ba43b05f56b5c436
+#: ../../../src/api/database/security.rst:21
+msgid "Returns the current security object from the specified database."
+msgstr ""
+
+# 12fc5cfcd2704e9c90fadcca30e73ef4
+#: ../../../src/api/database/security.rst:23
+msgid "The security object consists of two compulsory elements, ``admins`` and ``members``, which are used to specify the list of users and/or roles that have admin and members rights to the database respectively:"
+msgstr ""
+
+# a31a593516f24db7b73f39056cdbdcf6
+#: ../../../src/api/database/security.rst:27
+msgid "``members``: they can read all types of documents from the DB, and they can write (and edit) documents to the DB except for design documents."
+msgstr ""
+
+# c0ad0ed9c2994143853390e42cd4ce18
+#: ../../../src/api/database/security.rst:30
+msgid "``admins``: they have all the privileges of ``members`` plus the privileges: write (and edit) design documents, add/remove database admins and members, set the :ref:`database revisions limit <api/db/revs_limit>` and execute :ref:`temporary views <api/db/temp_view>` against the database. They can not create a database nor delete a database."
+msgstr ""
+
+# 05f5df482c7a4ba1ad458f16b6fc829f
+#: ../../../src/api/database/security.rst:36
+msgid "Both ``members`` and ``admins`` objects are contains two array-typed fields:"
+msgstr ""
+
+# c1281c286f3642ae94ae9eced0fb6e40
+#: ../../../src/api/database/security.rst:38
+msgid "``users``: List of CouchDB user names"
+msgstr ""
+
+# 90f98273b5714ba490e52545e43d2ab1
+#: ../../../src/api/database/security.rst:39
+msgid "``roles``: List of users roles"
+msgstr ""
+
+# ffe0194fbd804bc9a1ec7543a41eea2b
+#: ../../../src/api/database/security.rst:41
+msgid "Any other additional fields in the security object are optional. The entire security object is made available to validation and other internal functions so that the database can control and limit functionality."
+msgstr ""
+
+# 78d64be5d9c54cc28f8f0ad0541c9857
+#: ../../../src/api/database/security.rst:45
+msgid "If both the names and roles fields of either the admins or members properties are empty arrays, it means the database has no admins or members."
+msgstr ""
+
+# 38e8c4c6da4f46979001414f013268a8
+#: ../../../src/api/database/security.rst:48
+msgid "Having no admins, only server admins (with the reserved ``_admin`` role) are able to update design document and make other admin level changes."
+msgstr ""
+
+# b6a975257e8f42f6b923508c657d2d32
+#: ../../../src/api/database/security.rst:51
+msgid "Having no members, any user can write regular documents (any non-design document) and read documents from the database."
+msgstr ""
+
+# 3bc47ee15f164cc8b13d44ac938f4354
+#: ../../../src/api/database/security.rst:54
+msgid "If there are any member names or roles defined for a database, then only authenticated users having a matching name or role are allowed to read documents from the database (or do a :get:`/{db}` call)."
+msgstr ""
+
+# 77f6904c37164033b6d44f13624d9d6b
+#: ../../../src/api/database/security.rst:60
+msgid "If the security object for a database has never been set, then the value returned will be empty."
+msgstr ""
+
+# f0c1bf8b988847bc865d097fdc0e15b8
+#: ../../../src/api/database/security.rst:63
+msgid "Also note, that security objects are not regular versioned documents (that is, they are not under MVCC rules). This is a design choice to speedup authorization checks (avoids traversing a database`s documents B-Tree)."
+msgstr ""
+
+# f93755009c6d406390f425ba61dd41fa
+# f51ccc25bc864d7495adf071f822d8e7
+# 955c70c7a9194d6e84a44c6b8b3949d6
+# 319858146aad48a3b27c69e95ac3c906
+#: ../../../src/api/database/security.rst:69
+#: ../../../src/api/database/security.rst:71
+#: ../../../src/api/database/security.rst:124
+#: ../../../src/api/database/security.rst:131
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# 690863f8acf14f93b3c992b7c0ac95b3
+# dda63ed728ef4a52a5dab93c284aaab5
+#: ../../../src/api/database/security.rst:70
+#: ../../../src/api/database/security.rst:125
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# b53eaf78e6724f35a0a6c05ba9517b40
+# ff2f3417fff94ae2b8ef842fe176abbb
+#: ../../../src/api/database/security.rst:72
+#: ../../../src/api/database/security.rst:132
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# 56798d24f9db4417abc48bea4e17ce54
+# 15debedbb7f04a9a9bc429fff39b04ad
+#: ../../../src/api/database/security.rst:79
+#: ../../../src/api/database/security.rst:137
+msgid "**Request**:"
+msgstr ""
+
+# cfd7c3fed4854b6aaa5d3b7768e3c31f
+# acc89ff30f054f2cabf95415e72bc7ce
+#: ../../../src/api/database/security.rst:87
+#: ../../../src/api/database/security.rst:167
+msgid "**Response**:"
+msgstr ""
+
+# 2c7bc8ec81eb41baaec543f0705f07c3
+#: ../../../src/api/database/security.rst:121
+msgid "Sets the security object for the given database."
+msgstr ""

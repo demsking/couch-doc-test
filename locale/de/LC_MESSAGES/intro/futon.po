@@ -1,0 +1,295 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: 2014-03-02 18:58+0000\n"
+"Last-Translator: Andy <andywenk@apache.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
+"X-POOTLE-MTIME: 1393786713.000000\n"
+
+# 01310ca2c3964f6d845454ea3d56ccb1
+#: ../../../src/intro/futon.rst:17
+msgid "Futon: Web GUI Administration Panel"
+msgstr "Futon: Das Webinterface zur Administration von CouchDB"
+
+# fe4b9630ba95489d8aa323df6b3cfc33
+#: ../../../src/intro/futon.rst:19
+msgid "Futon is a native web-based interface built into CouchDB. It provides a basic interface to the majority of the functionality, including the ability to create, update, delete and view documents and views, provides access to the configuration parameters, and an interface for initiating replication."
+msgstr ""
+"Futon ist die webbasierte Oberfläche in CouchDB. Mit Futon können wir den "
+"Großteil der Funktionen von CouchDB nutzen: Dokumente und Views erstellen, "
+"aktualisieren und löschen sowie Konfigurationen bearbeiten und auch "
+"Replikationen steuern."
+
+# 3b5b0c77257b416aa944aab8d456a801
+#: ../../../src/intro/futon.rst:25
+msgid "The default view is the Overview page which provides you with a list of the databases. The basic structure of the page is consistent regardless of the section you are in. The main panel on the left provides the main interface to the databases, configuration or replication systems. The side panel on the right provides navigation to the main areas of Futon interface:"
+msgstr ""
+"Die Standardansicht ist die Übersichtsseite die eine Liste der Datenbanken "
+"anzeigt. Die Strukturen der Seiten ist unabhängig von dem jeweilig "
+"ausgewählten Punkt konsistent gehalten. Im großen Fenster auf der linken "
+"Seite bearbeitet man Datenbanken, Konfigurationen oder Replikationen. Der "
+"Abschnitt auf der rechten Seite beinhaltet das Hauptmenü mit dem man die "
+"verschiedenen Hauptbereiche in Futon erreichen kann:"
+
+# 072d8dc2244447e6854d7e17bef63acf
+#: ../../../src/intro/futon.rst:38
+msgid "The main sections are:"
+msgstr "Die Hauptbereiche sind:"
+
+# 4b8e60de90bd4837a7741face06df30a
+#: ../../../src/intro/futon.rst:40
+msgid "Overview"
+msgstr "Übersicht"
+
+# e64b23d710024321b533171b36859f58
+#: ../../../src/intro/futon.rst:42
+msgid "The main overview page, which provides a list of the databases and provides the interface for querying the database and creating and updating documents. See :ref:`futon-management`."
+msgstr ""
+"Die Hauptübersicht. Hier werden die Datenbanken aufgelistet, es können auch "
+"Abfragen an die Datenbank gestellt werden und Dokumente erzeugt oder "
+"aktualisiert werden. Siehe: :ref:`futon-management`."
+
+# 401e6ebf07674dd7a1a368880d128d1f
+#: ../../../src/intro/futon.rst:46
+msgid "Configuration"
+msgstr "Konfiguration"
+
+# 344a932359be448e982f4b5dd5875115
+#: ../../../src/intro/futon.rst:48
+msgid "An interface into the configuration of your CouchDB installation. The interface allows you to edit the different configurable parameters. For more details on configuration, see :ref:`config` section."
+msgstr ""
+"Hier bearbeitet man die Konfiguration der CouchDB Installation. Die "
+"Oberfläche erlaubt uns verschiedene Konfigurationen anzupassen. Mehr Details "
+"zur Konfiguration findest du im Abschnitt :ref:`config`. "
+
+# a108d9247923489fa3100bbc744aae77
+#: ../../../src/intro/futon.rst:52
+msgid "Replicator"
+msgstr "Replikator"
+
+# 71156fa1f1dc411a9229919e9d4b7a9b
+#: ../../../src/intro/futon.rst:54
+msgid "An interface to the replication system, enabling you to initiate replication between local and remote databases. See :ref:`futon-replication`."
+msgstr ""
+"Eine Oberfläche für die Replikationen, mit dem man die Replikation zwischen "
+"lokalen und entfernten Datenbanken starten kann. Siehe auch :ref:`futon-"
+"replication`."
+
+# dd2871461ad5408f992b85ec08bc369b
+#: ../../../src/intro/futon.rst:58
+msgid "Status"
+msgstr "Status"
+
+# 2eacbe1f5eac402e978d270f512cb48a
+#: ../../../src/intro/futon.rst:60
+msgid "Displays a list of the running background tasks on the server. Background tasks include view index building, compaction and replication. The Status page is an interface to the :ref:`Active Tasks <api/server/active_tasks>` API call."
+msgstr ""
+"Zeigt eine Liste der laufenden Hintergrundjobs auf dem Server. "
+"Hintergrundjobs beinhaltet die Indexerstellung für Views, Kompaktierung und "
+"Replikation. Die Statusseite ist die grafische Oberfläche für den :ref:`"
+"Active Tasks <api/server/active_tasks>` API Aufruf."
+
+# e512d093a1c64e08a764d3b2fe6bd61f
+#: ../../../src/intro/futon.rst:65
+msgid "Verify Installation"
+msgstr "Installation überprüfen"
+
+# e5e18d9e48964fd996799c3dd9cec176
+#: ../../../src/intro/futon.rst:67
+msgid "The Verify Installation allows you to check whether all of the components of your CouchDB installation are correctly installed."
+msgstr ""
+"Mit Installation überprüfen kann man prüfen, on alle Komponenten der CouchDB "
+"Installation ordnungsgemäß installiert wurden."
+
+# 8c1f19eb6b0d412fae81f121d25d1de8
+#: ../../../src/intro/futon.rst:70
+msgid "Test Suite"
+msgstr "Test Suite"
+
+# 4c5029f98d904ffa92caffc593eb1696
+#: ../../../src/intro/futon.rst:72
+msgid "The Test Suite section allows you to run the built-in test suite. This executes a number of test routines entirely within your browser to test the API and functionality of your CouchDB installation. If you select this page, you can run the tests by using the Run All button. This will execute all the tests, which may take some time."
+msgstr ""
+"Im Abschnitt Test Suite kann man die eingebaute Test Suite starten. Es "
+"werden dann eine Reihe von Testroutinen innerhalb des Browser ausgeführt, "
+"die das API und die Funktionalität der CouchDB Installation testen. Man "
+"startet die Tests mit dem Run All Button, es werden dann alle Tests "
+"ausgeführt, was ein wenig dauern kann."
+
+# b97b4ace007d4c68b6e6f45958d2ddf5
+#: ../../../src/intro/futon.rst:82
+msgid "Managing Databases and Documents"
+msgstr "Datenbanken und Dokumente verwalten"
+
+# e007b6249be6403497b9a551712e18bf
+#: ../../../src/intro/futon.rst:84
+msgid "You can manage databases and documents within Futon using the main Overview section of the Futon interface."
+msgstr ""
+"Du kannst Datenbanken und Dokumente innerhalb von Futon in der Übersicht "
+"verwalten."
+
+# 4f693ad02d41498f9e9c8d8b4f4e6048
+#: ../../../src/intro/futon.rst:87
+msgid "To create a new database, click the Create Database ELLIPSIS button. You will be prompted for the database name, as shown in the figure below."
+msgstr ""
+"Um eine neue Datenbank anzulegen, drücke den Knopf Datenbank anlegen. Man "
+"wird dich nach einem Datenbanknamen fragen, wie in der Abbildung unten."
+
+# 2213ad4e15ee48db90b1f593bf2a38b0
+#: ../../../src/intro/futon.rst:96
+msgid "Once you have created the database (or selected an existing one), you will be shown a list of the current documents. If you create a new document, or select an existing document, you will be presented with the edit document display."
+msgstr ""
+"Wenn du die Datenbank angelegt hast (oder eine bestehende ausgewählt hast) "
+"wird dir eine Liste der Dokumente angezeigt. Wenn du ein neues Dokument "
+"anlegst oder ein bestehendes selektierst, wird dir die Oberfläche für das "
+"Editieren von Dokumenten angezeigt."
+
+# 436cd7b9676941578ad760215fb997cd
+#: ../../../src/intro/futon.rst:101
+msgid "Editing documents within Futon requires selecting the document and then editing (and setting) the fields for the document individually before saving the document back into the database."
+msgstr ""
+"Um Dokumente in Futon zu editieren muss man das Dokument auswählen und dann "
+"die einzelnen Felder editieren oder hinzufügen, bevor man das Dokument dann "
+"speichert."
+
+# 15eb64ef8986464da6583a477466c2ab
+#: ../../../src/intro/futon.rst:105
+msgid "For example, the figure below shows the editor for a single document, a newly created document with a single ID, the document ``_id`` field."
+msgstr ""
+"Die Abbild unten zeigt zum Beispiel den Editor für ein einzelnen Dokument, "
+"ein neu erzeugtes Dokument mit einer ID, dem Dokumentenfeld ``_id``."
+
+# 86ee59e414f8405ebfc834f68630fc36
+#: ../../../src/intro/futon.rst:114
+msgid "To add a field to the document:"
+msgstr "Um dem Dokument ein Feld hinzuzufügen:"
+
+# 5035d9f5d1694dfeb9a725c1178887e0
+#: ../../../src/intro/futon.rst:116
+msgid "Click Add Field."
+msgstr "Drücke Feld Hinzufügen."
+
+# bfa2804cf1d94da0a3fd3b3ddadf50ca
+#: ../../../src/intro/futon.rst:118
+msgid "In the fieldname box, enter the name of the field you want to create. For example, “company”."
+msgstr ""
+"In der kleinen Box für den Namen des Feldes kannst du einen Namen für das "
+"Feld festlegen. Zum Beispiel: “company”."
+
+# eec088855fb743c4b88a953fd76c2578
+#: ../../../src/intro/futon.rst:121
+msgid "Click the green tick next to the field name to confirm the field name change."
+msgstr ""
+"Klicke auf den grünen Haken neben dem Feld um die Änderung zu Bestätigen."
+
+# 960a710220294f548d326db1f959c95f
+#: ../../../src/intro/futon.rst:124
+msgid "Double-click the corresponding Value cell."
+msgstr "Mache einen Doppelklick auf die dazugehörige Zelle für den Wert."
+
+# 6cddf8ec0fa14a18bf6b9803add9e2b9
+#: ../../../src/intro/futon.rst:126
+msgid "Enter a company name, for example “Example”."
+msgstr "Gib einen Firmennamen ein, zum Beispiel “Example”."
+
+# 09f0477618194ef8a672dfd55618606c
+#: ../../../src/intro/futon.rst:128
+msgid "Click the green tick next to the field value to confirm the field value."
+msgstr "Drücke den grünen Haken neben dem Feldwert um den Wert zu bestätigen."
+
+# 8c387e8fb9ab4281bf2c6a983f569053
+#: ../../../src/intro/futon.rst:131
+msgid "The document is still not saved as this point. You must explicitly save the document by clicking the Save Document button at the top of the page. This will save the document, and then display the new document with the saved revision information (the ``_rev`` field)."
+msgstr ""
+"Das Dokument ist jetzt noch nicht gespeichert. Man muss das Dokument "
+"explizit speichern indem man den Knopf mit Dokument Speichern oben auf der "
+"Seite drückt. Das Dokument wird dann gespeichert und es wird dann das neue "
+"Dokument mit der gespeicherten Revision (das ``_rev`` Feld) angezeigt."
+
+# 07c1683356e94e72a566dec0f08be92b
+#: ../../../src/intro/futon.rst:142
+msgid "The same basic interface is used for all editing operations within Futon. You *must* remember to save the individual element (fieldname, value) using the green tick button, before then saving the document."
+msgstr ""
+"Die Selbe Oberfläche wird für das Editieren in Futon benutzt. Du *musst* "
+"daran denken, das Element (Feldname, Wert) mit dem Grünen Haken zu "
+"bestätigen, bevor du das Dokument speicherst."
+
+# 24336a0ead9b4b10804bb8bdc3babd6b
+#: ../../../src/intro/futon.rst:150
+msgid "Configuring Replication"
+msgstr "Replikation konfigurieren"
+
+# 8a84d47a782149a1b272b0ccaab90de2
+#: ../../../src/intro/futon.rst:152
+msgid "When you click the Replicator option within the Tools menu you are presented with the Replicator screen. This allows you to start replication between two databases by filling in or select the appropriate options within the form provided."
+msgstr ""
+"Nach Auswahl der Option Replikator im Menü wird der Abschnitt Replikation "
+"angezeigt. Hier kann die Replikation zwischen zwei Datenbanken durch Auswahl "
+"oder Ausfüllen der passenden Optionen gestartet werden."
+
+# 1dcf7f3f48ef466ab615f86f67aa545f
+#: ../../../src/intro/futon.rst:163
+msgid "To start a replication process, either the select the local database or enter a remote database name into the corresponding areas of the form. Replication occurs from the database on the left to the database on the right."
+msgstr ""
+"Um einen Replikationsprozess zu starten, muss entweder die lokale Datenbank "
+"gewählt werden, oder der Name einer entfernten Datenbank in das Formular "
+"eingegeben werden. Die Replikation wird von der Datenbank auf der linken "
+"Seite zur Datenbank auf der rechten Seiten gestartet."
+
+# c8a56e1745bc4ee9bbd6859f7d2a3f60
+#: ../../../src/intro/futon.rst:168
+msgid "If you are specifying a remote database name, you must specify the full URL of the remote database (including the host, port number and database name). If the remote instance requires authentication, you can specify the username and password as part of the URL, for example ``http://username:pass@remotehost:5984/demo``."
+msgstr ""
+"Wenn man eine entfernte Datenbank angibt, muss die volle URL der Datenbank ("
+"inklusive Hostnamen, Port, und Datenbankname) angegeben werden. Wenn die "
+"entfernte Datenbankinstanz Authentifizierung benötigt, kann man den "
+"Benutzernamen und das Passwort als Teil der URL angeben, zum Beispiel: "
+"``http://username:pass@remotehost:5984/demo``."
+
+# 22f4e7f85e0047b491f7eee269a60af3
+#: ../../../src/intro/futon.rst:174
+msgid "To enable continuous replication, click the Continuous checkbox."
+msgstr ""
+"Setzen einen Haken an die Checkbox Kontinuierlich, um kontinuierliche "
+"Replikation zu aktivieren."
+
+# a399239e29fb4753b7f4e15fe8f8dc2d
+#: ../../../src/intro/futon.rst:176
+msgid "To start the replication process, click the Replicate button. The replication process should start and will continue in the background. If the replication process will take a long time, you can monitor the status of the replication using the Status option under the Tools menu."
+msgstr ""
+"Um die Replikation zu starten, drückt man den Knopf Replizieren. Der Prozess "
+"sollte starten und im Hintergrund weiterlaufen. Falls die Replikation lange "
+"dauert, kann man den Status jederzeit mit einem Klick auf Status im Tools-"
+"Menü einsehen."
+
+# 5ded56745bb2466ebcf598eeca294986
+#: ../../../src/intro/futon.rst:181
+msgid "Once replication has been completed, the page will show the information returned when the replication process completes by the API."
+msgstr ""
+"Nachdem die Replikation abgeschlossen ist, zeigt die Seite Informationen zum "
+"Replikationsprozess von dem API an."
+
+# e621e601b40f4fcb940e9452588d8b86
+#: ../../../src/intro/futon.rst:184
+msgid "The Replicator tool is an interface to the underlying replication API. For more information, see :ref:`api/server/replicate`. For more information on replication, see :ref:`replication`."
+msgstr ""
+"Das Replikationswerkzeug ist die grafische Oberfläche zu dem Replikations-"
+"API. Mehr Informationen dazu unter :ref:`api/server/replicate`. Für mehr "
+"Informationen zum Thema Replikation, siehe: :ref:`replication`."

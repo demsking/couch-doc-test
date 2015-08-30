@@ -1,0 +1,344 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may not
+# use this file except in compliance with the License. You may obtain a copy of
+# the License at
+#   http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations under
+# the License.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-18 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+# f2e9a6b3344545a68317184a88eea006
+#: ../../../src/api/ddoc/views.rst:17
+msgid "``/db/_design/design-doc/_view/view-name``"
+msgstr ""
+
+# edf9422c563544e3a3a4fdf410267f75
+#: ../../../src/api/ddoc/views.rst:21
+msgid "Executes the specified view function from the specified design document."
+msgstr ""
+
+# 0c298d663cd6447b8f33b20bf0e03eb4
+# a6c8dbfe7152492482fd71011cc8b0e8
+#: ../../../src/api/ddoc/views.rst:27
+#: ../../../src/api/ddoc/views.rst:66
+msgid ":mimetype:`application/json`"
+msgstr ""
+
+# c58b376c11c14f47a2a41f500a4840cf
+#: ../../../src/api/ddoc/views.rst:28
+msgid ":mimetype:`text/plain`"
+msgstr ""
+
+# a6ee123c692d419da8ea16b5e7ea9ded
+#: ../../../src/api/ddoc/views.rst:67
+msgid ":mimetype:`text/plain; charset=utf-8`"
+msgstr ""
+
+# 4283e760dba54295a3b4f022a3b58d43
+# c84a0d9cead6470b8116a0c1e8ca132a
+# 614ae486f43b49be8e1ed170ab1eb550
+# 5551a47da8e74537a64986b0fd785728
+# 1683268563cf4891802dcbe440280531
+# 4fcdc9ca11c74095833cdc3ab1238d52
+#: ../../../src/api/ddoc/views.rst:83
+#: ../../../src/api/ddoc/views.rst:135
+#: ../../../src/api/ddoc/views.rst:324
+#: ../../../src/api/ddoc/views.rst:452
+#: ../../../src/api/ddoc/views.rst:655
+#: ../../../src/api/ddoc/views.rst:724
+msgid "**Request**:"
+msgstr ""
+
+# 1d65ece85b294b9da3d35ed072b07e42
+# 5cbc76ce37354849ab4fdabe38eba969
+# 45c0f2528d5e4cafa830bbcfdafa4b35
+# 42f4d9e76a0149ddb011e1c0f09b413e
+# 6fc25489a1bb4f77bc5a896317c0f181
+# 13d60f3b4444451e925b1e7196d0988d
+#: ../../../src/api/ddoc/views.rst:91
+#: ../../../src/api/ddoc/views.rst:151
+#: ../../../src/api/ddoc/views.rst:333
+#: ../../../src/api/ddoc/views.rst:461
+#: ../../../src/api/ddoc/views.rst:663
+#: ../../../src/api/ddoc/views.rst:732
+msgid "**Response**:"
+msgstr ""
+
+# 1f96c8465d5e44f9b31d09348776c99f
+#: ../../../src/api/ddoc/views.rst:128
+msgid "Executes the specified view function from the specified design document. Unlike :get:`/{db}/_design/{ddoc}/_view/{view}` for accessing views, the :method:`POST` method supports the specification of explicit keys to be retrieved from the view results. The remainder of the :method:`POST` view functionality is identical to the :get:`/{db}/_design/{ddoc}/_view/{view}` API."
+msgstr ""
+
+# 8052b81fe37c424ab13424a0a3176e3c
+#: ../../../src/api/ddoc/views.rst:184
+msgid "View Options"
+msgstr ""
+
+# 0b065bd05c56441aacb448da855b624a
+#: ../../../src/api/ddoc/views.rst:186
+msgid "There are two view indexing options that can be defined in a design document as boolean properties of an ``options`` object. Unlike the others querying options, these aren't URL parameters because they take effect when the view index is generated, not when it's accessed:"
+msgstr ""
+
+# aeabcaa3be8548dda675f6e8b808c418
+#: ../../../src/api/ddoc/views.rst:191
+msgid "**local_seq** (*boolean*): Makes documents' local sequence numbers available to map functions (as a ``_local_seq`` document property)"
+msgstr ""
+
+# 0adba372c7e34eee95620a9abd396ec7
+#: ../../../src/api/ddoc/views.rst:193
+msgid "**include_design** (*boolean*): Allows map functions to be called on design documents as well as regular documents"
+msgstr ""
+
+# a212f7fdb1a54520b4192d6f76536021
+#: ../../../src/api/ddoc/views.rst:196
+msgid "In additional to these options, you may specify :ref:`any other <api/ddoc/view>` with their default value. E.g. having option ``\"include_docs\": true`` will automatically includes document body for view results response. You still may override such by explicitly defining same query parameter name with other value."
+msgstr ""
+
+# f0a01751da2642e0839ece660078c766
+#: ../../../src/api/ddoc/views.rst:204
+msgid "Querying Views and Indexes"
+msgstr ""
+
+# eaf44cc199c0424f94164cb203745700
+#: ../../../src/api/ddoc/views.rst:206
+msgid "The definition of a view within a design document also creates an index based on the key information defined within each view. The production and use of the index significantly increases the speed of access and searching or selecting documents from the view."
+msgstr ""
+
+# e294ff4d43104afaa1c713c2de74b4b5
+#: ../../../src/api/ddoc/views.rst:211
+msgid "However, the index is not updated when new documents are added or modified in the database. Instead, the index is generated or updated, either when the view is first accessed, or when the view is accessed after a document has been updated. In each case, the index is updated before the view query is executed against the database."
+msgstr ""
+
+# 72ec207f992642c38e20a20554be84bb
+#: ../../../src/api/ddoc/views.rst:217
+msgid "View indexes are updated incrementally in the following situations:"
+msgstr ""
+
+# 88362a079ce64953a6d3da704daf49b8
+#: ../../../src/api/ddoc/views.rst:219
+msgid "A new document has been added to the database."
+msgstr ""
+
+# dbfc049ca04246248bdb2bfff9464ae3
+#: ../../../src/api/ddoc/views.rst:221
+msgid "A document has been deleted from the database."
+msgstr ""
+
+# 7df0d20ac4c046fa9f45db77fb9757c7
+#: ../../../src/api/ddoc/views.rst:223
+msgid "A document in the database has been updated."
+msgstr ""
+
+# 052cf5634ece4896a72f6152972959cb
+#: ../../../src/api/ddoc/views.rst:225
+msgid "View indexes are rebuilt entirely when the view definition changes. To achieve this, a 'fingerprint' of the view definition is created when the design document is updated. If the fingerprint changes, then the view indexes are entirely rebuilt. This ensures that changes to the view definitions are reflected in the view indexes."
+msgstr ""
+
+# 8452a497e5e440f485fe8cc3d502f411
+#: ../../../src/api/ddoc/views.rst:232
+msgid "View index rebuilds occur when one view from the same the view group (i.e. all the views defined within a single a design document) has been determined as needing a rebuild. For example, if if you have a design document with different views, and you update the database, all three view indexes within the design document will be updated."
+msgstr ""
+
+# 3aa3fdbca754446d8c0e3b5a5d0b7654
+#: ../../../src/api/ddoc/views.rst:238
+msgid "Because the view is updated when it has been queried, it can result in a delay in returned information when the view is accessed, especially if there are a large number of documents in the database and the view index does not exist. There are a number of ways to mitigate, but not completely eliminate, these issues. These include:"
+msgstr ""
+
+# 8e2299c79a96494f99b58798fbf9506b
+#: ../../../src/api/ddoc/views.rst:244
+msgid "Create the view definition (and associated design documents) on your database before allowing insertion or updates to the documents. If this is allowed while the view is being accessed, the index can be updated incrementally."
+msgstr ""
+
+# 6d9c2765d6e0425a9767930f81ee2e85
+#: ../../../src/api/ddoc/views.rst:249
+msgid "Manually force a view request from the database. You can do this either before users are allowed to use the view, or you can access the view manually after documents are added or updated."
+msgstr ""
+
+# 9ebfbba613c24e35b8d7375650457ccf
+#: ../../../src/api/ddoc/views.rst:253
+msgid "Use the :ref:`changes feed <api/db/changes>` to monitor for changes to the database and then access the view to force the corresponding view index to be updated."
+msgstr ""
+
+# 4375a978419b47b8bdb13c5e6ad618f8
+#: ../../../src/api/ddoc/views.rst:257
+msgid "Use a monitor with the :ref:`update notification <update-notifications>` section of the CouchDB configuration file to monitor for changes to your database, and trigger a view query to force the view to be updated."
+msgstr ""
+
+# 91c03cf41c1a4e8298a63fe4ad713176
+#: ../../../src/api/ddoc/views.rst:261
+msgid "None of these can completely eliminate the need for the indexes to be rebuilt or updated when the view is accessed, but they may lessen the effects on end-users of the index update affecting the user experience."
+msgstr ""
+
+# 378a886a19fe470aac80477a052a1476
+#: ../../../src/api/ddoc/views.rst:265
+msgid "Another alternative is to allow users to access a 'stale' version of the view index, rather than forcing the index to be updated and displaying the updated results. Using a stale view may not return the latest information, but will return the results of the view query using an existing version of the index."
+msgstr ""
+
+# dd676b81a4084dd2beace392352684ec
+#: ../../../src/api/ddoc/views.rst:271
+msgid "For example, to access the existing stale view ``by_recipe`` in the ``recipes`` design document:"
+msgstr ""
+
+# 6f5fc29d5d6d4bdc88fbc49f134394d1
+#: ../../../src/api/ddoc/views.rst:278
+msgid "Accessing a stale view:"
+msgstr ""
+
+# 41f4242f699f459a9d6537a38ae22083
+#: ../../../src/api/ddoc/views.rst:280
+msgid "Does not trigger a rebuild of the view indexes, even if there have been changes since the last access."
+msgstr ""
+
+# a5d582f2853445e0ae77535e45847238
+#: ../../../src/api/ddoc/views.rst:283
+msgid "Returns the current version of the view index, if a current version exists."
+msgstr ""
+
+# af1f7ff6ad2c4773b5e5b946eb73c8b6
+#: ../../../src/api/ddoc/views.rst:286
+msgid "Returns an empty result set if the given view index does exist."
+msgstr ""
+
+# dd7f720ab4904870bed6c02344807c84
+#: ../../../src/api/ddoc/views.rst:288
+msgid "As an alternative, you use the ``update_after`` value to the ``stale`` parameter. This causes the view to be returned as a stale view, but for the update process to be triggered after the view information has been returned to the client."
+msgstr ""
+
+# 00b8573a394a4152a0115c810381469b
+#: ../../../src/api/ddoc/views.rst:293
+msgid "In addition to using stale views, you can also make use of the ``update_seq`` query argument. Using this query argument generates the view information including the update sequence of the database from which the view was generated. The returned value can be compared this to the current update sequence exposed in the database information (returned by :get:`/{db}`)."
+msgstr ""
+
+# cc7ef7f8b9eb4043bc937408de5ebccd
+#: ../../../src/api/ddoc/views.rst:304
+msgid "Sorting Returned Rows"
+msgstr ""
+
+# 129aca1ad5de4c3fbe89fa9a6aac180f
+#: ../../../src/api/ddoc/views.rst:306
+msgid "Each element within the returned array is sorted using native UTF-8 sorting according to the contents of the key portion of the emitted content. The basic order of output is as follows:"
+msgstr ""
+
+# 0a704f69d6484619af98f3d0bd824566
+#: ../../../src/api/ddoc/views.rst:310
+msgid "``null``"
+msgstr ""
+
+# 96dad7a293ce4a10a1470d2d08289c4a
+#: ../../../src/api/ddoc/views.rst:312
+msgid "``false``"
+msgstr ""
+
+# 1a1c2c319a344b55ab8b0acf2fad028e
+#: ../../../src/api/ddoc/views.rst:314
+msgid "``true``"
+msgstr ""
+
+# 9eaa905b19964b2cbcbbc9ccd9596255
+#: ../../../src/api/ddoc/views.rst:316
+msgid "Numbers"
+msgstr ""
+
+# 4c07b440515b4cdabc56b47fe2026f8f
+#: ../../../src/api/ddoc/views.rst:318
+msgid "Text (case sensitive, lowercase first)"
+msgstr ""
+
+# 52fb9f7f5df04de7a6084015c4e76557
+#: ../../../src/api/ddoc/views.rst:320
+msgid "Arrays (according to the values of each element, in order)"
+msgstr ""
+
+# dea4e57bb2ce4ea5aab1951c0afdff10
+#: ../../../src/api/ddoc/views.rst:322
+msgid "Objects (according to the values of keys, in key order)"
+msgstr ""
+
+# d73cb8cbcab146afb405c0d5a21bba52
+#: ../../../src/api/ddoc/views.rst:449
+msgid "You can reverse the order of the returned view information by using the ``descending`` query value set to true:"
+msgstr ""
+
+# df3352aa087742a899534cd6e9e79a4e
+#: ../../../src/api/ddoc/views.rst:578
+msgid "Sorting order and startkey/endkey"
+msgstr ""
+
+# 05a74bea76764e32b88cee3db133ee2a
+#: ../../../src/api/ddoc/views.rst:580
+msgid "The sorting direction is applied before the filtering applied using the ``startkey`` and ``endkey`` query arguments. For example the following query:"
+msgstr ""
+
+# e54e631e71cb4a53858669686dd31f8d
+#: ../../../src/api/ddoc/views.rst:589
+msgid "will operate correctly when listing all the matching entries between ``carrots`` and ``egg``. If the order of output is reversed with the ``descending`` query argument, the view request will return no entries:"
+msgstr ""
+
+# 6c450d10faa14bd681fbdd5029ae9f20
+#: ../../../src/api/ddoc/views.rst:606
+msgid "The results will be empty because the entries in the view are reversed before the key filter is applied, and therefore the ``endkey`` of “egg” will be seen before the ``startkey`` of “carrots”, resulting in an empty list."
+msgstr ""
+
+# 8fc4dee543ca48e892c6410698a84de5
+#: ../../../src/api/ddoc/views.rst:611
+msgid "Instead, you should reverse the values supplied to the ``startkey`` and ``endkey`` parameters to match the descending sorting applied to the keys. Changing the previous example to:"
+msgstr ""
+
+# 8f573a5da6c34d278ecb0f076ac5c6ce
+#: ../../../src/api/ddoc/views.rst:625
+msgid "Raw collation"
+msgstr ""
+
+# 89fb97303544482d87981833636d3b74
+#: ../../../src/api/ddoc/views.rst:627
+msgid "By default CouchDB using `ICU`_ driver for sorting view results. It's possible use binary collation instead for faster view builds where Unicode collation is not important."
+msgstr ""
+
+# 79f8bce2f005419d9f182e3091ad281d
+#: ../../../src/api/ddoc/views.rst:631
+msgid "To use raw collation add ``\"collation\": \"raw\"`` key-value pair to the design documents ``options`` object at the root level. After that, views will be regenerated and new order applied."
+msgstr ""
+
+# c033da9d91bf4a6eb76e842a9b3fdf1f
+#: ../../../src/api/ddoc/views.rst:637
+msgid ":ref:`views/collation`"
+msgstr ""
+
+# 054304b06f61444b83e10d44da739264
+#: ../../../src/api/ddoc/views.rst:644
+msgid "Using Limits and Skipping Rows"
+msgstr ""
+
+# 909c20d2ccdc4102ba362371bf374d0f
+#: ../../../src/api/ddoc/views.rst:646
+msgid "By default requestion views result returns all records for it. That's ok when they are small, but this may lead to problems when there are billions of them since the clients might have to read them all and consume all available memory."
+msgstr ""
+
+# 1b1d0f2b67f54e0cbea1a472a2377067
+#: ../../../src/api/ddoc/views.rst:650
+msgid "But it's possible to reduce output result rows by specifying ``limit`` query parameter. For example, retrieving the list of recipes using the ``by_title`` view and limited to 5 returns only 5 records, while there are total 2667 records in view:"
+msgstr ""
+
+# 02f4b5c6c33d46ddad4f148f4d919255
+#: ../../../src/api/ddoc/views.rst:722
+msgid "To omit some records you may use ``skip`` query parameter:"
+msgstr ""
+
+# 6011b9531ee74139bb206d8f665c4612
+#: ../../../src/api/ddoc/views.rst:777
+msgid "Using ``limit`` and ``skip`` parameters is not recommended for results pagination. Read :ref:`pagination recipe <views/pagination>` why it's so and how to make it better."
+msgstr ""
