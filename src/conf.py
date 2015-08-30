@@ -121,3 +121,6 @@ html_context['git_branch'] = github_branch = 'master'
 
 github_docs_path = 'share/doc/src'
 
+locale_dirs = ['locale/']
+
+language = 'de'

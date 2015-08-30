@@ -21,6 +21,9 @@ PAPERSIZE    := -D latex_paper_size=a4
 SPHINXFLAGS  := -a -W -n -A local=1 $(PAPERSIZE) -d $(BUILDDIR)/doctree
 SPHINXOPTS   := $(SPHINXFLAGS) $(SOURCE)
 
+MOFILES					:= $(shell find locale -name '*.po' \
+										| sed 's|\.po|\.mo|g')
+
 ENSURECMD=\
 if [[ $(shell which $(1) > /dev/null 2>&1; echo $$?) -eq 1 ]]; then \
   echo "*** Make sure that $(1) is installed and on your path" && exit 1; \
@@ -31,6 +34,11 @@ all: html pdf info man
 
 clean:
 	rm -rf $(BUILDDIR)
+
+i18n: $(MOFILES)
+
+%.mo: %.po
+	msgfmt $< -o $@
 
 html: $(SPHINXBUILD)
 	$(SPHINXBUILD) -b $@ $(SPHINXOPTS) $(BUILDDIR)/$@
@@ -77,3 +85,5 @@ $(MAKEINFO):
 
 $(PYTHON):
 	@$(call ENSURECMD,$@)
+
+PHONY: i18n
